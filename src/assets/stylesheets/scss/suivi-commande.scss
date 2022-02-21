@@ -1,0 +1,386 @@
+.suivi-commande{
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  .suivi-commande-content{
+    overflow-y: scroll;
+  position: relative;
+  &::-webkit-scrollbar {
+    display: none;
+}
+  &::-webkit-scrollbar {
+    display: none;
+}
+  margin-bottom: 8rem;
+  .suivi-commande-content-first-page{
+    padding: 0 4rem;
+    .first-page-header{
+      margin-top: 1rem;
+  margin-bottom: 3rem;
+  line-height: 2.4rem;
+  .man-wintak {
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  .header-title {
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #484848;
+    display: block;
+
+  }
+  .header-description{
+    display: block;
+    color: #484848;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+.details-commande{
+  border-radius: 5px; 
+  background: #fff;
+   border: 1px solid #e8e8e8; 
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+  margin: auto;
+  margin-bottom: 3rem;
+  .details-commande-header{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 0 2rem;
+    border-bottom: 1px solid #e8e8e8; 
+    .left-side{
+      .ref-commande{
+        font-size: 2.4rem;
+         color: #484848;
+      }
+      .restaurant-location{
+        display: flex;
+         margin-top: 2rem;
+        .restaurant-description{
+         margin-left: 2rem;
+          .restaurant-name{
+          font-weight: bold;
+           font-size: 1.8rem;
+            color: #484848;
+        }
+        div{
+          display: flex;
+          align-items: center;
+          i{
+            font-size: 1.4rem;
+            color: #484848;
+            opacity: 0.8;
+            font-weight: 400;
+
+          }
+            .restaurant-address{
+              padding-left: 1rem;
+          font-weight: normal;
+           font-size: 1.4rem; 
+            color: #484848;
+             opacity: 0.8;
+        }
+        }
+      
+        }
+        
+      }
+      .button-details-commande{
+        height: 4.4rem;
+         border-radius: 5px;
+          background: #fff; 
+          border: 1px solid #ff6900;
+          font-weight: bold;
+           font-size: 1.4rem;
+            text-align: center;
+             color: #ff6900;
+             padding: 0 2rem;
+             margin: 2rem 0 1rem 0;
+             outline: none;
+             cursor: pointer;
+      }
+    }
+    .main{
+      line-height: 3rem;
+      span{
+        font-weight: bold;
+         font-size: 1.4rem; 
+         color: #175db3;
+         display: block;
+      }
+    }
+    .right-side{
+      line-height: 3rem;
+      span{
+        font-weight: normal;
+         font-size: 1.4rem;
+         color: #484848;
+         display: block;
+      }
+    }
+  }
+  .steps-commande{
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.9fr 1.1fr;
+    .step-description{
+      border-right: 1px solid #e8e8e8; 
+      padding: 2rem;
+      .step-number{
+        font-weight: bold; 
+        font-size: 2rem; 
+        color: #484848; opacity: 0.5;
+        margin-right: 2rem;
+
+      }
+      .step-title{
+        font-weight: 500;
+         font-size: 1.4rem;
+         color: #484848; opacity: 0.5;
+      }
+    }
+    .step-description-active{
+      border-right: 1px solid #e8e8e8; 
+      padding: 2rem;
+      border-top: 3px solid #ff6900;
+      .step-number{
+        font-weight: bold; 
+        font-size: 2rem; 
+        color: #ff6900;
+        margin-right: 2rem;
+
+      }
+      .step-title{
+        font-weight: 500;
+         font-size: 1.4rem;
+         color: #ff6900; 
+      }
+    }
+  }
+}
+ 
+}
+ .suivi-commande-content-second-page{
+   display: none;
+   padding: 0 4rem;
+   .second-page-header{
+    margin-top: 1rem;
+margin-bottom: 3rem;
+line-height: 2.4rem;
+.man-wintak {
+  display: block;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.header-title {
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #484848;
+  display: block;
+
+}
+.retour{
+  cursor: pointer;
+margin: auto; 
+display: flex;
+    align-items: center;
+    i{
+      font-size: 3rem;
+        color: #484848;
+        opacity: 0.5;
+
+    }
+span{
+  margin-left: 1em;
+  font-weight: normal;
+font-size: 3rem;
+color: #484848;
+opacity: 0.5;
+}
+
+
+}
+}
+.details-commande{
+  border-radius: 5px; 
+  background: #fff;
+   border: 1px solid #e8e8e8; 
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+  margin: auto;
+  margin-bottom: 3rem;
+  .details-commande-header{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+    .left-side{
+      .ref-commande{
+        font-size: 2.4rem;
+         color: #484848;
+      }
+      .restaurant-location{
+        display: flex;
+         margin-top: 2rem;
+        .restaurant-description{
+         margin-left: 2rem;
+         i{
+          font-size: 1.4rem;
+          color: #484848;
+          opacity: 0.8;
+          font-weight: 400;
+                    }
+          .restaurant-name{
+          font-weight: bold;
+           font-size: 1.8rem;
+            color: #484848;
+            
+        }
+        div{
+          display: flex;
+          align-items: center;
+            .restaurant-address{
+              padding-left: 1rem;
+          font-weight: normal;
+           font-size: 1.4rem; 
+            color: #484848;
+             opacity: 0.8;
+        }
+        }
+      
+        }
+        
+      }
+    }
+    .main{
+      line-height: 3rem;
+      span{
+        font-weight: bold;
+         font-size: 1.4rem; 
+         color: #175db3;
+         display: block;
+      }
+    }
+    .right-side{
+      line-height: 3rem;
+      span{
+        font-weight: normal;
+         font-size: 1.4rem;
+         color: #484848;
+         display: block;
+      }
+    }
+  }
+  .command-list{
+    height: 50%;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+  }
+    .details-commande-food{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 2rem;
+    background: #fff; 
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    .left-side{
+      display: flex;
+      .details-commande-img{
+      width: 18rem;
+    }
+      .main{
+        display: flex;
+      flex-direction: column;
+      margin-left: 2rem;;
+       .food-name{
+        margin-top: 2rem;
+        font-weight: bold; 
+        font-size: 2rem; 
+        color: #484848;
+      } 
+      .food-description{
+        font-weight: normal; 
+        font-size: 1.4rem; 
+        line-height: 24px; 
+        color: #888;
+      }
+      .time{
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        i{
+         
+        font-size: 2rem;
+        text-align: left;
+        color: #484848;
+
+        }
+        span{
+          padding-left: 1rem;
+          font-weight: 300;
+           font-size: 2rem; 
+           text-align: left;
+           color: #484848;
+        }
+      }
+      }
+      
+     
+     
+    }
+    .right-side{
+      border-left: 1px solid #e8e8e8;
+      display: grid;
+      .quantity{
+        border-bottom: 1px solid #e8e8e8;
+        display: flex;
+    align-items: center;
+    padding: 0 1rem;
+        .Qnt-title{
+          font-weight: normal; 
+          font-size: 1.6rem; 
+          color: #484848;
+           opacity: 0.5;
+        }
+        .Qnt-number{
+          font-size: 3rem;
+           color: #484848; 
+           opacity: 0.5;
+           margin-left: 3rem;
+        }
+      }
+      .price{
+        display: flex;
+    align-items: center;
+    padding: 0 1rem;
+        .price-title{
+          
+          font-weight: normal; 
+          font-size: 1.6rem; 
+          color: #484848;
+           opacity: 0.5;
+        }
+        .price-number{
+          font-weight: 300; 
+          font-size: 3rem;
+           color: #ff6900;
+           margin-left: 3rem;
+        }
+      }
+    }
+  }
+  }
+  
+ 
+}
+ }
+
+ 
+  }
+}

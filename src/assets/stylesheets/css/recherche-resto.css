@@ -1,0 +1,747 @@
+.recherche-resto-page {
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto 1fr; }
+  .recherche-resto-page .recherche-resto-page-content {
+    overflow-y: scroll; }
+    .recherche-resto-page .recherche-resto-page-content::-webkit-scrollbar {
+      display: none; }
+    .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed {
+      display: flex; }
+      .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main {
+        padding-bottom: 15rem;
+        position: relative;
+        width: 62%;
+        max-width: 675px;
+        /* cell number */ }
+        .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .thai-food {
+          width: 100%;
+          height: 9rem;
+          border-radius: 5px;
+          margin-bottom: 2rem;
+          background: linear-gradient(#fda700 0%, #fd6a00 100%);
+          display: flex;
+          align-items: center;
+          justify-self: center; }
+          .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .thai-food span {
+            display: block;
+            margin: auto;
+            font-weight: 300;
+            font-size: 4rem;
+            text-align: center;
+            color: #fff; }
+        .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .carousel {
+          background: white;
+          margin-bottom: 3rem; }
+        .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .carousel-cell {
+          width: 26%;
+          margin-right: 1rem;
+          height: 4rem;
+          background: #fff;
+          border: 1px solid #e0e0e0;
+          filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.03));
+          border-radius: 20px; }
+          .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .carousel-cell span {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: normal;
+            font-size: 1.4rem;
+            text-align: center;
+            color: #484848; }
+        .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .flickity-page-dots {
+          visibility: hidden; }
+        .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .carousel-cell:before {
+          display: block;
+          text-align: center;
+          font-size: 8rem;
+          color: white; }
+        .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .categories {
+          margin-bottom: 3rem;
+          overflow-x: scroll;
+          overflow-y: hidden;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch; }
+          .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .categories .category {
+            margin-right: 1rem;
+            display: inline-block;
+            height: 4rem;
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.03));
+            border-radius: 2rem;
+            padding: 0 4.5rem; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .categories .category:last-child {
+              margin-right: 0; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .categories .category span {
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: normal;
+              font-size: 1.4rem;
+              text-align: center;
+              color: #484848; }
+        .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .search-result {
+          display: flex;
+          justify-content: space-between;
+          margin: 2rem 0; }
+          .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .search-result .number-result {
+            font-weight: 500;
+            font-size: 1.4rem;
+            color: #484848;
+            opacity: 0.5; }
+          .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .search-result .filter {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            cursor: pointer; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .search-result .filter span {
+              font-weight: bold;
+              font-size: 1.4rem;
+              text-align: right;
+              color: #484848;
+              cursor: pointer; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .search-result .filter i {
+              font-weight: normal;
+              font-size: 1.4rem;
+              color: #484848;
+              margin-left: 1rem;
+              cursor: pointer; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .search-result .filter .filter-pane {
+              padding: 1rem 2rem;
+              background: #f7f7fa;
+              border: 1px solid #e8e8e8;
+              filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.15));
+              border-radius: 5px;
+              position: absolute;
+              top: 17.5rem !important;
+              right: -0.4rem !important;
+              z-index: 1111;
+              height: 24rem;
+              width: 30rem;
+              display: none; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .search-result .filter .filter-pane .filter-header {
+                font-weight: bold;
+                font-size: 1.4rem;
+                text-align: left;
+                color: #484848;
+                margin-bottom: 1.5rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center; }
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .search-result .filter .filter-pane .filter-header i {
+                  font-weight: normal;
+                  font-size: 1.4rem;
+                  color: #484848; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .search-result .filter .filter-pane .filter-content {
+                display: flex;
+                flex-direction: column; }
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .search-result .filter .filter-pane .filter-content .content-title {
+                  font-weight: normal;
+                  font-size: 1.4rem;
+                  text-align: left;
+                  color: #484848;
+                  margin: 0.8rem 0;
+                  cursor: pointer; }
+                  .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .search-result .filter .filter-pane .filter-content .content-title:last-child {
+                    margin-bottom: 0; }
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .search-result .filter .filter-pane .filter-content .clicked {
+                  color: #ff6900; }
+        .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .ad-pub-sodexo {
+          margin-bottom: 3rem;
+          background: #293798;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-radius: 5px;
+          padding: 0 4rem; }
+          .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .ad-pub-sodexo span {
+            font-weight: normal;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            text-align: left;
+            color: #e8e8e8;
+            cursor: pointer; }
+        .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-main .card {
+          margin-bottom: 3rem; }
+      .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary {
+        padding-left: 2rem;
+        width: 38%; }
+        .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps {
+          position: relative;
+          margin-bottom: 2rem; }
+          .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .small-circle {
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: #ff6900;
+            border-radius: 100%;
+            position: absolute;
+            top: 31rem;
+            right: 16rem; }
+          .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .big-circle {
+            width: 16rem;
+            height: 16rem;
+            background: rgba(255, 105, 0, 0.1);
+            border: 1px solid rgba(253, 106, 0, 0.5);
+            position: absolute;
+            border-radius: 100%;
+            top: 24rem;
+            right: 9rem; }
+          .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .country-dropdown {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            height: 7.7rem;
+            width: 90%;
+            background: white;
+            display: flex;
+            align-items: center;
+            padding: 0 2rem; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .country-dropdown .country {
+              background: transparent;
+              box-shadow: none;
+              border: 0;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              font-weight: 500;
+              font-size: 2.4rem;
+              text-align: left;
+              color: #484848;
+              transition: all 0.3s;
+              margin-bottom: 0;
+              width: 100%; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .country-dropdown .country .bars {
+                cursor: pointer;
+                font-size: 3rem;
+                font-weight: 300; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .country-dropdown .drop-pa {
+              padding: 2rem;
+              border: 0;
+              display: none;
+              width: 100%;
+              z-index: 444;
+              border-radius: 5px;
+              background: #fff;
+              box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.16);
+              position: absolute;
+              top: 0 !important;
+              transition: 0.3s;
+              left: -1px !important; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .country-dropdown .drop-pa .dropdown-top {
+                position: relative;
+                margin-bottom: 4rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between; }
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .country-dropdown .drop-pa .dropdown-top i {
+                  font-size: 3rem;
+                  color: #484848;
+                  font-weight: normal;
+                  cursor: pointer; }
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .country-dropdown .drop-pa .dropdown-top span {
+                  font-weight: normal;
+                  font-size: 2.4rem;
+                  text-align: left;
+                  color: #484848;
+                  opacity: 0.5; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .country-dropdown .drop-pa .chosen-country {
+                margin: 3rem 0;
+                display: flex;
+                align-items: center; }
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .country-dropdown .drop-pa .chosen-country > img {
+                  margin-right: 2rem;
+                  height: 4rem;
+                  width: 4rem;
+                  display: block; }
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .country-dropdown .drop-pa .chosen-country > span {
+                  font-weight: 300;
+                  font-size: 3rem;
+                  text-align: left;
+                  color: #484848; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .country-dropdown .drop-pa .countries {
+                max-height: 25rem;
+                overflow-y: scroll; }
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .country-dropdown .drop-pa .countries .country {
+                  cursor: pointer;
+                  margin-bottom: 2rem;
+                  display: flex;
+                  align-items: center; }
+                  .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .country-dropdown .drop-pa .countries .country > img {
+                    display: block;
+                    height: 4rem;
+                    width: 4rem;
+                    margin-right: 2rem; }
+                  .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .country-dropdown .drop-pa .countries .country > span {
+                    font-weight: 300;
+                    font-size: 2rem;
+                    text-align: left;
+                    color: #484848; }
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .country-dropdown .drop-pa .countries .country-with-lettre {
+                  display: flex;
+                  justify-content: space-between; }
+                  .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .country-dropdown .drop-pa .countries .country-with-lettre div {
+                    cursor: pointer;
+                    margin-bottom: 2rem;
+                    display: flex;
+                    align-items: center; }
+                    .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .country-dropdown .drop-pa .countries .country-with-lettre div > img {
+                      display: block;
+                      height: 4rem;
+                      width: 4rem;
+                      margin-right: 2rem; }
+                    .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .country-dropdown .drop-pa .countries .country-with-lettre div > span {
+                      font-weight: 300;
+                      font-size: 2rem;
+                      text-align: left;
+                      color: #484848; }
+                  .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .country-dropdown .drop-pa .countries .country-with-lettre .lettre {
+                    width: 5rem;
+                    height: 5rem;
+                    background-color: #FFA500;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 2rem; }
+                    .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .country-dropdown .drop-pa .countries .country-with-lettre .lettre span {
+                      color: white;
+                      font-size: 2.4rem; }
+          .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .maps-bottom {
+            position: absolute;
+            bottom: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            left: 3rem;
+            grid-gap: 1rem; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .maps-bottom .gps {
+              width: 6rem;
+              height: 6rem;
+              background-color: white;
+              border-radius: 5px;
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .maps-bottom .gps i {
+                color: #ff6900;
+                font-size: 2.2rem;
+                font-weight: normal;
+                cursor: pointer; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .maps-bottom .search {
+              background-color: white;
+              width: 26rem;
+              height: 6rem;
+              border-radius: 5px;
+              padding: 0 2rem;
+              display: flex;
+              align-items: center; }
+              @media (max-width: 1000px) {
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .maps-bottom .search {
+                  width: 22rem; } }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .maps-bottom .search i {
+                font-size: 2.2rem;
+                color: #ff6900;
+                font-weight: normal;
+                margin-right: 1rem;
+                cursor: pointer; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .maps-bottom .search .progress-bar {
+                background-color: #E8E8E8;
+                height: 1px;
+                width: 13rem;
+                margin-right: 1rem;
+                overflow: hidden; }
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .maps-bottom .search .progress-bar .progress-bar__inner {
+                  position: relative;
+                  display: block;
+                  height: 6px;
+                  background-color: #ff6900;
+                  width: 55%; }
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .maps-bottom .search .progress-bar .cursor {
+                  position: absolute;
+                  top: 2.2rem;
+                  right: 13rem;
+                  width: 1.6rem;
+                  height: 1.6rem;
+                  background-color: white;
+                  border-radius: 100%;
+                  border: 3px solid #ff6900;
+                  cursor: pointer; }
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .maps-bottom .search .progress-bar:hover .progress-bar__inner {
+                  width: 85%; }
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .maps-bottom .search .progress-bar:hover .cursor {
+                  right: 9rem; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .location-maps .maps-bottom .search span {
+                font-weight: normal;
+                font-size: 1.4rem;
+                text-align: left;
+                color: #484848; }
+        .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .title-feed-secondary {
+          font-weight: bold;
+          font-size: 2rem;
+          text-align: left;
+          color: #175db3;
+          margin-bottom: 2rem; }
+        .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .foodliste-week-profile {
+          height: 20rem;
+          background: #fff;
+          border: 1px solid #e8e8e8;
+          border-radius: 5px;
+          padding: 2rem;
+          margin-bottom: 3rem; }
+          .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .foodliste-week-profile .profil-foodlist {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .foodliste-week-profile .profil-foodlist .visitor {
+              display: flex;
+              margin-bottom: 1.5rem; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .foodliste-week-profile .profil-foodlist .visitor .visitor-avatar {
+                margin-right: 1rem; }
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .foodliste-week-profile .profil-foodlist .visitor .visitor-avatar img {
+                  height: 3rem;
+                  width: 3rem;
+                  object-fit: cover; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .foodliste-week-profile .profil-foodlist .visitor .visitor-info .user-username {
+                font-weight: bold;
+                font-size: 1.8rem;
+                line-height: 1.8rem;
+                color: #484848; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .foodliste-week-profile .profil-foodlist .visitor .visitor-info .user-about {
+                font-weight: normal;
+                font-size: 1.4rem;
+                line-height: 1.4rem;
+                color: #484848;
+                opacity: 0.8;
+                margin-top: 0.5rem; }
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .foodliste-week-profile .profil-foodlist .visitor .visitor-info .user-about i {
+                  font-weight: normal;
+                  font-size: 1.4rem;
+                  color: #484848;
+                  opacity: 0.8; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .foodliste-week-profile .profil-foodlist .follow-button {
+              cursor: pointer;
+              background: #ffa500;
+              color: white;
+              padding: 0 1rem;
+              height: 4rem;
+              border-radius: 5px;
+              display: flex;
+              align-items: center;
+              justify-content: center; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .foodliste-week-profile .profil-foodlist .follow-button i {
+                font-weight: normal;
+                font-size: 1.4rem;
+                color: #fff;
+                cursor: pointer; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .foodliste-week-profile .profil-foodlist .added {
+              cursor: pointer;
+              background: #e8e8e8;
+              color: white;
+              padding: 0 1rem;
+              height: 4rem;
+              border-radius: 5px;
+              display: flex;
+              align-items: center;
+              justify-content: center; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .foodliste-week-profile .profil-foodlist .added span {
+                font-weight: normal;
+                font-size: 1.4rem;
+                color: #fff; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .foodliste-week-profile .profil-foodlist .added i {
+                font-weight: normal;
+                font-size: 1.4rem;
+                color: #fff; }
+          .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .foodliste-week-profile .foodliste-week-footer {
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem 0; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .foodliste-week-profile .foodliste-week-footer .item {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin-bottom: 1rem; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .foodliste-week-profile .foodliste-week-footer .item span {
+                font-weight: 300;
+                font-size: 1.4rem;
+                color: #484848; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .foodliste-week-profile .foodliste-week-footer .item .outside-circle {
+                margin-bottom: 1rem;
+                width: 7rem;
+                height: 7rem;
+                border-radius: 50%;
+                border: 1px solid #E8E8E8;
+                display: flex;
+                align-items: center;
+                justify-content: center; }
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .foodliste-week-profile .foodliste-week-footer .item .outside-circle .circle-orange {
+                  width: 6rem;
+                  height: 6rem;
+                  background: linear-gradient(#fda700 0%, #fd6a00 100%);
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  cursor: pointer; }
+                  .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .foodliste-week-profile .foodliste-week-footer .item .outside-circle .circle-orange i {
+                    font-size: 2rem;
+                    font-weight: normal;
+                    color: white;
+                    cursor: pointer; }
+        .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .list-to-dos {
+          margin-bottom: 4rem; }
+          .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .list-to-dos .to-do-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            cursor: pointer; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .list-to-dos .to-do-item i {
+              font-weight: normal;
+              font-size: 2rem;
+              color: #e8e8e8;
+              opacity: 0.5;
+              margin-right: 1rem; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .list-to-dos .to-do-item span {
+              font-weight: 300;
+              font-size: 1.6rem;
+              color: #484848; }
+          .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .list-to-dos .to-do-item-clicked {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .list-to-dos .to-do-item-clicked i {
+              font-weight: normal;
+              font-size: 2rem;
+              color: #ff6900;
+              opacity: 1;
+              margin-right: 1rem; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .list-to-dos .to-do-item-clicked span {
+              font-weight: 300;
+              font-size: 1.6rem;
+              color: #484848;
+              opacity: 0.3;
+              text-decoration: line-through; }
+          .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .list-to-dos .show-missions {
+            margin: 2rem 0;
+            padding: 0 3rem; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .list-to-dos .show-missions span {
+              font-weight: bold;
+              font-size: 1.4rem;
+              color: #ff6900;
+              cursor: pointer; }
+          .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .list-to-dos .list-to-dos-footer {
+            display: grid;
+            grid-template-columns: 2fr 3fr 1fr;
+            background-color: #A80000;
+            height: 6rem;
+            border-radius: 5px;
+            align-items: center;
+            padding: 0 2rem; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .list-to-dos .list-to-dos-footer .your-balance {
+              font-weight: 500;
+              font-size: 1.4rem;
+              color: #ffa500; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .list-to-dos .list-to-dos-footer .sold-wintak {
+              display: flex;
+              justify-content: flex-end; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .list-to-dos .list-to-dos-footer .sold-wintak .sold {
+                font-weight: 500;
+                font-size: 1.6rem;
+                color: #fff; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .list-to-dos .list-to-dos-footer .sold-wintak .wintak {
+                font-size: 1.2rem;
+                color: #fff; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .list-to-dos .list-to-dos-footer .right {
+              display: flex;
+              justify-content: flex-end; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .list-to-dos .list-to-dos-footer .right i {
+                font-weight: normal;
+                font-size: 1.2rem;
+                color: #fff;
+                cursor: pointer; }
+        .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .restaurants {
+          margin-bottom: 4rem; }
+          .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .restaurants .restaurant {
+            margin: 2rem 0;
+            display: flex;
+            align-items: center;
+            height: 10rem;
+            border-radius: 5px;
+            background: #fff;
+            border: 1px solid #e8e8e8; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .restaurants .restaurant .pict-of-res {
+              height: 10rem;
+              width: 10rem; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .restaurants .restaurant .logo {
+              padding: 0 1rem; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .restaurants .restaurant .restaurant-right-side {
+              display: flex; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .restaurants .restaurant .restaurant-right-side .logo {
+                width: 6rem;
+                height: 4rem; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .restaurants .restaurant .restaurant-right-side .restaurant-details .restaurant-name {
+                font-weight: bold;
+                font-size: 1.8rem;
+                color: #484848; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .restaurants .restaurant .restaurant-right-side .restaurant-details .restaurant-location {
+                display: flex;
+                align-items: center; }
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .restaurants .restaurant .restaurant-right-side .restaurant-details .restaurant-location .restaurant-adress {
+                  font-size: 1.4rem;
+                  color: #484848;
+                  opacity: 0.8; }
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .restaurants .restaurant .restaurant-right-side .restaurant-details .restaurant-location i {
+                  font-size: 1.4rem;
+                  font-weight: normal;
+                  color: #484848;
+                  opacity: 0.8;
+                  margin-right: 0.5rem; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .restaurants .restaurant .restaurant-right-side .restaurant-details .star-rating {
+                margin-top: 0.5rem; }
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .restaurants .restaurant .restaurant-right-side .restaurant-details .star-rating i {
+                  color: #ffa500;
+                  font-size: 9px;
+                  font-weight: normal; }
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .restaurants .restaurant .restaurant-right-side .restaurant-details .star-rating .checked {
+                  color: #ffa500; }
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .restaurants .restaurant .restaurant-right-side .restaurant-details .star-rating .non-checked {
+                  color: #e2e2e2; }
+        .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .most-read-articles {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 2rem; }
+          .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .most-read-articles .title-feed-secondary {
+            font-weight: bold;
+            font-size: 2rem;
+            color: #175db3;
+            margin: 0; }
+          .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .most-read-articles .show {
+            font-weight: bold;
+            font-size: 1.4rem;
+            color: #ff6900;
+            cursor: pointer; }
+        .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .orbit .orbit-wrapper-feed-secondary .orbit-content {
+          border: 1px solid #e8e8e8;
+          border-radius: 5px;
+          height: 32rem;
+          margin: 0;
+          outline: none; }
+          .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .orbit .orbit-wrapper-feed-secondary .orbit-content .post-card-header img {
+            width: 100%;
+            height: 12rem; }
+          .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .orbit .orbit-wrapper-feed-secondary .orbit-content .post-card-body .user-who-post-wrapper {
+            display: flex;
+            flex-direction: column;
+            padding: 0 1.5rem; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .orbit .orbit-wrapper-feed-secondary .orbit-content .post-card-body .user-who-post-wrapper .post-card-title {
+              font-weight: normal;
+              font-size: 1rem;
+              color: #484848;
+              opacity: 0.3;
+              margin: 1rem 0; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .orbit .orbit-wrapper-feed-secondary .orbit-content .post-card-body .user-who-post-wrapper .post-card-subtitle {
+              font-weight: bold;
+              font-size: 1.2rem;
+              color: #484848;
+              margin-bottom: 1rem; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .orbit .orbit-wrapper-feed-secondary .orbit-content .post-card-body .user-who-post-wrapper .post-card-description {
+              font-weight: normal;
+              font-size: 1.2rem;
+              line-height: 18px;
+              color: #a2a2a2;
+              margin-bottom: 1rem; }
+          .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .orbit .orbit-wrapper-feed-secondary .orbit-content .profil-foodlist {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1.5rem; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .orbit .orbit-wrapper-feed-secondary .orbit-content .profil-foodlist .visitor {
+              display: flex; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .orbit .orbit-wrapper-feed-secondary .orbit-content .profil-foodlist .visitor .visitor-avatar {
+                margin-right: 1rem; }
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .orbit .orbit-wrapper-feed-secondary .orbit-content .profil-foodlist .visitor .visitor-avatar img {
+                  height: 3rem;
+                  width: 3rem;
+                  object-fit: cover; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .orbit .orbit-wrapper-feed-secondary .orbit-content .profil-foodlist .visitor .visitor-info .user-username {
+                font-weight: bold;
+                font-size: 1.8rem;
+                line-height: 1.8rem;
+                color: #484848; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .orbit .orbit-wrapper-feed-secondary .orbit-content .profil-foodlist .visitor .visitor-info .user-about {
+                font-weight: normal;
+                font-size: 1.4rem;
+                line-height: 1.4rem;
+                color: #484848;
+                opacity: 0.8;
+                margin-top: 0.5rem; }
+                .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .orbit .orbit-wrapper-feed-secondary .orbit-content .profil-foodlist .visitor .visitor-info .user-about i {
+                  font-weight: normal;
+                  font-size: 1.4rem;
+                  color: #484848;
+                  opacity: 0.8; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .orbit .orbit-wrapper-feed-secondary .orbit-content .profil-foodlist .follow-button {
+              cursor: pointer;
+              background: #ffa500;
+              color: white;
+              padding: 0 1rem;
+              height: 4rem;
+              border-radius: 5px;
+              display: flex;
+              align-items: center;
+              justify-content: center; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .orbit .orbit-wrapper-feed-secondary .orbit-content .profil-foodlist .follow-button i {
+                font-weight: normal;
+                font-size: 1.4rem;
+                color: #fff; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .orbit .orbit-wrapper-feed-secondary .orbit-content .profil-foodlist .added {
+              cursor: pointer;
+              background: #e8e8e8;
+              color: white;
+              padding: 0 1rem;
+              height: 4rem;
+              border-radius: 5px;
+              display: flex;
+              align-items: center;
+              justify-content: center; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .orbit .orbit-wrapper-feed-secondary .orbit-content .profil-foodlist .added span {
+                font-weight: normal;
+                font-size: 1.4rem;
+                color: #fff; }
+              .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .orbit .orbit-wrapper-feed-secondary .orbit-content .profil-foodlist .added i {
+                font-weight: normal;
+                font-size: 1.4rem;
+                color: #fff; }
+        .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .orbit .orbit-bullets {
+          margin: 2rem 0; }
+          .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .orbit .orbit-bullets .bullet {
+            width: 10px;
+            height: 10px; }
+            .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .orbit .orbit-bullets .bullet.is-active {
+              background-color: #ff6900; }
+        .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .separator {
+          width: 100%;
+          background-color: #E8E8E8;
+          height: 1px;
+          margin: 3rem 0; }
+        .recherche-resto-page .recherche-resto-page-content .recherche-resto-page-content-feed .feed-secondary .separator2 {
+          width: 100%;
+          background-color: #E8E8E8;
+          height: 0.5px;
+          margin: 3rem 0; }
+
+.flickity-button-icon {
+  width: 3rem !important;
+  height: 3rem !important;
+  color: #484848 !important;
+  opacity: 0.8 !important; }
+
+.flickity-prev-next-button {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05) !important;
+  width: 5rem !important;
+  height: 5rem !important;
+  border-radius: 50% !important;
+  background-color: white !important; }

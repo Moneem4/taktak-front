@@ -1,0 +1,75 @@
+.sidemenu {
+    background-color: #f8f7fa;
+    position: relative;
+    width: 55rem;
+    height: 100vh;
+    padding: 2rem 5rem 2rem 14rem;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 991px) {
+      position: fixed;
+      height: 100vh;
+      width: 100vw;
+      left: -100vw;
+      top: 0;
+      z-index: 99;
+    }
+    .sidemenu-header {
+      margin-bottom: 4rem;
+      display: flex;
+      flex-direction: column;
+      .sidemenu-logo {
+        > img {
+          margin-bottom: 3rem;
+          display: block;
+          width: 120px;
+          height: 120px;
+        }
+      }
+      .input-wrapper {
+        position: relative;
+        input {
+          margin: 0;
+          background: white;
+          box-shadow: none;
+          border: 0;
+          padding-left: 9rem;
+          padding-right: 9rem;
+          height: 6rem;
+          border-radius: 5px;
+          font-size: 2rem;
+          &::placeholder {
+            font-family: Raleway;
+            font-weight: 300;
+            font-size: 20px;
+            text-align: left;
+            color: #484848;
+          }
+        }
+        i {
+          height: 25px;
+          bottom: 0;
+          margin: auto;
+          position: absolute;
+          left: 2rem;
+          top: 0;
+          font-size: 30px;
+          color: #ff6900;
+        }
+        .woman-restaurant {
+          position: absolute;
+          width: 13rem;
+          height: 13rem;
+          display: block;
+          top: -11.3rem;
+          right: 0;
+          opacity: 0;
+        }
+      }
+    }
+   .side-menu{
+       display: flex;
+   }
+    
+    
+}  

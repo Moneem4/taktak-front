@@ -1,0 +1,108 @@
+.last-seen .last-seen-top {
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: left;
+    color: #175db3; }
+   .last-seen .last-seen-body .user-who-post-info {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center; }
+     .last-seen .last-seen-body .user-who-post-info .user-who-post-info-avatar {
+      margin-right: 1rem; }
+       .last-seen .last-seen-body .user-who-post-info .user-who-post-info-avatar img {
+        max-width: 4rem;
+        object-fit: cover;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 5px; }
+     .last-seen .last-seen-body .user-who-post-info .user-who-post-info-info .user-username {
+      font-weight: bold;
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      color: #484848; }
+     .last-seen .last-seen-body .user-who-post-info .user-who-post-info-info .user-about {
+      font-weight: normal;
+      font-size: 1.4rem;
+      line-height: 1.4rem;
+      color: #484848;
+      opacity: 0.8; }
+     .last-seen .last-seen-body .user-who-post-info button {
+      margin-left: auto;
+      height: 4rem;
+      padding: 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      background: #e8e8e8; }
+       .last-seen .last-seen-body .user-who-post-info button i {
+        color: white;
+        font-size: 1.5rem; }
+   .last-seen .last-seen-body .profil-visitor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+     .last-seen .last-seen-body .profil-visitor .visitor {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem; }
+       .last-seen .last-seen-body .profil-visitor .visitor .visitor-avatar {
+        margin-right: 1rem; }
+         .last-seen .last-seen-body .profil-visitor .visitor .visitor-avatar img {
+          height: 4rem;
+          width: 4rem;
+          object-fit: cover; }
+       .last-seen .last-seen-body .profil-visitor .visitor .visitor-info .user-username {
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        color: #484848; }
+       .last-seen .last-seen-body .profil-visitor .visitor .visitor-info .user-about {
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        color: #484848;
+        opacity: 0.8;
+        margin-top: 0.5rem; }
+         .last-seen .last-seen-body .profil-visitor .visitor .visitor-info .user-about i {
+          font-weight: normal;
+          font-size: 1.4rem;
+          color: #484848;
+          opacity: 0.8; }
+     .last-seen .last-seen-body .profil-visitor .follow-button {
+      cursor: pointer;
+      background: #ffa500;
+      color: white;
+      padding: 0 1rem;
+      height: 4rem;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+       .last-seen .last-seen-body .profil-visitor .follow-button span {
+        font-weight: normal;
+        font-size: 1.4rem;
+        color: #fff; }
+       .last-seen .last-seen-body .profil-visitor .follow-button i {
+        font-weight: normal;
+        font-size: 1.4rem;
+        color: #fff; }
+     .last-seen .last-seen-body .profil-visitor .added {
+      cursor: pointer;
+      background: #e8e8e8;
+      color: white;
+      padding: 0 1rem;
+      height: 4rem;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+       .last-seen .last-seen-body .profil-visitor .added span {
+        font-weight: normal;
+        font-size: 1.4rem;
+        color: #fff; }
+       .last-seen .last-seen-body .profil-visitor .added i {
+        font-weight: normal;
+        font-size: 1.4rem;
+        color: #fff; }

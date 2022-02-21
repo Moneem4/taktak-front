@@ -1,0 +1,107 @@
+.sidemenu {
+  background-color: #f8f7fa;
+  position: relative;
+  width: 55rem;
+  height: 100vh;
+  padding: 2rem 5rem 2rem 14rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+@media (max-width: 991px) {
+  .sidemenu {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    left: -100vw;
+    top: 0;
+    z-index: 99; } }
+
+.sidemenu .sidemenu-header {
+  margin-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.sidemenu .sidemenu-header .sidemenu-logo > img {
+  margin-bottom: 3rem;
+  display: block;
+  width: 120px;
+  height: 120px; }
+
+.sidemenu .sidemenu-header .input-wrapper {
+  position: relative; }
+
+.sidemenu .sidemenu-header .input-wrapper input {
+  margin: 0;
+  background: white;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+  padding-left: 9rem;
+  padding-right: 9rem;
+  height: 6rem;
+  border-radius: 5px;
+  font-size: 2rem; }
+
+.sidemenu .sidemenu-header .input-wrapper input::-webkit-input-placeholder {
+  font-family: Raleway;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: left;
+  color: #484848; }
+
+.sidemenu .sidemenu-header .input-wrapper input:-ms-input-placeholder {
+  font-family: Raleway;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: left;
+  color: #484848; }
+
+.sidemenu .sidemenu-header .input-wrapper input::-ms-input-placeholder {
+  font-family: Raleway;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: left;
+  color: #484848; }
+
+.sidemenu .sidemenu-header .input-wrapper input::placeholder {
+  font-family: Raleway;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: left;
+  color: #484848; }
+
+.sidemenu .sidemenu-header .input-wrapper i {
+  height: 25px;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  left: 2rem;
+  top: 0;
+  font-size: 30px;
+  color: #ff6900; }
+
+.sidemenu .sidemenu-header .input-wrapper .woman-restaurant {
+  position: absolute;
+  width: 13rem;
+  height: 13rem;
+  display: block;
+  top: -11.3rem;
+  right: 0;
+  opacity: 0; }
+
+.sidemenu .side-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+/*# sourceMappingURL=side-menu-inbox.css.map */

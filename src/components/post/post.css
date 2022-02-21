@@ -1,0 +1,8 @@
+.MuiGridListTile-tile {
+    height: 100%;
+    display: flex !important;
+    flex-direction: row !important;
+    overflow: hidden;
+    position: relative;
+    justify-content: space-around !important;
+}

@@ -1,0 +1,513 @@
+.booking-page-process {
+  overflow: hidden;
+  height: 120vh;
+  /*display: grid;*/
+  grid-template-columns: auto 1fr; }
+  .booking-page-process .divider {
+    margin: 3rem 0;
+    border: 1px solid #e8e8e8; }
+  .booking-page-process .first-process .eprimez-vous {
+    height: 16rem;
+    background: linear-gradient(#fda700 0%, #fd6a00 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 5rem; }
+  .booking-page-process .first-process .header {
+    display: flex;
+    flex-direction: column; }
+    .booking-page-process .first-process .header img {
+      margin: auto auto 3rem;
+      display: block;
+      width: 16rem;
+      height: 14rem; }
+    .booking-page-process .first-process .header span {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.6rem;
+      color: #484848; }
+  .booking-page-process .first-process .details-restaurants .list {
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
+    overflow-y: hidden; }
+    .booking-page-process .first-process .details-restaurants .list::-webkit-scrollbar {
+      display: none; }
+    .booking-page-process .first-process .details-restaurants .list .my-booking-ele {
+      display: inline-block !important;
+      margin: 3rem 1rem;
+      position: relative;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      background: #fefefe;
+      border: 1px solid #e8e8e8; }
+      .booking-page-process .first-process .details-restaurants .list .my-booking-ele .divider {
+        margin-bottom: 0;
+        opacity: 1; }
+      .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-ele-top {
+        padding: 2rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between; }
+        .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-ele-top .time {
+          font-size: 1.4rem;
+          color: #484848;
+          opacity: 0.5; }
+        .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-ele-top > span {
+          cursor: pointer;
+          height: 4rem;
+          padding: 0 1.5rem;
+          display: flex;
+          align-items: center;
+          font-size: 1.2rem;
+          color: #484848;
+          border: 1px solid #e8e8e8;
+          border-radius: 20px; }
+          .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-ele-top > span i {
+            font-size: 1.4rem;
+            color: #ff6900;
+            margin-left: 0.5rem;
+            font-weight: normal;
+            margin-left: 1rem; }
+        .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-ele-top .you-may-like-element {
+          align-items: flex-start; }
+          .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-ele-top .you-may-like-element .info-header {
+            flex-wrap: wrap; }
+            .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-ele-top .you-may-like-element .info-header .raiting {
+              margin-top: 1rem;
+              width: 100%; }
+      .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-ele-main {
+        height: 5rem;
+        background: #f5f4f4;
+        border-bottom: 1px solid #E8E8E8;
+        border-top: 1px solid #E8E8E8;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-ele-main span {
+          font-weight: bold;
+          font-size: 1.2rem;
+          text-align: left;
+          color: #d40562;
+          opacity: 1111; }
+      .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-ele-bottom {
+        padding: 2rem; }
+        .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-ele-bottom > div {
+          display: grid;
+          grid-template-columns: 2fr 3fr;
+          align-items: center;
+          margin-bottom: 2rem;
+          grid-gap: 3rem; }
+          .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-ele-bottom > div:last-child {
+            margin-bottom: 0; }
+          .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-ele-bottom > div .my-booking-label {
+            font-weight: bold;
+            font-size: 1.4rem;
+            text-align: left;
+            color: #175db3; }
+          .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-ele-bottom > div .my-booking-value {
+            font-weight: normal;
+            font-size: 1.4rem;
+            text-align: left;
+            color: #484848;
+            display: flex; }
+            .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-ele-bottom > div .my-booking-value .number {
+              font-weight: bold;
+              font-size: 14px;
+              color: #484848; }
+            .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-ele-bottom > div .my-booking-value .number-sur-taktak {
+              font-weight: bold;
+              font-size: 1.1rem;
+              color: #175db3;
+              opacity: 0.8; }
+            .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-ele-bottom > div .my-booking-value .peoples {
+              display: flex;
+              align-items: center;
+              margin-left: 2rem; }
+              .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-ele-bottom > div .my-booking-value .peoples .people {
+                position: relative;
+                left: 0;
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 100%;
+                border: 1px solid white; }
+                .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-ele-bottom > div .my-booking-value .peoples .people img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover; }
+                .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-ele-bottom > div .my-booking-value .peoples .people:nth-child(2) {
+                  left: -1.25rem; }
+                .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-ele-bottom > div .my-booking-value .peoples .people:nth-child(3) {
+                  left: -2.25rem; }
+                .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-ele-bottom > div .my-booking-value .peoples .people:nth-child(4) {
+                  left: -3.25rem; }
+      .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-footer {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        padding: 2rem;
+        grid-gap: 2rem;
+        cursor: pointer; }
+        .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-footer .cancel {
+          background-color: #ff6900;
+          color: white;
+          border-radius: 5px;
+          padding: 0 2rem;
+          font-size: 1.4rem;
+          height: 4rem;
+          display: flex;
+          align-items: center;
+          outline: none;
+          cursor: pointer; }
+          .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-footer .cancel i {
+            font-size: 2rem;
+            color: white;
+            font-weight: normal;
+            margin-right: 1rem; }
+        .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-footer .phone {
+          outline: none;
+          border: 1px solid #ff6900;
+          border-radius: 5px;
+          padding: 0 2rem;
+          font-size: 1.4rem;
+          height: 4rem;
+          display: flex;
+          align-items: center;
+          cursor: pointer; }
+          .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-footer .phone i {
+            font-size: 2rem;
+            color: #ff6900;
+            font-weight: normal;
+            margin-right: 1rem; }
+        .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-footer .comment {
+          outline: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 4rem;
+          background: #43c497;
+          border-radius: 5px;
+          padding: 0 1rem;
+          cursor: pointer; }
+          .booking-page-process .first-process .details-restaurants .list .my-booking-ele .my-booking-footer .comment i {
+            font-family: "Font Awesome 5 Pro";
+            font-weight: normal;
+            font-size: 2.4rem;
+            text-align: left;
+            color: #fff; }
+            
+  .booking-page-process .seconde-process .eprimez-vous {
+    height: 16rem;
+    background: linear-gradient(#fda700 0%, #fd6a00 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 5rem;
+    position: relative; }
+    .booking-page-process .seconde-process .eprimez-vous .retour {
+      position: absolute;
+      top: 5.5rem;
+      left: 4.4rem;
+      font-family: Raleway;
+      font-weight: normal;
+      font-size: 3rem;
+      text-align: center;
+      color: #fff;
+      cursor: pointer; }
+      .booking-page-process .seconde-process .eprimez-vous .retour i {
+        cursor: pointer;
+        font-weight: 300;
+        font-size: 3rem;
+        text-align: center;
+        color: #fff;
+        margin-right: 1rem; }
+  .booking-page-process .seconde-process .content-process {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr; }
+    .booking-page-process .seconde-process .content-process .my-booking-ele {
+      display: inline-block !important;
+      margin: 3rem 1rem;
+      width: 58rem;
+      position: relative;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      background: #fefefe; }
+      .booking-page-process .seconde-process .content-process .my-booking-ele .divider {
+        margin-bottom: 0;
+        opacity: 1; }
+      .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-top {
+        padding-bottom: 2rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between; }
+        .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-top .time {
+          font-size: 1.4rem;
+          color: #484848;
+          opacity: 0.5; }
+        .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-top > span {
+          cursor: pointer;
+          height: 4rem;
+          padding: 0 1.5rem;
+          display: flex;
+          align-items: center;
+          font-size: 1.2rem;
+          color: #484848;
+          border: 1px solid #e8e8e8;
+          border-radius: 20px; }
+          .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-top > span i {
+            font-size: 1.4rem;
+            color: #ff6900;
+            margin-left: 0.5rem;
+            font-weight: normal;
+            margin-left: 1rem; }
+        .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-top .you-may-like-element {
+          align-items: flex-start; }
+          .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-top .you-may-like-element .info-header-process {
+            display: flex; }
+            .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-top .you-may-like-element .info-header-process .details {
+              display: flex;
+              margin-left: 2rem; }
+              .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-top .you-may-like-element .info-header-process .details .icon-restaurant {
+                height: 4rem; }
+              .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-top .you-may-like-element .info-header-process .details .name {
+                margin-left: 1rem;
+                display: flex;
+                flex-direction: column; }
+                .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-top .you-may-like-element .info-header-process .details .name .restaurant-name {
+                  font-weight: bold;
+                  font-size: 1.8rem;
+                  color: #484848; }
+                .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-top .you-may-like-element .info-header-process .details .name .location {
+                  font-weight: normal;
+                  font-size: 1.4rem;
+                  color: #484848;
+                  opacity: 0.8; }
+                  .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-top .you-may-like-element .info-header-process .details .name .location i {
+                    margin-right: 1rem; }
+            .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-top .you-may-like-element .info-header-process .raiting {
+              margin-top: 1rem;
+              width: 100%; }
+      .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-main {
+        height: 5rem;
+        background: #f5f4f4;
+        border-bottom: 1px solid #E8E8E8;
+        border-top: 1px solid #E8E8E8;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-main span {
+          font-weight: bold;
+          font-size: 1.2rem;
+          text-align: left;
+          color: #d40562;
+          opacity: 1111; }
+      .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-bottom {
+        padding: 2rem; }
+        .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-bottom > div {
+          display: grid;
+          grid-template-columns: 2fr 3fr;
+          align-items: center;
+          margin-bottom: 2rem;
+          grid-gap: 3rem; }
+          .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-bottom > div:last-child {
+            margin-bottom: 0; }
+          .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-bottom > div .my-booking-label {
+            font-weight: bold;
+            font-size: 1.4rem;
+            text-align: left;
+            color: #175db3; }
+          .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-bottom > div .my-booking-value {
+            font-weight: normal;
+            font-size: 1.4rem;
+            text-align: left;
+            color: #484848;
+            display: flex; }
+            .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-bottom > div .my-booking-value .number {
+              font-weight: bold;
+              font-size: 1.4rem;
+              color: #484848; }
+            .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-bottom > div .my-booking-value .number-sur-taktak {
+              font-weight: bold;
+              font-size: 1.1rem;
+              color: #175db3;
+              opacity: 0.8; }
+            .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-bottom > div .my-booking-value .peoples {
+              display: flex;
+              align-items: center;
+              margin-left: 2rem; }
+              .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-bottom > div .my-booking-value .peoples .people {
+                position: relative;
+                left: 0;
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 100%;
+                border: 1px solid white; }
+                .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-bottom > div .my-booking-value .peoples .people img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover; }
+                .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-bottom > div .my-booking-value .peoples .people:nth-child(2) {
+                  left: -1.25rem; }
+                .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-bottom > div .my-booking-value .peoples .people:nth-child(3) {
+                  left: -2.25rem; }
+                .booking-page-process .seconde-process .content-process .my-booking-ele .my-booking-ele-bottom > div .my-booking-value .peoples .people:nth-child(4) {
+                  left: -3.25rem; }
+    .booking-page-process .seconde-process .content-process .my-booking-footer {
+      margin-top: 6rem;
+      padding: 2rem; }
+      .booking-page-process .seconde-process .content-process .my-booking-footer .title {
+        font-family: Raleway;
+        font-weight: bold;
+        font-size: 2.8rem;
+        text-align: left;
+        color: #175db3; }
+      .booking-page-process .seconde-process .content-process .my-booking-footer .buttons {
+        margin-top: 6rem;
+        display: flex;
+        justify-content: space-between; }
+        .booking-page-process .seconde-process .content-process .my-booking-footer .buttons .phone {
+          width: 22rem;
+          border: 1px solid #ff6900;
+          border-radius: 5px;
+          padding: 0 2rem;
+          font-size: 2rem;
+          height: 4rem;
+          display: flex;
+          align-items: center;
+          color: #484848; }
+          .booking-page-process .seconde-process .content-process .my-booking-footer .buttons .phone i {
+            font-size: 2rem;
+            color: #ff6900;
+            font-weight: normal;
+            margin-right: 1.5rem; }
+        .booking-page-process .seconde-process .content-process .my-booking-footer .buttons .comment {
+          width: 30rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 4rem;
+          background: #43c497;
+          border-radius: 5px;
+          padding: 0 1rem;
+          font-size: 2rem;
+          color: #fff; }
+          .booking-page-process .seconde-process .content-process .my-booking-footer .buttons .comment i {
+            font-family: "Font Awesome 5 Pro";
+            font-weight: normal;
+            font-size: 2.4rem;
+            text-align: left;
+            color: #fff;
+            margin-right: 1.5rem; }
+    .booking-page-process .seconde-process .content-process .content-process-secondary {
+      padding: 2rem; }
+      .booking-page-process .seconde-process .content-process .content-process-secondary img {
+        width: 100%;
+        height: 35rem; }
+      .booking-page-process .seconde-process .content-process .content-process-secondary .box-content-process-sec {
+        border: 1px solid #e8e8e8;
+        border-radius: 5px; }
+        .booking-page-process .seconde-process .content-process .content-process-secondary .box-content-process-sec .box-item {
+          padding: 1rem 2rem;
+          display: grid;
+          grid-template-columns: 1fr 7fr 1fr;
+          align-items: center;
+          cursor: pointer; }
+          .booking-page-process .seconde-process .content-process .content-process-secondary .box-content-process-sec .box-item i {
+            font-family: "Font Awesome 5 Pro";
+            font-weight: 300;
+            font-size: 2rem;
+            text-align: center;
+            color: #484848;
+            opacity: 0.5;
+            cursor: pointer; }
+          .booking-page-process .seconde-process .content-process .content-process-secondary .box-content-process-sec .box-item span {
+            font-family: Raleway;
+            font-weight: normal;
+            font-size: 2rem;
+            text-align: left;
+            color: #484848;
+            opacity: 0.5;
+            cursor: pointer; }
+          .booking-page-process .seconde-process .content-process .content-process-secondary .box-content-process-sec .box-item:first-child {
+            border-bottom: 1px solid #e8e8e8; }
+          .booking-page-process .seconde-process .content-process .content-process-secondary .box-content-process-sec .box-item:nth-child(2) {
+            border-bottom: 1px solid #e8e8e8; }
+          .booking-page-process .seconde-process .content-process .content-process-secondary .box-content-process-sec .box-item:hover i, .booking-page-process .seconde-process .content-process .content-process-secondary .box-content-process-sec .box-item:hover span {
+            color: #ff6900;
+            opacity: 1; }
+      .booking-page-process .seconde-process .content-process .content-process-secondary img {
+        margin-top: 2rem; }
+
+.orbit-container {
+  outline: none;
+  height: 35rem !important; }
+  .orbit-container:focus {
+    outline: none; }
+  .orbit-container .orbit-slide {
+    width: 100%;
+    height: 35rem;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s; }
+    .orbit-container .orbit-slide img {
+      margin: auto;
+      display: block; }
+
+.orbit {
+  position: relative; }
+  .orbit .orbit-controls {
+    visibility: hidden; }
+  .orbit .orbit-booking-bottom .arrow-left, .orbit .orbit-booking-bottom .arrow-right {
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    border-radius: 5px;
+    outline: none;
+    position: absolute;
+    color: #ff6900;
+    top: 16rem;
+    cursor: pointer; }
+    .orbit .orbit-booking-bottom .arrow-left.arrow-left, .orbit .orbit-booking-bottom .arrow-right.arrow-left {
+      left: 2rem; }
+    .orbit .orbit-booking-bottom .arrow-left.arrow-right, .orbit .orbit-booking-bottom .arrow-right.arrow-right {
+      right: 2rem; }
+    .orbit .orbit-booking-bottom .arrow-left .prev, .orbit .orbit-booking-bottom .arrow-left .next, .orbit .orbit-booking-bottom .arrow-right .prev, .orbit .orbit-booking-bottom .arrow-right .next {
+      font-size: 2rem;
+      color: #ff6900;
+      font-weight: 300;
+      cursor: pointer; }
+
+  .booking-page-process .alerte-annulation-commande {
+  width: 100%;
+  height: 8rem;
+  background-color: #d40562;
+  position: fixed;
+  bottom: 0;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 99999999999; }
+  .booking-page-process .alerte-annulation-commande .question {
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: left;
+    color: #fff; }
+  .booking-page-process .alerte-annulation-commande .action .confirmer, .alerte-annulation-commande .action .annuler {
+    font-weight: bold;
+    font-size: 2.2rem;
+    text-align: left;
+    color: #fff;
+    cursor: pointer; }
+    .booking-page-process .alerte-annulation-commande .action .confirmer.confirmer, .alerte-annulation-commande .action .annuler.confirmer {
+      margin-right: 4rem; }
+

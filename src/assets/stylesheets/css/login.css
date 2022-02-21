@@ -1,0 +1,755 @@
+.login-page {
+  background: #f6f7fa;
+  width: 100%; }
+  @media (min-width: 992px) {
+    .login-page {
+      height: 100vh;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 2.5fr; } }
+  .login-page .auth-brand {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 992px) {
+      .login-page .auth-brand {
+        height: 100vh; } }
+    .login-page .auth-brand .auth-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+    .login-page .auth-brand .logo {
+      position: relative;
+      margin-bottom: 3rem;
+      margin-top: 10rem;
+      font-size: 26rem;
+      color: white; }
+      @media (max-width: 1520px) {
+        .login-page .auth-brand .logo {
+          font-size: 22rem; } }
+      @media (min-width: 992px) {
+        .login-page .auth-brand .logo {
+          margin-top: 20%; } }
+    .login-page .auth-brand > span {
+      position: relative;
+      font-weight: normal;
+      font-size: 4rem;
+      text-align: center;
+      color: #fff; }
+      @media (max-width: 1520px) {
+        .login-page .auth-brand > span {
+          font-size: 3.5rem; } }
+    .login-page .auth-brand > p {
+      position: relative;
+      margin-top: auto;
+      margin-bottom: 4rem;
+      font-weight: 300;
+      font-size: 1.6rem;
+      letter-spacing: 0.12em;
+      text-align: center;
+      color: #fff; }
+  .login-page .auth-form {
+    padding-bottom: 10rem;
+    overflow: scroll;
+    height: 100%;
+    width: 100%; }
+    .login-page .auth-form::-webkit-scrollbar {
+      display: none; }
+    .login-page .auth-form .auth-form-inner {
+      margin: auto !important;
+      display: block;
+      max-width: 80rem;
+      padding-top: 4rem; }
+      .login-page .auth-form .auth-form-inner .auth-form-header {
+        margin-bottom: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end; }
+        .login-page .auth-form .auth-form-inner .auth-form-header .who-you-are {
+          margin-right: 3rem;
+          font-weight: bold;
+          font-size: 1.6rem;
+          text-align: right;
+          color: #ff6900; }
+        .login-page .auth-form .auth-form-inner .auth-form-header .lang {
+          display: flex;
+          align-items: center;
+          font-weight: normal;
+          font-size: 1.4rem;
+          text-align: center;
+          color: #484848; }
+          .login-page .auth-form .auth-form-inner .auth-form-header .lang > i {
+            margin-left: 1rem;
+            color: #ff6900;
+            font-size: 2rem; }
+      .login-page .auth-form .auth-form-inner .auth-form-body .tabs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        border: 0;
+        background: transparent; }
+        .login-page .auth-form .auth-form-inner .auth-form-body .tabs li {
+          outline: none;
+          padding-bottom: 3rem;
+          opacity: 0.2;
+          border-bottom: 2px solid #484848; }
+          @media (max-width: 1520px) {
+            .login-page .auth-form .auth-form-inner .auth-form-body .tabs li {
+              padding-bottom: 2rem; } }
+          .login-page .auth-form .auth-form-inner .auth-form-body .tabs li > a {
+            background: none;
+            outline: none;
+            font-weight: bold;
+            font-size: 3rem;
+            text-align: center;
+            color: #484848; }
+            @media (max-width: 1520px) {
+              .login-page .auth-form .auth-form-inner .auth-form-body .tabs li > a {
+                font-size: 2.5rem; } }
+          .login-page .auth-form .auth-form-inner .auth-form-body .tabs li.is-active {
+            opacity: 1;
+            border-color: #ff6900; }
+      .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content {
+        border: 0;
+        background: transparent; }
+        .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .tabs-panel {
+          padding: 0; }
+        .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .form-inputs {
+          margin-bottom: 4rem; }
+          .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .form-inputs .input-item {
+            position: relative;
+            margin-top: 2rem; }
+            .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .form-inputs .input-item input {
+              margin-bottom: 2rem; }
+              @media (max-width: 1520px) {
+                .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .form-inputs .input-item input {
+                  height: 8rem; } }
+            .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .form-inputs .input-item .forgot-password {
+              cursor: pointer;
+              font-weight: bold;
+              font-size: 2rem;
+              height: 2rem;
+              text-align: right;
+              color: #ff6900;
+              position: absolute;
+              right: 4rem;
+              top: 0;
+              bottom: 0;
+              margin: auto; }
+        .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .switchs {
+          margin-bottom: 10rem;
+          display: flex;
+          justify-content: space-between; }
+          @media (max-width: 1520px) {
+            .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .switchs {
+              margin-bottom: 9rem; } }
+          .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .switchs .remembe-me {
+            display: flex;
+            align-items: center; }
+            .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .switchs .remembe-me .switch-one {
+              margin-right: 3rem;
+              pointer-events: none; }
+              .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .switchs .remembe-me .switch-one .input {
+                display: none;
+                visibility: hidden; }
+                .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .switchs .remembe-me .switch-one .input:checked + .toggle-wrapper-one > .selector-one {
+                  left: calc(100% - 3.5rem);
+                  background-color: white; }
+              .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .switchs .remembe-me .switch-one .toggle-wrapper-one {
+                margin-right: 3rem;
+                position: relative;
+                width: 7.5rem;
+                height: 4rem;
+                background-color: white;
+                border-radius: 999px;
+                margin: auto;
+                cursor: pointer;
+                pointer-events: all; }
+                .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .switchs .remembe-me .switch-one .toggle-wrapper-one .selector-one {
+                  width: 3rem;
+                  height: 3rem;
+                  position: absolute;
+                  top: 50%;
+                  left: 0.5rem;
+                  transform: translateY(-50%);
+                  background-color: #ff6900;
+                  transition: left 0.25s ease;
+                  border-radius: 50%; }
+              .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .switchs .remembe-me .switch-one .toggle-wrapper-clicked {
+                background-color: #ff6900; }
+            .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .switchs .remembe-me .switch-two {
+              margin-right: 3rem;
+              pointer-events: none; }
+              .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .switchs .remembe-me .switch-two .input {
+                display: none;
+                visibility: hidden; }
+                .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .switchs .remembe-me .switch-two .input:checked + .toggle-wrapper-two > .selector-two {
+                  left: calc(100% - 3.5rem);
+                  background-color: white; }
+              .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .switchs .remembe-me .switch-two .toggle-wrapper-two {
+                margin-right: 3rem;
+                position: relative;
+                width: 7.5rem;
+                height: 4rem;
+                background-color: white;
+                border-radius: 999px;
+                margin: auto;
+                cursor: pointer;
+                pointer-events: all; }
+                .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .switchs .remembe-me .switch-two .toggle-wrapper-two .selector-two {
+                  width: 3rem;
+                  height: 3rem;
+                  position: absolute;
+                  top: 50%;
+                  left: 0.5rem;
+                  transform: translateY(-50%);
+                  background-color: #ff6900;
+                  transition: left 0.25s ease;
+                  border-radius: 50%; }
+              .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .switchs .remembe-me .switch-two .toggle-wrapper-t-clicked {
+                background-color: #ff6900; }
+            .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .switchs .remembe-me > span {
+              font-weight: 300;
+              font-size: 2rem;
+              text-align: left;
+              color: #484848; }
+        .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .login-submit {
+          margin-bottom: 2rem;
+          cursor: pointer;
+          width: 100%;
+          border-radius: 5px;
+          height: 10rem;
+          background: #484848;
+          font-weight: normal;
+          font-size: 3rem;
+          text-align: center;
+          color: #fff; }
+          @media (max-width: 1520px) {
+            .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .login-submit {
+              height: 8rem; } }
+          .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .login-submit:hover {
+            background: #ff6900;
+            color: white; }
+        .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .socials {
+          display: flex;
+          grid-gap: 1rem;
+          position: relative; }
+          .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .socials button {
+            outline: none;
+            height: 10rem;
+            border-radius: 5px;
+            background: white;
+            font-weight: 500;
+            font-size: 2.4rem;
+            text-align: left;
+            color: white;
+            padding: 0 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+            @media (max-width: 1520px) {
+              .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .socials button {
+                height: 8rem; } }
+            .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .socials button i {
+              transition: all 0.3s;
+              margin-right: 1rem; }
+            .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .socials button:hover i {
+              margin-left: 1rem; }
+            .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .socials button.phone {
+              color: white;
+              background-color: #FFA500;
+              z-index: 11;
+              width: 26rem; }
+              .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .socials button.phone .app {
+                display: none; }
+              .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .socials button.phone .android, .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .socials button.phone .ios {
+                display: none; }
+              .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .socials button.phone:hover {
+                color: white;
+                background: #FF6900;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                position: absolute;
+                left: 0;
+                z-index: 11; }
+                .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .socials button.phone:hover .phone-switch {
+                  display: flex;
+                  align-items: center; }
+                  .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .socials button.phone:hover .phone-switch .download {
+                    display: none; }
+                  .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .socials button.phone:hover .phone-switch .app {
+                    display: block; }
+                .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .socials button.phone:hover .android {
+                  display: block; }
+                .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .socials button.phone:hover .ios {
+                  display: block; }
+            .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .socials button.google {
+              color: #a80000;
+              width: 26rem; }
+              .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .socials button.google:hover {
+                color: white;
+                background: #a80000; }
+            .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .socials button.facebook {
+              color: #175db3;
+              width: 26rem; }
+              .login-page .auth-form .auth-form-inner .auth-form-body .tabs-content .socials button.facebook:hover {
+                color: white;
+                background: #175db3; }
+      .login-page .auth-form .auth-form-inner .auth-form-body .orbit .orbit-footer {
+        display: flex;
+        align-items: center;
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+        width: 100%; }
+        .login-page .auth-form .auth-form-inner .auth-form-body .orbit .orbit-footer .orbit-bullets {
+          position: absolute;
+          right: 45%; }
+          .login-page .auth-form .auth-form-inner .auth-form-body .orbit .orbit-footer .orbit-bullets > button {
+            width: 1rem;
+            height: 1rem;
+            cursor: pointer;
+            outline: none; }
+            .login-page .auth-form .auth-form-inner .auth-form-body .orbit .orbit-footer .orbit-bullets > button.is-active {
+              background-color: #ff6900; }
+        .login-page .auth-form .auth-form-inner .auth-form-body .orbit .orbit-footer .prev-btn {
+          margin-right: 2rem;
+          font-weight: normal;
+          font-size: 3rem;
+          color: #484848;
+          opacity: 0.5;
+          outline: none;
+          cursor: pointer; }
+          .login-page .auth-form .auth-form-inner .auth-form-body .orbit .orbit-footer .prev-btn i {
+            margin-right: 2rem;
+            font-weight: normal;
+            font-size: 3rem;
+            color: #484848;
+            opacity: 0.5;
+           }
+  .login-page .orbit-container {
+    overflow: visible;
+    outline: none; }
+    .login-page .orbit-container:focus {
+      border: 0;
+      outline: none; }
+    .login-page .orbit-container .orbit-slide {
+      height: 55rem;
+      margin-top: 2rem; }
+      @media (max-width: 1520px) {
+        .login-page .orbit-container .orbit-slide {
+          height: 45rem; } }
+  .login-page .helper {
+    display: block;
+    font-weight: normal;
+    font-size: 3rem;
+    color: #484848;
+    margin: 3rem 0; }
+  .login-page .country-dropdown-wrapper {
+    position: relative; }
+    .login-page .country-dropdown-wrapper .options {
+      z-index: 0;
+      height: 10rem;
+      width: 100%;
+      position: relative;
+      background: white;
+      left: 0;
+      top: 0;
+      background: white; }
+      @media (max-width: 1520px) {
+        .login-page .country-dropdown-wrapper .options {
+          height: 8rem; } }
+      .login-page .country-dropdown-wrapper .options .flag {
+        position: absolute;
+        left: 4rem;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        display: block; }
+    .login-page .country-dropdown-wrapper .bars {
+      cursor: pointer;
+      position: absolute;
+      right: 4rem;
+      top: -12rem;
+      bottom: 0;
+      font-size: 3rem;
+      margin: auto;
+      height: 2rem;
+      z-index: 111; }
+      @media (max-width: 1520px) {
+        .login-page .country-dropdown-wrapper .bars {
+          top: -11rem;
+          font-size: 2.5rem; } }
+    .login-page .country-dropdown-wrapper .country-dropdown {
+      position: absolute;
+      height: 10rem;
+      border-radius: 5px;
+      background: transparent;
+      box-shadow: none;
+      border: 0;
+      display: flex;
+      align-items: center;
+      font-weight: 300;
+      font-size: 3rem;
+      text-align: left;
+      padding: 0 12rem;
+      color: #484848;
+      transition: all 0.3s;
+      margin-bottom: 2rem; }
+      @media (max-width: 1520px) {
+        .login-page .country-dropdown-wrapper .country-dropdown {
+          height: 8rem; } }
+      .login-page .country-dropdown-wrapper .country-dropdown.disabled {
+        pointer-events: none; }
+    .login-page .country-dropdown-wrapper .dropdown-filter {
+      /* padding: 3rem; */
+      border: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 2rem 2rem 50px rgba(0, 0, 0, 0.16);
+      position: absolute;
+      top: 0 !important;
+      transition: 0.3s;
+      display: flex;
+      }
+      .login-page .country-dropdown-wrapper .dropdown-filter .dropdown-search {
+        position: relative; }
+        .login-page .country-dropdown-wrapper .dropdown-filter .dropdown-search i {
+          position: absolute;
+          right: 4rem;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          font-size: 3rem;
+          height: 3rem;
+          color: #ff6900;
+          font-weight: normal; }
+        .login-page .country-dropdown-wrapper .dropdown-filter .dropdown-search input {
+          width: 100%;
+          box-shadow: none;
+          background: rgba(72, 72, 72, 0.05);
+          font-weight: 300;
+          font-size: 3rem;
+          text-align: left;
+          color: #484848;
+          height: 8rem;
+          margin-bottom: 2rem; }
+          .login-page .country-dropdown-wrapper .dropdown-filter .dropdown-search input::placeholder {
+            color: #484848;
+            opacity: 0.5; }
+      .login-page .country-dropdown-wrapper .dropdown-filter .chosen-country {
+        margin: 3rem 0;
+        display: flex;
+        align-items: center; }
+        .login-page .country-dropdown-wrapper .dropdown-filter .chosen-country > img {
+          margin-right: 2rem;
+          height: 4rem;
+          width: 4rem;
+          display: block; }
+        .login-page .country-dropdown-wrapper .dropdown-filter .chosen-country > span {
+          font-weight: 300;
+          font-size: 3rem;
+          text-align: left;
+          color: #484848; }
+      .login-page .country-dropdown-wrapper .dropdown-filter .countries {
+        max-height: 18rem;
+        overflow: scroll; }
+        .login-page .country-dropdown-wrapper .dropdown-filter .countries::-webkit-scrollbar {
+          display: none; }
+        .login-page .country-dropdown-wrapper .dropdown-filter .countries .country {
+          cursor: pointer;
+          margin-bottom: 2rem;
+          display: flex;
+          align-items: center; }
+          .login-page .country-dropdown-wrapper .dropdown-filter .countries .country > img {
+            display: block;
+            height: 4rem;
+            width: 4rem;
+            margin-right: 2rem;
+           }
+          .login-page .country-dropdown-wrapper .dropdown-filter .countries .country > span {
+            font-weight: 300;
+            font-size: 2rem;
+            text-align: left;
+            color: #484848; }
+        .login-page .country-dropdown-wrapper .dropdown-filter .countries .country-with-lettre {
+          display: flex;
+          justify-content: space-between; }
+          .login-page .country-dropdown-wrapper .dropdown-filter .countries .country-with-lettre div {
+            cursor: pointer;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center; }
+            .login-page .country-dropdown-wrapper .dropdown-filter .countries .country-with-lettre div > img {
+              display: block;
+              height: 4rem;
+              width: 4rem;
+              margin-right: 2rem; }
+            .login-page .country-dropdown-wrapper .dropdown-filter .countries .country-with-lettre div > span {
+              font-weight: 300;
+              font-size: 2rem;
+              text-align: left;
+              color: #484848; }
+          .login-page .country-dropdown-wrapper .dropdown-filter .countries .country-with-lettre .lettre {
+            width: 5rem;
+            height: 5rem;
+            background-color: #FFA500;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 2rem; }
+            .login-page .country-dropdown-wrapper .dropdown-filter .countries .country-with-lettre .lettre span {
+              color: white;
+              font-size: 2.4rem; }
+    .login-page .country-dropdown-wrapper .country-code-wrapper {
+      margin-top: 2rem;
+      position: relative; }
+      .login-page .country-dropdown-wrapper .country-code-wrapper .country-code {
+        font-weight: 300;
+        font-size: 3rem;
+        text-align: left;
+        color: #484848;
+        position: absolute;
+        left: 2rem;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        display: block;
+        height: 3rem;
+        line-height: 3rem; }
+      .login-page .country-dropdown-wrapper .country-code-wrapper input {
+        font-weight: 300;
+        font-size: 3rem;
+        text-align: left;
+        color: #484848;
+        margin-bottom: 2rem;
+        padding-left: 15rem; }
+  .login-page .final-orbit {
+    position: relative; }
+    .login-page .final-orbit .flag {
+      position: absolute;
+      top: 2.5rem;
+      left: 4.5rem;
+      width: 5rem; }
+      @media (max-width: 1520px) {
+        .login-page .final-orbit .flag {
+          top: 1.5rem;
+          width: 4.5rem; } }
+    .login-page .final-orbit i {
+      font-weight: normal;
+      font-size: 3rem;
+      color: #484848;
+      position: absolute;
+      right: 4.6rem;
+      top: 4rem; }
+      @media (max-width: 1520px) {
+        .login-page .final-orbit i {
+          font-size: 2.8rem;
+          top: 2.5rem; } }
+    .login-page .final-orbit .input-number {
+      background: #e8e8e8;
+      padding-left: 12rem !important;
+      font-size: 3rem;
+      color: #484848 !important; }
+      .login-page .final-orbit .input-number::placeholder {
+        font-weight: 300;
+        font-size: 3rem;
+        color: #484848 !important;
+        opacity: 1; }
+  .login-page .code-verif {
+    display: block;
+    margin-bottom: 3rem;
+    position: relative; }
+    .login-page .code-verif input {
+      height: 20rem;
+      font-weight: 300;
+      font-size: 8rem;
+      text-align: center;
+      color: #484848;
+      letter-spacing: 4rem;
+      text-align: center; }
+      @media (max-width: 1520px) {
+        .login-page .code-verif input {
+          height: 18rem; } }
+      .login-page .code-verif input::placeholder {
+        color: #484848;
+        opacity: 0.3;
+        font-size: 8rem;
+        letter-spacing: 4rem;
+        text-align: center; }
+    .login-page .code-verif .loading-line-placeholder,
+    .login-page .code-verif .loading-line {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      border-radius: 0px 0px 5px 5px;
+      background: #ffa500;
+      opacity: 0.3;
+      height: 8px; }
+    .login-page .code-verif .loading-line {
+      width: 0;
+      background: #ffa500;
+      opacity: 1; }
+  .login-page .resend-code {
+    display: block;
+    text-align: center; }
+    .login-page .resend-code span {
+      font-weight: 300;
+      font-size: 2rem;
+      text-align: center;
+      color: #484848; }
+    .login-page .resend-code button {
+      background: transparent;
+      cursor: pointer;
+      border: 0;
+      font-weight: 300;
+      font-size: 2rem;
+      text-align: center;
+      font-weight: bold;
+      color: #ff6900; }
+  .login-page input {
+    padding: 0 4rem;
+    height: 10rem;
+    border: 0;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: none;
+    font-size: 3rem;
+    margin-bottom: 2rem; }
+    @media (max-width: 1520px) {
+      .login-page input {
+        height: 8rem; } }
+    .login-page input:focus {
+      border: 0; }
+    .login-page input::placeholder {
+      font-weight: 300;
+      font-size: 3rem;
+      text-align: left;
+      color: #484848;
+      opacity: 0.5; }
+  .login-page .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+    .login-page .buttons-container .signup-button {
+      height: 10rem;
+      border-radius: 5px;
+      font-weight: 500;
+      font-size: 2.4rem;
+      text-align: left;
+      color: #fff;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s !important; }
+      @media (max-width: 1520px) {
+        .login-page .buttons-container .signup-button {
+          height: 8rem; } }
+      .login-page .buttons-container .signup-button.button-download {
+        background: #ffa500;
+        margin-right: 3rem;
+        width: 26rem;
+        transition: 0.2s !important; }
+        .login-page .buttons-container .signup-button.button-download .app {
+          display: none; }
+        .login-page .buttons-container .signup-button.button-download .android, .login-page .buttons-container .signup-button.button-download .ios {
+          display: none; }
+        .login-page .buttons-container .signup-button.button-download:hover {
+          color: white;
+          background: #FF6900;
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          z-index: 111;
+          position: absolute;
+          left: 0; }
+          .login-page .buttons-container .signup-button.button-download:hover .phone-switch {
+            display: flex;
+            align-items: center; }
+            .login-page .buttons-container .signup-button.button-download:hover .phone-switch .download {
+              display: none; }
+            .login-page .buttons-container .signup-button.button-download:hover .phone-switch .app {
+              display: block; }
+          .login-page .buttons-container .signup-button.button-download:hover .android {
+            display: block; }
+          .login-page .buttons-container .signup-button.button-download:hover .ios {
+            display: block; }
+      .login-page .buttons-container .signup-button.button-next {
+        background: #484848;
+        width: 40rem;
+        transition: 0s !important; }
+        .login-page .buttons-container .signup-button.button-next:hover {
+          background: #ff6900;
+          color: white; }
+      .login-page .buttons-container .signup-button.normal-p {
+        padding: 0 6rem; }
+  .login-page .buttons-container2 {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+    .login-page .buttons-container2 .signup-button {
+      height: 10rem;
+      border-radius: 5px;
+      font-weight: 500;
+      font-size: 2.4rem;
+      text-align: left;
+      color: #fff;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s !important; }
+      @media (max-width: 1520px) {
+        .login-page .buttons-container2 .signup-button {
+          height: 8rem; } }
+      .login-page .buttons-container2 .signup-button.button-download {
+        background: #ffa500;
+        width: 26rem;
+        margin-right: 3rem;
+        transition: 0.2s !important; }
+        .login-page .buttons-container2 .signup-button.button-download .app {
+          display: none; }
+        .login-page .buttons-container2 .signup-button.button-download .android, .login-page .buttons-container2 .signup-button.button-download .ios {
+          display: none; }
+        .login-page .buttons-container2 .signup-button.button-download:hover {
+          color: white;
+          background: #FF6900;
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          z-index: 111; }
+          .login-page .buttons-container2 .signup-button.button-download:hover .phone-switch {
+            display: flex;
+            align-items: center; }
+            .login-page .buttons-container2 .signup-button.button-download:hover .phone-switch .download {
+              display: none; }
+            .login-page .buttons-container2 .signup-button.button-download:hover .phone-switch .app {
+              display: block; }
+          .login-page .buttons-container2 .signup-button.button-download:hover .android {
+            display: block; }
+          .login-page .buttons-container2 .signup-button.button-download:hover .ios {
+            display: block; }
+      .login-page .buttons-container2 .signup-button.button-next {
+        background: #484848;
+        width: 40rem;
+        transition: 0s; }
+        .login-page .buttons-container2 .signup-button.button-next:hover {
+          background: #ff6900;
+          color: white; }
+      .login-page .buttons-container2 .signup-button.normal-p {
+        padding: 0 6rem; }
+  .login-page .orbit-controls {
+    visibility: hidden; }

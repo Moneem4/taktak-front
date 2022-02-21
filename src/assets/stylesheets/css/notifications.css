@@ -1,0 +1,657 @@
+.notifications-page {
+  overflow: hidden;
+  height: 100vh;
+  /*display: grid;*/
+  grid-template-columns: auto 1fr; }
+  .notifications-page .divider {
+    margin: 3rem 0; }
+  .notifications-page .notifications-page-content {
+    overflow-y: scroll; }
+    .notifications-page .notifications-page-content::-webkit-scrollbar {
+      display: none; }
+    .notifications-page .notifications-page-content .notifications-page-content-feed {
+      display: flex;
+      position: relative;
+      flex-wrap: wrap; }
+      .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main {
+        padding-bottom: 15rem;
+        position: relative;
+        width: 62%;
+        max-width: 675px; }
+        .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs {
+          margin-bottom: 3rem;
+          border: 0;
+          display: flex;
+          align-items: center; }
+          .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs .all {
+            padding-bottom: 1.5rem;
+            position: absolute;
+            right: 0;
+            font-weight: bold;
+            font-size: 1.4rem;
+            text-align: left;
+            color: #ff6900; }
+          .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs .tabs-title {
+            transition: all 0.3s;
+            padding-bottom: 1.5rem;
+            border-bottom: 5px solid #f6f6f6; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs .tabs-title a {
+              outline: none;
+              text-decoration: none;
+              font-weight: 500;
+              font-size: 1.6rem;
+              color: #484848;
+              background: transparent;
+              transition: all 0.3s; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs .tabs-title.is-active {
+              border-color: #ff6900; }
+        .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content {
+          border: none; }
+          .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element {
+            position: relative;
+            margin-bottom: 3rem; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .circle {
+              position: absolute;
+              top: 1rem;
+              right: 0.1rem;
+              height: 1rem;
+              width: 1rem;
+              border-radius: 100%;
+              background: #D40562; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .notification-element-top {
+              margin-bottom: 2rem;
+              display: flex;
+              align-items: center; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .notification-element-top img {
+                height: 4rem;
+                width: 4rem;
+                margin-right: 1rem; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .notification-element-top .notification-top-info {
+                display: flex;
+                flex-direction: column; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .notification-element-top .notification-top-info span:first-child {
+                  font-size: 1.8rem;
+                  text-align: left;
+                  color: #484848; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .notification-element-top .notification-top-info span:last-child {
+                  font-weight: 300;
+                  font-size: 1.4rem;
+                  text-align: left;
+                  color: #484848;
+                  opacity: 0.8; }
+                  .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .notification-element-top .notification-top-info span:last-child i {
+                    margin-right: 1rem;
+                    font-weight: normal;
+                    font-size: 1.4rem;
+                    text-align: left;
+                    color: #484848;
+                    opacity: 0.8; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .notification-element-body {
+              margin-bottom: 2rem;
+              border-radius: 5px;
+              background: #fff;
+              border: 1px solid #e8e8e8;
+              filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05));
+              display: grid;
+              grid-template-columns: 1fr 2fr; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .notification-element-body img {
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                width: 100%;
+                display: block;
+                height: 18rem;
+                object-fit: cover; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .notification-element-body .body-info {
+                height: 100%;
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .notification-element-body .body-info p {
+                  font-weight: normal;
+                  font-size: 1.4rem;
+                  text-align: left;
+                  color: #484848; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .notification-element-body .body-info .notification-icons span {
+                  margin-right: 4rem;
+                  font-weight: 300;
+                  font-size: 2.2rem;
+                  text-align: left;
+                  color: #484848; }
+                  .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .notification-element-body .body-info .notification-icons span i {
+                    margin-right: 2rem;
+                    font-size: 2rem;
+                    color: #ff6900; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .notification-element-footer {
+              display: flex;
+              align-items: center;
+              padding-left: 5rem;
+              font-weight: bold;
+              font-size: 1.4rem;
+              text-align: left;
+              color: #ff6900; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .notification-element-footer i {
+                margin-right: 1rem;
+                font-weight: normal;
+                font-size: 1.4rem;
+                color: #ff6900; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .notification-element-footer-taktak {
+              padding-left: 10rem; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .notification-element-footer-taktak .title-strong {
+                font-weight: bold;
+                font-size: 1.4rem;
+                text-align: left;
+                color: #ff6900; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .notification-element-footer-taktak i {
+                margin-right: 1rem; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .notification-element-footer-taktak img {
+                width: 3rem; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .notification-element-footer-taktak .title {
+                font-weight: normal;
+                font-size: 1.4rem;
+                text-align: left;
+                color: #484848; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .notification-element-footer-taktak .send-birthday {
+                margin-top: 1rem;
+                position: relative; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .notification-element-footer-taktak .send-birthday input {
+                  box-shadow: none;
+                  height: 51px;
+                  border-radius: 5px;
+                  padding: 0 6rem;
+                  font-size: 2rem;
+                  color: #484848; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .notification-element-footer-taktak .send-birthday i {
+                  font-size: 2.4rem;
+                  color: #ff6900;
+                  font-weight: normal;
+                  position: absolute;
+                  top: 1.7rem;
+                  left: 2rem; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element .notification-element-footer-taktak .send-birthday button {
+                  font-weight: bold;
+                  font-size: 1.4rem;
+                  text-align: left;
+                  color: #e8e8e8;
+                  position: absolute;
+                  top: 2.3rem;
+                  right: 2rem;
+                  outline: none; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.birthday .notification-element, .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.eat .notification-element {
+              display: grid;
+              grid-template-columns: 1fr 7fr; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.birthday .notification-element .right-side img, .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.eat .notification-element .right-side img {
+                width: 100%;
+                height: auto; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.birthday .notification-element .right-side .wish-a-ha-bir, .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.eat .notification-element .right-side .wish-a-ha-bir {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 1rem; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.birthday .notification-element .right-side .wish-a-ha-bir span, .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.eat .notification-element .right-side .wish-a-ha-bir span {
+                  font-weight: normal;
+                  font-size: 1.8rem;
+                  color: #212121; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.birthday .notification-element .right-side .wish-a-ha-bir .circle-, .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.eat .notification-element .right-side .wish-a-ha-bir .circle- {
+                  height: 1rem;
+                  width: 1rem;
+                  border-radius: 100%;
+                  background: #D40562; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.birthday .notification-element .right-side .time i, .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.eat .notification-element .right-side .time i {
+                font-family: "Font Awesome 5 Pro";
+                font-weight: normal;
+                font-size: 1.4rem;
+                text-align: left;
+                color: #484848;
+                opacity: 0.8;
+                margin-right: 1rem; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.birthday .notification-element .right-side .time span, .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.eat .notification-element .right-side .time span {
+                font-weight: 300;
+                font-size: 1.4rem;
+                text-align: left;
+                color: #484848;
+                opacity: 0.8; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.birthday .notification-element .right-side .notifications-user-birthday, .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.eat .notification-element .right-side .notifications-user-birthday {
+                display: flex;
+                align-items: center;
+                margin: 1rem 0 2rem 0; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.birthday .notification-element .right-side .notifications-user-birthday img, .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.eat .notification-element .right-side .notifications-user-birthday img {
+                  width: 4rem;
+                  height: 4rem;
+                  margin-right: 1rem; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.birthday .notification-element .right-side .notifications-user-birthday .description p, .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.eat .notification-element .right-side .notifications-user-birthday .description p {
+                  font-weight: normal;
+                  font-size: 1.4rem;
+                  line-height: 2rem;
+                  text-align: left;
+                  color: #484848;
+                  margin: 0; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.birthday .notification-element .left-side, .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.eat .notification-element .left-side {
+                margin-right: 2rem;
+                height: 8rem;
+                width: 8rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #D40562;
+                border-radius: 100%; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.birthday .notification-element .left-side i, .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.eat .notification-element .left-side i {
+                  font-size: 3rem;
+                  color: white;
+                  font-weight: 300; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.taktak .notification-element-top {
+              margin-bottom: 0; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.taktak .notification-element-top > span {
+                margin-right: 2rem;
+                height: 8rem;
+                width: 8rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #D40562;
+                border-radius: 100%; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.taktak .notification-element-top > span i {
+                  font-size: 3rem;
+                  color: white;
+                  font-weight: 300; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.taktak .notification-element-top .notification-top span {
+                font-size: 1.8rem;
+                color: #484848; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.taktak .notification-element-footer-commande {
+              display: flex;
+              padding-left: 10rem; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.taktak .notification-element-footer-commande .ref-commande {
+                width: 13rem;
+                height: 3.5rem;
+                border-radius: 5px;
+                background: #fff;
+                border: 1px solid #e8e8e8;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 1rem; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.taktak .notification-element-footer-commande .ref-commande .ref {
+                  font-weight: normal;
+                  font-size: 1.4rem;
+                  text-align: left;
+                  color: #ff6900; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.taktak .notification-element-footer-commande .ref-commande .numero {
+                  font-weight: normal;
+                  font-size: 1.4rem;
+                  text-align: left;
+                  color: #484848; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.comment .notification-element-body {
+              filter: none;
+              display: flex;
+              flex-direction: column;
+              margin-left: 5rem; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.comment .notification-element-body .body-info {
+                display: flex;
+                flex-direction: column; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.comment .notification-element-body .body-info .reply {
+                  font-weight: bold;
+                  font-size: 1.4rem;
+                  text-align: left;
+                  color: #ff6900;
+                  cursor: default; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.rappel .notification-element-top {
+              margin-bottom: 0; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.rappel .notification-element-top > span {
+                margin-right: 2rem;
+                height: 8rem;
+                width: 8rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #54D0A5;
+                border-radius: 100%; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element.rappel .notification-element-top > span i {
+                  font-size: 3rem;
+                  color: white;
+                  font-weight: normal; }
+          .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel {
+            display: flex; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-right-side {
+              margin-bottom: 0;
+              width: 30%;
+              margin-right: 2rem;
+              height: 8rem;
+              width: 8rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background: #54D0A5;
+              border-radius: 100%; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-right-side i {
+                font-size: 3rem;
+                color: white;
+                font-weight: normal; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-left-side {
+              width: 85%; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-left-side .notification-rappel-top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-left-side .notification-rappel-top .rappel-reservation {
+                  height: 3.2rem;
+                  border-radius: 5px;
+                  background: #54d0a5;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 22rem; }
+                  .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-left-side .notification-rappel-top .rappel-reservation span {
+                    font-weight: normal;
+                    font-size: 1.4rem;
+                    line-height: 2rem;
+                    text-align: right;
+                    color: #fff; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-left-side .notification-rappel-top .notification-top-info {
+                  display: flex; }
+                  .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-left-side .notification-rappel-top .notification-top-info .info-restaurant {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 1rem; }
+                    .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-left-side .notification-rappel-top .notification-top-info .info-restaurant .name {
+                      font-weight: bold;
+                      font-size: 1.8rem;
+                      text-align: left;
+                      color: #484848; }
+                    .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-left-side .notification-rappel-top .notification-top-info .info-restaurant .details {
+                      font-weight: 300;
+                      font-size: 1.4rem;
+                      text-align: left;
+                      color: #484848;
+                      opacity: 0.8; }
+                      .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-left-side .notification-rappel-top .notification-top-info .info-restaurant .details i {
+                        font-family: "Font Awesome 5 Pro";
+                        font-weight: normal;
+                        font-size: 1.4rem;
+                        text-align: left;
+                        color: #484848;
+                        opacity: 0.8;
+                        margin-right: 1rem; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-left-side .notification-element-body {
+                border: 1px solid #e8e8e8;
+                border-radius: 5px;
+                margin-top: 2rem; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-left-side .notification-element-body .body-info {
+                  padding: 2rem; }
+                  .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-left-side .notification-element-body .body-info > div {
+                    display: grid;
+                    grid-template-columns: 2fr 3fr;
+                    align-items: center;
+                    margin-bottom: 2rem; }
+                    .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-left-side .notification-element-body .body-info > div:last-child {
+                      margin-bottom: 0; }
+                    .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-left-side .notification-element-body .body-info > div .my-booking-label {
+                      font-weight: bold;
+                      font-size: 1.4rem;
+                      text-align: left;
+                      color: #175db3; }
+                    .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-left-side .notification-element-body .body-info > div .my-booking-value {
+                      font-weight: normal;
+                      font-size: 1.4rem;
+                      text-align: left;
+                      color: #484848;
+                      display: flex; }
+                      .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-left-side .notification-element-body .body-info > div .my-booking-value .number {
+                        font-weight: bold;
+                        font-size: 1.4rem;
+                        color: #484848; }
+                      .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-left-side .notification-element-body .body-info > div .my-booking-value .number-sur-taktak {
+                        font-weight: bold;
+                        font-size: 1.1rem;
+                        color: #175db3;
+                        opacity: 0.8; }
+                      .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-left-side .notification-element-body .body-info > div .my-booking-value .peoples {
+                        display: flex;
+                        align-items: center;
+                        margin-left: 2rem; }
+                        .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-left-side .notification-element-body .body-info > div .my-booking-value .peoples .people {
+                          position: relative;
+                          left: 0;
+                          width: 2.5rem;
+                          height: 2.5rem;
+                          border-radius: 100%;
+                          border: 1px solid white; }
+                          .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-left-side .notification-element-body .body-info > div .my-booking-value .peoples .people img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover; }
+                          .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-left-side .notification-element-body .body-info > div .my-booking-value .peoples .people:nth-child(2) {
+                            left: -1.25rem; }
+                          .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-left-side .notification-element-body .body-info > div .my-booking-value .peoples .people:nth-child(3) {
+                            left: -2.25rem; }
+                          .notifications-page .notifications-page-content .notifications-page-content-feed .feed-main .tabs-content .notification-element-rappel .notification-element-rappel-left-side .notification-element-body .body-info > div .my-booking-value .peoples .people:nth-child(4) {
+                            left: -3.25rem; }
+      .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary {
+        padding-left: 2rem;
+        width: 38%;
+        position: relative; }
+        .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .increase-feed {
+          margin-top: 3rem; }
+        .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .birthday {
+          width: 100%;
+          height: 38rem; }
+        .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .title-feed-secondary {
+          font-weight: bold;
+          font-size: 2rem;
+          text-align: left;
+          color: #175db3;
+          margin-top: 16rem;
+          margin-bottom: 2rem; }
+        .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .list-to-dos {
+          margin-bottom: 4rem; }
+          .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .list-to-dos .to-do-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .list-to-dos .to-do-item i {
+              font-weight: normal;
+              font-size: 2rem;
+              color: #e8e8e8;
+              opacity: 0.5;
+              margin-right: 1rem; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .list-to-dos .to-do-item span {
+              font-weight: 300;
+              font-size: 1.6rem;
+              color: #484848; }
+          .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .list-to-dos .to-do-item-clicked {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .list-to-dos .to-do-item-clicked i {
+              font-weight: normal;
+              font-size: 2rem;
+              color: #ff6900;
+              opacity: 1;
+              margin-right: 1rem; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .list-to-dos .to-do-item-clicked span {
+              font-weight: 300;
+              font-size: 1.6rem;
+              color: #484848;
+              opacity: 0.3;
+              text-decoration: line-through; }
+          .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .list-to-dos .show-missions {
+            margin: 2rem 0;
+            padding: 0 3rem; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .list-to-dos .show-missions span {
+              font-weight: bold;
+              font-size: 1.4rem;
+              color: #ff6900; }
+          .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .list-to-dos .list-to-dos-footer {
+            display: grid;
+            grid-template-columns: 2fr 3fr 1fr;
+            background-color: #A80000;
+            height: 6rem;
+            border-radius: 5px;
+            align-items: center;
+            padding: 0 2rem; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .list-to-dos .list-to-dos-footer .your-balance {
+              font-weight: 500;
+              font-size: 1.4rem;
+              color: #ffa500; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .list-to-dos .list-to-dos-footer .sold-wintak {
+              display: flex;
+              justify-content: flex-end; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .list-to-dos .list-to-dos-footer .sold-wintak .sold {
+                font-weight: 500;
+                font-size: 1.6rem;
+                color: #fff; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .list-to-dos .list-to-dos-footer .sold-wintak .wintak {
+                font-size: 1.2rem;
+                color: #fff; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .list-to-dos .list-to-dos-footer .right {
+              display: flex;
+              justify-content: flex-end; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .list-to-dos .list-to-dos-footer .right i {
+                font-weight: normal;
+                font-size: 1.2rem;
+                color: #fff; }
+        .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount {
+          margin-top: 2rem;
+          height: 8rem;
+          z-index: 10;
+          background: #fff;
+          position: absolute;
+          top: 40rem;
+          width: 100%;
+          filter: drop-shadow(10px 10px 40px rgba(254, 223, 113, 0.5));
+          border-radius: 5px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          transition: all 0.3s;
+          display: flex;
+          flex-direction: column; }
+          .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount .promotion-discount-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 2rem; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount .promotion-discount-header .restaurant-item {
+              display: flex;
+              align-items: center; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount .promotion-discount-header .restaurant-item img {
+                margin-right: 1rem;
+                height: 4rem;
+                width: 4rem;
+                border: 1px solid #e2e2e2; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount .promotion-discount-header .restaurant-item div {
+                display: flex;
+                flex-direction: column; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount .promotion-discount-header .restaurant-item div span:first-child {
+                  font-weight: bold;
+                  font-size: 1.8rem;
+                  text-align: left;
+                  color: #484848; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount .promotion-discount-header .restaurant-item div span:last-child {
+                  font-weight: normal;
+                  font-size: 1.4rem;
+                  text-align: left;
+                  color: #484848;
+                  opacity: 0.8; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount .promotion-discount-header > span {
+              font-weight: bold;
+              font-size: 2.4rem;
+              text-align: left;
+              color: #ff6900; }
+          .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount .promotion-discount-invisible {
+            visibility: hidden; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount .promotion-discount-invisible img {
+              padding: 0 2rem; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount .promotion-discount-invisible .description {
+              display: flex;
+              flex-direction: column;
+              margin: 1.5rem 0 2rem;
+              padding: 0 2rem; }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount .promotion-discount-invisible .description span {
+                font-size: 1.4rem;
+                line-height: 2rem;
+                text-align: left;
+                color: #484848;
+                margin-bottom: 0.8rem; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount .promotion-discount-invisible .promotion-discount-invisible-bottom {
+              height: 17rem;
+              border-radius: 0px 0px 5px 5px;
+              background: rgba(232, 232, 232, 0.25); }
+              .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount .promotion-discount-invisible .promotion-discount-invisible-bottom .content {
+                padding: 2rem;
+                position: relative; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount .promotion-discount-invisible .promotion-discount-invisible-bottom .content .invit {
+                  font-weight: normal;
+                  font-size: 1.4rem;
+                  text-align: left;
+                  color: #484848;
+                  opacity: 1 !important; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount .promotion-discount-invisible .promotion-discount-invisible-bottom .content input {
+                  height: 4rem;
+                  border-radius: 5px;
+                  border: 1px solid #e8e8e8;
+                  border: 0;
+                  box-shadow: none;
+                  margin: 2rem 0;
+                  padding: 0 5rem;
+                  font-size: 1.5rem;
+                  color: #484848; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount .promotion-discount-invisible .promotion-discount-invisible-bottom .content .at {
+                  font-size: 2.4rem;
+                  color: #ff6900;
+                  font-weight: bold;
+                  position: absolute;
+                  top: 6.5rem;
+                  left: 3rem; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount .promotion-discount-invisible .promotion-discount-invisible-bottom .content .send {
+                  font-weight: bold;
+                  font-size: 1.4rem;
+                  text-align: left;
+                  color: #e8e8e8;
+                  position: absolute;
+                  top: 6.5rem;
+                  right: 3rem;
+                  cursor: pointer; }
+                .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount .promotion-discount-invisible .promotion-discount-invisible-bottom .content .content-footer {
+                  display: flex;
+                  align-items: center; }
+                  .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount .promotion-discount-invisible .promotion-discount-invisible-bottom .content .content-footer img {
+                    padding: 0 1rem 0 0;
+                    width: 4rem;
+                    height: 3rem; }
+                  .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount .promotion-discount-invisible .promotion-discount-invisible-bottom .content .content-footer .add-user {
+                    width: 3rem;
+                    height: 3rem;
+                    background-color: #E8E8E8;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 1rem; }
+                    .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount .promotion-discount-invisible .promotion-discount-invisible-bottom .content .content-footer .add-user .user {
+                      font-size: 1.4rem;
+                      font-weight: normal;
+                      color: white; }
+          .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount:hover {
+            height: 48rem; }
+            .notifications-page .notifications-page-content .notifications-page-content-feed .feed-secondary .promotion-discount:hover .promotion-discount-invisible {
+              visibility: visible; }
+      .notifications-page .notifications-page-content .notifications-page-content-feed .alert-notifications {
+        display: none;
+        position: sticky;
+        bottom: 0;
+        height: 6rem;
+        background: #d40562;
+        z-index: 55;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%; }
+        .notifications-page .notifications-page-content .notifications-page-content-feed .alert-notifications:hover {
+          background-color: #be0256; }
+        .notifications-page .notifications-page-content .notifications-page-content-feed .alert-notifications span {
+          font-size: 1.8rem;
+          color: white; }
+        .notifications-page .notifications-page-content .notifications-page-content-feed .alert-notifications .croix {
+          font-size: 2rem;
+          color: white;
+          cursor: pointer; }

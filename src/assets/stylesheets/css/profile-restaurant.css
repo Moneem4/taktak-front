@@ -1,0 +1,6348 @@
+@charset "UTF-8";
+.profile-restaurant-page {
+  overflow: hidden;
+  /*height: 100vh;
+  display: grid;*/
+  grid-template-columns: auto 1fr;
+}
+.profile-restaurant-page .profile-restaurant-page-content {
+  overflow-y: scroll;
+}
+.profile-restaurant-page .profile-restaurant-page-content::-webkit-scrollbar {
+  display: none;
+}
+.profile-restaurant-page .profile-restaurant-page-content .profile-page-header {
+  margin-bottom: 3rem;
+  height: 28rem;
+  width: 100%;
+  position: relative;
+  /*background-image: url("../../img/restaurant-cover.jpg");*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed {
+  display: flex;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main {
+  padding-bottom: 15rem;
+  position: relative;
+  width: 65%;
+  margin-left: 20px;
+  max-width: 650px;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .header-inner {
+  display: flex;
+  align-self: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .profile-picture {
+  display: flex;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .profile-picture
+  img {
+  max-width: 26rem;
+  height: 12rem;
+  width: 12rem;
+  border-radius: 5px;
+  display: block;
+  border: 1px solid #e8e8e8;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .user-info {
+  margin-left: 2rem;
+  display: grid;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .user-info
+  .user-info-info {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 16rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .user-info
+  .user-info-info
+  .name {
+  font-weight: 300;
+  font-size: 4rem;
+  line-height: 4rem;
+  color: #484848;
+}
+@media (max-width: 1000px) {
+  .profile-restaurant-page
+    .profile-restaurant-page-content
+    .profile-restaurant-page-content-feed
+    .feed-main
+    .user-info
+    .user-info-info
+    .name {
+    font-size: 3rem;
+  }
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .user-info
+  .user-info-info
+  .name
+  i {
+  color: #ff6900;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .user-info
+  .user-info-info
+  .location {
+  font-size: 1.4rem;
+  color: #484848;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .user-info
+  .user-info-info
+  .location
+  i {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #484848;
+  opacity: 0.8;
+  margin-right: 0.5rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .user-info
+  .user-info-info
+  .location
+  .rating {
+  margin-bottom: 0;
+  margin-left: 1rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .user-info
+  .user-info-info
+  .location
+  .rating
+  i {
+  font-size: 1.7rem;
+  color: #ffa500;
+  font-weight: normal;
+  margin: 0;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .user-info
+  .user-info-info
+  .location
+  .votes {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  height: 3rem;
+  border-radius: 5px;
+  background: linear-gradient(#fda700 0%, #fd6a00 100%);
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #fff;
+  padding: 0 1rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .user-info
+  .user-info-info
+  .location
+  .votes-nb {
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.3;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .user-info
+  .user-info-info
+  .tags {
+  padding: 1rem;
+  border: 1px solid #484848;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #484848;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .user-info
+  .user-info-stories {
+  height: 16rem;
+  overflow-x: scroll;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .user-info
+  .user-info-stories
+  .story {
+  margin-right: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .user-info
+  .user-info-stories
+  .story:last-child {
+  margin-right: 0;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .user-info
+  .user-info-stories
+  .story
+  .story-image {
+  margin-bottom: 10px;
+  border: 2px solid #fd6a00;
+  border-radius: 100%;
+  padding: 5px;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .user-info
+  .user-info-stories
+  .story
+  .story-image
+  img {
+  max-width: 6rem;
+  height: 6rem;
+  width: 6rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 100%;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .user-info
+  .user-info-stories
+  .story
+  .story-image
+  .story-user {
+  font-weight: 500;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #484848;
+  opacity: 0.5;
+  display: block;
+  max-width: 7rem;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .user-info
+  .user-info-stories
+  .story.add
+  .story-image
+  span {
+  min-width: 6rem;
+  border-radius: 100%;
+  color: white;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  transition: all 0.3s;
+  background: linear-gradient(#fda700 0%, #fd6a00 100%);
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs {
+  margin-bottom: 3rem;
+  border: 0;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs
+  .tabs-title {
+  transition: all 0.3s;
+  padding-bottom: 1.5rem;
+  border-bottom: 5px solid #f6f6f6;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs
+  .tabs-title
+  a {
+  outline: none;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #484848;
+  background: transparent;
+  transition: all 0.3s;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs
+  .tabs-title.is-active {
+  border-color: #ff6900;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-panel {
+  padding: 0;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content {
+  border: 0;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .user-stats {
+  margin-bottom: 3rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .user-stats
+  .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 0;
+  width: 100%;
+  height: 1px;
+  background: #e8e8e8;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .user-stats
+  .user-stat {
+  background: white;
+  position: relative;
+  z-index: 1;
+  min-height: 19rem;
+  padding: 2rem 0;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .user-stats
+  .user-stat
+  .user-stat-top {
+  position: relative;
+  top: 0;
+  transition: all 0.1s;
+  margin-bottom: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .user-stats
+  .user-stat
+  .user-stat-top
+  > div {
+  font-weight: 300;
+  font-size: 4rem;
+  text-align: center;
+  color: #175db3;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .user-stats
+  .user-stat
+  .user-stat-top
+  > span {
+  font-weight: 300;
+  font-size: 1.4rem;
+  text-align: center;
+  display: block;
+  color: #484848;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .user-stats
+  .user-stat
+  .user-stat-bottom {
+  display: flex;
+  justify-content: center;
+  padding-left: 4.5rem;
+  position: relative;
+  top: 0;
+  transition: all 0.1s;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .user-stats
+  .user-stat
+  .user-stat-bottom
+  > img {
+  position: relative;
+  display: block;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100%;
+  object-fit: cover;
+  position: relative;
+  left: 0;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .user-stats
+  .user-stat
+  .user-stat-bottom
+  > img:nth-child(2) {
+  left: -1.5rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .user-stats
+  .user-stat
+  .user-stat-bottom
+  > img:nth-child(3) {
+  left: -3rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .user-stats
+  .user-stat
+  .user-stat-bottom
+  > img:nth-child(4) {
+  left: -4.5rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .user-stats
+  .user-stat:hover
+  .user-stat-top {
+  top: -1rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .user-stats
+  .user-stat:hover
+  .user-stat-bottom {
+  top: -1rem;
+  padding-left: 1rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .user-stats
+  .user-stat:hover
+  .user-stat-bottom
+  > img:nth-child(2) {
+  left: -0.5rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .user-stats
+  .user-stat:hover
+  .user-stat-bottom
+  > img:nth-child(3) {
+  left: -1rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .user-stats
+  .user-stat:hover
+  .user-stat-bottom
+  > img:nth-child(4) {
+  left: -1.5rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .restaurant-promo {
+  margin-bottom: 3rem;
+  height: 12rem;
+  width: 100%;
+  position: relative;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .restaurant-promo
+  img {
+  height: 13rem;
+  width: 100%;
+  object-fit: cover;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .brief {
+  padding-bottom: 3rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .brief
+  p {
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .brief
+  > span {
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #ff6900;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .brief
+  > span
+  i {
+  transform: rotate(90deg);
+  margin-right: 1rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .services
+  span {
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #484848;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .services
+  .service-item {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .services
+  .service-item
+  i {
+  font-size: 2rem;
+  color: #d40562;
+  cursor: pointer;
+  font-weight: normal;
+  margin-top: 1rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .services
+  .service-item
+  span {
+  font-weight: normal;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #707070;
+  cursor: pointer;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .services
+  .service-item:hover {
+  border: 1px solid #d40562;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .services
+  .clicked {
+  border: 1px solid #d40562;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-booking-ele-bottom {
+  padding: 2rem 2rem 3rem 2rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-booking-ele-bottom
+  > div {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-booking-ele-bottom
+  > div:last-child {
+  margin-bottom: 0;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-booking-ele-bottom
+  > div
+  .my-booking-label {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #175db3;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-booking-ele-bottom
+  > div
+  .my-booking-label
+  i {
+  color: #ff6900;
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin-left: 1rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-booking-ele-bottom
+  > div
+  .my-booking-value {
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+  display: flex;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-booking-ele-bottom
+  > div
+  .my-booking-value
+  .number {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #484848;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-booking-ele-bottom
+  > div
+  .my-booking-value
+  .number-sur-taktak {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #175db3;
+  opacity: 0.8;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-booking-ele-bottom
+  > div
+  .my-booking-value
+  .open {
+  background: #5ecc73;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 5px;
+  font-size: 0 1rem;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-booking-ele-bottom
+  > div
+  .my-booking-value
+  .close {
+  background: #ff6900;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 5px;
+  font-size: 0 1rem;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-booking-ele-bottom
+  > div
+  .my-booking-value
+  .peoples {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-booking-ele-bottom
+  > div
+  .my-booking-value
+  .peoples
+  .people {
+  position: relative;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-booking-ele-bottom
+  > div
+  .my-booking-value
+  .peoples
+  .people
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-booking-ele-bottom
+  > div
+  .my-booking-value
+  .peoples
+  .people:nth-child(2) {
+  left: -1.25rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-booking-ele-bottom
+  > div
+  .my-booking-value
+  .peoples
+  .people:nth-child(3) {
+  left: -2.25rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-booking-ele-bottom
+  > div
+  .my-booking-value
+  .peoples
+  .people:nth-child(4) {
+  left: -3.25rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-booking-ele-bottom
+  > div
+  .my-booking-value
+  i {
+  color: #ff6900;
+  font-weight: normal;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-booking-ele-bottom
+  > div
+  .my-booking-value
+  .my-booking-sous-value {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #acacac;
+  margin-left: 0.5rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-booking-ele-bottom
+  > div
+  .my-booking-value
+  .sous-value {
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+  margin-left: 0.5rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .personal-information
+  .personal-information-body {
+  display: flex;
+  flex-direction: column;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .personal-information
+  .personal-information-body
+  .info-item {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .personal-information
+  .personal-information-body
+  .info-item
+  .info-label {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .personal-information
+  .personal-information-body
+  .info-item
+  .info-value {
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .profile-title {
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: left;
+  color: #175db3;
+  margin-bottom: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .followers {
+  margin-top: 3rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .followers
+  .profile-title {
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: left;
+  color: #175db3;
+  margin-bottom: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .followers
+  .followers-list {
+  /*display: grid;*/
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 3rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .followers
+  .followers-list
+  .one-follower {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .followers
+  .followers-list
+  .one-follower
+  .one-follower-inner {
+  display: flex;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .followers
+  .followers-list
+  .one-follower
+  .one-follower-inner
+  .user-who-post-info-avatar {
+  margin-right: 1rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .followers
+  .followers-list
+  .one-follower
+  .one-follower-inner
+  .user-who-post-info-avatar
+  img {
+  max-width: 4rem;
+  object-fit: cover;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 5px;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .followers
+  .followers-list
+  .one-follower
+  .one-follower-inner
+  .user-who-post-info-info
+  .user-username {
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  color: #484848;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .followers
+  .followers-list
+  .one-follower
+  .one-follower-inner
+  .user-who-post-info-info
+  .user-about {
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  color: #484848;
+  opacity: 0.8;
+  margin-top: 0.5rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .restaurants-followed
+  .you-may-like
+  .you-may-like-body {
+  box-shadow: none;
+  filter: none;
+  border: 0;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .restaurants-followed
+  .you-may-like
+  .you-may-like-body
+  .you-may-like-element {
+  margin-bottom: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .svg-bottom {
+  position: absolute;
+  bottom: 8rem;
+  right: 50%;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .profile-section {
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 3rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .profile-section
+  .profile-title {
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: left;
+  color: #175db3;
+  margin-bottom: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .soft-restaurants-footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .soft-restaurants-footer
+  span {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #484848;
+  opacity: 0.3;
+  margin: 0 2rem;
+  text-align: center;
+  cursor: context-menu;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .soft-restaurants-footer
+  .line {
+  width: 100%;
+  height: 1px;
+  background-color: #e8e8e8;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .tab-one {
+  background: #fff;
+  border: 1px solid #ff6900;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.1));
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .tab-one
+  .tab-one-header {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .tab-one
+  .tab-one-header
+  .post-picture {
+  font-weight: 300;
+  font-size: 2.4rem;
+  text-align: left;
+  color: #b2b2b2;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .tab-one
+  .tab-one-header
+  .input-post {
+  display: block;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .tab-one
+  .tab-one-header
+  input {
+  font-size: 2.4rem;
+  color: #484848;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .tab-one
+  .tab-one-header
+  input::placeholder {
+  font-weight: 300;
+  font-size: 2.4rem;
+  color: #b2b2b2;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .tab-one
+  .tab-one-header
+  i {
+  color: #ff6900;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .tab-one
+  .tab-one-body {
+  display: block;
+  padding: 2rem;
+  transition: all 0.3s;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .tab-one
+  .tab-one-body
+  #dropzone {
+  margin-bottom: 2rem;
+  border: 1px dashed #e8e8e8;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .tab-one
+  .tab-one-body
+  #dropzone
+  .dz-details,
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .tab-one
+  .tab-one-body
+  #dropzone
+  .dz-error-message,
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .tab-one
+  .tab-one-body
+  #dropzone
+  .dz-error-mark,
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .tab-one
+  .tab-one-body
+  #dropzone
+  .dz-success-mark {
+  display: none;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .tab-one
+  .tab-one-body
+  #dropzone
+  .dz-image
+  img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 5px;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .tab-one
+  .tab-one-body
+  #dropzone
+  .dz-remove {
+  display: block;
+  width: 100%;
+  visibility: hidden;
+  position: relative;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .tab-one
+  .tab-one-body
+  #dropzone
+  .dz-remove:after {
+  color: #ff6900;
+  text-align: center;
+  visibility: visible;
+  content: "\e91a";
+  font-family: icomoon;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .tab-one
+  .tab-one-body
+  .upload-now {
+  text-align: center !important;
+  width: 100%;
+  height: 7rem;
+  background: #ff6900;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: left;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .tab-one.collapsed {
+  border: 0;
+  box-shadow: none;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .tab-one.collapsed
+  .tab-one-header {
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos {
+  margin-top: 3rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-top {
+  margin-bottom: 2rem;
+  display: flex;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-top
+  .photos-top-ele {
+  margin-left: 3rem;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: left;
+  color: #a3a3a3;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-top
+  .photos-top-ele.active {
+  color: #ff6900;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-top
+  .photos-top-ele
+  i {
+  margin-right: 1rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-top
+  .photos-top-ele:last-child {
+  margin-right: 0;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-bottom {
+  padding: 2rem;
+  padding-bottom: 2rem;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05));
+  border-radius: 5px;
+  position: relative;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-bottom
+  .my-photos-bottom-header {
+  margin-bottom: 2rem;
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-bottom
+  .my-photos-bottom-header
+  > span:first-child {
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.5;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-bottom
+  .my-photos-bottom-header
+  > span:last-child {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #484848;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-bottom
+  .my-photos-bottom-header
+  > span:last-child
+  i {
+  margin-left: 1rem;
+  font-size: 1.7rem;
+  color: #484848;
+  font-weight: normal;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-photos {
+  padding-bottom: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 18rem 18rem 18rem 18rem;
+  grid-gap: 1rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-photos
+  .add-photos-border {
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  padding: 0.7rem;
+  transition: all 0.3s all;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-photos
+  .add-photos-border
+  .add-photos {
+  cursor: pointer;
+  background: linear-gradient(#ffa500 0%, #ff6900 100%);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-photos
+  .add-photos-border
+  .add-photos
+  i {
+  font-size: 2rem;
+  color: white;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-photos
+  .add-photos-border:hover {
+  border: none;
+  padding: 0;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-photos
+  .add-photos-border:hover
+  .add-photos {
+  width: 100%;
+  height: 100%;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-photos
+  .photo {
+  position: relative;
+  height: 18rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-photos
+  .photo
+  img {
+  height: 18rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-photos
+  .photo:hover
+  .hover {
+  display: block;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-photos
+  .photo
+  .hover {
+  background: linear-gradient(rgba(72, 72, 72, 0.68) 0%, #0e0e0e 100%);
+  opacity: 0.95;
+  position: absolute;
+  top: 0;
+  z-index: 11;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  padding: 1rem;
+  display: none;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-photos
+  .photo
+  .hover
+  .remove {
+  font-weight: normal;
+  font-size: 1.6rem;
+  text-align: right;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-photos
+  .photo
+  .hover
+  .hover-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  color: #fff;
+  height: 93%;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-photos
+  .photo
+  .hover
+  .hover-bottom
+  .heart,
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .my-photos-photos
+  .photo
+  .hover
+  .hover-bottom
+  .comment {
+  font-weight: normal;
+  font-size: 1.6rem;
+  text-align: right;
+  color: #fff;
+  cursor: pointer;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .svg-bottom {
+  position: absolute;
+  margin-bottom: 2rem;
+  bottom: -0.2rem;
+  right: 50%;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .my-photos
+  .svg-bottom
+  .a {
+  color: #e8e8e8 !important;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .add-article {
+  margin-bottom: 3rem;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.05));
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .add-article
+  .add-article-left {
+  display: flex;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .add-article
+  .add-article-left
+  img {
+  margin-right: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .add-article
+  .add-article-left
+  div {
+  display: flex;
+  flex-direction: column;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .add-article
+  .add-article-left
+  div
+  span:first-child {
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-align: left;
+  color: #131d28;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .add-article
+  .add-article-left
+  div
+  span:last-child {
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #adadad;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .add-article
+  .add-article-right
+  button {
+  cursor: pointer;
+  outline: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 0 2rem;
+  height: 4rem;
+  background: #ff6900;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #fff;
+}
+.menu-picker {
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 0fr 18fr 1fr 0fr;
+  align-items: center;
+  top: 11.5rem;
+}
+.menu-picker span {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 5px;
+  background: #ffa500;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+.menu-picker span .set {
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  top: 30%;
+  right: 30%;
+  cursor: pointer;
+}
+.menu-picker .arrow {
+  cursor: pointer;
+  background: white;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+.menu-picker .arrow i {
+  color: #484848;
+  font-size: 1.5rem;
+}
+.menu-picker .arrow:first-child i {
+  transform: rotate(180deg);
+}
+.menu-picker .arrow.last {
+  margin-left: auto;
+}
+.menu-picker .menu-p {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+.menu-picker .menu-p::-webkit-scrollbar {
+  display: none;
+}
+.menu-picker .menu-p .menu-picker-items {
+  display: flex;
+  padding: 1rem;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+.menu-picker .menu-p .menu-picker-items::-webkit-scrollbar {
+  display: none;
+}
+.menu-picker .menu-p .menu-picker-items .picker-item {
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+  height: 5rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+  margin-right: 1rem;
+  outline: none;
+  cursor: pointer;
+}
+.menu-picker .menu-p .menu-picker-items .picker-item:last-child {
+  margin-right: 0;
+}
+.menu-picker .menu-p .menu-picker-items .item-clicked {
+  border: 1px solid #ff6900;
+  color: #ff6900;
+  outline: none;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .add-category {
+  margin-bottom: 3rem;
+  display: none;
+}
+
+.add-category-title {
+  display: block;
+  font-size: 1.8rem;
+  text-align: left;
+  color: #484848;
+  margin-bottom: 2rem;
+}
+.add-category-helper {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  border: 1px dashed #c9c9c9;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 5px;
+}
+.add-category-helper img {
+  display: block;
+  margin-right: 2rem;
+}
+.add-category-helper .helper-info {
+  display: flex;
+  flex-direction: column;
+}
+.add-category-helper .helper-info p {
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #818181;
+  line-height: 2rem;
+}
+.add-category-helper .helper-info span {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #ff6900;
+  margin-top: 1.5rem;
+}
+.added-categories {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.added-categories .added-category,
+.added-categories .input-add-category input {
+  position: relative;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+  height: 6.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: left;
+  color: #484848;
+}
+.added-categories .added-category:last-child,
+.added-categories .input-add-category input:last-child {
+  margin-bottom: 0;
+}
+.added-categories .added-category .icons,
+.added-categories .input-add-category input .icons {
+  display: none;
+}
+.added-categories .added-category .icons i,
+.added-categories .input-add-category input .icons i {
+  color: #ff6900;
+  font-size: 2rem;
+  font-weight: normal;
+  margin-left: 3rem;
+  cursor: pointer;
+}
+.added-categories .added-category.added-category:hover,
+.added-categories .input-add-category input.added-category:hover {
+  border: 1px solid #ff6900;
+}
+.added-categories .added-category.added-category:hover .icons,
+.added-categories .input-add-category input.added-category:hover .icons {
+  display: flex;
+}
+.added-categories .input-add-category {
+  position: relative;
+}
+.added-categories .input-add-category span {
+  position: absolute;
+  right: 2rem;
+  top: 0;
+  bottom: 0;
+  height: 6.5rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-align: left;
+  color: #9a9a9a;
+  font-family: Raleway;
+}
+.added-categories .input-add-category span strong {
+  color: #484848;
+  margin: 0 0.5rem;
+}
+.added-categories .input-add-category span i {
+  color: #ff6900;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.added-categories .input-add-category input {
+  outline: none;
+  width: 100%;
+}
+.add-category-btn {
+  display: block;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #ff6900;
+}
+.add-category-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+.add-category-bottom .retour {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.add-category-bottom .retour span {
+  font-weight: normal;
+  font-size: 3rem;
+  color: #484848;
+  opacity: 0.5;
+  outline: none;
+}
+.add-category-bottom .retour i {
+  font-weight: 300;
+  font-size: 3rem;
+  color: #484848;
+  opacity: 0.5;
+  margin-right: 2rem;
+}
+.add-category-bottom button {
+  outline: none;
+  height: 6rem;
+  width: 23rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #54d0a5;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #54d0a5;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.add-category-bottom button:hover {
+  background-color: #54d0a5;
+  color: white;
+}
+
+.add-article-form {
+  padding: 2rem;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  margin-bottom: 5rem;
+}
+.add-article-form > span {
+  display: block;
+  font-weight: 500;
+  font-size: 2.2rem;
+  text-align: left;
+  color: #484848;
+  margin-bottom: 2rem;
+}
+.add-article-form .add-article-form-form {
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+  grid-gap: 2rem;
+}
+.add-article-form .add-article-form-form .image-form {
+  height: 12rem;
+  width: 12rem;
+  background: #fff5ef;
+  border: 1px solid #ff6900;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff6900;
+}
+.add-article-form .add-article-form-form .info-form {
+  display: flex;
+  flex-direction: column;
+}
+.add-article-form .add-article-form-form .info-form input {
+  outline: none;
+  margin-bottom: 1rem;
+  padding: 0 2rem;
+  height: 4.4rem;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  outline: none;
+  font-weight: normal;
+  font-size: 1.6rem;
+  text-align: left;
+  color: #484848;
+}
+.add-article-form .add-article-form-form .info-form input::placeholder {
+  font-weight: normal;
+  font-size: 1.6rem;
+  text-align: left;
+  color: #484848;
+}
+.add-article-form .add-article-form-form .info-form input.ingr {
+  height: 10rem;
+}
+.add-article-form .add-article-form-form .info-form input:last-child {
+  margin-bottom: 0;
+}
+.add-article-form .add-article-form-form .info-form .info-form-bottom {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 0.5rem;
+}
+.add-article-form .add-article-form-form .info-form .info-form-bottom .price {
+  position: relative;
+  outline: none;
+  width: 19rem;
+  margin-bottom: 1rem;
+  padding: 0 2rem;
+  height: 4.4rem;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  outline: none;
+  font-weight: normal;
+  font-size: 1.6rem;
+  text-align: left;
+  color: #484848;
+}
+.add-article-form
+  .add-article-form-form
+  .info-form
+  .info-form-bottom
+  .price::placeholder {
+  font-weight: normal;
+  font-size: 1.6rem;
+  text-align: left;
+  color: #484848;
+}
+.add-article-form
+  .add-article-form-form
+  .info-form
+  .info-form-bottom
+  .unt-price {
+  position: absolute;
+  top: 7px;
+  left: 13.4rem;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #ff6900;
+}
+.add-article-form
+  .add-article-form-form
+  .info-form
+  .info-form-bottom
+  .unt-time {
+  position: absolute;
+  top: 0.7rem;
+  right: 1.7rem;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #ff6900;
+}
+.add-article-form .add-article-form-form .info-form .info-form-bottom .time {
+  position: relative;
+  width: 29rem;
+  margin-bottom: 1rem;
+  padding: 0 2rem;
+  height: 4.4rem;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  outline: none;
+  font-weight: normal;
+  font-size: 1.6rem;
+  text-align: left;
+  color: #484848;
+  box-shadow: none;
+  outline: none;
+}
+.add-article-form
+  .add-article-form-form
+  .info-form
+  .info-form-bottom
+  .time::placeholder {
+  font-weight: normal;
+  font-size: 1.6rem;
+  text-align: left;
+  color: #484848;
+}
+.add-article-form .add-article-form-form .info-form .info-form-bottom .title {
+  background-color: white;
+  position: absolute;
+  top: -1.2rem;
+  right: 13.7rem;
+  height: 1.5rem;
+}
+.add-article-form
+  .add-article-form-form
+  .info-form
+  .info-form-bottom
+  .title
+  span {
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.4;
+}
+.add-article-form .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.add-article-form .buttons .btn-retour {
+  color: #484848;
+  opacity: 0.5;
+  font-size: 2rem;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+}
+.add-article-form .buttons .btn-retour i {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-right: 1rem;
+}
+.add-article-form .buttons .btn-add {
+  display: block;
+  margin-left: auto;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #ff6900;
+  border: 0;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  > span {
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #bababa;
+  margin-bottom: 4rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first {
+  background: #fff;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-header {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-header
+  .checkin-label {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #484848;
+  opacity: 0.5;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-header
+  .checkin-options {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: right;
+  color: #484848;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-header
+  .checkin-options
+  i {
+  margin-left: 0.5rem;
+  font-size: 0.7rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .menu-example {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .menu-example
+  .place-media
+  img {
+  display: block;
+  width: 100%;
+  height: 15rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .menu-example
+  .menu-info {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  transition: all 0.5s ease;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .menu-example
+  .menu-info
+  .menu-title {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: left;
+  color: #484848;
+  margin-bottom: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .menu-example
+  .menu-info
+  p {
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-align: left;
+  color: #888;
+  margin-bottom: 3rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .menu-example
+  .menu-info
+  .menu-price {
+  font-weight: 300;
+  font-size: 3rem;
+  text-align: left;
+  color: #ff6900;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .menu-example:hover
+  .menu-info {
+  position: absolute;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .card {
+  background: white;
+  height: 41rem;
+  transition: 0.5s all ease;
+  margin-left: auto;
+  margin-right: auto;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardTop {
+  transition: 0.8s all ease;
+  object-fit: contain;
+  height: 50%;
+}
+@media (max-width: 1000px) {
+  .profile-restaurant-page
+    .profile-restaurant-page-content
+    .profile-restaurant-page-content-feed
+    .feed-main
+    .tabs-content
+    .menu
+    .menu-first
+    .menu-body
+    .card
+    .cardTop {
+    height: 45%;
+  }
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom {
+  height: 55%;
+  transition: 0.5s all ease;
+  position: relative;
+  background-color: #ffffff;
+}
+@media (max-width: 1000px) {
+  .profile-restaurant-page
+    .profile-restaurant-page-content
+    .profile-restaurant-page-content-feed
+    .feed-main
+    .tabs-content
+    .menu
+    .menu-first
+    .menu-body
+    .card
+    .cardBottom {
+    height: 60%;
+  }
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom
+  .cardText {
+  min-height: 100%;
+  padding-top: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .food-name {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #484848;
+  padding: 0 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .food-done {
+  display: none;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .food-done
+  .circle-white {
+  position: absolute;
+  top: -2.8rem;
+  right: 2.4rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .food-done
+  .added {
+  position: absolute;
+  top: -1.3rem;
+  right: 3.8rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .sub-title {
+  padding: 1.5rem 0;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #888;
+  padding: 0 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .price
+  span {
+  font-weight: 300;
+  font-size: 3rem;
+  color: #ff6900;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .price
+  i {
+  color: #ffa500;
+  font-size: 1.7rem;
+  font-weight: normal;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardHoverText {
+  display: none;
+  margin: 1rem 0;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content {
+  padding: 1.5rem;
+  border-top: 1px solid #e8e8e8;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content
+  .time
+  span {
+  font-size: 2rem;
+  color: #484848;
+  padding-left: 1rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content
+  .time
+  i {
+  font-size: 2rem;
+  color: #484848;
+  font-weight: normal;
+  cursor: pointer;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content
+  .icons
+  i {
+  color: #ff6900;
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0.7rem;
+  cursor: pointer;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .card:hover
+  .cardHoverText {
+  display: block;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .card:hover
+  .cardBottom {
+  height: 67%;
+  opacity: 1;
+}
+@media (max-width: 1000px) {
+  .profile-restaurant-page
+    .profile-restaurant-page-content
+    .profile-restaurant-page-content-feed
+    .feed-main
+    .tabs-content
+    .menu
+    .menu-first
+    .menu-body
+    .card:hover
+    .cardBottom {
+    height: 72%;
+  }
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-first
+  .menu-body
+  .card:hover
+  .cardTop {
+  height: 35%;
+  opacity: 0.8;
+}
+@media (max-width: 1000px) {
+  .profile-restaurant-page
+    .profile-restaurant-page-content
+    .profile-restaurant-page-content-feed
+    .feed-main
+    .tabs-content
+    .menu
+    .menu-first
+    .menu-body
+    .card:hover
+    .cardTop {
+    height: 28%;
+  }
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second {
+  display: none;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .menu-map {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: rgba(232, 232, 232, 0.05);
+  border: 1px solid #e8e8e8;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05));
+  border-radius: 5px;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .menu-map
+  .menu-map-header {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .menu-map
+  .menu-map-header
+  .map-label {
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.5;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .menu-map
+  .menu-map-header
+  .map-options {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: right;
+  color: #484848;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .menu-map
+  .menu-map-header
+  .map-options
+  i {
+  font-size: 0.7rem;
+  margin-left: 0.5rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .menu-map
+  .menu-map-body
+  img {
+  width: 100%;
+  object-fit: cover;
+  height: 15rem;
+  margin-bottom: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .menu-map
+  .menu-map-body
+  .map-info {
+  display: flex;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .menu-map
+  .menu-map-body
+  .map-info
+  > span:first-child,
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .menu-map
+  .menu-map-body
+  .map-info
+  > span:nth-child(2) {
+  margin-right: 3rem;
+  font-weight: normal;
+  font-size: 2rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.8;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .menu-map
+  .menu-map-body
+  .map-info
+  > span:first-child
+  i,
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .menu-map
+  .menu-map-body
+  .map-info
+  > span:nth-child(2)
+  i {
+  margin-right: 1rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .menu-map
+  .menu-map-body
+  .map-info
+  > span:last-child {
+  margin-left: auto;
+  font-weight: normal;
+  font-size: 1.6rem;
+  text-align: right;
+  color: #484848;
+  opacity: 0.5;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info {
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 40% auto;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-media {
+  height: 30rem;
+  width: 100%;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-media
+  img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info {
+  padding: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header
+  img {
+  margin-right: 1rem;
+  border-radius: 5px;
+  height: 4rem;
+  width: 4rem;
+  object-fit: cover;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header
+  .name
+  .restaurant-name {
+  display: block;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: left;
+  color: #484848;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header
+  .name
+  .restaurant-location {
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.8;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header
+  .name
+  .restaurant-location
+  i {
+  margin-right: 0.5rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header
+  .raiting {
+  margin-left: auto;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header
+  .raiting
+  span {
+  color: #e2e2e2;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header
+  .raiting
+  span.full {
+  color: #ffa500;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header
+  .raiting
+  span:hover {
+  color: #ffa500;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .time {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .time
+  i {
+  margin-right: 1rem;
+  color: #484848;
+  font-size: 1rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .time
+  .title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #175db3;
+  margin-right: 1rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .time
+  .status {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  border-radius: 3px;
+  background: #5ecc73;
+  padding: 0 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .time
+  ._time {
+  margin-left: auto;
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .info {
+  margin-bottom: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .info
+  i {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  color: #484848;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .info
+  .title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #175db3;
+  margin-right: 1rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .info
+  ._info {
+  max-width: 20rem;
+  padding-left: 1.5rem;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 16px;
+  text-align: left;
+  color: #484848;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here {
+  display: flex;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  .peoples {
+  display: flex;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  .peoples
+  .people {
+  position: relative;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  .peoples
+  .people
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  .peoples
+  .people:nth-child(2) {
+  left: -1.25rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  .peoples
+  .people:nth-child(3) {
+  left: -2.25rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  .peoples
+  .people:nth-child(4) {
+  left: -3.25rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  span {
+  position: relative;
+  left: -2rem;
+  font-size: 1.1rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.8;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  span
+  strong {
+  font-weight: bold;
+  color: #175db3;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant {
+  max-height: 24.5rem;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05));
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-header {
+  height: 14rem;
+  width: 100%;
+  transition: all 0.3s;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-header
+  img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body {
+  padding: 1rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  img {
+  margin-right: 1rem;
+  border-radius: 5px;
+  height: 4rem;
+  width: 4rem;
+  object-fit: cover;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  .name
+  .restaurant-name {
+  display: block;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: left;
+  color: #484848;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  .name
+  .restaurant-location {
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.8;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  .name
+  .restaurant-location
+  i {
+  margin-right: 0.5rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  .raiting {
+  margin-left: auto;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  .raiting
+  span {
+  color: #e2e2e2;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  .raiting
+  span.full {
+  color: #ffa500;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  .raiting
+  span:hover {
+  color: #ffa500;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer {
+  padding-left: 5rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here {
+  display: flex;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  .peoples {
+  display: flex;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  .peoples
+  .people {
+  position: relative;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  .peoples
+  .people
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  .peoples
+  .people:nth-child(2) {
+  left: -1.25rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  .peoples
+  .people:nth-child(3) {
+  left: -2.25rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  .peoples
+  .people:nth-child(4) {
+  left: -3.25rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  span {
+  position: relative;
+  left: -2rem;
+  font-size: 1.1rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.8;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  span
+  strong {
+  font-weight: bold;
+  color: #175db3;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-invisible {
+  transition: all 0.1s;
+  opacity: 0;
+  padding-left: 5rem;
+  display: flex;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-invisible
+  .promo
+  .promo-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: left;
+  color: #d40562;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-invisible
+  button {
+  margin-left: auto;
+  height: 4rem;
+  color: white;
+  background: #ffa500;
+  padding: 0 1rem;
+  border-radius: 5px;
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #fff;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-invisible
+  button
+  i {
+  margin-right: 1rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant:hover
+  .soft-restaurant-header {
+  height: 8rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .menu
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant:hover
+  .soft-restaurant-body
+  .soft-restaurant-body-invisible {
+  opacity: 1;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation-top {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  grid-gap: 3rem;
+  margin-bottom: 3rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation-top
+  .percentages-evaluation {
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  height: 25rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation-top
+  .percentages-evaluation
+  .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation-top
+  .percentages-evaluation
+  .header
+  .raiting
+  i {
+  font-size: 1.7rem;
+  font-weight: normal;
+  color: #ffa500;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation-top
+  .percentages-evaluation
+  .header
+  .right-side {
+  display: flex;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation-top
+  .percentages-evaluation
+  .header
+  .right-side
+  .number {
+  color: white;
+  width: 5rem;
+  height: 2.8rem;
+  background: linear-gradient(#fda700 0%, #fd6a00 100%);
+  border-radius: 5px;
+  margin-right: 1rem;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation-top
+  .percentages-evaluation
+  .header
+  .right-side
+  .vote {
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.3;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation-top
+  .percentages-evaluation
+  .main {
+  padding: 2rem 1rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation-top
+  .percentages-evaluation
+  .main
+  .item {
+  display: grid;
+  grid-template-columns: 1fr 3fr 0.5fr;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation-top
+  .percentages-evaluation
+  .main
+  .item
+  .number-of-star {
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.3;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation-top
+  .percentages-evaluation
+  .main
+  .item
+  .progress-bar {
+  background-color: #e8e8e8;
+  height: 6px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation-top
+  .percentages-evaluation
+  .main
+  .item
+  .progress-bar__inner {
+  position: relative;
+  display: block;
+  height: 6px;
+  background-color: #ff6900;
+  border-radius: 5px;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation-top
+  .percentages-evaluation
+  .main
+  .item
+  .pourcentage {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.3;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation-top
+  .percentages-evaluation
+  .main
+  .item:last-child {
+  margin-bottom: 0;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation-top
+  .news-evalutaion {
+  position: relative;
+  height: 25rem;
+  background: #d40562;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation-top
+  .news-evalutaion
+  span {
+  font-size: 2rem;
+  text-align: left;
+  color: #fff;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation-top
+  .news-evalutaion
+  .peoples {
+  display: flex;
+  margin: auto;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation-top
+  .news-evalutaion
+  .peoples
+  .people {
+  position: relative;
+  left: 0;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation-top
+  .news-evalutaion
+  .peoples
+  .people:nth-child(2) {
+  left: -1.25rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation-top
+  .news-evalutaion
+  .peoples
+  .people:nth-child(3) {
+  left: -2.25rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation-top
+  .news-evalutaion
+  .peoples
+  .people:nth-child(4) {
+  left: -3.25rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation-top
+  .news-evalutaion
+  .peoples
+  .people:nth-child(5) {
+  left: -4rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation-top
+  .news-evalutaion
+  .examine {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #fff;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #fefefe;
+  border: 1px solid #e8e8e8;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05));
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation
+  .evaluation-header {
+  display: flex;
+  justify-content: space-between;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation
+  .evaluation-header
+  .evaluation-label {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #484848;
+  opacity: 0.5;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation
+  .evaluation-header
+  .evaluation-options {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: right;
+  color: #484848;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .evaluation
+  .evaluation-header
+  .evaluation-options
+  i {
+  margin-left: 0.5rem;
+  font-size: 1.7rem;
+  font-weight: normal;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .card {
+  margin-bottom: 3rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .divider {
+  margin-bottom: 5rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .indicators {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .indicators
+  .indicator {
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  height: 9rem;
+  background: #fefefe;
+  border: 1px solid #e8e8e8;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05));
+  border-radius: 5px;
+  padding: 0 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .indicators
+  .indicator
+  .indicator-icon {
+  min-width: 4rem;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+  border: 1px solid black;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .indicators
+  .indicator
+  .indicator-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .indicators
+  .indicator
+  .indicator-info
+  .indicator-texts {
+  display: flex;
+  flex-direction: column;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .indicators
+  .indicator
+  .indicator-info
+  .indicator-texts
+  .indicator-name {
+  font-weight: normal;
+  font-size: 2rem;
+  text-align: left;
+  color: #484848;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .indicators
+  .indicator
+  .indicator-info
+  .indicator-texts
+  .indicator-value {
+  font-weight: normal;
+  font-size: 1.9rem;
+  text-align: left;
+  color: #ff6900;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .indicators
+  .indicator
+  .indicator-info
+  .icon {
+  font-size: 0.4rem;
+  margin-left: auto;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .indicators
+  .indicator.money
+  .indicator-icon {
+  border-color: #ff6900;
+  color: #ff6900;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .indicators
+  .indicator.money
+  .indicator-info
+  .indicator-texts
+  .indicator-value {
+  color: #ff6900;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .indicators
+  .indicator.cart
+  .indicator-icon {
+  border-color: #ffa500;
+  color: #ffa500;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .indicators
+  .indicator.cart
+  .indicator-info
+  .indicator-texts
+  .indicator-value {
+  color: #ffa500;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .indicators
+  .indicator.trend
+  .indicator-icon {
+  border-color: #4ad991;
+  color: #4ad991;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .indicators
+  .indicator.trend
+  .indicator-info
+  .indicator-texts
+  .indicator-value {
+  color: #4ad991;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line {
+  margin-bottom: 3rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 2rem;
+  background: #fefefe;
+  border: 1px solid #e8e8e8;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05));
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-title,
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-line-title {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-title
+  > span:first-child,
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-line-title
+  > span:first-child {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: left;
+  color: #175db3;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-title
+  > span:last-child,
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-line-title
+  > span:last-child {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: right;
+  color: #484848;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-title
+  > span:last-child
+  i,
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-line-title
+  > span:last-child
+  i {
+  margin-left: 1rem;
+  font-size: 0.7rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-body
+  .chart-container {
+  position: relative;
+  width: 24rem;
+  height: 24rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-body
+  .chart-container
+  .number-of-reservation {
+  position: absolute;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  text-align: center;
+  color: #4d4f5c;
+  top: 9.5rem;
+  right: 5rem;
+  width: 14rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-body
+  .chart-info
+  .one-info {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-body
+  .chart-info
+  .one-info
+  .info-circle {
+  margin-right: 1rem;
+  display: block;
+  height: 1.6rem;
+  width: 1.6rem;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background: #55d8fe;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-body
+  .chart-info
+  .one-info
+  .info-label {
+  margin-right: auto;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-body
+  .chart-info
+  .one-info
+  .info-value {
+  opacity: 0.5;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-body
+  .chart-info
+  .one-info:nth-child(2)
+  .info-circle {
+  background: #ff8373;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-body
+  .chart-info
+  .one-info:nth-child(3)
+  .info-circle {
+  background: #ffda83;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-body
+  .chart-info
+  .one-info:nth-child(4)
+  .info-circle {
+  background: #a3a0fb;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats {
+  margin-bottom: 3rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 2rem;
+  background: #fefefe;
+  border: 1px solid #e8e8e8;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05));
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05));
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats
+  .my-stats-title {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats
+  .my-stats-title
+  > span:first-child {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: left;
+  color: #175db3;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats
+  .my-stats-title
+  > span:last-child {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: right;
+  color: #484848;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats
+  .my-stats-title
+  > span:last-child
+  i {
+  margin-left: 1rem;
+  font-size: 1.7rem;
+  color: #484848;
+  font-weight: normal;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats
+  .my-stats-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats
+  .my-stats-body
+  .chart-container {
+  position: relative;
+  width: 24rem;
+  height: 24rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats
+  .my-stats-body
+  .chart-container
+  .number-of-reservation {
+  position: absolute;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  text-align: center;
+  color: #4d4f5c;
+  top: 9.5rem;
+  right: 5rem;
+  width: 14rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats
+  .my-stats-body
+  .chart-info {
+  margin-right: 3rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats
+  .my-stats-body
+  .chart-info
+  .one-info {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats
+  .my-stats-body
+  .chart-info
+  .one-info
+  .info-circle {
+  margin-right: 1rem;
+  display: block;
+  height: 1.6rem;
+  width: 1.6rem;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats
+  .my-stats-body
+  .chart-info
+  .one-info
+  .info-label {
+  margin-right: auto;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-align: left;
+  color: #43425d;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats
+  .my-stats-body
+  .chart-info
+  .one-info
+  .info-value {
+  opacity: 0.5;
+  font-size: 1.3rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats
+  .my-stats-body
+  .chart-info
+  .one-info:first-child
+  .info-circle {
+  border: 3px solid #55d8fe;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats
+  .my-stats-body
+  .chart-info
+  .one-info:nth-child(2)
+  .info-circle {
+  border: 3px solid #ff8373;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats
+  .my-stats-body
+  .chart-info
+  .one-info:nth-child(3)
+  .info-circle {
+  border: 3px solid #ffda83;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats
+  .my-stats-body
+  .chart-info
+  .one-info:nth-child(4)
+  .info-circle {
+  border: 3px solid #a3a0fb;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-line-indicators {
+  display: flex;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-line-indicators
+  .stats-indicator {
+  display: flex;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-line-indicators
+  .stats-indicator
+  span:first-child {
+  display: block;
+  margin-right: 1rem;
+  width: 1rem;
+  height: 6px;
+  border-radius: 4px;
+  background: #ff6900;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-line-indicators
+  .stats-indicator
+  span:last-child {
+  font-weight: normal;
+  font-size: 1rem;
+  text-align: left;
+  color: #4d4f5c;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-line-indicators
+  .stats-indicator:last-child {
+  margin-left: 2rem;
+  opacity: 0.5;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-stats-line
+  .my-stats-line-body
+  img {
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-highlight {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  background: #d40562;
+  padding: 2rem;
+  border-radius: 5px;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-highlight
+  span {
+  color: white;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-highlight
+  span:first-child {
+  margin-right: 2rem;
+  font-size: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-highlight
+  span:nth-child(2) {
+  font-size: 2rem;
+  text-align: left;
+  color: #fff;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-highlight
+  .my-booking-persons {
+  margin-left: auto;
+  margin-right: 4rem;
+  display: flex;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-highlight
+  .my-booking-persons
+  img {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 100%;
+  display: block;
+  border: 1px solid white;
+  position: relative;
+  left: 0;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-highlight
+  .my-booking-persons
+  img:nth-child(2) {
+  left: -1.5rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-highlight
+  .my-booking-persons
+  img:nth-child(3) {
+  left: -3rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-highlight
+  .my-booking-persons
+  img:nth-child(4) {
+  left: -4.5rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-highlight
+  button {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #fff;
+  border: 0;
+  background: transparent;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-title {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-title
+  > span:first-child {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: left;
+  color: #175db3;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-title
+  > span:last-child {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: right;
+  color: #ff6900;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-body
+  .my-booking-ele {
+  margin-bottom: 2rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #fefefe;
+  border: 1px solid #e8e8e8;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-body
+  .my-booking-ele
+  .divider {
+  margin-bottom: 0;
+  opacity: 1;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-body
+  .my-booking-ele
+  .my-booking-ele-top {
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-body
+  .my-booking-ele
+  .my-booking-ele-top
+  > span {
+  cursor: pointer;
+  height: 4rem;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #484848;
+  border: 1px solid #e8e8e8;
+  border-radius: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-body
+  .my-booking-ele
+  .my-booking-ele-top
+  > span
+  i {
+  font-size: 1.4rem;
+  color: #ff6900;
+  margin-left: 0.5rem;
+  font-weight: normal;
+  margin-left: 1rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-body
+  .my-booking-ele
+  .my-booking-ele-top
+  .you-may-like-element {
+  align-items: flex-start;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-body
+  .my-booking-ele
+  .my-booking-ele-top
+  .you-may-like-element
+  .info-header {
+  flex-wrap: wrap;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-body
+  .my-booking-ele
+  .my-booking-ele-top
+  .you-may-like-element
+  .info-header
+  .raiting {
+  margin-top: 1rem;
+  width: 100%;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-body
+  .my-booking-ele
+  .my-booking-ele-main {
+  height: 5rem;
+  background: #f5f4f4;
+  border-bottom: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-body
+  .my-booking-ele
+  .my-booking-ele-main
+  span {
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: left;
+  color: #d40562;
+  opacity: 1111;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-body
+  .my-booking-ele
+  .my-booking-ele-bottom {
+  padding: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-body
+  .my-booking-ele
+  .my-booking-ele-bottom
+  > div {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-body
+  .my-booking-ele
+  .my-booking-ele-bottom
+  > div:last-child {
+  margin-bottom: 0;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-body
+  .my-booking-ele
+  .my-booking-ele-bottom
+  > div
+  .my-booking-label {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #175db3;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-body
+  .my-booking-ele
+  .my-booking-ele-bottom
+  > div
+  .my-booking-value {
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+  display: flex;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-body
+  .my-booking-ele
+  .my-booking-ele-bottom
+  > div
+  .my-booking-value
+  .number {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #484848;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-body
+  .my-booking-ele
+  .my-booking-ele-bottom
+  > div
+  .my-booking-value
+  .number-sur-taktak {
+  font-weight: bold;
+  font-size: 11px;
+  color: #175db3;
+  opacity: 0.8;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-body
+  .my-booking-ele
+  .my-booking-ele-bottom
+  > div
+  .my-booking-value
+  .peoples {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-body
+  .my-booking-ele
+  .my-booking-ele-bottom
+  > div
+  .my-booking-value
+  .peoples
+  .people {
+  position: relative;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-body
+  .my-booking-ele
+  .my-booking-ele-bottom
+  > div
+  .my-booking-value
+  .peoples
+  .people
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-body
+  .my-booking-ele
+  .my-booking-ele-bottom
+  > div
+  .my-booking-value
+  .peoples
+  .people:nth-child(2) {
+  left: -1.25rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-body
+  .my-booking-ele
+  .my-booking-ele-bottom
+  > div
+  .my-booking-value
+  .peoples
+  .people:nth-child(3) {
+  left: -2.25rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-booking
+  .my-booking-body
+  .my-booking-ele
+  .my-booking-ele-bottom
+  > div
+  .my-booking-value
+  .peoples
+  .people:nth-child(4) {
+  left: -3.25rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-transactions-list
+  .my-transactions-list-header {
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-transactions-list
+  .my-transactions-list-header
+  .header-title {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: left;
+  color: #175db3;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-transactions-list
+  .my-transactions-list-header
+  > span {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: right;
+  color: #484848;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-transactions-list
+  .my-transactions-list-header
+  > span
+  i {
+  margin-left: 0.5rem;
+  font-size: 0.7rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-transactions-list
+  .my-transactions-list-body
+  .body-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-transactions-list
+  .my-transactions-list-body
+  .body-list-header
+  > span {
+  width: 10rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: left;
+  color: #c7c7c7;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-transactions-list
+  .body-list-body
+  .my-transaction-item {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  border: 1px solid #e8e8e8;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-transactions-list
+  .body-list-body
+  .my-transaction-item
+  .transaction-restaurant {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-transactions-list
+  .body-list-body
+  .my-transaction-item
+  .transaction-restaurant
+  img {
+  height: 4rem;
+  width: 4rem;
+  margin-right: 1rem;
+  display: block;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-transactions-list
+  .body-list-body
+  .my-transaction-item
+  .transaction-restaurant
+  > div {
+  display: flex;
+  flex-direction: column;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-transactions-list
+  .body-list-body
+  .my-transaction-item
+  .transaction-restaurant
+  > div
+  > span:first-child {
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: left;
+  color: #484848;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-transactions-list
+  .body-list-body
+  .my-transaction-item
+  .transaction-restaurant
+  > div
+  > span:last-child {
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.8;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-main
+  .tabs-content
+  .dashboard
+  .my-transactions-list
+  .body-list-body
+  .my-transaction-item
+  .transaction-item-value {
+  font-size: 1.6rem;
+  color: #131d28;
+  width: 10rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-secondary {
+  padding-left: 2rem;
+  width: 35%;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-secondary
+  .list-icon {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 40%;
+  padding-bottom: 0 !important;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-secondary
+  .list-icon
+  div {
+  display: flex;
+  flex-direction: column;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-secondary
+  .list-icon
+  div
+  i {
+  padding-bottom: 1rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-secondary
+  .list-icon
+  div
+  span {
+  color: #ff6900;
+  font-weight: 300;
+  font-size: 1.6rem;
+  text-align: center;
+  visibility: hidden;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-secondary
+  .list-icon
+  div:hover
+  i {
+  color: #ff6900;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-secondary
+  .list-icon
+  div:hover
+  span {
+  visibility: visible;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-secondary
+  .feed-secondary-gestuin-de-residus {
+  height: 9rem;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  margin: 3rem 0;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-secondary
+  .feed-secondary-gestuin-de-residus
+  .left-side
+  i {
+  color: #ff6900;
+  font-size: 2.6rem;
+  font-weight: normal;
+  margin-right: 3rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-secondary
+  .feed-secondary-gestuin-de-residus
+  .left-side
+  span {
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: left;
+  color: #ff6900;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-secondary
+  .feed-secondary-gestuin-de-residus
+  .question {
+  font-weight: normal;
+  font-size: 2.4rem;
+  text-align: center;
+  color: #484848;
+  opacity: 0.5;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-secondary
+  .feed-secondary-promo {
+  margin: 3rem 0;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-secondary
+  .feed-secondary-promo
+  .promo-header {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-secondary
+  .feed-secondary-promo
+  .promo-header
+  .title-header {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #175db3;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-secondary
+  .feed-secondary-promo
+  .promo-header
+  .arrows
+  i {
+  font-weight: normal;
+  font-size: 3rem;
+  text-align: center;
+  color: #ff6900;
+  cursor: pointer;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-secondary
+  .feed-secondary-promo
+  .promo-header
+  .arrows
+  i.promo-arrow-left {
+  margin-right: 3rem;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-secondary
+  .feed-secondary-promo
+  img {
+  width: 100%;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-secondary
+  .shared-component-location-bottom
+  .shared-component-adress-panneau {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 300;
+  font-size: 2.4rem;
+  text-align: left;
+  color: #ff6900;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-secondary
+  .f-shared {
+  padding: 10rem 0 10rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-secondary
+  .f-shared
+  .left-side
+  span {
+  font-size: 1.4rem;
+  color: #484848;
+  font-weight: normal;
+  opacity: 0.5;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-secondary
+  .f-shared
+  .right-side {
+  display: flex;
+  align-items: center;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-secondary
+  .f-shared
+  .right-side
+  span {
+  font-size: 1.4rem;
+  color: #484848;
+  font-weight: normal;
+  opacity: 0.5;
+}
+.profile-restaurant-page
+  .profile-restaurant-page-content
+  .profile-restaurant-page-content-feed
+  .feed-secondary
+  .f-shared
+  .right-side
+  i {
+  font-weight: normal;
+  color: #ff6900;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+.alerte-add-product {
+  position: sticky;
+  bottom: 0;
+  background-color: #d40562;
+  height: 8rem;
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8rem;
+}
+.alerte-add-product span {
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 4rem;
+  text-align: left;
+  color: #fff;
+}
+.alerte-add-product .close-alert-menu {
+  font-weight: normal;
+  font-size: 2rem;
+  text-align: left;
+  color: #fff;
+  cursor: pointer;
+}

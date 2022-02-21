@@ -1,0 +1,995 @@
+.autour-de-moi-page {
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  grid-template-columns: auto 1fr;
+  margin: 10px;  }
+  .autour-de-moi-page .autour-de-moi-page-content {
+    overflow-y: scroll;
+    padding-bottom: 20rem; }
+    .autour-de-moi-page .autour-de-moi-page-content::-webkit-scrollbar {
+      display: none; }
+    .autour-de-moi-page .autour-de-moi-page-content .navbar {
+      top: 0;
+      position: sticky;
+      z-index: 5555; }
+    .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more {
+      display: flex; }
+      .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed {
+        padding-bottom: 15rem;
+        position: relative;
+        width: 62%;
+        max-width: 675px; }
+        .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .card {
+          margin-bottom: 3rem; }
+        .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found {
+          margin-bottom: 3rem; }
+          .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-header {
+            display: flex;
+            align-items: center; }
+            .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-header .founds {
+              font-weight: 500;
+              font-size: 1.4rem;
+              text-align: left;
+              color: #484848;
+              opacity: 0.5;
+              margin-right: 2rem; }
+            .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-header .refresh {
+              font-weight: bold;
+              font-size: 1.4rem;
+              text-align: left;
+              color: #ff6900; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-header .refresh i {
+                margin-right: 1rem; }
+            .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-header .filter {
+              margin-left: auto;
+              display: flex;
+              align-items: center; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-header .filter span {
+                font-weight: bold;
+                font-size: 1.4rem;
+                text-align: right;
+                color: #484848; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-header .filter i {
+                font-weight: normal;
+                font-size: 1.4rem;
+                color: #484848;
+                margin-left: 1rem; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-header .filter:hover .filter-pane {
+                display: block; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-header .filter .filter-pane {
+                padding: 1rem 2rem;
+                background: #f7f7fa;
+                border: 1px solid #e8e8e8;
+                filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.15));
+                border-radius: 5px;
+                position: absolute;
+                top: 22.4rem !important;
+                right: -3px !important;
+                z-index: 1111;
+                height: 24rem;
+                width: 30rem;
+                display: none; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-header .filter .filter-pane .filter-header {
+                  font-weight: bold;
+                  font-size: 1.4rem;
+                  text-align: left;
+                  color: #484848;
+                  margin-bottom: 1.5rem;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-header .filter .filter-pane .filter-header i {
+                    font-weight: normal;
+                    font-size: 1.4rem;
+                    color: #484848; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-header .filter .filter-pane .filter-content {
+                  display: flex;
+                  flex-direction: column; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-header .filter .filter-pane .filter-content .content-title {
+                    font-weight: normal;
+                    font-size: 1.4rem;
+                    text-align: left;
+                    color: #484848;
+                    margin: 0.8rem 0;
+                    cursor: pointer; }
+                    .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-header .filter .filter-pane .filter-content .content-title:last-child {
+                      margin-bottom: 0; }
+                    .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-header .filter .filter-pane .filter-content .content-title:hover {
+                      color: #ff6900; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-header .filter .filter-pane .filter-content .clicked {
+                    color: #ff6900; }
+          .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-body {
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch; }
+            .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-body .restaurant-category {
+              display: inline-block;
+              width: 20rem;
+              height: 16rem;
+              background: #fff;
+              border: 1px solid #e8e8e8;
+              transition: all 0.3s;
+              border-radius: 5px;
+              margin-right: 2rem; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-body .restaurant-category:last-child {
+                margin-right: 0; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-body .restaurant-category .restaurant-category-inner {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-body .restaurant-category .restaurant-category-inner img {
+                  position: relative;
+                  top: 0;
+                  margin-bottom: 1rem;
+                  transition: all 0.3s; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-body .restaurant-category .restaurant-category-inner span {
+                  position: relative;
+                  top: 0;
+                  font-weight: bold;
+                  font-size: 1.4rem;
+                  text-align: center;
+                  color: #484848;
+                  opacity: 0.25;
+                  transition: all 0.3s; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-body .restaurant-category:hover {
+                background: #fff7f1; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-body .restaurant-category:hover img {
+                  top: -1rem; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .restaurants-found .restaurants-found-body .restaurant-category:hover span {
+                  top: 1rem; }
+        .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-header {
+          margin-bottom: 1rem; }
+          .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-header .header-top {
+            display: flex;
+            align-items: center; }
+            .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-header .header-top .header-title {
+              font-weight: bold;
+              font-size: 2.5rem;
+              text-align: left;
+              color: #175db3;
+              margin-right: 1rem; }
+            .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-header .header-top .header-number {
+              font-weight: 500;
+              font-size: 1.6rem;
+              text-align: left;
+              color: #484848;
+              opacity: 0.5; }
+            .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-header .header-top button {
+              margin-left: auto;
+              outline: none; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-header .header-top button i {
+                font-size: 0.4rem;
+                cursor: pointer; }
+          .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-header .header-bottom {
+            font-weight: normal;
+            font-size: 1.4rem;
+            line-height: 20px;
+            text-align: left;
+            color: #484848;
+            opacity: 1; }
+        .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body {
+          margin-bottom: 5rem; }
+          .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container {
+            border-radius: 5px;
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05)); }
+            .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide {
+              display: grid;
+              grid-template-columns: 40% auto; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-media {
+                height: 30rem;
+                width: 100%; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-media img {
+                  object-fit: cover;
+                  width: 100%;
+                  height: 100%; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info {
+                padding: 2rem; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-header {
+                  margin-bottom: 1rem;
+                  display: flex; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-header img {
+                    margin-right: 1rem;
+                    border-radius: 5px;
+                    height: 4rem;
+                    width: 4rem;
+                    object-fit: cover; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-header .name .restaurant-name {
+                    display: block;
+                    font-weight: bold;
+                    font-size: 1.8rem;
+                    text-align: left;
+                    color: #484848; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-header .name .restaurant-location {
+                    font-weight: normal;
+                    font-size: 1.4rem;
+                    text-align: left;
+                    color: #484848;
+                    opacity: 0.8; }
+                    .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-header .name .restaurant-location i {
+                      margin-right: 0.5rem; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-header .raiting {
+                    margin-left: auto; }
+                    .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-header .raiting i {
+                      font-weight: normal;
+                      font-size: 1rem;
+                      color: #ffa500; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-body .time {
+                  margin-bottom: 1rem;
+                  display: flex;
+                  align-items: center; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-body .time i {
+                    margin-right: 1rem;
+                    color: #484848;
+                    font-size: 1.4rem; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-body .time .title {
+                    font-weight: bold;
+                    font-size: 1.4rem;
+                    text-align: left;
+                    color: #175db3;
+                    margin-right: 1rem; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-body .time .status {
+                    display: flex;
+                    align-items: center;
+                    height: 2rem;
+                    border-radius: 3px;
+                    background: #5ecc73;
+                    padding: 0 0.5rem;
+                    font-weight: bold;
+                    font-size: 1rem;
+                    text-align: center;
+                    color: #fff;
+                    text-transform: uppercase; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-body .time ._time {
+                    margin-left: auto;
+                    font-weight: normal;
+                    font-size: 1.4rem;
+                    text-align: left;
+                    color: #484848; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-body .info {
+                  margin-bottom: 2rem; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-body .info i {
+                    font-size: 1.4rem;
+                    margin-right: 0.5rem;
+                    color: #484848; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-body .info .title {
+                    font-weight: bold;
+                    font-size: 1.4rem;
+                    text-align: left;
+                    color: #175db3;
+                    margin-right: 1rem; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-body .info ._info {
+                    max-width: 20rem;
+                    padding-left: 1.5rem;
+                    font-weight: normal;
+                    font-size: 1.2rem;
+                    line-height: 1.6rem;
+                    text-align: left;
+                    color: #484848; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-body .people-was-here {
+                  display: flex;
+                  align-items: center; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-body .people-was-here .peoples {
+                    display: flex; }
+                    .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-body .people-was-here .peoples .people {
+                      position: relative;
+                      left: 0;
+                      width: 2.5rem;
+                      height: 2.5rem;
+                      border-radius: 100%;
+                      border: 1px solid white; }
+                      .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-body .people-was-here .peoples .people img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover; }
+                      .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-body .people-was-here .peoples .people:nth-child(2) {
+                        left: -1.25rem; }
+                      .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-body .people-was-here .peoples .people:nth-child(3) {
+                        left: -2.25rem; }
+                      .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-body .people-was-here .peoples .people:nth-child(4) {
+                        left: -3.25rem; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-body .people-was-here span {
+                    position: relative;
+                    left: -2rem;
+                    font-size: 1.1rem;
+                    text-align: left;
+                    color: #484848;
+                    opacity: 0.8; }
+                    .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-container .orbit-slide .slide-info .slide-info-body .people-was-here span strong {
+                      font-weight: bold;
+                      color: #175db3; }
+          .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 3rem; }
+            .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-bottom .arrow {
+              outline: none; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-bottom .arrow i {
+                font-weight: 500;
+                color: #ff6900;
+                cursor: pointer; }
+            .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-bottom .orbit-bullets {
+              margin: 0 5rem; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-bottom .orbit-bullets button {
+                background: #484848;
+                height: 1rem;
+                width: 1rem;
+                margin-right: 2rem;
+                outline: none;
+                cursor: pointer; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-bottom .orbit-bullets button.is-active {
+                  background: #ff6900; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .best-of-taktak .best-of-taktak-body .orbit .orbit-bottom .orbit-bullets button:last-child {
+                  margin-right: 0; }
+        .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .header-title {
+          display: flex;
+          align-items: center; }
+          .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .header-title .nbr {
+            font-weight: 500;
+            font-size: 1.6rem;
+            text-align: left;
+            color: #484848;
+            opacity: 0.5;
+            margin-left: 3rem; }
+        .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants {
+          margin-bottom: 3rem; }
+          .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-header {
+            margin-bottom: 2rem;
+            margin-bottom: 1rem; }
+            .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-header .header-top {
+              display: flex;
+              align-items: center; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-header .header-top .header-title {
+                font-weight: bold;
+                font-size: 2.5rem;
+                text-align: left;
+                color: #175db3;
+                margin-right: 1rem; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-header .header-top .header-number {
+                font-weight: 500;
+                font-size: 1.6rem;
+                text-align: left;
+                color: #484848;
+                opacity: 0.5; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-header .header-top button {
+                margin-left: auto;
+                outline: none; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-header .header-top button i {
+                  font-size: 0.4rem;
+                  cursor: pointer; }
+            .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-header .header-bottom {
+              font-weight: normal;
+              font-size: 1.4rem;
+              line-height: 2rem;
+              text-align: left;
+              color: #484848;
+              opacity: 1; }
+          .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 2rem; }
+            .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant {
+              max-height: 24.5rem;
+              overflow: hidden;
+              border-radius: 5px;
+              background: #fff;
+              border: 1px solid #e8e8e8;
+              filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05)); }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-header {
+                height: 13rem;
+                width: 100%;
+                transition: all 0.3s; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-header img {
+                  border-top-left-radius: 5px;
+                  border-top-right-radius: 5px;
+                  height: 100%;
+                  width: 100%;
+                  object-fit: cover; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-body {
+                padding: 1rem; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-body .soft-restaurant-body-header {
+                  margin-bottom: 1rem;
+                  display: flex;
+                  align-items: center; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-body .soft-restaurant-body-header img {
+                    margin-right: 1rem;
+                    border-radius: 5px;
+                    height: 4rem;
+                    width: 4rem;
+                    object-fit: cover; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-body .soft-restaurant-body-header .name .restaurant-name {
+                    display: block;
+                    font-weight: bold;
+                    font-size: 1.8rem;
+                    text-align: left;
+                    color: #484848; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-body .soft-restaurant-body-header .name .restaurant-location {
+                    font-weight: normal;
+                    font-size: 1.4rem;
+                    text-align: left;
+                    color: #484848;
+                    opacity: 0.8; }
+                    .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-body .soft-restaurant-body-header .name .restaurant-location i {
+                      margin-right: 0.5rem; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-body .soft-restaurant-body-header .raiting {
+                    margin-left: auto; }
+                    .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-body .soft-restaurant-body-header .raiting i {
+                      font-size: 1.1rem;
+                      color: #ffa500;
+                      font-weight: normal; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer {
+                  padding-left: 5rem; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here {
+                    display: flex;
+                    align-items: center; }
+                    .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here .peoples {
+                      display: flex; }
+                      .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here .peoples .people {
+                        position: relative;
+                        left: 0;
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        border-radius: 100%;
+                        border: 1px solid white; }
+                        .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here .peoples .people img {
+                          width: 100%;
+                          height: 100%;
+                          object-fit: cover; }
+                        .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here .peoples .people:nth-child(2) {
+                          left: -1.25rem; }
+                        .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here .peoples .people:nth-child(3) {
+                          left: -2.25rem; }
+                        .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here .peoples .people:nth-child(4) {
+                          left: -3.25rem; }
+                    .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here span {
+                      position: relative;
+                      left: -2rem;
+                      font-size: 1.1rem;
+                      text-align: left;
+                      color: #484848;
+                      opacity: 0.8; }
+                      .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here span strong {
+                        font-weight: bold;
+                        color: #175db3; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-body .soft-restaurant-body-invisible {
+                  transition: all 0.1s;
+                  opacity: 0;
+                  padding-left: 5rem;
+                  display: flex;
+                  align-items: center;
+                  padding-top: 2rem; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-body .soft-restaurant-body-invisible .promo .promo-name {
+                    font-weight: bold;
+                    font-size: 1.1rem;
+                    text-align: left;
+                    color: #d40562; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-body .soft-restaurant-body-invisible button {
+                    margin-left: auto;
+                    height: 4rem;
+                    color: white;
+                    background: #ffa500;
+                    padding: 0 1rem;
+                    border-radius: 5px;
+                    font-weight: normal;
+                    font-size: 1.4rem;
+                    text-align: left;
+                    color: #fff;
+                    outline: none;
+                    cursor: pointer; }
+                    .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant .soft-restaurant-body .soft-restaurant-body-invisible button i {
+                      margin-right: 1rem; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant:hover .soft-restaurant-header {
+                height: 8rem; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-body .soft-restaurant:hover .soft-restaurant-body .soft-restaurant-body-invisible {
+                opacity: 1; }
+          .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-footer {
+            display: grid;
+            grid-template-columns: 2fr 1fr 2fr;
+            align-items: center;
+            justify-content: center;
+            margin: 3rem 0; }
+            .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-footer span {
+              font-weight: bold;
+              font-size: 1.4rem;
+              color: #484848;
+              opacity: 0.3;
+              margin: 0 2rem;
+              text-align: center;
+              cursor: context-menu; }
+            .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .autour-de-moi-page-content-inner-feed .soft-restaurants .soft-restaurants-footer .line {
+              width: 100%;
+              height: 1px;
+              background-color: #e8e8e8; }
+      .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more {
+        padding-left: 2rem;
+        width: 38%; }
+        .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps {
+          position: relative;
+          margin-bottom: 2rem; }
+          .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .small-circle {
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: #ff6900;
+            border-radius: 100%;
+            position: absolute;
+            top: 31rem;
+            right: 16rem; }
+          .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .big-circle {
+            width: 16rem;
+            height: 16rem;
+            background: rgba(255, 105, 0, 0.1);
+            border: 1px solid rgba(253, 106, 0, 0.5);
+            position: absolute;
+            border-radius: 100%;
+            top: 24rem;
+            right: 9rem; }
+          .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .country-dropdown {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            height: 7.7rem;
+            width: 90%;
+            background: white;
+            display: flex;
+            align-items: center;
+            padding: 0 2rem; }
+            .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .country-dropdown .country {
+              background: transparent;
+              box-shadow: none;
+              border: 0;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              font-weight: 500;
+              font-size: 2.4rem;
+              text-align: left;
+              color: #484848;
+              transition: all 0.3s;
+              margin-bottom: 0;
+              width: 100%; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .country-dropdown .country .bars {
+                cursor: pointer;
+                font-size: 3rem;
+                font-weight: 300; }
+            .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .country-dropdown .drop-pa {
+              padding: 2rem;
+              border: 0;
+              display: none;
+              width: 100%;
+              border-radius: 5px;
+              background: #fff;
+              box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.16);
+              position: absolute;
+              top: 0 !important;
+              z-index: 444;
+              transition: 0.3s;
+              left: -1px !important; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .country-dropdown .drop-pa .dropdown-top {
+                position: relative;
+                margin-bottom: 4rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .country-dropdown .drop-pa .dropdown-top i {
+                  font-size: 3rem;
+                  color: #484848;
+                  font-weight: normal;
+                  cursor: pointer; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .country-dropdown .drop-pa .dropdown-top span {
+                  font-weight: normal;
+                  font-size: 2.4rem;
+                  text-align: left;
+                  color: #484848;
+                  opacity: 0.5; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .country-dropdown .drop-pa .chosen-country {
+                margin: 3rem 0;
+                display: flex;
+                align-items: center; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .country-dropdown .drop-pa .chosen-country > img {
+                  margin-right: 2rem;
+                  height: 4rem;
+                  width: 4rem;
+                  display: block; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .country-dropdown .drop-pa .chosen-country > span {
+                  font-weight: 300;
+                  font-size: 3rem;
+                  text-align: left;
+                  color: #484848; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .country-dropdown .drop-pa .countries {
+                max-height: 25rem;
+                overflow-y: scroll; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .country-dropdown .drop-pa .countries .country {
+                  cursor: pointer;
+                  margin-bottom: 2rem;
+                  display: flex;
+                  align-items: center; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .country-dropdown .drop-pa .countries .country > img {
+                    display: block;
+                    height: 4rem;
+                    width: 4rem;
+                    margin-right: 2rem; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .country-dropdown .drop-pa .countries .country > span {
+                    font-weight: 300;
+                    font-size: 2rem;
+                    text-align: left;
+                    color: #484848; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .country-dropdown .drop-pa .countries .country-with-lettre {
+                  display: flex;
+                  justify-content: space-between; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .country-dropdown .drop-pa .countries .country-with-lettre div {
+                    cursor: pointer;
+                    margin-bottom: 2rem;
+                    display: flex;
+                    align-items: center; }
+                    .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .country-dropdown .drop-pa .countries .country-with-lettre div > img {
+                      display: block;
+                      height: 4rem;
+                      width: 4rem;
+                      margin-right: 2rem; }
+                    .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .country-dropdown .drop-pa .countries .country-with-lettre div > span {
+                      font-weight: 300;
+                      font-size: 2rem;
+                      text-align: left;
+                      color: #484848; }
+                  .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .country-dropdown .drop-pa .countries .country-with-lettre .lettre {
+                    width: 5rem;
+                    height: 5rem;
+                    background-color: #FFA500;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 2rem; }
+                    .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .country-dropdown .drop-pa .countries .country-with-lettre .lettre span {
+                      color: white;
+                      font-size: 2.4rem; }
+          .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .maps-bottom {
+            position: absolute;
+            bottom: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            left: 3rem;
+            grid-gap: 1rem; }
+            .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .maps-bottom .gps {
+              width: 6rem;
+              height: 6rem;
+              background-color: white;
+              border-radius: 5px;
+              cursor: pointer;
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .maps-bottom .gps i {
+                color: #ff6900;
+                font-size: 2.2rem;
+                font-weight: normal;
+                cursor: pointer; }
+            .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .maps-bottom .search {
+              background-color: white;
+              width: 26rem;
+              height: 6rem;
+              border-radius: 5px;
+              padding: 0 2rem;
+              display: flex;
+              align-items: center; }
+              @media (max-width: 1000px) {
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .maps-bottom .search {
+                  width: 22rem; } }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .maps-bottom .search i {
+                font-size: 2.2rem;
+                color: #ff6900;
+                font-weight: normal;
+                margin-right: 1rem;
+                cursor: pointer; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .maps-bottom .search .progress-bar {
+                background-color: #E8E8E8;
+                height: 1px;
+                width: 13rem;
+                margin-right: 1rem;
+                overflow: hidden; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .maps-bottom .search .progress-bar .progress-bar__inner {
+                  position: relative;
+                  display: block;
+                  height: 6px;
+                  background-color: #ff6900;
+                  width: 55%; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .maps-bottom .search .progress-bar .cursor {
+                  position: absolute;
+                  top: 2.2rem;
+                  right: 13rem;
+                  width: 1.6rem;
+                  height: 1.6rem;
+                  background-color: white;
+                  border-radius: 100%;
+                  border: 3px solid #ff6900;
+                  cursor: pointer; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .maps-bottom .search .progress-bar:hover .progress-bar__inner {
+                  width: 85%; }
+                .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .maps-bottom .search .progress-bar:hover .cursor {
+                  right: 9rem; }
+              .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-page-content-inner-feed-and-more .more .location-maps .maps-bottom .search span {
+                font-weight: normal;
+                font-size: 1.4rem;
+                text-align: left;
+                color: #484848; }
+    .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .content-header {
+      margin-bottom: 2rem; }
+      .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .content-header .man-2min {
+        display: block;
+        margin: auto;
+        margin-bottom: 2rem; }
+      .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .content-header .header-title,
+      .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .content-header .header-description,
+      .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .content-header .header-helper {
+        font-weight: bold;
+        font-size: 1.6rem;
+        text-align: center;
+        color: #484848;
+        display: block; }
+      .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .content-header .header-description {
+        font-weight: normal;
+        margin-bottom: 2rem; }
+      .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .content-header .header-helper {
+        margin-bottom: 4rem;
+        color: #808080;
+        font-weight: normal; }
+    .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .content-body .orbit .orbit-wrapper {
+      background: #f8f7fa;
+      border: 1px solid #e8e8e8;
+      filter: drop-shadow(6px 6px 10px rgba(0, 0, 0, 0.05));
+      padding: 4rem; }
+      .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .content-body .orbit .orbit-wrapper .orbit-container {
+        outline: none; }
+        .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .content-body .orbit .orbit-wrapper .orbit-container:focus {
+          outline: none; }
+      .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .content-body .orbit .orbit-wrapper .orbit-slide .slide-title {
+        display: block;
+        text-align: center;
+        font-weight: 300;
+        font-size: 3.4rem;
+        text-align: center;
+        color: #484848;
+        margin-bottom: 2rem; }
+      .slide-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem; }
+        .slide-content .food-category {
+          justify-self: center;
+          height: 16rem;
+          width: 20rem;
+          background: white;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+          border: 1px solid #e8e8e8;
+          transition: all 0.2s; }
+          .slide-content .food-category .category-img {
+            position: relative;
+            bottom: 0;
+            margin-bottom: 1.5rem;
+            transition: all 0.2s; }
+          .slide-content .food-category .category-name {
+            position: relative;
+            bottom: 0;
+            font-weight: bold;
+            font-size: 1.4rem;
+            text-align: center;
+            color: #484848;
+            opacity: 0.25;
+            transition: all 0.2s; }
+          .slide-content .food-category:hover {
+            background: #fff7f1; }
+            .slide-content .food-category:hover .category-img {
+              bottom: 1rem; }
+            .slide-content .food-category:hover .category-name {
+              bottom: -1rem;
+              color: #ff6900;
+              opacity: 1; }
+
+      .slide-content-three {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        margin-top: 10%; }
+        .slide-content-three .food-category {
+          justify-self: center;
+          height: 16rem;
+          width: 20rem;
+          background: white;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+          border: 1px solid #e8e8e8;
+          transition: all 0.2s; }
+          .slide-content-three .food-category .category-img {
+            position: relative;
+            bottom: 0;
+            margin-bottom: 1.5rem;
+            transition: all 0.2s; }
+          .slide-content-three .food-category .category-name {
+            position: relative;
+            bottom: 0;
+            font-weight: bold;
+            font-size: 1.4rem;
+            text-align: center;
+            color: #484848;
+            opacity: 0.25;
+            transition: all 0.2s; }
+          .slide-content-three .food-category:hover {
+            background: #fff7f1; }
+           .slide-content-three .food-category:hover .category-img {
+              bottom: 1rem; }
+           .slide-content-three .food-category:hover .category-name {
+              bottom: -1rem;
+              color: #ff6900;
+              opacity: 1; }
+
+    .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .content-body .orbit .orbit-bullets {
+      margin-top: 2rem; }
+      .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .content-body .orbit .orbit-bullets button {
+        margin-right: 2rem;
+        height: 1rem;
+        width: 1rem;
+        background: #484848; }
+        .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .content-body .orbit .orbit-bullets button.is-active {
+          background: #ff6900; }
+        .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .content-body .orbit .orbit-bullets button:last-child {
+          margin-right: 0; }
+    .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-loading {
+      display: none; }
+      .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-loading .loading-inner {
+        min-height: 37rem;
+        margin-bottom: 6rem;
+        position: relative; }
+        .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-loading .loading-inner canvas {
+          display: block;
+          margin: auto; }
+        .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-loading .loading-inner .chief {
+          position: absolute;
+          left: 3.7rem;
+          right: 0;
+          bottom: 0;
+          top: 0;
+          margin: auto; }
+      .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-loading .loading-info {
+        max-width: 400px;
+        display: block;
+        margin: auto; }
+        .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-loading .loading-info span,
+        .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-loading .loading-info p {
+          text-align: center;
+          display: block;
+          font-weight: bold;
+          font-size: 1.6rem;
+          text-align: center;
+          color: #484848;
+          margin-bottom: 2rem; }
+        .autour-de-moi-page .autour-de-moi-page-content .autour-de-moi-page-content-inner .autour-de-moi-loading .loading-info p {
+          font-weight: normal; }
+
+.wrapper {
+  width: 100%;
+  padding-top: 1rem;
+  text-align: center;
+  position: relative; }
+
+h2 {
+  font-family: sans-serif;
+  color: #fff; }
+
+.carousel {
+  width: 90%;
+  margin: 0px auto; }
+
+.slick-slide {
+  margin: 1rem; }
+
+.slick-dots {
+  visibility: hidden !important; }
+
+.slick-list {
+  height: 18rem !important; }
+
+.slick-slide {
+  white-space: nowrap;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  height: 16rem !important;
+  width: 21rem !important;
+  display: inline-block; }
+  .slick-slide .restaurant-category {
+    background: #fff;
+    transition: all 0.3s;
+    margin-right: 2rem; }
+    .slick-slide .restaurant-category:last-child {
+      margin-right: 0; }
+    .slick-slide .restaurant-category .restaurant-category-inner {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .slick-slide .restaurant-category .restaurant-category-inner img {
+        position: relative;
+        top: 0;
+        margin-bottom: 1rem;
+        transition: all 0.3s; }
+      .slick-slide .restaurant-category .restaurant-category-inner span {
+        position: relative;
+        top: 0;
+        font-weight: bold;
+        font-size: 1.4rem;
+        text-align: center;
+        color: #484848;
+        opacity: 0.25;
+        transition: all 0.3s; }
+    .slick-slide .restaurant-category:hover {
+      background: #fff7f1; }
+      .slick-slide .restaurant-category:hover img {
+        top: -1rem; }
+      .slick-slide .restaurant-category:hover span {
+        top: 1rem; }
+
+.slick-track {
+  height: 16rem !important;
+  width: 250rem !important; }
+
+.slick-prev {
+  visibility: hidden; }
+
+.prev-btn {
+  width: 5rem;
+  height: 5rem;
+  background-color: #e8e8e8;
+  opacity: 0.9;
+  border-radius: 50%;
+  position: absolute;
+  top: 8.5rem;
+  z-index: 4;
+  left: -1.2rem;
+  cursor: pointer; }
+  .prev-btn .arr-prev {
+    position: absolute;
+    z-index: 4;
+    font-size: 2rem;
+    color: #484848;
+    top: 1.6rem;
+    left: 1.6rem;
+    font-weight: normal;
+    opacity: 1;
+    cursor: pointer; }
+
+.next-btn {
+  width: 5rem;
+  height: 5rem;
+  background-color: #e8e8e8;
+  opacity: 0.9;
+  border-radius: 50%;
+  position: absolute;
+  top: 8.5rem;
+  z-index: 4;
+  right: -1.2rem;
+  cursor: pointer; }
+  .next-btn .arr-next {
+    position: absolute;
+    z-index: 4;
+    font-size: 2rem;
+    color: #484848;
+    top: 1.6rem;
+    right: 1.6rem;
+    font-weight: normal;
+    opacity: 1;
+    cursor: pointer; }

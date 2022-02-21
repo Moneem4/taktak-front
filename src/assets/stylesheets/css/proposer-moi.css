@@ -1,0 +1,757 @@
+.proposer-moi-page {
+  overflow: hidden;
+  height: 100vh;
+  /*display: grid;*/
+  display: flex;
+  grid-template-columns: auto 1fr; }
+  .proposer-moi-page .proposer-moi-page-content {
+    overflow-y: scroll; }
+    .proposer-moi-page .proposer-moi-page-content::-webkit-scrollbar {
+      display: none; }
+    .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed {
+      display: flex; }
+      .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main {
+        padding-bottom: 15rem;
+        position: relative;
+        width: 75%; }
+        .which-restaurant {
+          margin-bottom: 3rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 16rem;
+          padding: 0 4rem;
+          background: url("../../img/filtretinder.png") no-repeat;
+          border-radius: 5px;
+          position: relative; }
+          .which-restaurant .which-restaurant-left .which-restaurant-title {
+            margin-bottom: 1rem;
+            font-weight: 300;
+            font-size: 4rem;
+            text-align: center;
+            color: #fff; }
+          .which-restaurant .which-restaurant-left .refresh {
+            display: flex;
+            align-items: center; }
+            .which-restaurant .which-restaurant-left .refresh i {
+              color: white;
+              font-size: 1.4rem;
+              margin-right: 1rem;
+              font-weight: normal; }
+            .which-restaurant .which-restaurant-left .refresh .refresh-text {
+              font-weight: bold;
+              font-size: 1.4rem;
+              text-align: left;
+              color: #fff;
+              cursor: pointer; }
+          .which-restaurant .which-restaurant-right .params {
+            position: absolute;
+            top: 6.5rem;
+            right: 4rem;
+            cursor: pointer;
+            font-size: 3rem;
+            color: white;
+            font-weight: normal; }
+          .which-restaurant .which-restaurant-right #navigation-restaurant {
+            position: absolute;
+            left: -.8rem !important;
+            top: 0px !important;
+            border: 0;
+            width: calc(100% + 1.5rem);
+            border-radius: 5px;
+            background: #fff;
+            visibility: visible;
+            height: 74rem;
+            background: #fff;
+            border: 1px solid #e8e8e8; }
+            .which-restaurant .which-restaurant-right #navigation-restaurant .affiner-header {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 4rem 2rem 2rem 2rem; }
+              .which-restaurant .which-restaurant-right #navigation-restaurant .affiner-header span {
+                font-weight: 300;
+                font-size: 4rem;
+                color: #484848; }
+              .which-restaurant .which-restaurant-right #navigation-restaurant .affiner-header .paramas-setting {
+                font-size: 3rem;
+                font-weight: normal;
+                color: #484848;
+                cursor: pointer; }
+            .which-restaurant .which-restaurant-right #navigation-restaurant .food-categories {
+              overflow-x: scroll;
+              overflow-y: hidden;
+              white-space: nowrap;
+              -webkit-overflow-scrolling: touch;
+              display: flex; }
+              .which-restaurant .which-restaurant-right #navigation-restaurant .food-categories .card-ingredients {
+                display: inline-block !important;
+                margin: 3rem 1rem;
+                position: relative;
+                cursor: pointer;
+                width: 12rem;
+                height: 13rem;
+                background: #fff;
+                border: 1px solid #e8e8e8;
+                padding: 2rem;
+                transition: all 0.3s;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center; }
+                .which-restaurant .which-restaurant-right #navigation-restaurant .food-categories .card-ingredients .card-ingredients-header {
+                  display: flex;
+                  justify-content: center; }
+                  .which-restaurant .which-restaurant-right #navigation-restaurant .food-categories .card-ingredients .card-ingredients-header img {
+                    height: 5.6rem;
+                    width: 5.6rem; }
+                .which-restaurant .which-restaurant-right #navigation-restaurant .food-categories .card-ingredients .card-ingredients-body {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center; }
+                  .which-restaurant .which-restaurant-right #navigation-restaurant .food-categories .card-ingredients .card-ingredients-body .username {
+                    padding-top: 1rem;
+                    font-weight: bold;
+                    font-size: 1.4rem;
+                    text-align: center;
+                    color: #484848;
+                    opacity: 0.25; }
+                .which-restaurant .which-restaurant-right #navigation-restaurant .food-categories .card-ingredients .card-ingredients-footer {
+                  position: absolute;
+                  opacity: 0;
+                  left: 0;
+                  right: 0;
+                  margin: auto;
+                  bottom: 2rem;
+                  transition: all 0.3s;
+                  display: flex;
+                  justify-content: center; }
+                  .which-restaurant .which-restaurant-right #navigation-restaurant .food-categories .card-ingredients .card-ingredients-footer .follow-button {
+                    height: 4rem;
+                    padding: 0 1rem;
+                    background: #484848;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 5px;
+                    position: absolute;
+                    bottom: 6rem; }
+                    .which-restaurant .which-restaurant-right #navigation-restaurant .food-categories .card-ingredients .card-ingredients-footer .follow-button span {
+                      margin-left: 1rem;
+                      font-weight: normal;
+                      font-size: 2rem;
+                      font-weight: bold;
+                      color: white; }
+            .which-restaurant .which-restaurant-right #navigation-restaurant .choose-gouvernerat {
+              padding: 0 2rem;
+              height: 7.7rem;
+              border-radius: 5px;
+              background: #fff;
+              border: 1px solid #f0f0f0;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin: 3rem 0; }
+              .which-restaurant .which-restaurant-right #navigation-restaurant .choose-gouvernerat span, .which-restaurant .which-restaurant-right #navigation-restaurant .choose-gouvernerat i {
+                font-weight: normal;
+                font-size: 2.4rem;
+                text-align: left;
+                color: #484848; }
+            .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options {
+              padding: 0 2rem; }
+              .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .header {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 12rem;
+                margin-bottom: 2rem; }
+                .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .header span {
+                  font-weight: 300;
+                  font-size: 3rem;
+                  text-align: left;
+                  color: #ff6900; }
+                  .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .header span .single {
+                    font-weight: 300;
+                    font-size: 1.2rem;
+                    color: #ff6900; }
+              .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 12rem;
+                margin-bottom: 1rem; }
+                .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item {
+                  display: flex;
+                  align-items: center; }
+                  .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item .checkbox {
+                    position: absolute;
+                    left: -9999px;
+                    visibility: hidden; }
+                    .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item .checkbox + label {
+                      position: relative;
+                      display: inline-block;
+                      padding: 1.2rem;
+                      cursor: pointer; }
+                      .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item .checkbox + label:before, .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item .checkbox + label:after {
+                        position: absolute;
+                        top: 0;
+                        content: '';
+                        border-radius: 1px; }
+                      .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item .checkbox + label:before {
+                        top: 0.2rem;
+                        left: 0;
+                        width: 2rem;
+                        height: 2rem;
+                        border: 1px solid #CCC;
+                        background-color: white;
+                        border-radius: 3px; }
+                      .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item .checkbox + label:after {
+                        /* hidden */
+                        width: 0;
+                        height: 0; }
+                    .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item .checkbox:checked + label:before {
+                      background-color: white; }
+                    .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item .checkbox:checked + label:after {
+                      width: 0.6rem;
+                      height: 1.3rem;
+                      top: 0.3rem;
+                      left: 0.8rem;
+                      color: #fff;
+                      border-top: 2px solid transparent;
+                      border-left: 2px solid transparent;
+                      border-right: 2px solid #ff6900;
+                      border-bottom: 2px solid #ff6900;
+                      -webkit-transform: rotate(37deg);
+                      -ms-transform: rotate(37deg);
+                      -o-transform: rotate(37deg);
+                      transform: rotate(37deg); }
+                    .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item .checkbox:disabled + label {
+                      color: #CCC; }
+                      .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item .checkbox:disabled + label:before {
+                        border-color: #CCC;
+                        background-color: #F2F2F2;
+                        box-shadow: none; }
+                      .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item .checkbox:disabled + label:after {
+                        /* hidden */
+                        width: 0;
+                        height: 0; }
+                  .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item .checkbox2 {
+                    position: absolute;
+                    left: -9999px;
+                    visibility: hidden; }
+                    .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item .checkbox2 + label {
+                      position: relative;
+                      display: inline-block;
+                      padding: 1.2rem;
+                      cursor: pointer; }
+                      .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item .checkbox2 + label:before, .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item .checkbox2 + label:after {
+                        position: absolute;
+                        top: 0;
+                        content: '';
+                        border-radius: 1px; }
+                      .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item .checkbox2 + label:before {
+                        top: 0.2rem;
+                        left: 0;
+                        width: 2rem;
+                        height: 2rem;
+                        border: 1px solid #CCC;
+                        background-color: white;
+                        border-radius: 13px; }
+                      .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item .checkbox2 + label:after {
+                        /* hidden */
+                        width: 0;
+                        height: 0; }
+                    .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item .checkbox2:checked + label:before {
+                      background-color: white; }
+                    .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item .checkbox2:checked + label:after {
+                      width: 1rem;
+                      height: 1rem;
+                      top: 0.7rem;
+                      left: 0.5rem;
+                      border-radius: 50%;
+                      background-color: #ff6900; }
+                    .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item .checkbox2:disabled + label {
+                      color: #CCC; }
+                      .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item .checkbox2:disabled + label:before {
+                        border-color: #CCC;
+                        background-color: #F2F2F2;
+                        box-shadow: none; }
+                      .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item .checkbox2:disabled + label:after {
+                        /* hidden */
+                        width: 0;
+                        height: 0; }
+                  .which-restaurant .which-restaurant-right #navigation-restaurant .choose-options .options .item span {
+                    font-weight: normal;
+                    font-size: 1.8rem;
+                    text-align: left;
+                    color: #484848; }
+        .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider {
+          display: block;
+          margin: auto; }
+          .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider {
+            margin: 0 2rem;
+            position: relative;
+            outline: none;
+            display: flex;
+            flex-direction: column;
+            height: 57rem;
+            width: 48rem;
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: 5px;
+            filter: drop-shadow(6px 6px 16px rgba(0, 0, 0, 0.05));
+            filter: blur(1px);
+            transition: all 0.4s;
+            position: relative;
+            left: -20rem; }
+            .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider.slick-current {
+              z-index: 9;
+              filter: blur(0);
+              transform: scale(1); }
+            .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider.slick-snext {
+              transform: translate3d(-80%, 0, -10px) scale(0.9) rotate(5deg); }
+            .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider.slick-sprev {
+              transform: translate3d(80%, 0, -10px) scale(0.9) rotate(-5deg); }
+            .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-media {
+              height: 24rem;
+              width: 100%; }
+              .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-media img {
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                object-fit: cover;
+                height: 100%;
+                width: 100%; }
+            .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-info {
+              position: relative;
+              top: -3rem; }
+              .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-info .info-logo {
+                margin-bottom: 1rem;
+                display: block;
+                margin: auto;
+                height: 6rem;
+                width: 6rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: white;
+                border-radius: 5px; }
+                .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-info .info-logo img {
+                  height: 4rem;
+                  width: 4rem; }
+              .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-info .info-name {
+                margin-bottom: 1rem;
+                display: block;
+                font-weight: bold;
+                font-size: 1.8rem;
+                text-align: center;
+                color: #484848; }
+              .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-info .rating {
+                margin-bottom: 1rem;
+                display: flex;
+                justify-content: center; }
+                .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-info .rating i {
+                  font-weight: normal;
+                  font-size: 1rem;
+                  text-align: left;
+                  color: #ffa500; }
+                .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-info .rating span {
+                  color: #e2e2e2; }
+                  .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-info .rating span.checked {
+                    color: #ffa500; }
+              .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-info .info-description {
+                font-weight: normal;
+                font-size: 1.4rem;
+                text-align: center;
+                color: #484848;
+                max-width: 80%;
+                display: block;
+                margin: auto; }
+            .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-bottom {
+              padding: 0 2rem;
+              display: flex;
+              align-items: center;
+              margin-top: auto;
+              margin-bottom: 2rem; }
+              .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-bottom .people-was-here {
+                display: flex;
+                align-items: center; }
+                .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-bottom .people-was-here .peoples {
+                  display: flex; }
+                  .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-bottom .people-was-here .peoples .people {
+                    position: relative;
+                    left: 0;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    border-radius: 100%;
+                    border: 1px solid white; }
+                    .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-bottom .people-was-here .peoples .people img {
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover; }
+                    .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-bottom .people-was-here .peoples .people:nth-child(2) {
+                      left: -1.25rem; }
+                    .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-bottom .people-was-here .peoples .people:nth-child(3) {
+                      left: -2.25rem; }
+                    .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-bottom .people-was-here .peoples .people:nth-child(4) {
+                      left: -3.25rem; }
+                .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-bottom .people-was-here span {
+                  position: relative;
+                  left: -2rem;
+                  font-size: 1.1rem;
+                  text-align: left;
+                  color: #484848;
+                  opacity: 0.8; }
+                  .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-bottom .people-was-here span strong {
+                    font-weight: bold;
+                    color: #175db3; }
+              .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-bottom .follow {
+                height: 4rem;
+                border-radius: 5px;
+                border-radius: 5px;
+                background: #fff;
+                border: 1px solid #e8e8e8;
+                padding: 0 1rem;
+                font-weight: normal;
+                font-size: 1.4rem;
+                text-align: left;
+                color: #484848;
+                outline: none; }
+                .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-bottom .follow.btn {
+                  margin-left: auto;
+                  outline: none; }
+                .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-bottom .follow i {
+                  color: #ff6900;
+                  padding-right: 1.5rem; }
+                .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .suggest-restaurant-slider .one-slider .one-slider-bottom .follow.send {
+                  border: 0;
+                  font-size: 2.4rem; }
+        .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .slider-controls {
+          margin-top: 4rem;
+          display: flex;
+          justify-content: center; }
+          .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .slider-controls button {
+            outline: none;
+            height: 8rem;
+            width: 8rem;
+            border-radius: 100%;
+            border: 1px solid #fd6a00;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            margin-right: 4rem;
+            transition: all 0.3s;
+            cursor: pointer; }
+            .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .slider-controls button#goNext {
+              transform: rotate(180deg); }
+            .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .slider-controls button:last-child {
+              margin-right: 0; }
+            .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .slider-controls button:hover {
+              background: #fd6a00; }
+              .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .slider-controls button:hover span {
+                color: white; }
+            .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-main .suggest-restaurant-slider-container .slider-controls button span {
+              transition: all 0.3s;
+              display: block;
+              margin: auto;
+              font-size: 4rem;
+              color: #fd6a00; }
+      .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary {
+        padding-left: 2rem;
+        width: 35%; }
+        .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .ad-pub-sodexo {
+          margin-bottom: 3rem;
+          height: 38rem;
+          width: 100%;
+          margin-bottom: 3rem;
+          background: #293798;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-radius: 5px;
+          padding: 0 4rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center; }
+          .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .ad-pub-sodexo span {
+            font-weight: normal;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            text-align: left;
+            color: #e8e8e8; }
+        .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .last-seen .last-seen-top {
+          margin-bottom: 2rem;
+          font-weight: bold;
+          font-size: 2rem;
+          text-align: left;
+          color: #175db3; }
+        .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .last-seen .last-seen-body .user-who-post-info {
+          margin-bottom: 2rem;
+          display: flex;
+          align-items: center; }
+          .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .last-seen .last-seen-body .user-who-post-info .user-who-post-info-avatar {
+            margin-right: 1rem; }
+            .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .last-seen .last-seen-body .user-who-post-info .user-who-post-info-avatar img {
+              max-width: 4rem;
+              object-fit: cover;
+              height: 4rem;
+              width: 4rem;
+              border-radius: 5px; }
+          .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .last-seen .last-seen-body .user-who-post-info .user-who-post-info-info .user-username {
+            font-weight: bold;
+            font-size: 1.8rem;
+            line-height: 1.8rem;
+            color: #484848; }
+          .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .last-seen .last-seen-body .user-who-post-info .user-who-post-info-info .user-about {
+            font-weight: normal;
+            font-size: 1.4rem;
+            line-height: 1.4rem;
+            color: #484848;
+            opacity: 0.8; }
+          .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .last-seen .last-seen-body .user-who-post-info button {
+            margin-left: auto;
+            height: 4rem;
+            padding: 0 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            background: #e8e8e8; }
+            .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .last-seen .last-seen-body .user-who-post-info button i {
+              color: white;
+              font-size: 1.5rem; }
+        .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .last-seen .last-seen-body .profil-visitor {
+          display: flex;
+          align-items: center;
+          justify-content: space-between; }
+          .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .last-seen .last-seen-body .profil-visitor .visitor {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem; }
+            .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .last-seen .last-seen-body .profil-visitor .visitor .visitor-avatar {
+              margin-right: 1rem; }
+              .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .last-seen .last-seen-body .profil-visitor .visitor .visitor-avatar img {
+                height: 4rem;
+                width: 4rem;
+                object-fit: cover; }
+            .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .last-seen .last-seen-body .profil-visitor .visitor .visitor-info .user-username {
+              font-weight: bold;
+              font-size: 1.8rem;
+              line-height: 1.8rem;
+              color: #484848; }
+            .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .last-seen .last-seen-body .profil-visitor .visitor .visitor-info .user-about {
+              font-weight: normal;
+              font-size: 1.4rem;
+              line-height: 1.4rem;
+              color: #484848;
+              opacity: 0.8;
+              margin-top: 0.5rem; }
+              .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .last-seen .last-seen-body .profil-visitor .visitor .visitor-info .user-about i {
+                font-weight: normal;
+                font-size: 1.4rem;
+                color: #484848;
+                opacity: 0.8; }
+          .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .last-seen .last-seen-body .profil-visitor .follow-button {
+            cursor: pointer;
+            background: #ffa500;
+            color: white;
+            padding: 0 1rem;
+            height: 4rem;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+            .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .last-seen .last-seen-body .profil-visitor .follow-button span {
+              font-weight: normal;
+              font-size: 1.4rem;
+              color: #fff; }
+            .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .last-seen .last-seen-body .profil-visitor .follow-button i {
+              font-weight: normal;
+              font-size: 1.4rem;
+              color: #fff; }
+          .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .last-seen .last-seen-body .profil-visitor .added {
+            cursor: pointer;
+            background: #e8e8e8;
+            color: white;
+            padding: 0 1rem;
+            height: 4rem;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+            .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .last-seen .last-seen-body .profil-visitor .added span {
+              font-weight: normal;
+              font-size: 1.4rem;
+              color: #fff; }
+            .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .last-seen .last-seen-body .profil-visitor .added i {
+              font-weight: normal;
+              font-size: 1.4rem;
+              color: #fff; }
+        .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .restaurant {
+          margin: 2rem 0;
+          display: flex;
+          align-items: center;
+          height: 10rem;
+          border-radius: 5px;
+          background: #fff;
+          border: 1px solid #e8e8e8; }
+          .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .restaurant .pict-of-res {
+            height: 10rem;
+            width: 10rem; }
+          .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .restaurant .logo {
+            padding: 0 1rem; }
+          .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .restaurant .restaurant-right-side {
+            display: flex; }
+            .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .restaurant .restaurant-right-side .logo {
+              width: 6rem;
+              height: 4rem; }
+            .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .restaurant .restaurant-right-side .restaurant-details .restaurant-name {
+              font-weight: bold;
+              font-size: 1.8rem;
+              color: #484848; }
+            .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .restaurant .restaurant-right-side .restaurant-details .restaurant-location {
+              display: flex;
+              align-items: center; }
+              .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .restaurant .restaurant-right-side .restaurant-details .restaurant-location .restaurant-adress {
+                font-size: 1.4rem;
+                color: #484848;
+                opacity: 0.8; }
+              .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .restaurant .restaurant-right-side .restaurant-details .restaurant-location i {
+                font-size: 1.4rem;
+                font-weight: normal;
+                color: #484848;
+                opacity: 0.8;
+                margin-right: 0.5rem; }
+            .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .restaurant .restaurant-right-side .restaurant-details .star-rating {
+              margin-top: 0.5rem; }
+              .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .restaurant .restaurant-right-side .restaurant-details .star-rating i {
+                color: #ffa500;
+                font-size: 9px;
+                font-weight: normal; }
+              .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .restaurant .restaurant-right-side .restaurant-details .star-rating .checked {
+                color: #ffa500; }
+              .proposer-moi-page .proposer-moi-page-content .proposer-moi-page-content-feed .feed-secondary .restaurant .restaurant-right-side .restaurant-details .star-rating .non-checked {
+                color: #e2e2e2; }
+
+.slick-list {
+  padding: 0 25rem !important; }
+
+.country-dropdown {
+  position: relative;
+  height: 7.7rem;
+  background: white;
+  border: 1px solid #e8e8e8;
+  margin: 3rem 2rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem; }
+  .country-dropdown .country {
+    background: transparent;
+    box-shadow: none;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 2.4rem;
+    text-align: left;
+    color: #484848;
+    transition: all 0.3s;
+    margin-bottom: 0;
+    width: 100%; }
+    .country-dropdown .country .bars {
+      cursor: pointer;
+      font-size: 3rem;
+      font-weight: 300; }
+  .country-dropdown .drop-pa {
+    padding: 2rem;
+    border: 0;
+    display: none;
+    width: 100%;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.16);
+    position: absolute;
+    top: 0 !important;
+    z-index: 444;
+    transition: 0.3s;
+    left: 0px !important; }
+    .country-dropdown .drop-pa .dropdown-top {
+      position: relative;
+      margin-bottom: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .country-dropdown .drop-pa .dropdown-top i {
+        font-size: 3rem;
+        color: #484848;
+        font-weight: normal;
+        cursor: pointer; }
+      .country-dropdown .drop-pa .dropdown-top span {
+        font-weight: normal;
+        font-size: 2.4rem;
+        text-align: left;
+        color: #484848;
+        opacity: 0.5; }
+    .country-dropdown .drop-pa .chosen-country {
+      margin: 3rem 0;
+      display: flex;
+      align-items: center; }
+      .country-dropdown .drop-pa .chosen-country > img {
+        margin-right: 2rem;
+        height: 4rem;
+        width: 4rem;
+        display: block; }
+      .country-dropdown .drop-pa .chosen-country > span {
+        font-weight: 300;
+        font-size: 3rem;
+        text-align: left;
+        color: #484848; }
+    .country-dropdown .drop-pa .countries {
+      max-height: 25rem;
+      overflow-y: scroll; }
+      .country-dropdown .drop-pa .countries .country {
+        cursor: pointer;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center; }
+        .country-dropdown .drop-pa .countries .country > img {
+          display: block;
+          height: 4rem;
+          width: 4rem;
+          margin-right: 2rem; }
+        .country-dropdown .drop-pa .countries .country > span {
+          font-weight: 300;
+          font-size: 2rem;
+          text-align: left;
+          color: #484848; }
+      .country-dropdown .drop-pa .countries .country-with-lettre {
+        display: flex;
+        justify-content: space-between; }
+        .country-dropdown .drop-pa .countries .country-with-lettre div {
+          cursor: pointer;
+          margin-bottom: 2rem;
+          display: flex;
+          align-items: center; }
+          .country-dropdown .drop-pa .countries .country-with-lettre div > img {
+            display: block;
+            height: 4rem;
+            width: 4rem;
+            margin-right: 2rem; }
+          .country-dropdown .drop-pa .countries .country-with-lettre div > span {
+            font-weight: 300;
+            font-size: 2rem;
+            text-align: left;
+            color: #484848; }
+        .country-dropdown .drop-pa .countries .country-with-lettre .lettre {
+          width: 5rem;
+          height: 5rem;
+          background-color: #FFA500;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 2rem; }
+          .country-dropdown .drop-pa .countries .country-with-lettre .lettre span {
+            color: white;
+            font-size: 2.4rem; }

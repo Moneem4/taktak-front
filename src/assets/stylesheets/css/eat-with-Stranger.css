@@ -1,0 +1,716 @@
+.eat-with-Stranger {
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto 1fr; }
+  .eat-with-Stranger .eat-with-Stranger-content {
+    overflow-y: scroll;
+    position: relative; }
+    .eat-with-Stranger .eat-with-Stranger-content::-webkit-scrollbar {
+      display: none; }
+    .eat-with-Stranger .eat-with-Stranger-content .navbar {
+      top: 0;
+      position: sticky;
+      z-index: 5555; }
+    .eat-with-Stranger .eat-with-Stranger-content .cover-picture {
+      padding: 0;
+      position: relative; }
+      .eat-with-Stranger .eat-with-Stranger-content .cover-picture button {
+        position: absolute;
+        bottom: 0.5rem;
+        height: 5rem;
+        border-radius: 5px;
+        background: #fff;
+        color: #ff6900;
+        padding: 0 2rem;
+        margin-left: 5rem;
+        font-size: 2rem;
+        color: #ff6900;
+        cursor: pointer;
+        outline: none; }
+        .eat-with-Stranger .eat-with-Stranger-content .cover-picture button i {
+          font-size: 1.5rem;
+          font-weight: normal; }
+    .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content {
+      display: flex;
+      margin-bottom: 12rem; }
+      .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main {
+        position: relative;
+        width: 63%;
+        max-width: 675px;
+        margin-bottom: 5rem; }
+        .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger {
+          background: #fff;
+          border: 1px solid #e8e8e8;
+          border-radius: 5px;
+          padding: 2rem 1.5rem;
+          display: flex;
+          flex-direction: column;
+          margin: 2rem 0; }
+          .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .eating-with-stranger-title {
+            font-weight: bold;
+            font-size: 3rem;
+            line-height: 2.4rem;
+            color: #175db3; }
+          .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .eating-with-stranger-description {
+            width: 87%;
+            font-weight: 300;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: #484848;
+            padding: 2rem  0; }
+          .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .accept-the-concept-or-refuse {
+            display: grid;
+            grid-template-columns: 1.2fr 2fr 1.5fr;
+            grid-gap: 1rem;
+            align-items: center; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .accept-the-concept-or-refuse button {
+              height: 4.4rem;
+              cursor: pointer;
+              outline: none;
+              background-color: #ff6900;
+              padding: 0 1rem;
+              cursor: pointer;
+              outline: none;
+              color: white;
+              font-size: 1.4rem;
+              font-weight: bold;
+              border-radius: 5px; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .accept-the-concept-or-refuse .accept {
+              display: flex;
+              align-items: center;
+              /* Rounded sliders */ }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .accept-the-concept-or-refuse .accept i {
+                color: #ff6900;
+                font-size: 2rem; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .accept-the-concept-or-refuse .accept span {
+                font-size: 1.4rem;
+                color: #484848;
+                padding: 0 1rem; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .accept-the-concept-or-refuse .accept .eat-switch {
+                position: relative;
+                display: inline-block;
+                width: 4rem;
+                height: 3rem;
+                margin-bottom: 0.5rem;
+                cursor: pointer; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .accept-the-concept-or-refuse .accept .eat-switch input {
+                  visibility: hidden; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .accept-the-concept-or-refuse .accept .eat-switch input {
+                  width: 0;
+                  height: 0; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .accept-the-concept-or-refuse .accept .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: white;
+                border: 1px solid  #7dc364;
+                -webkit-transition: .4s;
+                transition: .4s; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .accept-the-concept-or-refuse .accept .slider:before {
+                position: absolute;
+                content: "";
+                height: 2.5rem;
+                width: 2.5rem;
+                left: 0.5rem;
+                bottom: 0.5rem;
+                background-color: white;
+                opacity: 1;
+                border: 1px solid  #7dc364;
+                -webkit-transition: .4s;
+                transition: .4s; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .accept-the-concept-or-refuse .accept input:checked + .slider {
+                background-color: #7dc364;
+                opacity: 1; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .accept-the-concept-or-refuse .accept input:focus + .slider {
+                box-shadow: 0 0 1px  #7dc364; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .accept-the-concept-or-refuse .accept input:checked + .slider:before {
+                -webkit-transform: translateX(2.6rem);
+                -ms-transform: translateX(2.6rem);
+                transform: translateX(2.6rem); }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .accept-the-concept-or-refuse .accept .slider.round {
+                border-radius: 3.4rem;
+                width: 6rem;
+                height: 3.5rem;
+                margin: 0; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .accept-the-concept-or-refuse .accept .slider.round:before {
+                border-radius: 50%; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .accept-the-concept-or-refuse .refuse {
+              font-weight: bold;
+              font-size: 1.4rem;
+              color: #ff6900;
+              display: flex;
+              justify-content: flex-end; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .accept-the-concept-or-refuse .number-of-place {
+              display: none; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .accept-the-concept-or-refuse .number-of-place div {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .accept-the-concept-or-refuse .number-of-place div i {
+                  color: #ff6900;
+                  font-size: 2rem;
+                  cursor: pointer; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .accept-the-concept-or-refuse .number-of-place div .plus-moins {
+                  color: #ff6900;
+                  font-size: 2.5rem; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .accept-the-concept-or-refuse .number-of-place div span {
+                  font-weight: normal;
+                  font-size: 1.4rem;
+                  color: #484848;
+                  padding: 0 1rem; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .eating-with-stranger .accept-the-concept-or-refuse .number-of-place div .number {
+                  border-radius: 5px;
+                  background: #fff;
+                  border: 1px solid #ccc;
+                  padding: 0 1rem;
+                  color: #484848;
+                  font-size: 1.6rem;
+                  font-weight: bold;
+                  margin: 0 1rem;
+                  cursor: pointer; }
+        .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site {
+          height: 23rem;
+          background: #fff;
+          border: 1px solid #e8e8e8;
+          border-radius: 5px;
+          padding: 2rem 1rem;
+          display: flex;
+          flex-direction: column;
+          margin: 2rem 0; }
+          .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-header .Foodists-on-site-title {
+              font-weight: bold;
+              font-size: 3rem;
+              line-height: 2.4rem;
+              color: #175db3; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-header .meaning-symbols {
+              font-weight: 500;
+              font-size: 2rem;
+              color: #175db3;
+              display: none; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-header .question-icon {
+              border-radius: 5px;
+              background: #fdfdfd;
+              border: 1px solid #e8e8e8;
+              width: 4.5rem;
+              height: 4rem;
+              text-align: center;
+              justify-content: center;
+              display: flex;
+              align-items: center; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-header .question-icon i {
+                font-size: 2rem;
+                color: #484848; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-header .question-icon:hover {
+                border: 1px solid #ff6900; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-header .question-icon:hover i {
+                  color: #ff6900; }
+          .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people {
+            /*display: grid;*/
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 2rem;
+            margin: 2rem 0; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-active {
+              display: grid;
+              grid-template-columns: 1fr 5fr; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-active img {
+                width: 4rem;
+                height: 4rem; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-active .foodists-on-site-active-right-side {
+                display: flex;
+                justify-content: space-between;
+                position: relative; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-active .foodists-on-site-active-right-side .foodists-on-site-person-details .name {
+                  font-weight: bold;
+                  font-size: 1.8rem;
+                  color: #484848; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-active .foodists-on-site-active-right-side .foodists-on-site-person-details .number-available {
+                  display: flex;
+                  align-items: center; }
+                  .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-active .foodists-on-site-active-right-side .foodists-on-site-person-details .number-available i {
+                    font-size: 1.4rem;
+                    color: #484848;
+                    opacity: 0.8;
+                    margin-right: 0.5rem; }
+                  .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-active .foodists-on-site-active-right-side .foodists-on-site-person-details .number-available .number {
+                    font-size: 1.4rem;
+                    color: #ff6900; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-active .foodists-on-site-active-right-side .symbol {
+                  border-radius: 5px;
+                  background: #fff;
+                  border: 1px solid #d0d0d0;
+                  padding: 1rem;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  cursor: pointer;
+                  z-index: 555;
+                  height: 4.5rem;
+                  width: 6.5rem;
+                  transition: 0.5s all ease; }
+                  .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-active .foodists-on-site-active-right-side .symbol span, .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-active .foodists-on-site-active-right-side .symbol .comment {
+                    display: none; }
+                  .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-active .foodists-on-site-active-right-side .symbol .cookie {
+                    font-weight: normal;
+                    font-size: 1.6rem;
+                    color: #ff6900; }
+                  .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-active .foodists-on-site-active-right-side .symbol .circle {
+                    padding-left: 1rem;
+                    font-weight: 700;
+                    font-size: 1.7rem;
+                    color: #7DC364; }
+                  .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-active .foodists-on-site-active-right-side .symbol:hover {
+                    width: 100%;
+                    background: #7dc364;
+                    border: 1px solid #7dc364;
+                    position: absolute;
+                    right: 0; }
+                    .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-active .foodists-on-site-active-right-side .symbol:hover .cookie, .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-active .foodists-on-site-active-right-side .symbol:hover .comment {
+                      display: block;
+                      font-weight: normal;
+                      font-size: 1.6rem;
+                      color: white; }
+                    .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-active .foodists-on-site-active-right-side .symbol:hover .circle {
+                      display: none; }
+                    .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-active .foodists-on-site-active-right-side .symbol:hover span {
+                      display: block;
+                      font-weight: normal;
+                      font-size: 1.4rem;
+                      color: #fff; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-non-active {
+              display: grid;
+              grid-template-columns: 1fr 5fr; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-non-active img {
+                width: 4rem;
+                height: 4rem; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-non-active .foodists-on-site-active-right-side {
+                display: flex;
+                justify-content: space-between;
+                position: relative; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-non-active .foodists-on-site-active-right-side .foodists-on-site-person-details .name {
+                  font-weight: bold;
+                  font-size: 1.8rem;
+                  color: #484848; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-non-active .foodists-on-site-active-right-side .foodists-on-site-person-details .number-available i {
+                  font-size: 1.4rem;
+                  color: #484848;
+                  opacity: 0.3; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-non-active .foodists-on-site-active-right-side .foodists-on-site-person-details .number-available .state {
+                  font-size: 1.4rem;
+                  color: #484848;
+                  opacity: 0.3; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-non-active .foodists-on-site-active-right-side .symbol {
+                  border-radius: 5px;
+                  background: #fff;
+                  border: 1px solid #d0d0d0;
+                  padding: 1rem;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  cursor: pointer;
+                  position: absolute;
+                  right: 0;
+                  z-index: 555;
+                  height: 4.5rem;
+                  width: 6.5rem;
+                  transition: 0.5s all ease; }
+                  .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-non-active .foodists-on-site-active-right-side .symbol span, .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-non-active .foodists-on-site-active-right-side .symbol .comment {
+                    display: none; }
+                  .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-non-active .foodists-on-site-active-right-side .symbol .cookie {
+                    font-weight: normal;
+                    font-size: 1.6rem;
+                    color: #ff6900; }
+                  .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-non-active .foodists-on-site-active-right-side .symbol .circle {
+                    padding-left: 1rem;
+                    font-weight: normal;
+                    font-size: 1.7rem;
+                    color: #7DC364; }
+                  .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-non-active .foodists-on-site-active-right-side .symbol:hover {
+                    width: 100%;
+                    border: 1px solid #7DC364; }
+                    .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-non-active .foodists-on-site-active-right-side .symbol:hover .comment {
+                      display: block;
+                      font-weight: normal;
+                      font-size: 1.6rem;
+                      color: #7DC364; }
+                    .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-non-active .foodists-on-site-active-right-side .symbol:hover .circle {
+                      display: none; }
+                    .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .Foodists-on-site-people .foodists-on-site-non-active .foodists-on-site-active-right-side .symbol:hover span {
+                      display: block;
+                      font-weight: normal;
+                      font-size: 1.4rem;
+                      color: #7DC364; }
+          .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .foodists-on-site-body-hover {
+            display: none;
+            margin-top: 1.5rem; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .foodists-on-site-body-hover .type {
+              margin: 1rem 0;
+              display: flex;
+              margin: 1rem 0; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .foodists-on-site-body-hover .type .symbol {
+                border-radius: 5px;
+                background: #fff;
+                border: 1px solid #d0d0d0;
+                padding: 1rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                height: 4.5rem;
+                width: 6.5rem;
+                transition: 0.5s all ease; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .foodists-on-site-body-hover .type .symbol span, .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .foodists-on-site-body-hover .type .symbol .comment {
+                  display: none; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .foodists-on-site-body-hover .type .symbol .cookie {
+                  font-weight: normal;
+                  font-size: 1.6rem;
+                  color: #ff6900; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .foodists-on-site-body-hover .type .symbol .circle {
+                  padding-left: 1rem;
+                  font-weight: 700;
+                  font-size: 1.7rem;
+                  color: #7DC364; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .foodists-on-site-body-hover .type .symbol .dot-circle {
+                  padding-left: 1rem;
+                  font-weight: normal;
+                  font-size: 1.7rem;
+                  color: #7DC364; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .Foodists-on-site .foodists-on-site-body-hover .type span {
+                padding-left: 2rem;
+                width: 86%;
+                font-weight: normal;
+                font-size: 1.4rem;
+                color: #484848; }
+        .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .foodists-on-site-hover .hover-content {
+          height: 210px;
+          background: #fff;
+          border: 1px solid #ff6900;
+          border-radius: 5px;
+          padding: 1rem 2rem;
+          display: flex;
+          flex-direction: column;
+          margin: 2rem 0; }
+        .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .foodists-nearby {
+          background: #fff;
+          border: 1px solid #e8e8e8;
+          border-radius: 5px;
+          padding: 2rem 2rem 0 2rem;
+          display: flex;
+          flex-direction: column;
+          margin-top: 2rem; }
+          .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .foodists-nearby .title {
+            font-weight: bold;
+            font-size: 3rem;
+            line-height: 2.4rem;
+            color: #175db3;
+            margin: 1rem; }
+          .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .foodists-nearby .foodists {
+            margin-top: 2rem;
+            /*display: flex;*/
+            -webkit-overflow-scrolling: touch;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .foodists-nearby .foodists::-webkit-scrollbar {
+              display: none; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .foodists-nearby .foodists .foodist-user {
+              margin-top: 2rem;
+              margin-bottom: 3rem;
+              width: 300px;
+              display: flex;
+              align-items: center;
+              padding-right: 8rem; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .foodists-nearby .foodists .foodist-user .details-foodist {
+                margin: 0 1rem; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .foodists-nearby .foodists .foodist-user .details-foodist .name {
+                  font-weight: bold;
+                  font-size: 1.8rem;
+                  color: #484848; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .foodists-nearby .foodists .foodist-user .details-foodist .location {
+                  display: flex;
+                  align-items: center; }
+                  .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .foodists-nearby .foodists .foodist-user .details-foodist .location .city {
+                    font-weight: normal;
+                    font-size: 1.4rem;
+                    color: #484848;
+                    opacity: 0.8;
+                    padding-left: 0.5rem; }
+                  .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .foodists-nearby .foodists .foodist-user .details-foodist .location i {
+                    font-size: 1.4rem;
+                    font-weight: normal;
+                    color: #484848; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .foodists-nearby .foodists .add-social {
+              cursor: pointer;
+              border-radius: 5px;
+              background: #ffa500;
+              padding: 1.5rem; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .foodists-nearby .foodists .add-social i {
+                font-size: 1.5rem;
+                color: white;
+                font-weight: normal; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-main .foodists-nearby .foodists .added {
+              background: #e8e8e8; }
+      .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary {
+        padding-left: 20px;
+        width: 37%; }
+        .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover {
+          background: #f8f7fa;
+          border: 1px solid #e8e8e8;
+          padding: 2rem;
+          position: relative;
+          top: -40px;
+          border-radius: 5px; }
+          .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .title {
+            font-weight: bold;
+            font-size: 1.6rem;
+            color: #484848; }
+          .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant {
+            margin-top: 1rem;
+            position: relative;
+            height: 250px;
+            display: block;
+            background: white;
+            transition: 0.4s linear;
+            border-radius: 5px;
+            background: #fff;
+            border: 1px solid #e8e8e8; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .image {
+              height: 180px;
+              width: 100%;
+              overflow: hidden; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .image img {
+                height: 100%;
+                transition: 0.3; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content {
+              position: absolute;
+              bottom: 15px;
+              background: white;
+              width: 100%;
+              padding: 1rem; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .informations-restaurant {
+                display: grid;
+                grid-template-columns: 3.5fr 1fr; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .informations-restaurant .details-restaurant {
+                  display: flex; }
+                  .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .informations-restaurant .details-restaurant .logo-restaurant {
+                    width: 4rem;
+                    height: 4rem; }
+                  .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .informations-restaurant .details-restaurant div {
+                    padding-left: 1rem; }
+                    .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .informations-restaurant .details-restaurant div .name-restaurant {
+                      font-weight: bold;
+                      font-size: 1.8rem;
+                      color: #484848; }
+                    .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .informations-restaurant .details-restaurant div div {
+                      display: flex;
+                      align-items: center;
+                      padding: 0; }
+                      .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .informations-restaurant .details-restaurant div div .adress {
+                        font-size: 1.3rem;
+                        color: #484848;
+                        opacity: 0.8;
+                        padding-left: 0.5rem; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .informations-restaurant .star-rating {
+                  margin-top: 0.5rem; }
+                  .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .informations-restaurant .star-rating i {
+                    color: #ffa500;
+                    font-size: 9px;
+                    font-weight: normal; }
+                  .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .informations-restaurant .star-rating .checked {
+                    color: #ffa500; }
+                  .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .informations-restaurant .star-rating .non-checked {
+                    color: #e2e2e2; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .shared-component-profil-img {
+                display: grid;
+                grid-template-columns: 1fr 5fr; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .shared-component-profil-img div {
+                  margin-top: 1rem;
+                  display: flex;
+                  align-items: center;
+                  top: 0;
+                  transition: all 0.1s;
+                  padding: 0; }
+                  .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .shared-component-profil-img div .imgs {
+                    width: 28%; }
+                    .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .shared-component-profil-img div .imgs > img {
+                      position: relative;
+                      display: block;
+                      height: 2.5rem;
+                      width: 2.5rem;
+                      border-radius: 100%;
+                      object-fit: cover;
+                      position: relative;
+                      left: 0; }
+                      .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .shared-component-profil-img div .imgs > img:nth-child(2) {
+                        left: -1.2rem; }
+                      .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .shared-component-profil-img div .imgs > img:nth-child(3) {
+                        left: -2.4rem; }
+                      .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .shared-component-profil-img div .imgs > img:nth-child(4) {
+                        left: -3.6rem; }
+                    .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .shared-component-profil-img div .imgs #profil-img-number {
+                      left: -6rem;
+                      position: relative;
+                      color: white;
+                      font-size: 1.2rem;
+                      font-weight: bold;
+                      text-align: center;
+                      justify-content: center;
+                      top: -4px; }
+                  .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .shared-component-profil-img div span {
+                    margin-top: 1rem;
+                    font-size: 1.1rem;
+                    color: #484848;
+                    opacity: 0.8; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .bottom {
+                display: none; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .bottom div {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center; }
+                  .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .bottom div .promo {
+                    display: flex;
+                    align-items: center; }
+                    .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .bottom div .promo .title {
+                      font-weight: bold;
+                      font-size: 1.1rem;
+                      color: #d40562; }
+                    .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .bottom div .promo .pourcentage {
+                      font-size: 1.4rem;
+                      text-align: left;
+                      color: #484848;
+                      padding-left: 1rem; }
+                  .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant .content .bottom div button {
+                    cursor: pointer;
+                    outline: none;
+                    margin-left: 3rem;
+                    height: 40px;
+                    border-radius: 5px;
+                    background: #ffa500;
+                    padding: 1rem;
+                    color: white;
+                    font-size: 1.4rem;
+                    cursor: pointer; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .card-restaurant.active .image img {
+              transform: scale(1); }
+          .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .shared-component-profil {
+            border-top: 1px solid #e8e8e8;
+            border-radius: 5px;
+            padding-top: 2rem; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .shared-component-profil span {
+              font-size: 1.7rem;
+              color: #175db3; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .shared-component-profil:hover .shared-component-profil-img {
+              padding-left: 1rem; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .shared-component-profil:hover .shared-component-profil-img > img:nth-child(2) {
+                left: -0.5rem; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .shared-component-profil:hover .shared-component-profil-img > img:nth-child(3) {
+                left: -1rem; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .shared-component-profil:hover .shared-component-profil-img > img:nth-child(4) {
+                left: -1.5rem; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .shared-component-profil:hover .shared-component-profil-img > img:nth-child(5) {
+                left: -2rem; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .shared-component-profil:hover .shared-component-profil-img > img:nth-child(6) {
+                left: -2.5rem; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .shared-component-profil:hover .shared-component-profil-img > img:nth-child(7) {
+                left: -3rem; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .shared-component-profil:hover .shared-component-profil-img #profil-img-number {
+                position: relative;
+                left: -6rem;
+                color: white;
+                font-size: 1.4rem;
+                font-weight: bold;
+                text-align: center;
+                justify-content: center;
+                top: 0.9rem; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .shared-component-profil .shared-component-profil-img {
+              display: flex;
+              position: relative;
+              top: 0;
+              transition: all 0.1s;
+              padding: 0; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .shared-component-profil .shared-component-profil-img > img {
+                position: relative;
+                display: block;
+                height: 4rem;
+                width: 4rem;
+                border-radius: 100%;
+                object-fit: cover;
+                position: relative;
+                left: 0; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .shared-component-profil .shared-component-profil-img > img:nth-child(2) {
+                  left: -1.5rem; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .shared-component-profil .shared-component-profil-img > img:nth-child(3) {
+                  left: -3rem; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .shared-component-profil .shared-component-profil-img > img:nth-child(4) {
+                  left: -4.5rem; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .shared-component-profil .shared-component-profil-img > img:nth-child(5) {
+                  left: -6rem; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .shared-component-profil .shared-component-profil-img > img:nth-child(6) {
+                  left: -7.5rem; }
+                .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .shared-component-profil .shared-component-profil-img > img:nth-child(7) {
+                  left: -9rem; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .card-restaurant-cover .shared-component-profil .shared-component-profil-img #profil-img-number {
+                left: -12.2rem;
+                position: relative;
+                color: white;
+                font-size: 1.4rem;
+                font-weight: bold;
+                text-align: center;
+                justify-content: center;
+                top: 0.9rem; }
+        .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .restaurants-around {
+          font-weight: bold;
+          font-size: 2rem;
+          color: #175db3; }
+        .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .restaurant {
+          margin: 2rem 0;
+          display: flex;
+          align-items: center;
+          height: 10rem;
+          border-radius: 5px;
+          background: #fff;
+          border: 1px solid #e8e8e8; }
+          .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .restaurant .pict-of-res {
+            height: 10rem;
+            width: 10rem; }
+          .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .restaurant .logo {
+            padding: 0 1rem; }
+          .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .restaurant .restaurant-right-side {
+            display: flex; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .restaurant .restaurant-right-side .logo {
+              width: 6rem;
+              height: 4rem; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .restaurant .restaurant-right-side .restaurant-details .restaurant-name {
+              font-weight: bold;
+              font-size: 1.8rem;
+              color: #484848; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .restaurant .restaurant-right-side .restaurant-details .restaurant-location {
+              display: flex;
+              align-items: center; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .restaurant .restaurant-right-side .restaurant-details .restaurant-location .restaurant-adress {
+                font-size: 1.4rem;
+                color: #484848;
+                opacity: 0.8; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .restaurant .restaurant-right-side .restaurant-details .restaurant-location i {
+                font-size: 1.4rem;
+                font-weight: normal;
+                color: #484848;
+                opacity: 0.8;
+                margin-right: 0.5rem; }
+            .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .restaurant .restaurant-right-side .restaurant-details .star-rating {
+              margin-top: 0.5rem; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .restaurant .restaurant-right-side .restaurant-details .star-rating i {
+                color: #ffa500;
+                font-size: 9px;
+                font-weight: normal; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .restaurant .restaurant-right-side .restaurant-details .star-rating .checked {
+                color: #ffa500; }
+              .eat-with-Stranger .eat-with-Stranger-content .eat-with-Stranger-page-content .content-secondary .restaurant .restaurant-right-side .restaurant-details .star-rating .non-checked {
+                color: #e2e2e2; }

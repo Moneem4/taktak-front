@@ -1,0 +1,310 @@
+.suivi-commandeRestaurant {
+    overflow: hidden;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto 1fr; }
+    .suivi-commandeRestaurant.suivi-commandeRestaurant-content {
+      overflow-y: scroll;
+      position: relative;
+      margin-bottom: 8rem; }
+      .suivi-commandeRestaurant .suivi-commandeRestaurant-content::-webkit-scrollbar {
+        display: none; }
+      .suivi-commandeRestaurant .suivi-commandeRestaurant-content::-webkit-scrollbar {
+        display: none; }
+      .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-first-page {
+        padding: 0 4rem; }
+        .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-first-page .commande-section {
+          height: 16rem;
+          width: 100%;
+          background: linear-gradient(#fda700 0%, #fd6a00 100%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          font-size: 4rem;
+          text-align: center;
+          color: #fff;
+          margin-bottom: 3rem; }
+        .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-first-page .first-page-header {
+          margin-top: 1rem;
+          margin-bottom: 3rem;
+          line-height: 2.4rem; } 
+          .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-first-page .first-page-header .man-wintak {
+            margin: auto auto 3rem;
+            display: block;
+           }
+          .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-first-page .first-page-header .header-title {
+            font-weight: bold;
+            font-size: 1.6rem;
+            text-align: center;
+            color: #484848;
+            display: block; }
+          .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-first-page .first-page-header .header-description {
+            display: block;
+            color: #484848;
+            font-size: 1.6rem;
+            text-align: center; }
+        .details-commande {
+          border-radius: 5px;
+          background: #fff;
+          border: 1px solid #e8e8e8;
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+          margin: auto;
+          margin-bottom: 3rem; }
+          .details-commande .details-commande-header {
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            padding: 0 2rem;
+            border-bottom: 1px solid #e8e8e8; }
+            .details-commande .details-commande-header .left-side .ref-commande {
+              font-size: 2.4rem;
+              color: #484848; }
+             .details-commande .details-commande-header .left-side .restaurant-location {
+              display: flex;
+              margin-top: 2rem; }
+              .details-commande .details-commande-header .left-side .restaurant-location .restaurant-description {
+                margin-left: 2rem; }
+                .details-commande .details-commande-header .left-side .restaurant-location .restaurant-description .restaurant-name {
+                  font-weight: bold;
+                  font-size: 1.8rem;
+                  color: #484848; }
+                .details-commande .details-commande-header .left-side .restaurant-location .restaurant-description div {
+                  display: flex;
+                  align-items: center; }
+                   .details-commande .details-commande-header .left-side .restaurant-location .restaurant-description div i {
+                    font-size: 1.4rem;
+                    color: #484848;
+                    opacity: 0.8;
+                    font-weight: 400; }
+                .details-commande .details-commande-header .left-side .restaurant-location .restaurant-description div .restaurant-address {
+                    padding-left: 1rem;
+                    font-weight: normal;
+                    font-size: 1.4rem;
+                    color: #484848;
+                    opacity: 0.8; }
+           .details-commande .details-commande-header .left-side .button-details-commande {
+              height: 4.4rem;
+              border-radius: 5px;
+              background: #fff;
+              border: 1px solid #ff6900;
+              font-weight: bold;
+              font-size: 1.4rem;
+              text-align: center;
+              color: #ff6900;
+              padding: 0 2rem;
+              margin: 2rem 0 1rem 0;
+              outline: none;
+              cursor: pointer; }
+         .details-commande .details-commande-header .main {
+              line-height: 3rem; }
+               .details-commande .details-commande-header .main span {
+                font-weight: bold;
+                font-size: 1.4rem;
+                color: #175db3;
+                display: block; }
+           .details-commande .details-commande-header .right-side {
+              line-height: 3rem; }
+           .details-commande .details-commande-header .right-side span {
+                font-weight: normal;
+                font-size: 1.4rem;
+                color: #484848;
+                display: block; }
+         .details-commande .steps-commande {
+            display: grid;
+            grid-template-columns: 1fr 1fr 0.9fr 1.1fr; }
+            .details-commande .steps-commande .step-description {
+              border-right: 1px solid #e8e8e8;
+              padding: 2rem; }
+             .details-commande .steps-commande .step-description .step-number {
+                font-weight: bold;
+                font-size: 2rem;
+                color: #484848;
+                opacity: 0.5;
+                margin-right: 2rem; }
+          .details-commande .steps-commande .step-description .step-title {
+                font-weight: 500;
+                font-size: 1.4rem;
+                color: #484848;
+                opacity: 0.5; }
+             .details-commande .steps-commande .step-description-active {
+              border-right: 1px solid #e8e8e8;
+              padding: 2rem;
+              border-top: 3px solid #ff6900; }
+             .details-commande .steps-commande .step-description-active .step-number {
+                font-weight: bold;
+                font-size: 2rem;
+                color: #ff6900;
+                margin-right: 2rem; }
+                 .details-commande .steps-commande .step-description-active .step-title {
+                font-weight: 500;
+                font-size: 1.4rem;
+                color: #ff6900; }
+      .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page {
+        display: block;
+        padding: 0 4rem; }
+        .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .second-page-header {
+          margin-top: 1rem;
+          margin-bottom: 3rem;
+          line-height: 2.4rem; }
+          .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .second-page-header .man-wintak {
+            display: block;
+            margin: auto;
+            margin-bottom: 2rem; }
+          .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .second-page-header .header-title {
+            font-weight: bold;
+            font-size: 1.6rem;
+            text-align: center;
+            color: #484848;
+            display: block; }
+          .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .second-page-header .retour {
+            cursor: pointer;
+            margin: auto;
+            display: flex;
+            align-items: center; }
+            .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .second-page-header .retour i {
+              font-size: 3rem;
+              color: #484848;
+              opacity: 0.5; }
+            .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .second-page-header .retour span {
+              margin-left: 1em;
+              font-weight: normal;
+              font-size: 3rem;
+              color: #484848;
+              opacity: 0.5; }
+        .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande {
+          border-radius: 5px;
+          background: #fff;
+          border: 1px solid #e8e8e8;
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+          margin: auto;
+          margin-bottom: 3rem; }
+          .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .details-commande-header {
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            padding: 0 2rem;
+            margin-bottom: 3rem; }
+            .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .details-commande-header .left-side .ref-commande {
+              font-size: 2.4rem;
+              color: #484848; }
+            .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .details-commande-header .left-side .restaurant-location {
+              display: flex;
+              margin-top: 2rem; }
+              .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .details-commande-header .left-side .restaurant-location .restaurant-description {
+                margin-left: 2rem; }
+                .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .details-commande-header .left-side .restaurant-location .restaurant-description i {
+                  font-size: 1.4rem;
+                  color: #484848;
+                  opacity: 0.8;
+                  font-weight: 400; }
+                .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .details-commande-header .left-side .restaurant-location .restaurant-description .restaurant-name {
+                  font-weight: bold;
+                  font-size: 1.8rem;
+                  color: #484848; }
+                .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .details-commande-header .left-side .restaurant-location .restaurant-description div {
+                  display: flex;
+                  align-items: center; }
+                  .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .details-commande-header .left-side .restaurant-location .restaurant-description div .restaurant-address {
+                    padding-left: 1rem;
+                    font-weight: normal;
+                    font-size: 1.4rem;
+                    color: #484848;
+                    opacity: 0.8; }
+            .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .details-commande-header .main {
+              line-height: 3rem; }
+              .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .details-commande-header .main span {
+                font-weight: bold;
+                font-size: 1.4rem;
+                color: #175db3;
+                display: block; }
+            .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .details-commande-header .right-side {
+              line-height: 3rem; }
+              .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .details-commande-header .right-side span {
+                font-weight: normal;
+                font-size: 1.4rem;
+                color: #484848;
+                display: block; }
+          .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .command-list {
+            height: 50%;
+            overflow-y: scroll; }
+            .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .command-list::-webkit-scrollbar {
+              display: none; }
+            .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .command-list .details-commande-food {
+              display: grid;
+              grid-template-columns: 3fr 1fr;
+              margin: 2rem;
+              background: #fff;
+              border: 1px solid #e8e8e8;
+              border-radius: 5px;
+            }
+              .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .command-list .details-commande-food .left-side {
+                display: flex; }
+                .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .command-list .details-commande-food .left-side .details-commande-img {
+                  width: 18rem; }
+                .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .command-list .details-commande-food .left-side .main {
+                  display: flex;
+                  flex-direction: column;
+                  margin-left: 2rem; }
+                  .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .command-list .details-commande-food .left-side .main .food-name {
+                    margin-top: 2rem;
+                    font-weight: bold;
+                    font-size: 2rem;
+                    color: #484848; }
+                  .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .command-list .details-commande-food .left-side .main .food-description {
+                    font-weight: normal;
+                    font-size: 1.4rem;
+                    line-height: 24px;
+                    color: #888; }
+                    .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .command-list .details-commande-food .left-side .main .food-descriptionOptions {
+                      font-weight: bold;
+                      font-size: 1.4rem;
+                      line-height: 24px;
+                      color: #888; }
+                  .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .command-list .details-commande-food .left-side .main .time {
+                    margin-top: 2rem;
+                    display: flex;
+                    align-items: center; }
+                    .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .command-list .details-commande-food .left-side .main .time i {
+                      font-size: 2rem;
+                      text-align: left;
+                      color: #484848; }
+                    .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .command-list .details-commande-food .left-side .main .time span {
+                      padding-left: 1rem;
+                      font-weight: 300;
+                      font-size: 2rem;
+                      text-align: left;
+                      color: #484848; }
+              .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .command-list .details-commande-food .right-side {
+                border-left: 1px solid #e8e8e8;
+                display: grid; }
+                .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .command-list .details-commande-food .right-side .quantity {
+                  border-bottom: 1px solid #e8e8e8;
+                  display: flex;
+                  align-items: center;
+                  padding: 0 1rem; }
+                  .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .command-list .details-commande-food .right-side .quantity .Qnt-title {
+                    font-weight: normal;
+                    font-size: 1.6rem;
+                    color: #484848;
+                    opacity: 0.5; }
+                  .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .command-list .details-commande-food .right-side .quantity .Qnt-number {
+                    font-size: 3rem;
+                    color: #484848;
+                    opacity: 0.5;
+                    margin-left: 3rem; }
+                .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .command-list .details-commande-food .right-side .price {
+                  display: flex;
+                  align-items: center;
+                  padding: 0 1rem; }
+                  .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .command-list .details-commande-food .right-side .price .price-title {
+                    font-weight: normal;
+                    font-size: 1.6rem;
+                    color: #484848;
+                    opacity: 0.5; }
+                  .suivi-commandeRestaurant .suivi-commandeRestaurant-content .suivi-commandeRestaurant-content-second-page .details-commande .command-list .details-commande-food .right-side .price .price-number {
+                    font-weight: 300;
+                    font-size: 3rem;
+                    color: #ff6900;
+                    margin-left: 3rem; }
+  

@@ -1,0 +1,2031 @@
+.you-may-like {
+  margin-bottom: 3rem; }
+  .you-may-like .you-may-like-header {
+    margin-bottom: 1rem; }
+    .you-may-like .you-may-like-header .header-top {
+      display: flex;
+      align-items: center; }
+      .you-may-like .you-may-like-header .header-top .header-title {
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-align: left;
+        color: #175db3;
+        margin-right: 1rem; }
+      .you-may-like .you-may-like-header .header-top .header-number {
+        font-weight: 500;
+        font-size: 1.6rem;
+        text-align: left;
+        color: #484848;
+        opacity: 0.5; }
+      .you-may-like .you-may-like-header .header-top button {
+        margin-left: auto;
+        outline: none; }
+        .you-may-like .you-may-like-header .header-top button i {
+          font-size: 0.4rem;
+          cursor: pointer; }
+    .you-may-like .you-may-like-header .header-bottom {
+      font-weight: normal;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      text-align: left;
+      color: #484848;
+      opacity: 1; }
+  .you-may-like .you-may-like-body {
+    padding: 2rem;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05)); }
+    .you-may-like .you-may-like-body .you-may-like-element {
+      display: flex;
+      align-items: center; }
+      .you-may-like .you-may-like-body .you-may-like-element .you-may-like-element-media {
+        margin-right: 2rem;
+        height: 10rem;
+        width: 28rem; }
+        .you-may-like .you-may-like-body .you-may-like-element .you-may-like-element-media img {
+          border-radius: 5px;
+          height: 100%;
+          width: 100%;
+          object-fit: cover; }
+      .you-may-like .you-may-like-body .you-may-like-element .you-may-like-element-info .info-header {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center; }
+        .you-may-like .you-may-like-body .you-may-like-element .you-may-like-element-info .info-header img {
+          margin-right: 1rem;
+          border-radius: 5px;
+          height: 4rem;
+          width: 4rem;
+          object-fit: cover; }
+        .you-may-like .you-may-like-body .you-may-like-element .you-may-like-element-info .info-header .name .restaurant-name {
+          display: block;
+          font-weight: bold;
+          font-size: 1.8rem;
+          text-align: left;
+          color: #484848; }
+        .you-may-like .you-may-like-body .you-may-like-element .you-may-like-element-info .info-header .name .restaurant-location {
+          font-weight: normal;
+          font-size: 1.4rem;
+          text-align: left;
+          color: #484848;
+          opacity: 0.8; }
+          .you-may-like .you-may-like-body .you-may-like-element .you-may-like-element-info .info-header .name .restaurant-location i {
+            margin-right: 0.5rem; }
+        .you-may-like .you-may-like-body .you-may-like-element .you-may-like-element-info .info-header .raiting {
+          margin-left: auto; }
+          .you-may-like .you-may-like-body .you-may-like-element .you-may-like-element-info .info-header .raiting i {
+            font-size: 1rem;
+            font-weight: normal;
+            color: #ffa500; }
+          .you-may-like .you-may-like-body .you-may-like-element .you-may-like-element-info .info-header .raiting span {
+            color: #e2e2e2; }
+            .you-may-like .you-may-like-body .you-may-like-element .you-may-like-element-info .info-header .raiting span.full {
+              color: #ffa500; }
+            .you-may-like .you-may-like-body .you-may-like-element .you-may-like-element-info .info-header .raiting span:hover {
+              color: #ffa500; }
+      .you-may-like .you-may-like-body .you-may-like-element .you-may-like-element-info .info-body {
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        text-align: left;
+        color: #484848; }
+
+.program {
+  margin-bottom: 3rem;
+  border-radius: 5px;
+  background: url("../../img/Groupe.png") no-repeat;
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center; }
+  .program > img {
+    margin-right: 2rem; }
+  .program .program-info .program-title {
+    margin-bottom: 0.5rem;
+    display: block;
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    text-align: left;
+    color: #fff; }
+  .program .program-info .program-description {
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: left;
+    color: #fff; }
+  .program i {
+    padding-left: 4rem;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer; }
+
+.popular-restaurants {
+  margin-bottom: 3rem; }
+  .popular-restaurants .popular-restaurants-header {
+    margin-bottom: 1rem; }
+    .popular-restaurants .popular-restaurants-header .header-top {
+      display: flex;
+      align-items: center; }
+      .popular-restaurants .popular-restaurants-header .header-top .header-title {
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-align: left;
+        color: #175db3;
+        margin-right: 1rem; }
+      .popular-restaurants .popular-restaurants-header .header-top .header-number {
+        font-weight: 500;
+        font-size: 1.6rem;
+        text-align: left;
+        color: #484848;
+        opacity: 0.5; }
+      .popular-restaurants .popular-restaurants-header .header-top button {
+        margin-left: auto;
+        outline: none; }
+        .popular-restaurants .popular-restaurants-header .header-top button i {
+          font-size: 0.4rem;
+          cursor: pointer; }
+    .popular-restaurants .popular-restaurants-header .header-bottom {
+      font-weight: normal;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      text-align: left;
+      color: #484848;
+      opacity: 1; }
+  .popular-restaurants .popular-restaurants-body {
+    border-radius: 5px;
+    padding: 2rem;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05));
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem; }
+    .popular-restaurants .popular-restaurants-body .popular-restaurant .location,
+    .popular-restaurants .popular-restaurants-body .popular-restaurant .number-of-restaurants {
+      font-weight: bold;
+      font-size: 1.8rem;
+      text-align: left;
+      color: #484848; }
+    .popular-restaurants .popular-restaurants-body .popular-restaurant .number-of-restaurants {
+      font-weight: normal; }
+
+.mobile-app-ad {
+  margin-bottom: 3rem;
+  position: relative;
+  padding: 2rem;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
+  border-top: 6px solid #ff6900;
+  border-radius: 5px; }
+  .mobile-app-ad .mobile-app-ad-header {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center; }
+    .mobile-app-ad .mobile-app-ad-header img {
+      max-width: 5rem;
+      height: 5rem;
+      width: 5rem; }
+    .mobile-app-ad .mobile-app-ad-header i {
+      height: 5rem;
+      width: auto; }
+    .mobile-app-ad .mobile-app-ad-header span {
+      margin-left: 2rem;
+      font-weight: bold;
+      font-size: 1.8rem;
+      text-align: left;
+      color: #484848; }
+  .mobile-app-ad .mobile-app-ad-body p {
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: left;
+    color: #484848;
+    margin-bottom: 3rem; }
+    .mobile-app-ad .mobile-app-ad-body p:last-child {
+      max-width: 50%;
+      margin-bottom: 1.5rem; }
+  .mobile-app-ad .mobile-app-ad-footer .send {
+    max-width: 50%;
+    margin-bottom: 3rem; }
+    .mobile-app-ad .mobile-app-ad-footer .send .send-header {
+      margin-bottom: 1rem;
+      display: flex; }
+      .mobile-app-ad .mobile-app-ad-footer .send .send-header button {
+        cursor: pointer;
+        outline: none;
+        opacity: 0.2;
+        background: transparent;
+        border: 0;
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: #484848;
+        margin-right: 2rem;
+        transition: all 0.3s; }
+        .mobile-app-ad .mobile-app-ad-footer .send .send-header button.selected {
+          opacity: 1; }
+        .mobile-app-ad .mobile-app-ad-footer .send .send-header button:last-child {
+          margin-right: 0; }
+    .mobile-app-ad .mobile-app-ad-footer .send .send-body {
+      position: relative; }
+      .mobile-app-ad .mobile-app-ad-footer .send .send-body input {
+        padding-right: 13rem;
+        padding-left: 1rem;
+        outline: none;
+        width: 100%;
+        height: 5.5rem;
+        background: #f8f7fa;
+        border: 1px solid rgba(112, 112, 112, 0.2);
+        font-weight: 300;
+        font-size: 2.4rem;
+        line-height: 2rem;
+        color: #484848;
+        border-radius: 5px; }
+        .mobile-app-ad .mobile-app-ad-footer .send .send-body input::-webkit-input-placeholder {
+          font-weight: 300;
+          font-size: 2.4rem;
+          line-height: 2rem;
+          color: #484848; }
+      .mobile-app-ad .mobile-app-ad-footer .send .send-body .send-options {
+        height: 5.5rem;
+        position: absolute;
+        right: 3rem;
+        top: 0;
+        display: flex;
+        align-items: center; }
+        .mobile-app-ad .mobile-app-ad-footer .send .send-body .send-options i {
+          margin-right: 1rem;
+          font-weight: normal;
+          font-size: 1.5rem;
+          color: #484848; }
+        .mobile-app-ad .mobile-app-ad-footer .send .send-body .send-options span {
+          cursor: pointer;
+          font-weight: bold;
+          font-size: 1.6rem;
+          line-height: 2rem;
+          color: #ff6900; }
+  .mobile-app-ad .mobile-app-ad-footer .downloads {
+    display: flex;
+    width: 15rem;
+    height: auto; }
+    .mobile-app-ad .mobile-app-ad-footer .downloads img {
+      margin-right: 2rem; }
+      .mobile-app-ad .mobile-app-ad-footer .downloads img:last-child {
+        margin-right: 0; }
+  .mobile-app-ad > i {
+    cursor: pointer;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    font-size: 4px; }
+  .mobile-app-ad .bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 23rem; }
+
+.ad-pub-sodexo {
+  margin-bottom: 3rem;
+  background: #293798;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 0 4rem; }
+  .ad-pub-sodexo span {
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: left;
+    color: #e8e8e8; }
+
+.top-foodies .tabs {
+  border: 0; }
+  .top-foodies .tabs .tabs-title {
+    margin-right: 1rem; }
+    .top-foodies .tabs .tabs-title a {
+      padding: 0;
+      padding-bottom: 1rem;
+      font-weight: 600;
+      font-size: 1.5rem;
+      text-align: left;
+      color: #484848;
+      opacity: 0.2;
+      background: transparent; }
+    .top-foodies .tabs .tabs-title.is-active a {
+      opacity: 1;
+      border-bottom: 2px solid #ff6900; }
+    .top-foodies .tabs .tabs-title:last-child {
+      margin-right: 0; }
+
+.top-foodies .tabs-content {
+  border: 0; }
+
+.top-foodies .one-foodie {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center; }
+  .top-foodies .one-foodie:last-child {
+    margin-bottom: 0; }
+  .top-foodies .one-foodie .one-foodie-number {
+    margin-right: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: left;
+    color: #ff6900; }
+  .top-foodies .one-foodie .avatar {
+    max-width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    width: 4rem;
+    border-radius: 100%;
+    margin-right: 1rem; }
+  .top-foodies .one-foodie .one-foodie-info {
+    display: flex;
+    flex-direction: column; }
+    .top-foodies .one-foodie .one-foodie-info .one-foodie-info-name {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-align: left;
+      color: #175db3; }
+    .top-foodies .one-foodie .one-foodie-info p {
+      font-weight: normal;
+      font-size: 1.1rem;
+      text-align: left;
+      color: #484848;
+      opacity: 0.8; }
+
+.suggested-restaurants {
+  margin-bottom: 2rem; }
+  .suggested-restaurants .suggested-restaurants-top {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: left;
+    color: #175db3;
+    margin-bottom: 1rem; }
+  .suggested-restaurants .suggested-restaurants-bottom .one-suggestion {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    height: 10rem;
+    margin-bottom: 2rem; }
+    .suggested-restaurants .suggested-restaurants-bottom .one-suggestion:last-child {
+      margin-bottom: 0; }
+    .suggested-restaurants .suggested-restaurants-bottom .one-suggestion .suggestion-media img {
+      display: block;
+      object-fit: cover;
+      object-position: center;
+      height: 10rem;
+      width: 10rem;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px; }
+    .suggested-restaurants .suggested-restaurants-bottom .one-suggestion .suggestion-info {
+      padding: 1rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap; }
+      .suggested-restaurants .suggested-restaurants-bottom .one-suggestion .suggestion-info img {
+        margin-right: 1rem;
+        border-radius: 5px;
+        height: 4rem;
+        width: 4rem;
+        object-fit: cover; }
+      .suggested-restaurants .suggested-restaurants-bottom .one-suggestion .suggestion-info .name .restaurant-name {
+        display: block;
+        font-weight: bold;
+        font-size: 1.8rem;
+        text-align: left;
+        color: #484848; }
+      .suggested-restaurants .suggested-restaurants-bottom .one-suggestion .suggestion-info .name .restaurant-location {
+        font-weight: normal;
+        font-size: 1.4rem;
+        text-align: left;
+        color: #484848;
+        opacity: 0.8; }
+        .suggested-restaurants .suggested-restaurants-bottom .one-suggestion .suggestion-info .name .restaurant-location i {
+          margin-right: 0.5rem; }
+      .suggested-restaurants .suggested-restaurants-bottom .one-suggestion .suggestion-info .raiting {
+        margin-top: 1rem; }
+        .suggested-restaurants .suggested-restaurants-bottom .one-suggestion .suggestion-info .raiting span {
+          color: #e2e2e2; }
+          .suggested-restaurants .suggested-restaurants-bottom .one-suggestion .suggestion-info .raiting span.full {
+            color: #ffa500; }
+          .suggested-restaurants .suggested-restaurants-bottom .one-suggestion .suggestion-info .raiting span:hover {
+            color: #ffa500; }
+  .suggested-restaurants .suggested-restaurants-bottom .restaurant {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #e8e8e8; }
+    .suggested-restaurants .suggested-restaurants-bottom .restaurant .logo {
+      padding: 0 1rem; }
+    .suggested-restaurants .suggested-restaurants-bottom .restaurant .restaurant-right-side {
+      display: flex; }
+      .suggested-restaurants .suggested-restaurants-bottom .restaurant .restaurant-right-side .logo {
+        width: 6.5rem; }
+      .suggested-restaurants .suggested-restaurants-bottom .restaurant .restaurant-right-side .restaurant-details .restaurant-name {
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: #484848; }
+      .suggested-restaurants .suggested-restaurants-bottom .restaurant .restaurant-right-side .restaurant-details .restaurant-location {
+        display: flex;
+        align-items: center; }
+        .suggested-restaurants .suggested-restaurants-bottom .restaurant .restaurant-right-side .restaurant-details .restaurant-location .restaurant-adress {
+          font-size: 1.4rem;
+          color: #484848;
+          opacity: 0.8; }
+        .suggested-restaurants .suggested-restaurants-bottom .restaurant .restaurant-right-side .restaurant-details .restaurant-location i {
+          font-size: 1.4rem;
+          font-weight: normal;
+          color: #484848;
+          opacity: 0.8;
+          margin-right: 0.5rem; }
+      .suggested-restaurants .suggested-restaurants-bottom .restaurant .restaurant-right-side .restaurant-details .star-rating .checked {
+        color: #ffa500; }
+      .suggested-restaurants .suggested-restaurants-bottom .restaurant .restaurant-right-side .restaurant-details .star-rating .non-checked {
+        color: #e2e2e2; }
+
+.promos-tak-tak {
+  margin-bottom: 4rem; }
+  .promos-tak-tak .promos-tak-tak-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .promos-tak-tak .promos-tak-tak-header .promos-title {
+      font-weight: bold;
+      font-size: 2.5rem;
+      text-align: left;
+      color: #175db3;
+      margin-bottom: 1.5rem; }
+    .promos-tak-tak .promos-tak-tak-header i {
+      font-size: 4px;
+      cursor: pointer; }
+  .promos-tak-tak .promos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem; }
+    .promos-tak-tak .promos .promo {
+      border-radius: 5px;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05); }
+      .promos-tak-tak .promos .promo img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5px; }
+
+.increase-feed {
+  margin-bottom: 2rem; }
+  .increase-feed .increase-feed-top {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: left;
+    color: #175db3; }
+  .increase-feed .increase-feed-bottom .one-item {
+    display: flex;
+    align-items: center; }
+    .increase-feed .increase-feed-bottom .one-item .one-item-icon-container {
+      margin-right: 1rem;
+      height: 2rem;
+      width: 2rem;
+      border: 1px solid #e8e8e8;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .increase-feed .increase-feed-bottom .one-item .one-item-icon-container i {
+        font-size: 0.7rem;
+        color: #484848;
+        font-size: 0.7rem;
+        color: #e8e8e8;
+        opacity: 0.5; }
+    .increase-feed .increase-feed-bottom .one-item .one-item-icon-texttext {
+      font-weight: 300;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      text-align: left;
+      color: #484848; }
+    .increase-feed .increase-feed-bottom .one-item.done .one-item-icon-container {
+      border-color: #ff6900; }
+      .increase-feed .increase-feed-bottom .one-item.done .one-item-icon-container i {
+        opacity: 1;
+        color: #ff6900; }
+    .increase-feed .increase-feed-bottom .one-item.done .one-item-icon-texttext {
+      text-decoration: line-through;
+      opacity: 0.3; }
+  .increase-feed .show-more {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: left;
+    color: #ff6900; }
+  .increase-feed .your-balance {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    background: #a80000;
+    border-radius: 5px;
+    padding: 2rem; }
+    .increase-feed .your-balance .your-balance-title {
+      font-weight: 500;
+      font-size: 1.4rem;
+      text-align: left;
+      color: #ffa500; }
+    .increase-feed .your-balance .wintak {
+      font-weight: 500;
+      font-size: 1.6rem;
+      text-align: left;
+      color: #fff; }
+      .increase-feed .your-balance .wintak > span {
+        position: relative;
+        font-size: 1rem;
+        top: -0.5rem; }
+      .increase-feed .your-balance .wintak i {
+        margin-left: 3rem;
+        font-size: 1rem; }
+
+.most-readable-articles .most-readable-articles-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem; }
+  .most-readable-articles .most-readable-articles-top .most-readable-articles-top-title {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: left;
+    color: #175db3;
+    margin-bottom: 1rem; }
+  .most-readable-articles .most-readable-articles-top .most-readable-articles-top-see-all {
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: left;
+    color: #ff6900; }
+
+.most-readable-articles .most-readable-articles-bottom {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px; }
+  .most-readable-articles .most-readable-articles-bottom .most-readable-articles-bottom-media img {
+    display: block;
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    object-position: center;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px; }
+  .most-readable-articles .most-readable-articles-bottom .most-readable-articles-bottom-info {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column; }
+    .most-readable-articles .most-readable-articles-bottom .most-readable-articles-bottom-info .info-subtitle {
+      font-weight: normal;
+      font-size: 0.9rem;
+      text-align: left;
+      color: #484848;
+      opacity: 0.3;
+      margin-bottom: 1rem; }
+    .most-readable-articles .most-readable-articles-bottom .most-readable-articles-bottom-info .info-title {
+      height: 1.8rem;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-align: left;
+      margin-bottom: 1rem;
+      color: #484848; }
+    .most-readable-articles .most-readable-articles-bottom .most-readable-articles-bottom-info .info-descritpion {
+      font-weight: normal;
+      font-size: 1.2rem;
+      text-align: left;
+      color: #a2a2a2; }
+    .most-readable-articles .most-readable-articles-bottom .most-readable-articles-bottom-info .user-who-post-info {
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center; }
+      .most-readable-articles .most-readable-articles-bottom .most-readable-articles-bottom-info .user-who-post-info .user-who-post-info-avatar {
+        margin-right: 1rem; }
+        .most-readable-articles .most-readable-articles-bottom .most-readable-articles-bottom-info .user-who-post-info .user-who-post-info-avatar img {
+          max-width: 4rem;
+          object-fit: cover;
+          height: 4rem;
+          width: 4rem;
+          border-radius: 5px; }
+      .most-readable-articles .most-readable-articles-bottom .most-readable-articles-bottom-info .user-who-post-info .user-who-post-info-info .user-username {
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        color: #484848; }
+      .most-readable-articles .most-readable-articles-bottom .most-readable-articles-bottom-info .user-who-post-info .user-who-post-info-info .user-about {
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        color: #484848;
+        opacity: 0.8; }
+      .most-readable-articles .most-readable-articles-bottom .most-readable-articles-bottom-info .user-who-post-info button {
+        margin-left: auto;
+        height: 4rem;
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        background: #e8e8e8; }
+        .most-readable-articles .most-readable-articles-bottom .most-readable-articles-bottom-info .user-who-post-info button i {
+          color: white;
+          font-size: 1.5rem; }
+
+.you-may-like-element {
+  display: flex;
+  align-items: center; }
+  .you-may-like-element .you-may-like-element-media {
+    margin-right: 2rem;
+    height: 10rem;
+    width: 28rem; }
+    .you-may-like-element .you-may-like-element-media img {
+      border-radius: 5px;
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+  .you-may-like-element .you-may-like-element-info .info-header {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center; }
+    .you-may-like-element .you-may-like-element-info .info-header img {
+      margin-right: 1rem;
+      border-radius: 5px;
+      height: 4rem;
+      width: 4rem;
+      object-fit: cover; }
+    .you-may-like-element .you-may-like-element-info .info-header .name .restaurant-name {
+      display: block;
+      font-weight: bold;
+      font-size: 1.8rem;
+      text-align: left;
+      color: #484848; }
+    .you-may-like-element .you-may-like-element-info .info-header .name .restaurant-location {
+      font-weight: normal;
+      font-size: 1.4rem;
+      text-align: left;
+      color: #484848;
+      opacity: 0.8; }
+      .you-may-like-element .you-may-like-element-info .info-header .name .restaurant-location i {
+        margin-right: 0.5rem; }
+    .you-may-like-element .you-may-like-element-info .info-header .raiting {
+      margin-left: auto;
+      color: #ffa500;
+      font-weight: normal; }
+      .you-may-like-element .you-may-like-element-info .info-header .raiting span {
+        color: #e2e2e2; }
+        .you-may-like-element .you-may-like-element-info .info-header .raiting span.full {
+          color: #ffa500; }
+        .you-may-like-element .you-may-like-element-info .info-header .raiting span:hover {
+          color: #ffa500; }
+  .you-may-like-element .you-may-like-element-info .info-body {
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: left;
+    color: #484848; }
+
+.contact {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  grid-gap: 2rem;
+  height: 6.5rem;
+  margin-bottom: 2rem; }
+  .contact .phone-number {
+    border-radius: 5px;
+    padding: 0 1rem;
+    background: #fff;
+    border: 1px solid #ff6900;
+    display: flex;
+    align-items: center;
+    outline: none;
+    cursor: pointer; }
+    .contact .phone-number .phone-number-avatar {
+      margin-right: 1.5rem; }
+      .contact .phone-number .phone-number-avatar span {
+        font-size: 2rem;
+        color: #fd6a00; }
+    .contact .phone-number .phone-icon {
+      font-size: 2rem;
+      color: #ff6900;
+      font-weight: normal;
+      margin-right: 2rem; }
+    .contact .phone-number .phone-number-info {
+      font-weight: 500;
+      font-size: 2rem;
+      text-align: left;
+      color: #484848; }
+      @media (max-width: 1000px) {
+        .contact .phone-number .phone-number-info {
+          font-size: 1.7rem; } }
+    .contact .phone-number .steps-left {
+      font-weight: 300;
+      font-size: 1.3rem;
+      text-align: left;
+      color: #484848;
+      margin-right: 1rem; }
+  .contact .suivi-nous {
+    outline: none;
+    border-radius: 5px;
+    padding: 0.8rem;
+    background: #ff6900;
+    border: 1px solid #ff6900;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer; }
+    .contact .suivi-nous .suivi-nous-avatar-avatar {
+      margin-right: 1.5rem; }
+      .contact .suivi-nous .suivi-nous-avatar-avatar img {
+        width: 4rem;
+        height: 4rem;
+        max-width: 4rem;
+        border-radius: 100%; }
+    .contact .suivi-nous span {
+      font-weight: 500;
+      font-size: 1.7rem;
+      text-align: left;
+      color: white; }
+
+.reservations {
+  outline: none;
+  margin-top: 0.5rem;
+  align-items: center;
+  border-radius: 5px;
+  background: #54D0A5;
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
+  width: 100%;
+  cursor: pointer; }
+  .reservations .reservation-left-side {
+    display: flex;
+    align-items: center;
+    padding-left: 2rem; }
+    .reservations .reservation-left-side .reservations-title {
+      font-size: 2.1rem;
+      color: white; }
+      .reservations .reservation-left-side .reservations-title svg, .reservations .reservation-left-side .reservations-title i {
+        color: white;
+        font-size: 2.4rem;
+        padding-right: 1rem; }
+  .reservations .reservations-right-side {
+    background-color: #43C497;
+    width: 17%;
+    height: 6rem;
+    padding: 2rem; }
+    .reservations .reservations-right-side svg, .reservations .reservations-right-side i {
+      color: white;
+      font-size: 2.4rem; }
+
+.list-icon {
+  padding: 2.5rem 0 2.5rem 0; }
+  .list-icon svg, .list-icon i {
+    font-size: 2.4rem;
+    color: #175db3;
+    margin-right: 3rem;
+    cursor: pointer; }
+
+.completion {
+  height: 9rem;
+  margin-top: 3rem;
+  align-items: center;
+  border-radius: 5px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #E8E8E8;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  display: grid;
+  grid-template-columns: 3fr 12fr 1fr;
+  align-items: center;
+  padding-left: 2rem; }
+  .completion .icon-flech-right {
+    padding-right: 2rem; }
+  .completion .completion-main .completion-title {
+    font-size: 2rem;
+    color: #175DB3;
+    font-weight: bold; }
+  .completion .completion-main .completion-profil-cheched {
+    display: flex;
+    align-items: center; }
+    .completion .completion-main .completion-profil-cheched .fa-2x {
+      color: #E8E8E8;
+      margin-left: 0.3rem;
+      cursor: pointer; }
+    .completion .completion-main .completion-profil-cheched .checked {
+      color: #ff6900;
+      cursor: pointer; }
+    .completion .completion-main .completion-profil-cheched span {
+      font-size: 1.2rem;
+      color: #484848;
+      margin-left: 0.5rem; }
+
+.shared-component-location {
+  margin-top: 2.2rem; }
+  .shared-component-location .shared-component-location-first-title {
+    margin-bottom: 1.5rem; }
+    .shared-component-location .shared-component-location-first-title span {
+      color: #175DB3;
+      font-size: 1.8rem;
+      font-weight: bold; }
+  .shared-component-location .shared-component-location-maps {
+    border-radius: 5px;
+    border: 1px solid #E8E8E8; }
+    .shared-component-location .shared-component-location-maps hr {
+      border: 1px solid #E8E8E8; }
+    .shared-component-location .shared-component-location-maps .shared-component-location-bottom {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem; }
+      .shared-component-location .shared-component-location-maps .shared-component-location-bottom .shared-component-adress {
+        display: flex;
+        flex-direction: column; }
+        .shared-component-location .shared-component-location-maps .shared-component-location-bottom .shared-component-adress span:first-child {
+          color: #175db3;
+          font-size: 1.5rem;
+          font-weight: bold; }
+        .shared-component-location .shared-component-location-maps .shared-component-location-bottom .shared-component-adress span:last-child {
+          color: #484848;
+          font-size: 1.5rem; }
+      .shared-component-location .shared-component-location-maps .shared-component-location-bottom .shared-component-adress-panneau svg, .shared-component-location .shared-component-location-maps .shared-component-location-bottom .shared-component-adress-panneau i {
+        color: #ff6900;
+        font-size: 2.4rem; }
+
+.shared-component-profil {
+  border-top: 1px solid #e8e8e8;
+  border-radius: 5px;
+  padding: 2rem; }
+  .shared-component-profil span {
+    font-size: 1.7rem;
+    color: #175db3; }
+  .shared-component-profil:hover .shared-component-profil-img {
+    padding-left: 1rem; }
+    .shared-component-profil:hover .shared-component-profil-img > img:nth-child(2) {
+      left: -0.5rem; }
+    .shared-component-profil:hover .shared-component-profil-img > img:nth-child(3) {
+      left: -1rem; }
+    .shared-component-profil:hover .shared-component-profil-img > img:nth-child(4) {
+      left: -1.5rem; }
+    .shared-component-profil:hover .shared-component-profil-img > img:nth-child(5) {
+      left: -2rem; }
+    .shared-component-profil:hover .shared-component-profil-img > img:nth-child(6) {
+      left: -2.5rem; }
+    .shared-component-profil:hover .shared-component-profil-img > img:nth-child(7) {
+      left: -3rem; }
+    .shared-component-profil:hover .shared-component-profil-img #profil-img-number {
+      position: relative;
+      left: -6rem;
+      color: white;
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-align: center;
+      justify-content: center;
+      top: 0.9rem; }
+  .shared-component-profil .shared-component-profil-img {
+    display: flex;
+    position: relative;
+    top: 0;
+    transition: all 0.1s; }
+    .shared-component-profil .shared-component-profil-img > img {
+      position: relative;
+      display: block;
+      height: 4rem;
+      width: 4rem;
+      border-radius: 100%;
+      object-fit: cover;
+      position: relative;
+      left: 0; }
+      .shared-component-profil .shared-component-profil-img > img:nth-child(2) {
+        left: -1.5rem; }
+      .shared-component-profil .shared-component-profil-img > img:nth-child(3) {
+        left: -3rem; }
+      .shared-component-profil .shared-component-profil-img > img:nth-child(4) {
+        left: -4.5rem; }
+      .shared-component-profil .shared-component-profil-img > img:nth-child(5) {
+        left: -6rem; }
+      .shared-component-profil .shared-component-profil-img > img:nth-child(6) {
+        left: -7.5rem; }
+      .shared-component-profil .shared-component-profil-img > img:nth-child(7) {
+        left: -9rem; }
+    .shared-component-profil .shared-component-profil-img #profil-img-number {
+      left: -12.2rem;
+      position: relative;
+      color: white;
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-align: center;
+      justify-content: center;
+      top: 0.9rem; }
+
+.last-visit-restaurant {
+  padding: 2rem 0 2rem 0; }
+  .last-visit-restaurant .last-visit-restaurant-title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #175db3; }
+  .last-visit-restaurant .last-visit-restaurant-profil {
+    display: flex;
+    position: relative;
+    top: 0;
+    transition: all 0.1s; }
+    .last-visit-restaurant .last-visit-restaurant-profil img {
+      position: relative;
+      display: block;
+      height: 4rem;
+      width: 4rem;
+      border-radius: 100%;
+      object-fit: cover;
+      position: relative;
+      left: 0; }
+      .last-visit-restaurant .last-visit-restaurant-profil img:nth-child(2) {
+        left: -1.5rem; }
+      .last-visit-restaurant .last-visit-restaurant-profil img:nth-child(3) {
+        left: -3rem; }
+    .last-visit-restaurant .last-visit-restaurant-profil span {
+      font-size: 1.2rem;
+      padding-top: 1rem;
+      left: -2rem;
+      position: relative; }
+
+.invitation {
+  border: 1px solid #E8E8E8;
+  background: rgba(232, 232, 232, 0.3);
+  height: 23rem;
+  border-radius: 5px;
+  padding: 2rem;
+  padding-bottom: inherit; }
+  .invitation .invitation-first-title {
+    margin-bottom: 1rem; }
+    .invitation .invitation-first-title span {
+      color: #175db3;
+      font-size: 1.8rem;
+      font-weight: bold; }
+      @media (max-width: 1000px) {
+        .invitation .invitation-first-title span {
+          font-size: 1.5rem; } }
+  .invitation .invitation-description {
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column; }
+  .invitation .adress-mail {
+    padding-top: 2rem; }
+    .invitation .adress-mail span {
+      color: #175db3;
+      font-size: 1.5rem;
+      font-weight: bold; }
+    .invitation .adress-mail .input-wra {
+      position: relative; }
+      .invitation .adress-mail .input-wra .plane {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        font-size: 2.4rem;
+        color: #ff6900; }
+      .invitation .adress-mail .input-wra input {
+        border: 1px solid #e8e8e8e8;
+        width: 100%;
+        height: 2%;
+        border-radius: 5px;
+        padding: 0 2rem;
+        height: 5rem;
+        margin-top: 1rem;
+        outline: none;
+        font-size: 1.4rem; }
+        .invitation .adress-mail .input-wra input::-webkit-input-placeholder {
+          font-size: 1.2rem; }
+
+.footer-shared {
+  padding: 10rem 0 10rem 0;
+  display: flex;
+  justify-content: space-between; }
+  .footer-shared .footer-shared-left-side span {
+    font-size: 1.4rem;
+    color: #484848;
+    font-weight: normal;
+    opacity: 0.5; }
+  .footer-shared .footer-shared-right-side {
+    display: flex;
+    align-items: center; }
+    .footer-shared .footer-shared-right-side span {
+      color: #484848;
+      font-size: 1.4rem;
+      font-family: Raleway;
+      font-weight: normal;
+      opacity: 0.5; }
+    .footer-shared .footer-shared-right-side i, .footer-shared .footer-shared-right-side svg {
+      color: #ff6900;
+      font-size: 2rem;
+      margin-left: 2rem; }
+
+.list-icon {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 40%;
+  padding-bottom: 0 !important; }
+  .list-icon div {
+    display: flex;
+    flex-direction: column; }
+    .list-icon div i {
+      padding-bottom: 1rem; }
+    .list-icon div span {
+      color: #ff6900;
+      font-weight: 300;
+      font-size: 1.6rem;
+      text-align: center;
+      visibility: hidden; }
+    .list-icon div:hover i {
+      color: #ff6900; }
+    .list-icon div:hover span {
+      visibility: visible; }
+
+.rating {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center; }
+  .rating span {
+    color: #e2e2e2; }
+    .rating span.checked {
+      color: #ffa500; }
+
+.tabs {
+  border: 0; }
+  .tabs .tabs-title {
+    transition: all 0.3s;
+    padding-bottom: 1.5rem; }
+    .tabs .tabs-title a {
+      outline: none;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.6rem;
+      color: #484848;
+      background: transparent;
+      transition: all 0.3s; }
+    .tabs .tabs-title.is-active {
+      border-color: #ff6900; }
+
+.soft-restaurant {
+  max-height: 24.5rem;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05)); }
+  .soft-restaurant .soft-restaurant-header {
+    height: 14rem;
+    width: 100%;
+    transition: all 0.3s;
+    position: relative; }
+    .soft-restaurant .soft-restaurant-header img {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+    .soft-restaurant .soft-restaurant-header .hover-star {
+      position: absolute;
+      top: 1rem;
+      background: white;
+      border-radius: 5px;
+      width: 4rem;
+      height: 4rem;
+      left: 1rem;
+      display: none; }
+      .soft-restaurant .soft-restaurant-header .hover-star i {
+        color: #ffa500;
+        font-size: 1.4rem;
+        font-weight: normal;
+        text-align: center; }
+  .soft-restaurant .soft-restaurant-body {
+    padding: 1rem; }
+    .soft-restaurant .soft-restaurant-body .soft-restaurant-body-header {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center; }
+      .soft-restaurant .soft-restaurant-body .soft-restaurant-body-header img {
+        margin-right: 1rem;
+        border-radius: 5px;
+        height: 4rem;
+        width: 4rem;
+        object-fit: cover; }
+      .soft-restaurant .soft-restaurant-body .soft-restaurant-body-header .name .restaurant-name {
+        display: block;
+        font-weight: bold;
+        font-size: 1.8rem;
+        text-align: left;
+        color: #484848; }
+      .soft-restaurant .soft-restaurant-body .soft-restaurant-body-header .name .restaurant-location {
+        font-weight: normal;
+        font-size: 1.4rem;
+        text-align: left;
+        color: #484848;
+        opacity: 0.8; }
+        .soft-restaurant .soft-restaurant-body .soft-restaurant-body-header .name .restaurant-location i {
+          margin-right: 0.5rem; }
+      .soft-restaurant .soft-restaurant-body .soft-restaurant-body-header .raiting {
+        margin-left: auto; }
+        .soft-restaurant .soft-restaurant-body .soft-restaurant-body-header .raiting span {
+          color: #e2e2e2; }
+          .soft-restaurant .soft-restaurant-body .soft-restaurant-body-header .raiting span.full {
+            color: #ffa500; }
+          .soft-restaurant .soft-restaurant-body .soft-restaurant-body-header .raiting span:hover {
+            color: #ffa500; }
+    .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer {
+      padding-left: 5rem; }
+      .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here {
+        display: flex;
+        align-items: center; }
+        .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here .peoples {
+          display: flex; }
+          .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here .peoples .people {
+            position: relative;
+            left: 0;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 100%;
+            border: 1px solid white; }
+            .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here .peoples .people img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
+            .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here .peoples .people:nth-child(2) {
+              left: -1.25rem; }
+            .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here .peoples .people:nth-child(3) {
+              left: -2.25rem; }
+            .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here .peoples .people:nth-child(4) {
+              left: -3.25rem; }
+        .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here span {
+          position: relative;
+          left: -2rem;
+          font-size: 1.1rem;
+          text-align: left;
+          color: #484848;
+          opacity: 0.8; }
+          .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here span strong {
+            font-weight: bold;
+            color: #175db3; }
+    .soft-restaurant .soft-restaurant-body .soft-restaurant-body-invisible {
+      transition: all 0.1s;
+      opacity: 0;
+      padding-left: 5rem;
+      display: flex;
+      align-items: center; }
+      .soft-restaurant .soft-restaurant-body .soft-restaurant-body-invisible .promo .promo-name {
+        font-weight: bold;
+        font-size: 1.1rem;
+        text-align: left;
+        color: #d40562; }
+      .soft-restaurant .soft-restaurant-body .soft-restaurant-body-invisible button {
+        margin-left: auto;
+        height: 4rem;
+        color: white;
+        background: #ffa500;
+        padding: 0 1rem;
+        border-radius: 5px;
+        font-weight: normal;
+        font-size: 1.4rem;
+        text-align: left;
+        color: #fff; }
+        .soft-restaurant .soft-restaurant-body .soft-restaurant-body-invisible button i {
+          margin-right: 1rem; }
+  .soft-restaurant:hover .soft-restaurant-header {
+    height: 8rem; }
+    .soft-restaurant:hover .soft-restaurant-header .hover-star {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .soft-restaurant:hover .soft-restaurant-body .soft-restaurant-body-invisible {
+    opacity: 1; }
+
+.achievement {
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  padding: 2rem;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.05));
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .achievement .steps-left-feeds {
+    font-size: 1.3rem;
+    color: #484848;
+    margin-left: 1rem; }
+
+.achievement .achievement-avatar {
+  margin-right: 1.5rem; }
+
+.achievement .achievement-avatar img {
+  width: 4rem;
+  height: 4rem;
+  max-width: 4rem;
+  border-radius: 100%; }
+
+.achievement .achievement-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.achievement .achievement-info .info-title {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 1.7rem;
+  text-align: left;
+  color: #175db3; }
+
+.achievement .achievement-info .achievement-items .item {
+  height: 1.5rem;
+  width: 1.5rem;
+  background: #e8e8e8;
+  display: inline-block;
+  border-radius: 3px; }
+
+.achievement .achievement-info .achievement-items .item.filled {
+  background: #ff6900; }
+
+.achievement .achievement-info .steps-left {
+  font-weight: 300;
+  font-size: 1.3rem;
+  text-align: left;
+  color: #484848;
+  margin-left: 1rem; }
+
+.invite-friends {
+  padding: 2rem;
+  border-radius: 5px;
+  background: rgba(232, 232, 232, 0.3);
+  border: 1px solid #e8e8e8;
+  position: relative; }
+
+.invite-friends .invite-friends-title {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #175db3;
+  margin-bottom: 2rem; }
+
+.invite-friends p {
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+  margin-bottom: 2rem;
+  padding-right: 6rem; }
+
+.invite-friends p .highlighted {
+  color: #fd6a00; }
+
+.invite-friends .invite-input {
+  display: flex;
+  flex-direction: column; }
+
+.invite-friends .invite-input label {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #175db3;
+  margin-bottom: 1rem; }
+
+.invite-friends .invite-input input {
+  height: 5rem;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  outline: none;
+  padding: 0 2rem;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848; }
+
+.invite-friends .invite-input i {
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: #ff6900;
+  position: absolute;
+  bottom: 4.3rem;
+  right: 4rem; }
+
+.invite-friends .invite-input input::placeholder {
+  font-weight: 300;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.5; }
+
+.chatt {
+  position: fixed;
+  right: 2rem;
+  bottom: 0; 
+  z-index: 99999999999; }
+  .chatt .content-chatt {
+    display: flex;
+    align-items: flex-end; }
+  .chatt .conversation-open-img {
+    display: none;
+    margin: 2rem 0 2rem 2rem;
+    flex-direction: column; }
+    .chatt .conversation-open-img .item {
+      position: relative; }
+      .chatt .conversation-open-img .item .close {
+        width: 4.4rem;
+        height: 4.4rem;
+        background-color: white;
+        border-radius: 50%;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 1.2rem;
+        left: 1.2rem;
+        cursor: pointer; }
+        .chatt .conversation-open-img .item .close i {
+          color: #ff6900;
+          font-size: 1.8rem;
+          font-weight: normal;
+          cursor: pointer; }
+      .chatt .conversation-open-img .item img {
+        width: 7rem;
+        height: 7rem; }
+      .chatt .conversation-open-img .item:hover .close {
+        display: flex; }
+  .chatt .short-list-online {
+    display: none;
+    width: 8rem;
+    background: #f8f7fa;
+    border: 1px solid #e8e8e8;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.2));
+    bottom: 0;
+    right: 1.5rem; }
+    .chatt .short-list-online .header {
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .chatt .short-list-online .header i {
+        font-size: 2rem;
+        color: #ff6900;
+        margin: 2rem 0;
+        text-align: center; }
+    .chatt .short-list-online .users {
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid #e8e8e8;
+      border-top: none;
+      padding: 1rem;
+      justify-content: center;
+      align-items: center; }
+      .chatt .short-list-online .users img {
+        padding-bottom: 1rem;
+        width: 4rem;
+        height: auto; }
+    .chatt .short-list-online .bottom {
+      margin: 1rem auto;
+      width: 3.5em;
+      height: 4rem;
+      border-radius: 50%;
+      border: 1px solid #E8E8E8;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      font-weight: 500;
+      font-size: 1.2rem;
+      color: #484848;
+      align-items: center; }
+      .chatt .short-list-online .bottom img {
+        position: absolute;
+        top: -0.2rem;
+        right: -0.2rem; }
+  .chatt .convesation-open {
+    display: block;
+    z-index: 9999;
+    width: 42rem;
+    height: 50rem;
+    margin-left: 2rem;
+    position: relative;
+    background-color: white;
+    border-left: 1px solid #ff6900;
+    border-right: 1px solid #ff6900;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px; }
+    .chatt .convesation-open .discussion-header {
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      background-color: #ff6900;
+      height: 5rem;
+      display: grid;
+      grid-template-columns: 8fr 1fr 1fr; }
+      .chatt .convesation-open .discussion-header .discussion-header-details-user {
+        display: flex;
+        align-items: center; }
+        .chatt .convesation-open .discussion-header .discussion-header-details-user .img-user {
+          position: absolute;
+          top: -12px;
+          width: 6rem;
+          height: 6rem;
+          background-color: white;
+          border: 1px solid #ff6900;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .chatt .convesation-open .discussion-header .discussion-header-details-user .img-user img {
+            width: 5rem; }
+      .chatt .convesation-open .discussion-header span {
+        font-weight: normal;
+        font-size: 1.4rem;
+        color: #fff; }
+      .chatt .convesation-open .discussion-header i {
+        color: #fff;
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: flex-end; }
+    .chatt .convesation-open .discussion-main {
+      border-right: 1px solid #d5d5d5; }
+      .chatt .convesation-open .discussion-main .discussion {
+        padding: 3rem 2rem; }
+        .chatt .convesation-open .discussion-main .discussion .message-sent .content {
+          align-items: flex-end;
+          display: flex;
+          flex-direction: column; }
+          .chatt .convesation-open .discussion-main .discussion .message-sent .content .content-msg {
+            display: flex;
+            position: relative;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 1rem; }
+            .chatt .convesation-open .discussion-main .discussion .message-sent .content .content-msg img {
+              padding-left: 1rem;
+              height: 2rem; }
+            .chatt .convesation-open .discussion-main .discussion .message-sent .content .content-msg .message {
+              padding: 1rem;
+              width: max-content;
+              max-width: 25rem;
+              background-color: #FFA500;
+              border-radius: 5px;
+              color: white;
+              font-size: 1.4rem; }
+            .chatt .convesation-open .discussion-main .discussion .message-sent .content .content-msg .triangle {
+              position: absolute;
+              right: 0.8rem;
+              width: 0;
+              top: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 1.7rem 1.7rem 0 0;
+              border-color: #FFA500 transparent transparent transparent; }
+        .chatt .convesation-open .discussion-main .discussion .message-sent .time-send {
+          display: flex;
+          justify-content: flex-end;
+          padding-right: 2rem;
+          color: #CBCBCB;
+          font-size: 1.2rem; }
+        .chatt .convesation-open .discussion-main .discussion .message-received .content {
+          display: flex; }
+          .chatt .convesation-open .discussion-main .discussion .message-received .content .three-pts {
+            height: 2rem;
+            padding-left: 1rem; }
+          .chatt .convesation-open .discussion-main .discussion .message-received .content .img-user {
+            width: 4rem;
+            height: 4rem; }
+          .chatt .convesation-open .discussion-main .discussion .message-received .content .message {
+            padding: 1rem;
+            width: max-content;
+            max-width: 25rem;
+            background-color: #E8E8E8;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            color: #5d5d5d;
+            margin-left: 1rem;
+            font-size: 1.4rem;
+            position: relative; }
+            .chatt .convesation-open .discussion-main .discussion .message-received .content .message .triangle {
+              top: 0;
+              left: -0.8rem;
+              position: absolute;
+              width: 0;
+              height: 0;
+              border-top: -1px solid transparent;
+              border-right: 23px solid #E8E8E8;
+              border-bottom: 15px solid transparent; }
+        .chatt .convesation-open .discussion-main .discussion .message-received .time-send {
+          padding-left: 6rem;
+          color: #CBCBCB;
+          font-size: 1.2rem; }
+        .chatt .convesation-open .discussion-main .discussion .writing {
+          margin: 3rem 0 1rem 0; }
+          .chatt .convesation-open .discussion-main .discussion .writing .icon-writing {
+            width: 4.5rem;
+            padding-left: 1rem; }
+    .chatt .convesation-open .discussion-bottom {
+      padding: 2rem;
+      border-right: 1px solid #d5d5d5;
+      border-top: 1px solid #d5d5d5;
+      position: absolute;
+      bottom: 0;
+      width: 100%; }
+      .chatt .convesation-open .discussion-bottom .send-msg {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 2rem; }
+        .chatt .convesation-open .discussion-bottom .send-msg input {
+          font-size: 2rem;
+          box-shadow: none;
+          outline: none;
+          border: none; }
+          .chatt .convesation-open .discussion-bottom .send-msg input::placeholder {
+            color: #b2b2b2;
+            font-size: 1.8rem; }
+        .chatt .convesation-open .discussion-bottom .send-msg img {
+          height: 2rem; }
+      .chatt .convesation-open .discussion-bottom .icons img {
+        padding-right: 2rem; }
+  .chatt .convesation-with-restaurant {
+    display: block;
+    width: 42rem;
+    height: 50rem;
+    z-index: 99999999;
+    background-color: white;
+    border-left: 1px solid #D40562;
+    border-right: 1px solid #D40562;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px; }
+    .chatt .convesation-with-restaurant .discussion-header {
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      background-color: #D40562;
+      height: 5rem;
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr; }
+      .chatt .convesation-with-restaurant .discussion-header .discussion-header-details-user {
+        display: flex;
+        align-items: center; }
+        .chatt .convesation-with-restaurant .discussion-header .discussion-header-details-user .img-user {
+          position: absolute;
+          top: -2rem;
+          width: 6rem;
+          height: 6rem;
+          background-color: white;
+          border: 1px solid #ff6900;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .chatt .convesation-with-restaurant .discussion-header .discussion-header-details-user .img-user img {
+            width: 5rem; }
+      .chatt .convesation-with-restaurant .discussion-header span {
+        font-weight: normal;
+        font-size: 1.4rem;
+        color: #fff; }
+      .chatt .convesation-with-restaurant .discussion-header i {
+        color: #fff;
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: flex-end; }
+    .chatt .convesation-with-restaurant .discussion-main {
+      overflow-y: scroll;
+      height: 48rem;
+      border-right: 1px solid #d5d5d5;
+      border-bottom: 1px solid #d5d5d5; }
+      .chatt .convesation-with-restaurant .discussion-main::-webkit-scrollbar {
+        display: none; }
+      .chatt .convesation-with-restaurant .discussion-main .discussion {
+        padding: 3rem 2rem; }
+        .chatt .convesation-with-restaurant .discussion-main .discussion .message-sent .content {
+          align-items: flex-end;
+          display: flex;
+          flex-direction: column; }
+          .chatt .convesation-with-restaurant .discussion-main .discussion .message-sent .content .content-msg {
+            display: flex;
+            position: relative;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 1rem; }
+            .chatt .convesation-with-restaurant .discussion-main .discussion .message-sent .content .content-msg img {
+              padding-left: 1rem;
+              height: 2rem; }
+            .chatt .convesation-with-restaurant .discussion-main .discussion .message-sent .content .content-msg .message {
+              padding: 1rem;
+              width: max-content;
+              max-width: 25rem;
+              background-color: #FFA500;
+              border-radius: 5px;
+              color: white;
+              font-size: 1.4rem; }
+            .chatt .convesation-with-restaurant .discussion-main .discussion .message-sent .content .content-msg .triangle {
+              position: absolute;
+              right: 0.8rem;
+              width: 0;
+              top: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 1.7rem 1.7rem 0 0;
+              border-color: #FFA500 transparent transparent transparent; }
+        .chatt .convesation-with-restaurant .discussion-main .discussion .message-sent .time-send {
+          display: flex;
+          justify-content: flex-end;
+          padding-right: 2rem;
+          color: #CBCBCB;
+          font-size: 1.2rem; }
+        .chatt .convesation-with-restaurant .discussion-main .discussion .message-received .content {
+          display: flex; }
+          .chatt .convesation-with-restaurant .discussion-main .discussion .message-received .content .three-pts {
+            height: 2rem;
+            padding-left: 1rem; }
+          .chatt .convesation-with-restaurant .discussion-main .discussion .message-received .content .img-user {
+            width: 4rem;
+            height: 4rem; }
+          .chatt .convesation-with-restaurant .discussion-main .discussion .message-received .content .message {
+            width: max-content;
+            max-width: 25rem;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            margin-left: 1rem;
+            position: relative; }
+            .chatt .convesation-with-restaurant .discussion-main .discussion .message-received .content .message .first-msg {
+              padding: 1rem 1rem 0 1rem;
+              margin: 0;
+              font-size: 1.4rem;
+              color: #5d5d5d;
+              background-color: #E8E8E8; }
+            .chatt .convesation-with-restaurant .discussion-main .discussion .message-received .content .message .second-msg {
+              padding: 0.5rem 1rem 1rem 1rem;
+              margin: 0;
+              font-size: 1.4rem;
+              color: #5d5d5d;
+              background-color: #E8E8E8; }
+            .chatt .convesation-with-restaurant .discussion-main .discussion .message-received .content .message .triangle {
+              top: 0;
+              left: -0.9rem;
+              position: absolute;
+              width: 0;
+              height: 0;
+              border-top: -1px solid transparent;
+              border-right: 15px solid #E8E8E8;
+              border-bottom: 13px solid transparent; }
+            .chatt .convesation-with-restaurant .discussion-main .discussion .message-received .content .message .informations-restaurant {
+              margin-top: 1rem;
+              display: grid;
+              grid-template-columns: 1fr 3fr; }
+              .chatt .convesation-with-restaurant .discussion-main .discussion .message-received .content .message .informations-restaurant .details .name-restaurant {
+                font-weight: bold;
+                font-size: 1.7rem;
+                color: #484848; }
+              .chatt .convesation-with-restaurant .discussion-main .discussion .message-received .content .message .informations-restaurant .details .location {
+                display: flex;
+                align-items: center; }
+                .chatt .convesation-with-restaurant .discussion-main .discussion .message-received .content .message .informations-restaurant .details .location .adress {
+                  font-size: 1.3rem;
+                  color: #484848;
+                  opacity: 0.8;
+                  margin-left: 1rem; }
+              .chatt .convesation-with-restaurant .discussion-main .discussion .message-received .content .message .informations-restaurant .details .rating {
+                margin: 2rem 0;
+                display: block; }
+                .chatt .convesation-with-restaurant .discussion-main .discussion .message-received .content .message .informations-restaurant .details .rating i {
+                  color: #ffa500;
+                  font-size: 1rem;
+                  font-weight: normal; }
+            .chatt .convesation-with-restaurant .discussion-main .discussion .message-received .content .message .show-details {
+              width: 100%;
+              height: 4.7rem;
+              background: #ff6900;
+              padding: 0 2rem;
+              font-family: Raleway;
+              border-radius: 5px;
+              font-size: 2rem;
+              color: #fff;
+              cursor: pointer;
+              outline: none;
+              margin: 2rem 0; }
+            .chatt .convesation-with-restaurant .discussion-main .discussion .message-received .content .message .profile-restaurant {
+              font-weight: bold;
+              font-size: 1.4rem;
+              color: #ff6900;
+              display: flex;
+              justify-content: center; }
+        .chatt .convesation-with-restaurant .discussion-main .discussion .message-received .time-send {
+          padding-left: 6rem;
+          color: #CBCBCB;
+          font-size: 1.2rem; }
+        .chatt .convesation-with-restaurant .discussion-main .discussion .writing {
+          margin: 3rem 0 1rem 0; }
+          .chatt .convesation-with-restaurant .discussion-main .discussion .writing .icon-writing {
+            width: 4.5rem;
+            padding-left: 1rem; }
+    .chatt .convesation-with-restaurant .discussion-bottom {
+      padding: 2rem;
+      border-right: 1px solid #d5d5d5;
+      border-bottom: 1px solid #d5d5d5; }
+      .chatt .convesation-with-restaurant .discussion-bottom .send-msg {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 2rem; }
+        .chatt .convesation-with-restaurant .discussion-bottom .send-msg input {
+          font-size: 2rem;
+          box-shadow: none;
+          outline: none;
+          border: none; }
+          .chatt .convesation-with-restaurant .discussion-bottom .send-msg input::placeholder {
+            color: #b2b2b2;
+            font-size: 1.8rem; }
+        .chatt .convesation-with-restaurant .discussion-bottom .send-msg img {
+          height: 2rem; }
+      .chatt .convesation-with-restaurant .discussion-bottom .icons img {
+        padding-right: 2rem; }
+  .chatt .conversation {
+    position: relative;
+    background-color: white;
+    border-top-left-radius: 5px;
+    z-index: 9999;
+    bottom: 0;
+    right: 1.5rem;
+    width: 41rem;
+    margin-left: 4rem;
+    /* height: 70rem; */
+    /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); */
+    box-shadow: -1px -26px 23px -25px rgba(255, 105, 0, 0.19); }
+    .chatt .conversation .open-button {
+      padding: 0 2rem;
+      position: absolute;
+      bottom: 0;
+      height: 7rem;
+      cursor: pointer;
+      margin-bottom: 0.3rem;
+      border-bottom: 2px solid #ff6900;
+      display: grid;
+      grid-template-columns: 1fr 6fr 1fr;
+      cursor: pointer;
+      border-radius: 5px 5px 0px 0px;
+      background: #fff;
+      align-items: center; }
+      .chatt .conversation .open-button i {
+        font-size: 2.5rem;
+        color: #ff6900; }
+      .chatt .conversation .open-button span {
+        font-weight: 600;
+        font-size: 1.6rem;
+        color: #ff6900; }
+      .chatt .conversation .open-button .number {
+        position: relative;
+        background-color: #ff6900;
+        color: white;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: bold; }
+        .chatt .conversation .open-button .number img {
+          position: absolute;
+          top: 0;
+          right: -0.3rem; }
+    .chatt .conversation .coll {
+      padding: 0 2rem;
+      position: absolute;
+      bottom: 0;
+      cursor: pointer;
+      margin-top: 2rem;
+      margin-bottom: 0.3rem;
+      border-bottom: 2px solid #ff6900;
+      display: grid;
+      grid-template-columns: 1fr 6fr 1fr;
+      cursor: pointer;
+      border-radius: 5px 5px 0px 0px;
+      background: #fff;
+      align-items: center; }
+      .chatt .conversation .coll i {
+        font-size: 2.5rem;
+        color: #484848; }
+      .chatt .conversation .coll span {
+        font-weight: 600;
+        font-size: 1.6rem;
+        color: #484848; }
+      .chatt .conversation .coll .number {
+        position: relative;
+        background-color: white;
+        border: 1px solid #e8e8e8;
+        color: #484848;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: bold; }
+        .chatt .conversation .coll .number img {
+          position: absolute;
+          top: 0;
+          right: -0.3rem; }
+    .chatt .conversation .form-container {
+      display: flex;
+      background-color: white;
+      flex-direction: column;
+      /* width: 41rem; } */}
+    
+      .chatt .conversation .form-container .list-online-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        cursor : pointer; }
+        .chatt .conversation-hover .form-container .list-online-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 2rem;
+          margin-bottom: 2rem;
+          cursor : pointer; }
+        .chatt .conversation .form-container .list-online-header .list-online-left-side i {
+          cursor: pointer;
+          color: #ff6900;
+          font-size: 2rem; }
+          .chatt .conversation-hover .form-container .list-online-header .list-online-left-side i {
+            cursor: pointer;
+            color: #ff6900;
+            font-size: 2rem; }
+        .chatt .conversation .form-container .list-online-header .list-online-left-side span {
+          padding-left: 1rem;
+          font-weight: bold;
+          font-size: 1.6rem;
+          color: #ff6900; }
+           .chatt .conversation .form-container .list-online-header .list-online-left-side span {
+          padding-left: 1rem;
+          font-weight: bold;
+          font-size: 1.6rem;
+          color: #ff6900; }
+          .chatt .conversation-hover .form-container .list-online-header .list-online-left-side span {
+            padding-left: 1rem;
+            font-weight: bold;
+            font-size: 1.6rem;
+            color: #ff6900; }
+        .chatt .conversation .form-container .list-online-header .list-online-right-side {
+          display: flex;
+          align-items: center; }
+          .chatt .conversation-hoover .form-container .list-online-header .list-online-right-side {
+            display: flex;
+            align-items: center; }
+          .chatt .conversation .form-container .list-online-header .list-online-right-side i {
+            cursor: pointer;
+            color: #ff6900;
+            font-size: 2rem; }
+            .chatt .conversation-hover .form-container .list-online-header .list-online-right-side i {
+              cursor: pointer;
+              color: #ff6900;
+              font-size: 2rem; }
+          .chatt .conversation .form-container .list-online-header .list-online-right-side span {
+            cursor: pointer;
+            padding-right: 2rem;
+            font-size: 1.6rem;
+            color: #484848; }
+            .chatt .conversation-hover .form-container .list-online-header .list-online-right-side span {
+            display:none}
+      .chatt .conversation .form-container .list-users-online {
+        overflow-y: scroll;
+        height: 45rem; }
+        .chatt .conversation-hover .form-container .list-users-online {
+      
+          height: 45rem; }
+        .chatt .conversation .form-container .list-users-online::-webkit-scrollbar {
+          display: block; }
+        .chatt .conversation .form-container .list-users-online .online-profile {
+          cursor: pointer;
+          display: grid;
+          grid-template-columns: 6fr 2fr 1.5fr 1.5fr;
+          align-items: center;
+          margin-bottom: 1rem;
+          padding: 0 2rem;
+          }
+          .chatt .conversation-hover .form-container .list-users-online .online-profile {
+            cursor: pointer;
+            display: grid;
+            grid-template-columns: 2fr 6fr 1.5fr 1.5fr;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 0 2rem;
+            }
+          .chatt .conversation .form-container .list-users-online .online-profile .online-profile-img {
+            width: 4rem; }
+          .chatt .conversation .form-container .list-users-online .online-profile .online-profile-name {
+            color: #5d5d5d;
+            font-size: 1.4rem; }
+          .chatt .conversation .form-container .list-users-online .online-profile .time-disconnected {
+            color: #a2a2a2;
+            font-size: 1rem;
+            text-align: center; }
+          .chatt .conversation .form-container .list-users-online .online-profile .online {
+            display: flex;
+            justify-self: flex-end; }
+            .chatt .conversation-hover .form-container .list-users-online .online-profile .online {
+              display: flex;
+              justify-self: flex-end; }
+          .chatt .conversation .form-container .list-users-online .online-profile .svg-writing {
+            color: #ff6900;
+            justify-self: flex-end; }
+            .chatt .conversation .form-container .list-users-online .online-profile .svg-writing path {
+              fill: #ff6900 !important; }
+      .chatt .conversation .form-container .btn {
+        padding: 0 2rem;
+        border-top: 1px solid #E8E8E8;
+        cursor: pointer;
+        margin-top: 2rem;
+        border-bottom: 2px solid #ff6900;
+        margin-bottom: 0.4rem;
+        display: grid;
+        grid-template-columns: 1fr 6fr 1fr;
+        cursor: pointer;
+        height: 6rem;
+        background: #fff;
+        align-items: center; }
+        .chatt .conversation .form-container .btn i {
+          font-size: 2.5rem;
+          color: #484848; }
+        .chatt .conversation .form-container .btn span {
+          font-weight: 600;
+          font-size: 1.6rem;
+          color: #484848; }
+        .chatt .conversation .form-container .btn .number {
+          position: relative;
+          background-color: white;
+          border: 1px solid #E8E8E8;
+          color: #484848;
+          width: 4rem;
+          height: 4rem;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.2rem;
+          font-weight: bold; }
+          .chatt .conversation .form-container .btn .number img {
+            position: absolute;
+            top: 0;
+            right: -0.3rem; }
+  .chatt .conversation-hover {
+    width: 9rem; 
+    position: relative;
+    background-color: white;
+    border-top-left-radius: 5px;
+    z-index: 9999;
+    bottom: 0;
+    right: 1.5rem;
+  
+    margin-left: 4rem;
+    /* height: 70rem; */
+    /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); */
+    box-shadow: -1px -26px 23px -25px rgba(255, 105, 0, 0.19); }
+    .chatt .conversation-hover .open-button .title, .chatt .conversation-hover .open-button i, .chatt .conversation-hover .open-button span {
+      display: block; 
+      font-weight: 600;
+      font-size: 1.6rem;
+      color: #ff6900;}
+    .chatt .conversation-hover .form-container {
+      width: 8rem;
+      display: flex;
+      background-color: white;
+      flex-direction: column; }
+      .chatt .conversation-hover .form-container .list-online-header .list-online-right-side {
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 2rem; }
+      .chatt .conversation-hover .form-container .list-online-left-side span, .chatt .conversation-hover .form-container .list-online-left-side .boite {
+        display: none; }
+      .chatt .conversation-hover .form-container .list-users-online .online-profile {
+        display: flex;
+        cursor: pointer;
+      
+          grid-template-columns: 2fr 6fr 1.5fr 1.5fr;
+          align-items: center;
+          margin-bottom: 1rem;
+          padding: 0 2rem; }
+        .chatt .conversation-hover .form-container .list-users-online .online-profile .online-profile-name, .chatt .conversation-hover .form-container .list-users-online .online-profile .online, .chatt .conversation-hover .form-container .list-users-online .online-profile .writing, .chatt .conversation-hover .form-container .list-users-online .online-profile .time-disconnected {
+          display: none; }
+        .chatt .conversation-hover .form-container .list-users-online .online-profile .online-profile-img {
+          width: 4rem; }

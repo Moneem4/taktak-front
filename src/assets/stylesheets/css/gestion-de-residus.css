@@ -1,0 +1,5882 @@
+@charset "UTF-8";
+.gestion-de-residus {
+  overflow: hidden;
+  height: 100vh;
+  /*display: grid;*/
+  grid-template-columns: auto 1fr;
+}
+.gestion-de-residus .gestion-de-residus-content {
+  overflow-y: scroll;
+  position: relative;
+  height: 100%;
+}
+.gestion-de-residus .gestion-de-residus-content::-webkit-scrollbar {
+  display: none;
+}
+.gestion-de-residus .gestion-de-residus-content .navbar {
+  top: 0;
+  position: sticky;
+  z-index: 5555;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed {
+  display: flex;
+  justify-content: space-between;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant {
+  padding-bottom: 15rem;
+  position: relative;
+  width: 100%;
+  margin-left: 10px;
+  max-width: 675px;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .gestion-residus-Restaurant-header {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.4rem;
+  padding: 0 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .gestion-residus-Restaurant-header
+  .gestion-residus-Restaurant-header-title {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .gestion-residus-Restaurant-header
+  .gestion-residus-Restaurant-header-description {
+  font-size: 1.6rem;
+  color: #484848; 
+}
+
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu
+  .menu-first {
+  background: #fff;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu
+  .menu-first
+    .menu-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+  }
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu
+  .menu-first
+  .menu-body
+  .card {
+  background: white;
+  height: 41rem;
+  transition: 0.5s all ease;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardTop {
+  transition: 0.8s all ease;
+  object-fit: contain;
+  height: 50%;
+}
+@media (max-width: 1000px) {
+  .gestion-de-residus
+    .gestion-de-residus-content
+    .gestion-de-residus-Restaurant-content-feed
+    .gestion-residus-Restaurant
+    .menu
+    .menu-first
+    .menu-body
+    .card
+    .cardTop {
+    height: 45%;
+  }
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom {
+  height: 55%;
+  transition: 0.5s all ease;
+  position: relative;
+  background-color: #ffffff;
+  }
+@media (max-width: 1000px) {
+  .gestion-de-residus
+    .gestion-de-residus-content
+    .gestion-de-residus-Restaurant-content-feed
+    .gestion-residus-Restaurant
+    .menu
+    .menu-first
+    .menu-body
+    .card
+    .cardBottom {
+    height: 60%;
+  }
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom
+  .cardText {
+  min-height: 100%;
+  padding-top: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .food-name {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #484848;
+  padding: 0 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .sub-title {
+  padding: 1.5rem 0;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #888;
+  padding: 0 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .price
+  span {
+  font-weight: 300;
+  font-size: 3rem;
+  color: #ff6900;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .price
+  i {
+  color: #ffa500;
+  font-size: 1.7rem;
+  font-weight: normal;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardHoverText {
+  display: block;
+  margin: 1rem 0;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content {
+  padding: 1.5rem;
+  border-top: 1px solid #e8e8e8;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content
+  .time
+  span {
+  font-size: 2rem;
+  color: #484848;
+  padding-left: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu
+  .menu-first
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content
+  .time
+  i {
+  font-size: 2rem;
+  color: #484848;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+
+
+
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .header-inner {
+  display: flex;
+  align-self: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .profile-picture {
+  display: flex;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .profile-picture
+  img {
+  max-width: 26rem;
+  height: 12rem;
+  width: 12rem;
+  border-radius: 5px;
+  display: block;
+  border: 1px solid #e8e8e8;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .user-info {
+  margin-left: 2rem;
+  display: grid;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .user-info
+  .user-info-info {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 16rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .user-info
+  .user-info-info
+  .name {
+  font-weight: 300;
+  font-size: 4rem;
+  line-height: 4rem;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .user-info
+  .user-info-info
+  .name
+  i {
+  color: #ff6900;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .user-info
+  .user-info-info
+  .location {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #484848;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .user-info
+  .user-info-info
+  .location
+  i {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #484848;
+  opacity: 0.8;
+  margin-right: 0.5rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .user-info
+  .user-info-info
+  .location
+  .rating {
+  margin-bottom: 0;
+  margin-left: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .user-info
+  .user-info-info
+  .location
+  .rating
+  i {
+  font-size: 1.7rem;
+  color: #ffa500;
+  font-weight: normal;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .user-info
+  .user-info-info
+  .location
+  .votes {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  height: 3rem;
+  border-radius: 5px;
+  background: linear-gradient(#fda700 0%, #fd6a00 100%);
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #fff;
+  padding: 0 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .user-info
+  .user-info-info
+  .location
+  .votes-nb {
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.3;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .user-info
+  .user-info-info
+  .tags {
+  padding: 1rem;
+  border: 1px solid #484848;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-picker {
+  display: grid;
+  grid-template-columns: 1fr 18fr 1fr;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-picker
+  .arrow {
+  cursor: pointer;
+  background: white;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-picker
+  .arrow
+  i {
+  color: #484848;
+  font-size: 1.5rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-picker
+  .arrow:first-child
+  i {
+  transform: rotate(180deg);
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-picker
+  .arrow.last {
+  margin-left: auto;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-picker
+  .menu {
+  margin: 3rem 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-picker
+  .menu::-webkit-scrollbar {
+  display: none;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-picker
+  .menu
+  span {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 5px;
+  background: #ffa500;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-picker
+  .menu
+  .menu-picker-items {
+  display: flex;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-picker
+  .menu
+  .menu-picker-items::-webkit-scrollbar {
+  display: none;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-picker
+  .menu
+  .menu-picker-items
+  .picker-item {
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+  height: 5rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+  margin-right: 1rem;
+  width: auto;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-picker
+  .menu
+  .menu-picker-items
+  .picker-item:last-child {
+  margin-right: 0;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-picker
+  .menu
+  .menu-picker-items
+  .picker-item-clicked {
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #ff6900;
+  height: 5rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #fd6a00;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+  margin-right: 1rem;
+  width: auto;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus {
+  margin-top: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  > span {
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #bababa;
+  margin-bottom: 4rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body {
+  /*display: grid;*/
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+  margin-top: 1rem;
+}
+
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu {
+  position: relative;
+  height: 42rem;
+  display: block;
+  background: white;
+  transition: 0.4s linear;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  transition: 1s all ease;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .image {
+  height: 22rem;
+  overflow: hidden;
+  transition: 1s;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .image
+  img {
+  height: 100%;
+  width: 100%;
+  transition: 1s;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .content {
+  position: absolute;
+  bottom: 0px;
+  background: white;
+  transition: 1s all ease;
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .content
+  .food-name {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  transition: 1s all ease;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .content
+  .food-name
+  span {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #484848;
+  transition: 1s all ease;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .content
+  .sub-title {
+  padding: 1.5rem;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #888;
+  transition: 1s all ease;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .content
+  .price {
+  padding: 1.5rem;
+  transition: 1s all ease;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .content
+  .price
+  span {
+  font-weight: 300;
+  font-size: 30px;
+  color: #ff6900;
+  transition: 1s all ease;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .content
+  .price
+  i {
+  font-size: 2rem;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .content:hover {
+  transition: 1s all ease;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .content:hover
+  .bottom {
+  display: block;
+  transition: 1s all ease;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .content:hover
+  .food-name {
+  transition: 1s all ease;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .content:hover
+  .food-name
+  img {
+  position: absolute;
+  top: -3rem;
+  right: 4rem;
+  transition: 1s;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .content:hover.active {
+  transition: 1s all ease;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .content:hover.active
+  .image
+  img {
+  transform: scale(1);
+  transition: 1s;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .bottom {
+  display: none;
+  transition: 1s all ease;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .bottom
+  .menu-info-bottom-content {
+  padding: 1.5rem;
+  border-top: 1px solid #e8e8e8;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  transition: 1s;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .bottom
+  .menu-info-bottom-content
+  .time {
+  transition: 1s all ease;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .bottom
+  .menu-info-bottom-content
+  .time
+  span {
+  font-size: 2rem;
+  color: #484848;
+  padding-left: 1rem;
+  transition: 1s all ease;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .bottom
+  .menu-info-bottom-content
+  .add-remove
+  .add {
+  cursor: pointer;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .bottom
+  .menu-info-bottom-content
+  .add-remove
+  .add
+  i {
+  font-size: 2rem;
+  color: #ff6900;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .bottom
+  .menu-info-bottom-content
+  .add-remove
+  .add
+  span {
+  font-weight: 300;
+  font-size: 2rem;
+  color: #ff6900;
+  padding-right: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .bottom
+  .menu-info-bottom-content
+  .add-remove
+  .remove {
+  display: none;
+  cursor: pointer;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .bottom
+  .menu-info-bottom-content
+  .add-remove
+  .remove
+  i {
+  font-size: 2rem;
+  color: #ff6900;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card-menu
+  .bottom
+  .menu-info-bottom-content
+  .add-remove
+  .remove
+  span {
+  font-weight: 300;
+  font-size: 2rem;
+  color: #ff6900;
+  padding-right: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card {
+  background: white;
+  height: 40rem;
+  transition: 0.5s all ease;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card
+  .cardTop {
+  transition: 0.8s all ease;
+  height: 51%;
+  /*background: url("../../../assets/img/svg/pizza-gestion-résidus.png") no-repeat; */
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card
+  .cardBottom {
+  height: 53%;
+  transition: 0.5s all ease;
+  position: relative;
+}
+@media (max-width: 1000px) {
+  .gestion-de-residus
+    .gestion-de-residus-content
+    .gestion-de-residus-Restaurant-content-feed
+    .gestion-residus-Restaurant
+    .menu-gestion-residus
+    .menu-body
+    .card
+    .cardBottom {
+    height: 62%;
+  }
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card
+  .cardBottom
+  .cardText {
+  min-height: 100%;
+  padding-top: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .food-name {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #484848;
+  padding: 0 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .food-done {
+  display: none;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .food-done
+  .circle-white {
+  position: absolute;
+  top: -2.8rem;
+  right: 2.4rem;
+  width: 7rem;
+  height: 7rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .food-done
+  .added {
+  position: absolute;
+  top: -1.3rem;
+  right: 3.8rem;
+  width: 4rem;
+  height: 4rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .sub-title {
+  padding: 1.5rem 0;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #888;
+  padding: 0 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .price {
+  font-weight: 300;
+  font-size: 3rem;
+  color: #ff6900;
+  padding: 0 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card
+  .cardHoverText {
+  margin: 1rem 0;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content {
+  padding: 1.5rem;
+  border-top: 1px solid #e8e8e8;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content
+  .time
+  span {
+  font-size: 2rem;
+  color: #484848;
+  padding-left: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content
+  .time
+  i {
+  font-size: 2rem;
+  color: #484848;
+  font-weight: normal;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content
+  .add-remove
+  .add {
+  cursor: pointer;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content
+  .add-remove
+  .add
+  i {
+  font-size: 2rem;
+  color: #ff6900;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content
+  .add-remove
+  .add
+  span {
+  font-weight: 300;
+  font-size: 2rem;
+  color: #ff6900;
+  padding-right: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content
+  .add-remove
+  .remove {
+  /*display: none;*/
+  cursor: pointer;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content
+  .add-remove
+  .remove
+  i {
+  font-size: 2rem;
+  color: #ff6900;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content
+  .add-remove
+  .remove
+  span {
+  font-weight: 300;
+  font-size: 2rem;
+  color: #ff6900;
+  padding-right: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card:hover
+  .cardHoverText {
+  display: block;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card:hover
+  .cardBottom {
+  height: 67%;
+  opacity: 1;
+}
+@media (max-width: 1000px) {
+  .gestion-de-residus
+    .gestion-de-residus-content
+    .gestion-de-residus-Restaurant-content-feed
+    .gestion-residus-Restaurant
+    .menu-gestion-residus
+    .menu-body
+    .card:hover
+    .cardBottom {
+    height: 75%;
+  }
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-body
+  .card:hover
+  .cardTop {
+  height: 35%;
+  opacity: 0.8;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second {
+  display: none;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .menu-map {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: rgba(232, 232, 232, 0.05);
+  border: 1px solid #e8e8e8;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05));
+  border-radius: 5px;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .menu-map
+  .menu-map-header {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .menu-map
+  .menu-map-header
+  .map-label {
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.5;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .menu-map
+  .menu-map-header
+  .map-options {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: right;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .menu-map
+  .menu-map-header
+  .map-options
+  i {
+  font-size: 0.7rem;
+  margin-left: 0.5rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .menu-map
+  .menu-map-body
+  img {
+  width: 100%;
+  object-fit: cover;
+  height: 15rem;
+  margin-bottom: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .menu-map
+  .menu-map-body
+  .map-info {
+  display: flex;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .menu-map
+  .menu-map-body
+  .map-info
+  > span:first-child,
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .menu-map
+  .menu-map-body
+  .map-info
+  > span:nth-child(2) {
+  margin-right: 3rem;
+  font-weight: normal;
+  font-size: 2rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.8;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .menu-map
+  .menu-map-body
+  .map-info
+  > span:first-child
+  i,
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .menu-map
+  .menu-map-body
+  .map-info
+  > span:nth-child(2)
+  i {
+  margin-right: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .menu-map
+  .menu-map-body
+  .map-info
+  > span:last-child {
+  margin-left: auto;
+  font-weight: normal;
+  font-size: 1.6rem;
+  text-align: right;
+  color: #484848;
+  opacity: 0.5;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info {
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 40% auto;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-media {
+  height: 30rem;
+  width: 100%;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-media
+  img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info {
+  padding: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header
+  img {
+  margin-right: 1rem;
+  border-radius: 5px;
+  height: 4rem;
+  width: 4rem;
+  object-fit: cover;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header
+  .name
+  .restaurant-name {
+  display: block;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: left;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header
+  .name
+  .restaurant-location {
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.8;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header
+  .name
+  .restaurant-location
+  i {
+  margin-right: 0.5rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header
+  .raiting {
+  margin-left: auto;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header
+  .raiting
+  i {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: normal;
+  font-size: 17px;
+  text-align: left;
+  color: #ffa500;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .time {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .time
+  i {
+  margin-right: 1rem;
+  color: #484848;
+  font-size: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .time
+  .title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #175db3;
+  margin-right: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .time
+  .status {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  border-radius: 3px;
+  background: #5ecc73;
+  padding: 0 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .time
+  ._time {
+  margin-left: auto;
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .info {
+  margin-bottom: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .info
+  i {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .info
+  .title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #175db3;
+  margin-right: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .info
+  ._info {
+  max-width: 20rem;
+  padding-left: 1.5rem;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 16px;
+  text-align: left;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here {
+  display: flex;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  .peoples {
+  display: flex;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  .peoples
+  .people {
+  position: relative;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  .peoples
+  .people
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  .peoples
+  .people:nth-child(2) {
+  left: -1.25rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  .peoples
+  .people:nth-child(3) {
+  left: -2.25rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  .peoples
+  .people:nth-child(4) {
+  left: -3.25rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  span {
+  position: relative;
+  left: -2rem;
+  font-size: 1.1rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.8;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  span
+  strong {
+  font-weight: bold;
+  color: #175db3;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant {
+  max-height: 24.5rem;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05));
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-header {
+  height: 14rem;
+  width: 100%;
+  transition: all 0.3s;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-header
+  img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body {
+  padding: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  img {
+  margin-right: 1rem;
+  border-radius: 5px;
+  height: 4rem;
+  width: 4rem;
+  object-fit: cover;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  .name
+  .restaurant-name {
+  display: block;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: left;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  .name
+  .restaurant-location {
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.8;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  .name
+  .restaurant-location
+  i {
+  margin-right: 0.5rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  .raiting {
+  margin-left: auto;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  .raiting
+  i {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: normal;
+  font-size: 17px;
+  text-align: left;
+  color: #ffa500;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  .raiting
+  span {
+  color: #e2e2e2;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  .raiting
+  span.full {
+  color: #ffa500;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  .raiting
+  span:hover {
+  color: #ffa500;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer {
+  padding-left: 5rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here {
+  display: flex;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  .peoples {
+  display: flex;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  .peoples
+  .people {
+  position: relative;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  .peoples
+  .people
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  .peoples
+  .people:nth-child(2) {
+  left: -1.25rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  .peoples
+  .people:nth-child(3) {
+  left: -2.25rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  .peoples
+  .people:nth-child(4) {
+  left: -3.25rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  span {
+  position: relative;
+  left: -2rem;
+  font-size: 1.1rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.8;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  span
+  strong {
+  font-weight: bold;
+  color: #175db3;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-invisible {
+  transition: all 0.1s;
+  opacity: 0;
+  padding-left: 5rem;
+  display: flex;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-invisible
+  .promo
+  .promo-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: left;
+  color: #d40562;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-invisible
+  button {
+  margin-left: auto;
+  height: 4rem;
+  color: white;
+  background: #ffa500;
+  padding: 0 1rem;
+  border-radius: 5px;
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #fff;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-invisible
+  button
+  i {
+  margin-right: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant:hover
+  .soft-restaurant-header {
+  height: 8rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant:hover
+  .soft-restaurant-body
+  .soft-restaurant-body-invisible {
+  opacity: 1;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .back-to-menu {
+  display: flex;
+  align-items: center;
+  margin: 4rem 0;
+  cursor: pointer;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .back-to-menu
+  i {
+  font-size: 3rem;
+  color: #484848;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .gestion-residus-Restaurant
+  .back-to-menu
+  a {
+  font-weight: normal;
+  font-size: 3rem;
+  text-align: center;
+  color: #484848;
+  opacity: 0.5;
+  margin-left: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary {
+  height: 100%;
+  padding: 0 2rem 2rem 2rem;
+  width: 32%;
+  background: #f8f7fa;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+  margin: 0.5rem 2rem;
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .listContainer {
+  height: 100%;
+  background: #ffa60063;
+  padding: 0 2rem 2rem 2rem;
+  border-radius: 5px;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .my-list {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .my-list
+  .left-side {
+  font-weight: 500;
+  font-size: 3rem;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .my-list
+  .right-side {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #ff6900;
+  cursor: pointer;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item {
+  display: flex;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  img {
+  height: 70px;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details {
+  margin-left: 2rem;
+  width: 100%;
+  width: 324px;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details
+  .first-details {
+  display: flex;
+  justify-content: space-between;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details
+  .first-details
+  .details-food {
+  display: flex;
+  flex-direction: column;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details
+  .first-details
+  .details-food
+  .food-name {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details
+  .first-details
+  i {
+  cursor: pointer;
+  color: #fd6a00;
+  font-size: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details
+  .food-price {
+  font-size: 1.8rem;
+  text-align: left;
+  color: #ff6900;
+  text-decoration-line: line-through;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details
+  .new-price {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details
+  .new-price
+  .new-price-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #484848;
+  opacity: 0.5;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details
+  .new-price
+  .new-price-number {
+  width: 105px;
+  height: 30px;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: left;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details
+  .new-price
+  .new-price-number
+  .number {
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: left;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details
+  .new-price
+  .new-price-number
+  .unit {
+  font-size: 1.6rem;
+  text-align: left;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details
+  .Qty-available {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details
+  .Qty-available
+  .title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #484848;
+  opacity: 0.5;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details
+  .Qty-available
+  .Qty-number {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  width: 105px;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details
+  .Qty-available
+  .Qty-number
+  div {
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #ff6900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details
+  .Qty-available
+  .Qty-number
+  div
+  i {
+  font-size: 1rem;
+  color: #fd6a00;
+  padding: 0 0.8rem;
+  cursor: pointer;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details
+  .Qty-available
+  .Qty-number
+  .number {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 0 1rem;
+  width: 40px;
+  height: 28px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details
+  .Qty-available
+  .Qty-number
+  .number
+  span {
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .content-list
+  .confirmation {
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  background: #484848;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .content-list
+.confirmationCircularProgress{
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  background: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Restaurant-content-feed
+  .feed-secondary
+  .content-list
+  .confirmation:hover {
+  background: #ff6900;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed {
+  display: none;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content {
+  display: flex;
+  justify-content: space-between;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist {
+  padding-bottom: 15rem;
+  position: relative;
+  width: 65%;
+  max-width: 675px;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .gestion-residus-Foodlist-header {
+  display: flex;
+  flex-direction: column;
+  line-height: 24px;
+  padding: 0 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .gestion-residus-Foodlist-header
+  .greeting {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 24px;
+  color: #ff6900;
+  margin: 2rem 0;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .gestion-residus-Foodlist-header
+  .Foodlist-header-title {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .gestion-residus-Foodlist-header
+  .Foodlist-header-description {
+  font-size: 1.6rem;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .filtres {
+  margin: 3rem 0;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .filtres
+  i {
+  color: #ff6900;
+  font-size: 2.4rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .filtres
+  .Choose-governorate {
+  padding: 0 2rem;
+  width: 214px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .filtres
+  .Choose-governorate
+  span {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #484848;
+  padding-right: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .filtres
+  .Choose-governorate
+  i {
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .filtres
+  .cheapest {
+  padding: 0 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 185px;
+  height: 5rem;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  margin-left: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .filtres
+  .cheapest
+  i {
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .filtres
+  .cheapest
+  span {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #484848;
+  padding-right: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .filtres
+  .most-recent {
+  cursor: pointer;
+  padding: 0 2rem;
+  width: 185px;
+  height: 5rem;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  margin-left: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .filtres
+  .most-recent
+  i {
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .filtres
+  .most-recent
+  span {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #484848;
+  padding-right: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus {
+  margin-top: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  > span {
+  font-weight: 500;
+  font-size: 2.4rem;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first {
+  background: #fff;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-header {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-header
+  .checkin-label {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #484848;
+  opacity: 0.5;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-header
+  .checkin-options {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: right;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-header
+  .checkin-options
+  i {
+  margin-left: 0.5rem;
+  font-size: 0.7rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+  margin-top: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .menu-example {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  height: 380px;
+  position: relative;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .menu-example:hover
+  .place-media
+  img {
+  width: 100%;
+  height: 13rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .menu-example:hover
+  .menu-info-bottom
+  .menu-info-bottom-content {
+  border-top: 1px solid #e8e8e8;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .menu-example:hover
+  .menu-info-bottom
+  .menu-info-bottom-content
+  .time
+  span {
+  font-size: 2rem;
+  color: #484848;
+  padding-left: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .menu-example:hover
+  .menu-info-bottom
+  .menu-info-bottom-content
+  .add-remove
+  i {
+  font-size: 2rem;
+  color: #ff6900;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .menu-example:hover
+  .menu-info-bottom
+  .menu-info-bottom-content
+  .add-remove
+  span {
+  font-weight: 300;
+  font-size: 2rem;
+  color: #ff6900;
+  padding-right: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .menu-example
+  .place-media
+  img {
+  display: block;
+  width: 100%;
+  height: 15rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: absolute;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .menu-example
+  .menu-info {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 16rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .menu-example
+  .menu-info
+  .menu-title {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: left;
+  color: #484848;
+  margin-bottom: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .menu-example
+  .menu-info
+  p {
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 24px;
+  text-align: left;
+  color: #888;
+  margin-bottom: 3rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .menu-example
+  .menu-info
+  .menu-price {
+  font-weight: 300;
+  font-size: 30px;
+  text-align: left;
+  color: #ff6900;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .menu-example
+  .menu-info-bottom {
+  display: none;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .menu-example
+  .menu-info-bottom
+  .menu-info-bottom-content {
+  border-top: 1px solid #e8e8e8;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .menu-example
+  .menu-info-bottom
+  .menu-info-bottom-content
+  .time
+  span {
+  font-size: 2rem;
+  color: #484848;
+  padding-left: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .menu-example
+  .menu-info-bottom
+  .menu-info-bottom-content
+  .add-remove
+  i {
+  font-size: 2rem;
+  color: #ff6900;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .menu-example
+  .menu-info-bottom
+  .menu-info-bottom-content
+  .add-remove
+  span {
+  font-weight: 300;
+  font-size: 2rem;
+  color: #ff6900;
+  padding-right: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .card {
+  background: white;
+  height: 40rem;
+  transition: 0.5s all ease;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .card
+  .cardTop {
+  transition: 0.8s all ease;
+  height: 51%;
+  /*background: url("../../../assets/img/svg/pizza-gestion-résidus.png") no-repeat; */
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom {
+  height: 53%;
+  transition: 0.5s all ease;
+  position: relative;
+}
+@media (max-width: 1000px) {
+  .gestion-de-residus
+    .gestion-de-residus-content
+    .gestion-de-residus-Foodlist-content-feed
+    .gestion-de-residus-Foodlist-content
+    .gestion-residus-Foodlist
+    .menu-gestion-residus
+    .menu-first
+    .menu-body
+    .card
+    .cardBottom {
+    height: 62%;
+  }
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom
+  .cardText {
+  min-height: 100%;
+  padding-top: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .food-name {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #484848;
+  padding: 0 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .food-done {
+  display: none;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .food-done
+  .circle-white {
+  position: absolute;
+  top: -2.8rem;
+  right: 2.4rem;
+  width: 7rem;
+  height: 7rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .food-done
+  .added {
+  position: absolute;
+  top: -1.3rem;
+  right: 3.8rem;
+  width: 4rem;
+  height: 4rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .sub-title {
+  padding: 1.5rem 0;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #888;
+  padding: 0 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .card
+  .cardBottom
+  .cardText
+  .price {
+  font-weight: 300;
+  font-size: 3rem;
+  color: #ff6900;
+  padding: 0 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .card
+  .cardHoverText {
+  margin: 1rem 0;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content {
+  padding: 1.5rem;
+  border-top: 1px solid #e8e8e8;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content
+  .time
+  span {
+  font-size: 2rem;
+  color: #484848;
+  padding-left: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content
+  .time
+  i {
+  font-size: 2rem;
+  color: #484848;
+  font-weight: normal;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content
+  .add-remove
+  .add {
+  cursor: pointer;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content
+  .add-remove
+  .add
+  i {
+  font-size: 2rem;
+  color: #ff6900;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content
+  .add-remove
+  .add
+  span {
+  font-weight: 300;
+  font-size: 2rem;
+  color: #ff6900;
+  padding-right: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content
+  .add-remove
+  .remove {
+  display: none;
+  cursor: pointer;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content
+  .add-remove
+  .remove
+  i {
+  font-size: 2rem;
+  color: #ff6900;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .card
+  .cardHoverText
+  .menu-info-bottom-content
+  .add-remove
+  .remove
+  span {
+  font-weight: 300;
+  font-size: 2rem;
+  color: #ff6900;
+  padding-right: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .card:hover
+  .cardHoverText {
+  display: block;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .card:hover
+  .cardBottom {
+  height: 67%;
+  opacity: 1;
+}
+@media (max-width: 1000px) {
+  .gestion-de-residus
+    .gestion-de-residus-content
+    .gestion-de-residus-Foodlist-content-feed
+    .gestion-de-residus-Foodlist-content
+    .gestion-residus-Foodlist
+    .menu-gestion-residus
+    .menu-first
+    .menu-body
+    .card:hover
+    .cardBottom {
+    height: 75%;
+  }
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-first
+  .menu-body
+  .card:hover
+  .cardTop {
+  height: 35%;
+  opacity: 0.8;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second {
+  display: none;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .menu-map {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: rgba(232, 232, 232, 0.05);
+  border: 1px solid #e8e8e8;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05));
+  border-radius: 5px;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .menu-map
+  .menu-map-header {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .menu-map
+  .menu-map-header
+  .map-label {
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.5;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .menu-map
+  .menu-map-header
+  .map-options {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: right;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .menu-map
+  .menu-map-header
+  .map-options
+  i {
+  font-size: 0.7rem;
+  margin-left: 0.5rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .menu-map
+  .menu-map-body
+  img {
+  width: 100%;
+  object-fit: cover;
+  height: 15rem;
+  margin-bottom: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .menu-map
+  .menu-map-body
+  .map-info {
+  display: flex;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .menu-map
+  .menu-map-body
+  .map-info
+  > span:first-child,
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .menu-map
+  .menu-map-body
+  .map-info
+  > span:nth-child(2) {
+  margin-right: 3rem;
+  font-weight: normal;
+  font-size: 2rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.8;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .menu-map
+  .menu-map-body
+  .map-info
+  > span:first-child
+  i,
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .menu-map
+  .menu-map-body
+  .map-info
+  > span:nth-child(2)
+  i {
+  margin-right: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .menu-map
+  .menu-map-body
+  .map-info
+  > span:last-child {
+  margin-left: auto;
+  font-weight: normal;
+  font-size: 1.6rem;
+  text-align: right;
+  color: #484848;
+  opacity: 0.5;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info {
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 40% auto;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-media {
+  height: 30rem;
+  width: 100%;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-media
+  img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info {
+  padding: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header
+  img {
+  margin-right: 1rem;
+  border-radius: 5px;
+  height: 4rem;
+  width: 4rem;
+  object-fit: cover;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header
+  .name
+  .restaurant-name {
+  display: block;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: left;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header
+  .name
+  .restaurant-location {
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.8;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header
+  .name
+  .restaurant-location
+  i {
+  margin-right: 0.5rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header
+  .raiting {
+  margin-left: auto;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header
+  .raiting
+  i {
+  font-weight: normal;
+  font-size: 1.7rem;
+  text-align: left;
+  color: #ffa500;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header
+  .raiting
+  span {
+  color: #e2e2e2;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header
+  .raiting
+  span.full {
+  color: #ffa500;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-header
+  .raiting
+  span:hover {
+  color: #ffa500;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .time {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .time
+  i {
+  margin-right: 1rem;
+  color: #484848;
+  font-size: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .time
+  .title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #175db3;
+  margin-right: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .time
+  .status {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  border-radius: 3px;
+  background: #5ecc73;
+  padding: 0 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .time
+  ._time {
+  margin-left: auto;
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .info {
+  margin-bottom: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .info
+  i {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .info
+  .title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #175db3;
+  margin-right: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .info
+  ._info {
+  max-width: 20rem;
+  padding-left: 1.5rem;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 16px;
+  text-align: left;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here {
+  display: flex;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  .peoples {
+  display: flex;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  .peoples
+  .people {
+  position: relative;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  .peoples
+  .people
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  .peoples
+  .people:nth-child(2) {
+  left: -1.25rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  .peoples
+  .people:nth-child(3) {
+  left: -2.25rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  .peoples
+  .people:nth-child(4) {
+  left: -3.25rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  span {
+  position: relative;
+  left: -2rem;
+  font-size: 1.1rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.8;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .restaurant-with-info
+  .slide-info
+  .slide-info-body
+  .people-was-here
+  span
+  strong {
+  font-weight: bold;
+  color: #175db3;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant {
+  max-height: 24.5rem;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05));
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-header {
+  height: 14rem;
+  width: 100%;
+  transition: all 0.3s;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-header
+  img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body {
+  padding: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  img {
+  margin-right: 1rem;
+  border-radius: 5px;
+  height: 4rem;
+  width: 4rem;
+  object-fit: cover;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  .name
+  .restaurant-name {
+  display: block;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: left;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  .name
+  .restaurant-location {
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.8;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  .name
+  .restaurant-location
+  i {
+  margin-right: 0.5rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  .raiting {
+  margin-left: auto;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  .raiting
+  i {
+  font-weight: normal;
+  font-size: 1.7rem;
+  text-align: left;
+  color: #ffa500;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  .raiting
+  span {
+  color: #e2e2e2;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  .raiting
+  span.full {
+  color: #ffa500;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-header
+  .raiting
+  span:hover {
+  color: #ffa500;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer {
+  padding-left: 5rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here {
+  display: flex;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  .peoples {
+  display: flex;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  .peoples
+  .people {
+  position: relative;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  .peoples
+  .people
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  .peoples
+  .people:nth-child(2) {
+  left: -1.25rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  .peoples
+  .people:nth-child(3) {
+  left: -2.25rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  .peoples
+  .people:nth-child(4) {
+  left: -3.25rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  span {
+  position: relative;
+  left: -2rem;
+  font-size: 1.1rem;
+  text-align: left;
+  color: #484848;
+  opacity: 0.8;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-footer
+  .people-was-here
+  span
+  strong {
+  font-weight: bold;
+  color: #175db3;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-invisible {
+  transition: all 0.1s;
+  opacity: 0;
+  padding-left: 5rem;
+  display: flex;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-invisible
+  .promo
+  .promo-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: left;
+  color: #d40562;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-invisible
+  button {
+  margin-left: auto;
+  height: 4rem;
+  color: white;
+  background: #ffa500;
+  padding: 0 1rem;
+  border-radius: 5px;
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #fff;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant
+  .soft-restaurant-body
+  .soft-restaurant-body-invisible
+  button
+  i {
+  margin-right: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant:hover
+  .soft-restaurant-header {
+  height: 8rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .menu-gestion-residus
+  .menu-second
+  .soft-restaurants
+  .soft-restaurant:hover
+  .soft-restaurant-body
+  .soft-restaurant-body-invisible {
+  opacity: 1;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .back-to-menu {
+  display: flex;
+  align-items: center;
+  margin: 4rem 0;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .gestion-residus-Foodlist
+  .back-to-menu
+  span {
+  font-weight: normal;
+  font-size: 3rem;
+  text-align: center;
+  color: #484848;
+  opacity: 0.5;
+  margin-left: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .feed-secondary {
+  height: 100%;
+  padding: 0 2rem 2rem 2rem;
+  width: 32%;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  margin: 0.5rem 2rem;
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .feed-secondary
+  .my-list {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .feed-secondary
+  .my-list
+  .left-side {
+  font-weight: 500;
+  font-size: 3rem;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .feed-secondary
+  .my-list
+  .right-side {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #ff6900;
+  cursor: pointer;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item {
+  display: flex;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  img {
+  height: 7rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details {
+  margin-left: 2rem;
+  width: 100%;
+  width: 32.4rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details
+  .first-details {
+  display: flex;
+  justify-content: space-between;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details
+  .first-details
+  .details-food {
+  display: flex;
+  flex-direction: column;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details
+  .first-details
+  .details-food
+  .food-name {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details
+  .first-details
+  i {
+  cursor: pointer;
+  color: #fd6a00;
+  font-size: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .feed-secondary
+  .content-list
+  .lists
+  .list-item
+  .list-item-details
+  .food-price {
+  font-size: 1.8rem;
+  text-align: left;
+  color: #ff6900;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .feed-secondary
+  .content-list
+  .order {
+  width: 100%;
+  height: 6rem;
+  border-radius: 5px;
+  background: #484848;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .feed-secondary
+  .content-list
+  .order:hover {
+  background: #ff6900;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .feed-secondary
+  .content-list
+  .donation {
+  margin: 2rem 0;
+  width: 100%;
+  height: 6rem;
+  border-radius: 5px;
+  background: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #ff6900;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #ff6900;
+  border-radius: 5px;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .gestion-de-residus-Foodlist-content-feed
+  .gestion-de-residus-Foodlist-content
+  .feed-secondary
+  .content-list
+  .donation:hover {
+  background: #ff6900;
+  color: white;
+}
+.gestion-de-residus .gestion-de-residus-content .faire-don-page {
+  display: none;
+  width: 77rem;
+  height: 100vh;
+  z-index: 99999;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #f5f5f5;
+  filter: drop-shadow(-10px 0px 10px rgba(0, 0, 0, 0.04));
+}
+.gestion-de-residus .gestion-de-residus-content .faire-don-page .faire-don {
+  width: 70rem;
+  height: 90vh;
+  background: white;
+  padding: 3rem 0 3rem 3rem;
+  position: absolute;
+  border-radius: 5px;
+  right: 3rem;
+  top: 4rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .name {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #ff6900;
+  margin-bottom: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .thanks {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .thanks
+  .sentence-of-thanks {
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .thanks
+  .sub-title {
+  font-size: 2rem;
+  color: #968989;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .faire-un-don-lists
+  .title {
+  font-weight: 500;
+  font-size: 2.4rem;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .faire-un-don-lists
+  .faire-un-don-lists-food {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .faire-un-don-lists
+  .faire-un-don-lists-food
+  .list-food {
+  display: flex;
+  padding-right: 2rem;
+  height: 6rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .faire-un-don-lists
+  .faire-un-don-lists-food
+  .list-food
+  .food-details {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .faire-un-don-lists
+  .faire-un-don-lists-food
+  .list-food
+  .food-details
+  .food-name {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .faire-un-don-lists
+  .faire-un-don-lists-food
+  .list-food
+  .food-details
+  .price {
+  font-weight: normal;
+  font-size: 1.8rem;
+  color: #ff6900;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .title {
+  font-weight: 500;
+  font-size: 2.4rem;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .associations {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .associations::-webkit-scrollbar {
+  display: none;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .associations
+  .association {
+  display: inline-block !important;
+  width: 34rem;
+  height: 22rem;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1rem 1.5rem 1rem 0;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .associations
+  .association
+  .association-img {
+  border-bottom: 1px solid #e8e8e8;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .associations
+  .association
+  .association-img
+  img {
+  width: 34rem;
+  height: 14rem;
+  display: block;
+  margin: auto;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .associations
+  .association
+  .association-details {
+  padding: 1.5rem;
+  position: relative;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .associations
+  .association
+  .association-details
+  .ONG-done {
+  display: none;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .associations
+  .association
+  .association-details
+  .ONG-done
+  .circle-white {
+  position: absolute;
+  bottom: 4.5rem;
+  right: 2.1rem;
+  border-radius: 50%;
+  border: 1px solid #fd6a00;
+  width: 7rem;
+  height: 7rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .associations
+  .association
+  .association-details
+  .ONG-done
+  .added {
+  position: absolute;
+  bottom: 6rem;
+  right: 3.5rem;
+  width: 4rem;
+  height: 4rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .associations
+  .association
+  .association-details
+  .association-name {
+  font-size: 1.6rem;
+  color: #484848;
+  font-weight: bold;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .associations
+  .association
+  .association-details
+  .association-location
+  .adress {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #484848;
+  opacity: 0.8;
+  padding-left: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .associations
+  .association
+  .association-details
+  .association-location
+  i {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #484848;
+  opacity: 0.8;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .associations
+  .association-has-choosen {
+  border: 1px solid #ff6900;
+  cursor: pointer;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .associations
+  .association-has-choosen
+  .association-img {
+  border-bottom: 1px solid #ff6900;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .associations
+  .association-has-choosen
+  .association-details {
+  position: relative;
+  padding: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .associations
+  .association-has-choosen
+  .association-details
+  .association-name {
+  font-size: 1.6rem;
+  color: #fd6a00;
+  font-weight: bold;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .associations
+  .association-has-choosen
+  .association-details
+  .ONG-done {
+  display: flex;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .associations
+  .association-has-choosen
+  .association-details
+  .ONG-done
+  .circle-white {
+  position: absolute;
+  bottom: 4.5rem;
+  right: 2.1rem;
+  border-radius: 35px;
+  border: 1px solid #fd6a00;
+  width: 7rem;
+  height: 7rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .associations
+  .association-has-choosen
+  .association-details
+  .ONG-done
+  .added {
+  position: absolute;
+  bottom: 6rem;
+  right: 3.5rem;
+  width: 4rem;
+  height: 4rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .associations
+  .association-has-choosen
+  .association-details
+  .association-location
+  .adress {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #484848;
+  opacity: 0.8;
+  padding-left: 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .associations
+  .association-has-choosen
+  .association-details
+  .association-location
+  i {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #484848;
+  opacity: 0.8;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .ONG-bottom {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .choose-ONG
+  .ONG-bottom
+  span {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #484848;
+  opacity: 0.4;
+  margin: 1rem 1rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .faire-un-don-checkbox {
+  margin: 1rem 1rem;
+  height: 6rem;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .faire-un-don-checkbox
+  span {
+  font-size: 1.2rem;
+  color: #484848;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .faire-un-don-checkbox
+  .checkbox {
+  display: flex;
+  align-items: center;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .faire-un-don-checkbox
+  .checkbox
+  .yes {
+  font-size: 1.2rem;
+  color: #676767;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .faire-un-don-checkbox
+  .checkbox
+  .no {
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #9a9a9a;
+  opacity: 0.4;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .faire-un-don-checkbox
+  .checkbox
+  .switch {
+  margin: 0 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .faire-un-don-checkbox
+  .checkbox
+  .switch
+  .switch-paddle {
+  border-radius: 2rem;
+  background: #ff6900;
+  width: 4rem;
+  height: 2rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .faire-un-don-checkbox
+  .checkbox
+  .switch
+  .switch-paddle:after {
+  background-color: white;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 0.25rem;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .faire-un-don-buttom {
+  display: flex;
+  justify-content: flex-end;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .faire-un-don-buttom
+  .cancel {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #ff6900;
+  cursor: pointer;
+  outline: none;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .faire-un-don-buttom
+  .continuer {
+  margin-left: 4rem;
+  width: 32rem;
+  height: 6rem;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #ff6900;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #ff6900;
+  cursor: pointer;
+  outline: none;
+}
+.gestion-de-residus
+  .gestion-de-residus-content
+  .faire-don-page
+  .faire-don
+  .faire-un-don-buttom
+  .continuer:hover {
+  background-color: #ff6900;
+  color: white;
+}

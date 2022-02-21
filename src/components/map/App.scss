@@ -1,0 +1,314 @@
+.App {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .markerClusterSmall {
+    border-radius: 20px;
+    font-size: 10px;
+    font-size: 0.6vw;
+    color: #fff;
+    font-weight: 900;
+    font-family: Open Sans;
+    text-transform: uppercase;
+  }
+
+  .markerClusterSmallDivOne {
+    position: absolute;
+    font-size: 10px;
+    margin-left: -5px;
+    margin-top: -5px;
+    border-radius: 7.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 3s;
+  }
+
+  .markerClusterSmallDivTwo {
+    position: absolute;
+    font-size: 10px;
+    width: 5em;
+    height: 5em;
+    border-radius: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 2.5s;
+  }
+
+  .markerClusterSmallDivThree {
+    width: 3.5em;
+    font-size: 10px;
+    height: 3.5em;
+    border-radius: 4.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 2s;
+  }
+
+  .markerClusterSmallDivFour {
+    width: 2em;
+    font-size: 10px;
+    height: 2em;
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 1.5s;
+  }
+
+  .markerClusterSmallLabel {
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .markerClusterMedium {
+    border-radius: 40px;
+    font-size: 10px;
+    font-size: 0.6vw;
+    color: #fff;
+    font-weight: 900;
+    font-family: Open Sans;
+    text-transform: uppercase;
+  }
+
+  .markerClusterMediumDivOne {
+    position: absolute;
+    font-size: 10px;
+    margin-left: -5px;
+    margin-top: -5px;
+    border-radius: 9.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 3s;
+  }
+
+  .markerClusterMediumDivTwo {
+    position: absolute;
+    font-size: 10px;
+    width: 6.5em;
+    height: 6.5em;
+    border-radius: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 2.5s;
+  }
+
+  .markerClusterMediumDivThree {
+    width: 5em;
+    font-size: 10px;
+    height: 5em;
+    border-radius: 6.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 2s;
+  }
+
+  .markerClusterMediumDivFour {
+    width: 3.5em;
+    font-size: 10px;
+    height: 3.5em;
+    border-radius: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 1.5s;
+  }
+
+  .markerClusterMediumLabel {
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .markerClusterLarge {
+    border-radius: 70px;
+    font-size: 10px;
+    font-size: 0.6vw;
+    color: #fff;
+    font-weight: 900;
+    font-family: Open Sans;
+    text-transform: uppercase;
+  }
+
+  .markerClusterLargeDivOne {
+    position: absolute;
+    font-size: 10px;
+    margin-left: -5px;
+    margin-top: -5px;
+    border-radius: 12em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 3s;
+  }
+
+  .markerClusterLargeDivTwo {
+    position: absolute;
+    font-size: 10px;
+    width: 9em;
+    height: 9em;
+    border-radius: 10.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 2.5s;
+  }
+
+  .markerClusterLargeDivThree {
+    width: 7.5em;
+    font-size: 10px;
+    height: 7.5em;
+    border-radius: 9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 2s;
+  }
+
+  .markerClusterLargeDivFour {
+    padding: 1px;
+    font-size: 10px;
+    width: 6em;
+    height: 6em;
+    border-radius: 7.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 1.5s;
+  }
+
+  .markerClusterLargeLabel {
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .markerClusterLargeXL {
+    border-radius: 70px;
+    font-size: 10px;
+    font-size: 0.6vw;
+    color: #fff;
+    font-weight: 900;
+    font-family: Open Sans;
+    text-transform: uppercase;
+  }
+
+  .markerClusterLargeXLDivOne {
+    position: absolute;
+    font-size: 10px;
+    margin-left: -5px;
+    margin-top: -5px;
+    border-radius: 12em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 3s;
+  }
+
+  .markerClusterLargeXLDivTwo {
+    position: absolute;
+    font-size: 10px;
+    width: 10.5em;
+    height: 10.5em;
+    border-radius: 10.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 2.5s;
+  }
+
+  .markerClusterLargeXLDivThree {
+    width: 9em;
+    font-size: 10px;
+    height: 9em;
+    border-radius: 9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 2s;
+  }
+
+  .markerClusterLargeXLDivFour {
+    padding: 1px;
+    font-size: 10px;
+    width: 7.5em;
+    height: 7.5em;
+    border-radius: 7.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 1.5s;
+  }
+
+  .markerClusterLargeXLLabel {
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .circle {
+    animation: fadein 1.5s;
+  }
+
+  .googleMapContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .googleMapElement {
+    height: 100%;
+  }
+
+  .search-container {
+    position: absolute;
+    top: 0;
+    max-width: 700px;
+    width: 95%;
+    right: 0;
+    z-index: 1000;
+
+    .location-filter {
+      padding: 8px;
+      height: 50px;
+      z-index: 1;
+    }
+  }
+
+  .drawer {
+    width: 100%;
+
+    .MuiDrawer-paper {
+      top: -68px;
+      position: relative;
+      right: 0;
+      width: 100%;
+      height: fit-content;
+      max-width: 657px;
+      max-height: calc(100% - 174px);
+    }
+  }
+}

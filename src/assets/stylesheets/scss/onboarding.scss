@@ -1,0 +1,134 @@
+.on-boarding {
+  position: relative;
+  height: 100vh;
+  max-width: 800px;
+  margin: auto;
+  display: block;
+  .orbit-container {
+    outline: none;
+    &:focus {
+      outline: none;
+    }
+
+    .orbit-slide {
+      .orbit-slide-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        .slide-content-top {
+          position: relative;
+          .slide-image {
+            background: white;
+            width: 100%;
+            height: 41vh;
+            object-fit: cover;
+            object-position: center;
+            transition: all 0.3s;
+            &.fixed {
+              position: fixed;
+              visibility: hidden;
+            }
+          }
+          .slide-logo {
+            width: 360px;
+            background: white;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -50px;
+            margin: auto;
+            display: block;
+            padding: 50px;
+          }
+          &:hover {
+            .slide-image {
+            }
+          }
+        }
+        .slide-content-bottom {
+          padding-top: 8vh;
+          transition: all 0.3s;
+          .slide-title {
+            position: relative;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 4rem;
+            text-align: center;
+            color: #484848;
+            padding: 0 5rem;
+            margin-bottom: 2rem;
+          }
+          .slide-description {
+            font-weight: 300;
+            font-size: 3rem;
+            line-height: 4rem;
+            text-align: center;
+            color: #484848;
+            
+          }
+        }
+        .arrow {
+          outline: none;
+          position: relative;
+          width: 40px;
+          top: 10rem;
+          z-index: 555;
+          background: transparent;
+          color: #ff6900;
+          &.prev {
+            left: 20%;
+          }
+         
+        }
+      }
+    }
+  }
+  .onboarding-bottom{
+    margin-top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .orbit-bullets {
+    
+      .bullet {
+        width: 10px;
+        height: 10px;
+        margin: 0 1rem;
+        &.is-active {
+          background-color: #ff6900;
+        }
+      }
+    }
+    .arrow {
+      outline: none;
+      position: absolute;
+      width: 40px;
+      // top: 0;
+      background: transparent;
+      color: #ff6900;
+      &.prev {
+        left: 20%;
+      }
+      &.next {
+        right: 20%;
+      }
+    }
+  }
+  
+  .copyright {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.12em;
+    text-align: center;
+    color: #484848;
+    display: block;
+    text-align: center;
+  }
+  .orbit-controls {
+    visibility: hidden;
+  }
+}

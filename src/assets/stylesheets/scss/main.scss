@@ -1,0 +1,47 @@
+@import 'fontawesome.scss';
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+html {
+  font-size: 10px;
+  @media (min-width: 1200px) {
+    font-size: 6px;
+  }
+  @media (min-width: 1366px) {
+    font-size: 7px;
+  }
+  @media (min-width: 1420px) {
+    font-size: 8px;
+  }
+  @media (min-width: 1520px) {
+    font-size: 8px;
+  }
+  @media (min-width: 1920px) {
+    font-size: 10px;
+  }
+}
+
+
+
+body {
+  margin: 0;
+}
+.container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.divider {
+  margin: 1rem 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e8e8e8;
+}
+.orbit-container{
+  outline: none!important;
+}

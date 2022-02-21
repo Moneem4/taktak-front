@@ -1,0 +1,625 @@
+.paiement-page {
+  overflow: hidden;
+  height: 160vh;
+  display: grid;
+  /*grid-template-columns: auto 1fr;*/ }
+  .paiement-page .paiement-page-content {
+    overflow-y: scroll;
+    position: relative; }
+    .paiement-page .paiement-page-content::-webkit-scrollbar {
+      display: none; }
+    .paiement-page .paiement-page-content .paiement-page-content-first-page .first-page-header {
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+      line-height: 2.4rem; }
+      .paiement-page .paiement-page-content .paiement-page-content-first-page .first-page-header .man-wintak {
+        display: block;
+        margin: auto;
+        margin-bottom: 2rem; }
+      .paiement-page .paiement-page-content .paiement-page-content-first-page .first-page-header .header-title {
+        font-weight: bold;
+        font-size: 1.6rem;
+        text-align: center;
+        color: #484848;
+        display: block; }
+      .paiement-page .paiement-page-content .paiement-page-content-first-page .first-page-header .header-description,
+      .paiement-page .paiement-page-content .paiement-page-content-first-page .first-page-header .header-helper {
+        display: block;
+        color: #484848;
+        font-size: 1.6rem;
+        text-align: center; }
+    .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit .orbit-bar {
+      display: grid;
+      grid-template-columns: 5fr 1fr;
+      grid-gap: 2.8rem;
+      width: 100%;
+      margin: auto;
+      align-items: center; }
+      .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit .orbit-bar .orbit-bullets {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        height: 6rem;
+        background: white;
+        border: 1px solid #e8e8e8;
+        border-radius: 5px;
+        filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.05)); }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit .orbit-bar .orbit-bullets > button {
+          border-right: 1px solid #e8e8e8;
+          border-radius: 0;
+          background: white;
+          display: flex;
+          justify-items: center;
+          padding: 0 2rem;
+          outline: none;
+          align-items: center; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit .orbit-bar .orbit-bullets > button .step-number {
+            font-weight: bold;
+            font-size: 2rem;
+            color: #484848;
+            opacity: 0.5; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit .orbit-bar .orbit-bullets > button .step-description {
+            font-weight: 500;
+            font-size: 1.4rem;
+            color: #484848;
+            padding-left: 2rem;
+            opacity: 0.5; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit .orbit-bar .orbit-bullets > button.is-active div {
+            border-bottom: 4px solid #ff6900;
+            padding: 1.8rem 0; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit .orbit-bar .orbit-bullets > button.is-active .step-number {
+            font-weight: bold;
+            font-size: 2rem;
+            color: #ff6900;
+            opacity: 2; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit .orbit-bar .orbit-bullets > button.is-active .step-description {
+            font-weight: 500;
+            font-size: 1.4rem;
+            color: #ff6900;
+            padding-left: 2rem;
+            opacity: 2; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit .orbit-bar .orbit-bullets > button.done div {
+            border-bottom: 4px solid  #7dc364;
+            padding: 1.8rem 0; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit .orbit-bar .orbit-bullets > button.done .step-number {
+            font-weight: bold;
+            font-size: 2rem;
+            color: #7dc364;
+            opacity: 0.5;
+            opacity: 2; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit .orbit-bar .orbit-bullets > button.done .step-description {
+            font-weight: 500;
+            font-size: 1.4rem;
+            color: #7dc364;
+            opacity: 0.5;
+            padding-left: 2rem;
+            opacity: 2; }
+      .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit .orbit-bar .go-next {
+        background-color: #ff6900;
+        height: 6rem;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: #fff;
+        outline: none;
+        cursor: pointer; }
+    .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-controls {
+      visibility: hidden; }
+    .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container {
+      position: initial !important; }
+      .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .total-to-pay {
+        margin-top: 10rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .total-to-pay .total-to-pay-title {
+          font-weight: bold;
+          font-size: 2rem;
+          color: #a80000; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .total-to-pay .go-next {
+          background-color: #ff6900;
+          height: 6rem;
+          border-radius: 5px;
+          font-weight: bold;
+          font-size: 1.8rem;
+          color: #fff;
+          outline: none;
+          cursor: pointer; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .total-to-pay .total-to-pay-price {
+          font-weight: normal;
+          font-size: 3rem;
+          padding-left: 2rem;
+          color: #a80000; }
+      .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-recap {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1.5fr 0.5fr;
+        margin-bottom: 2rem;
+        border: 1px solid #e8e8e8;
+        border-radius: 5px; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-recap:hover {
+          background: #fff7f1;
+          border: 1px solid #ff6900; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-recap:hover .paiement .Qte .Qte-title {
+            margin-right: 2rem; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-recap:hover .paiement .Qte .Qte-number {
+            margin: 0 3rem; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-recap:hover .paiement .Qte .plus, .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-recap:hover .paiement .Qte .moins {
+            display: flex;
+            font-size: 3rem;
+            color: #484848;
+            cursor: pointer; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-recap .paiement-recap-img img {
+          width: 20rem;
+          height: 16rem; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-recap .paiement-recap-main {
+          display: flex;
+          flex-direction: column;
+          padding-left: 2rem; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-recap .paiement-recap-main .food-name {
+            font-weight: bold;
+            font-size: 2rem;
+            color: #473535;
+            margin-top: 1rem; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-recap .paiement-recap-main .food-description {
+            font-weight: normal;
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            color: #888; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-recap .paiement {
+          display: grid;
+          grid-template-rows: 1fr 1fr;
+          border-left: 1px solid #e8e8e8;
+          border-right: 1px solid #e8e8e8; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-recap .paiement .Qte {
+            border-bottom: 1px solid #e8e8e8;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center; }
+            .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-recap .paiement .Qte .Qte-title {
+              font-size: 1.6rem;
+              color: #484848;
+              opacity: 0.5;
+              margin-right: 6rem; }
+            .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-recap .paiement .Qte .Qte-number {
+              font-size: 3rem;
+              color: #484848;
+              opacity: 0.5; }
+            .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-recap .paiement .Qte .plus, .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-recap .paiement .Qte .moins {
+              display: none;
+              cursor: pointer; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-recap .paiement .price {
+            padding: 0 1rem;
+            display: flex;
+            align-items: center; }
+            .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-recap .paiement .price .total-price {
+              font-size: 1.6rem;
+              color: #484848;
+              opacity: 0.5;
+              margin-right: 6rem; }
+            .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-recap .paiement .price .price-number {
+              font-weight: 300;
+              font-size: 3rem;
+              color: #ff6900; }
+            @media (max-width: 1000px) {
+              .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-recap .paiement .price .price-number {
+                font-size: 2.5rem; } }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-recap .remove {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-recap .remove i {
+            font-size: 2rem;
+            color: #ff6900;
+            cursor: pointer; }
+      .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .go-next {
+        margin-top: 0.7rem;
+        background-color: #ff6900;
+        width: 15rem;
+        height: 6.6rem;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: #fff;
+        outline: none;
+        position: absolute;
+        right: 0; }
+      .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .orbit-slide-two-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .orbit-slide-two-header .return {
+          display: flex;
+          align-items: center;
+          margin-top: 8.5rem;
+          cursor: pointer; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .orbit-slide-two-header .return i {
+            font-size: 3rem;
+            color: #484848;
+            opacity: 0.5;
+            cursor: pointer; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .orbit-slide-two-header .return span {
+            font-weight: normal;
+            font-size: 3rem;
+            color: #484848;
+            opacity: 0.5;
+            padding-left: 2rem; }
+      .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .promo-code {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr;
+        border: 1px solid #e8e8e8;
+        border-radius: 5px;
+        padding: 1rem 2rem;
+        align-items: center;
+        margin-bottom: 2rem; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .promo-code .question {
+          font-weight: 600;
+          font-size: 1.8rem;
+          color: #484848;
+          padding-left: 3rem; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .promo-code input {
+          width: 25rem;
+          height: 7rem;
+          background: #fff;
+          border: 1px solid #e8e8e8;
+          font-size: 3rem;
+          color: #484848;
+          margin: 0;
+          box-shadow: none;
+          padding: 0 2rem; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .promo-code .application {
+          font-weight: bold;
+          font-size: 1.4rem;
+          color: #ff6900;
+          text-align: center; }
+      .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .invoice-details {
+        background: #fff;
+        border: 1px solid #e8e8e8;
+        padding: 2rem 5rem;
+        margin-bottom: 5rem; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .invoice-details .invoice-details-header {
+          display: flex;
+          justify-content: space-between; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .invoice-details .invoice-details-header .title {
+            font-weight: 600;
+            font-size: 2rem;
+            line-height: 2.4rem;
+            color: #484848; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .invoice-details .invoice-details-header .description {
+            font-weight: 600;
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            color: #484848;
+            opacity: 0.4; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .invoice-details .renseignements {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 15rem;
+          margin: 3rem 0; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .invoice-details .renseignements input {
+            box-shadow: none;
+            height: 7rem;
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: 5px;
+            padding: 0 2rem;
+            font-size: 2.4rem;
+            color: #484848; }
+            .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .invoice-details .renseignements input::placeholder {
+              font-weight: 300;
+              font-size: 2.4rem;
+              color: #484848;
+              opacity: 0.5; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .invoice-details .note span {
+          font-weight: 600;
+          font-size: 2rem;
+          line-height: 2.4rem;
+          color: #484848; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .invoice-details .note textarea {
+          height: 19rem;
+          box-shadow: none;
+          background: #fff;
+          border: 1px solid #e8e8e8;
+          margin: 3rem 0;
+          padding: 2rem;
+          font-size: 2.4rem;
+          color: #484848;
+          opacity: 0.5; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .invoice-details .note input {
+          box-shadow: none;
+          margin: 3rem 0;
+          height: 19rem;
+          background: #fff;
+          border: 1px solid #e8e8e8;
+          border-radius: 5px;
+          padding: 0 2rem;
+          font-size: 2.4rem;
+          color: #484848;
+          position: relative; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .invoice-details .note input::placeholder {
+            font-weight: 300;
+            font-size: 2.4rem;
+            color: #484848;
+            opacity: 0.5;
+            box-shadow: none; }
+      .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .orbit-slide-three-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10rem; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .orbit-slide-three-header .return {
+          display: flex;
+          align-items: center;
+          cursor: pointer; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .orbit-slide-three-header .return i {
+            font-size: 3rem;
+            color: #484848;
+            opacity: 0.5;
+            cursor: pointer; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .orbit-slide-three-header .return span {
+            font-weight: normal;
+            font-size: 3rem;
+            color: #484848;
+            opacity: 0.5;
+            padding-left: 2rem; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .orbit-slide-three-header .total-to-pay {
+          margin-top: 1rem;
+          margin-bottom: 2rem;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .orbit-slide-three-header .total-to-pay .total-to-pay-title {
+            font-weight: bold;
+            font-size: 2rem;
+            color: #a80000;
+            opacity: 0.5; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .orbit-slide-three-header .total-to-pay .total-to-pay-price {
+            font-weight: normal;
+            font-size: 3rem;
+            padding-left: 2rem;
+            color: #a80000;
+            opacity: 0.5; }
+      .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak {
+        border-radius: 5px;
+        border: 1px solid #A80000;
+        margin: auto;
+        height: 10rem;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 3fr; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak .solde-wintak-left-side {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-left: 2rem;
+          position: relative; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak .solde-wintak-left-side span:first-child {
+            color: #a80000;
+            font-size: 1.8rem;
+            font-weight: bold; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak .solde-wintak-left-side span:nth-child(2) {
+            font-size: 1.4rem;
+            color: #484848;
+            opacity: 0.5; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak .solde-wintak-left-side .triangle {
+            position: absolute;
+            right: -0.6rem; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak .solde-wintak-right-side {
+          display: flex;
+          background-color: #A80000;
+          display: grid;
+          grid-template-columns: 1fr 3fr 3fr 5fr;
+          justify-content: center;
+          align-items: center; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak .solde-wintak-right-side img {
+            display: block;
+            margin: auto; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak .solde-wintak-right-side .solde {
+            display: flex; }
+            .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak .solde-wintak-right-side .solde span:first-child {
+              font-size: 4rem;
+              color: #fff;
+              font-weight: 300; }
+            .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak .solde-wintak-right-side .solde span:nth-child(2) {
+              font-size: 2.5rem;
+              color: #fff;
+              font-weight: 300; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak .solde-wintak-right-side .price {
+            font-weight: normal;
+            font-size: 3rem;
+            color: #ffa500;
+            display: flex;
+            justify-content: flex-end;
+            margin: 0 2rem; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak .solde-wintak-right-side .button-sold-wintak {
+            height: 6rem;
+            background: #7dc364;
+            border-radius: 5px;
+            margin: 2rem;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 2rem;
+            align-items: center;
+            outline: none;
+            cursor: pointer; }
+            .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak .solde-wintak-right-side .button-sold-wintak span {
+              font-weight: bold;
+              font-size: 1.4rem;
+              color: #fff; }
+            .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak .solde-wintak-right-side .button-sold-wintak .checkbox {
+              position: absolute;
+              left: -9999px;
+              visibility: hidden; }
+              .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak .solde-wintak-right-side .button-sold-wintak .checkbox + label {
+                position: relative;
+                display: inline-block;
+                padding: 1.2rem;
+                cursor: pointer; }
+                .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak .solde-wintak-right-side .button-sold-wintak .checkbox + label:before, .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak .solde-wintak-right-side .button-sold-wintak .checkbox + label:after {
+                  position: absolute;
+                  top: 0;
+                  content: '';
+                  border-radius: 1px; }
+                .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak .solde-wintak-right-side .button-sold-wintak .checkbox + label:before {
+                  top: 0.4rem;
+                  left: 0;
+                  width: 1.8rem;
+                  height: 1.8rem;
+                  border: 1px solid #CCC;
+                  background-color: white; }
+                .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak .solde-wintak-right-side .button-sold-wintak .checkbox + label:after {
+                  /* hidden */
+                  width: 0;
+                  height: 0; }
+              .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak .solde-wintak-right-side .button-sold-wintak .checkbox:checked + label:before {
+                background-color: white; }
+              .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak .solde-wintak-right-side .button-sold-wintak .checkbox:checked + label:after {
+                width: 0.6rem;
+                height: 1.3rem;
+                top: 0.3rem;
+                left: 0.5rem;
+                color: #fff;
+                border-top: 2px solid transparent;
+                border-left: 2px solid transparent;
+                border-right: 2px solid #7dc364;
+                border-bottom: 2px solid #7dc364;
+                -webkit-transform: rotate(37deg);
+                -ms-transform: rotate(37deg);
+                -o-transform: rotate(37deg);
+                transform: rotate(37deg); }
+              .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak .solde-wintak-right-side .button-sold-wintak .checkbox:disabled + label {
+                color: #CCC; }
+                .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak .solde-wintak-right-side .button-sold-wintak .checkbox:disabled + label:before {
+                  border-color: #CCC;
+                  background-color: #F2F2F2;
+                  box-shadow: none; }
+                .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .paiement-solde-wintak .solde-wintak-right-side .button-sold-wintak .checkbox:disabled + label:after {
+                  /* hidden */
+                  width: 0;
+                  height: 0; }
+      .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .remains-to-pay-description {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: flex-end; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .remains-to-pay-description span {
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          color: #484848; }
+      .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .remains-to-pay {
+        margin-top: 3rem; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .remains-to-pay .the-amount {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          margin-bottom: 2rem; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .remains-to-pay .the-amount .the-amount-title {
+            font-weight: bold;
+            font-size: 2rem;
+            color: #a80000;
+            padding-right: 2rem; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .remains-to-pay .the-amount .the-amount-number {
+            font-weight: normal;
+            font-size: 3rem;
+            color: #a80000; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .remains-to-pay .means-of-payment {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          justify-content: center;
+          grid-gap: 2rem;
+          width: 90%;
+          margin: auto; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .remains-to-pay .means-of-payment .method-of-payment {
+            height: 25rem;
+            border-radius: 5px;
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.03);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; }
+            .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .remains-to-pay .means-of-payment .method-of-payment img {
+              width: 9.8rem; }
+            .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .remains-to-pay .means-of-payment .method-of-payment span {
+              margin-top: 4rem;
+              font-weight: 600;
+              font-size: 2rem;
+              line-height: 2.4rem;
+              text-align: center;
+              color: #ff6900; }
+            .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .remains-to-pay .means-of-payment .method-of-payment:hover {
+              border-radius: 5px;
+              background: #fff7f1;
+              border: 1px solid #ff6900;
+              box-shadow: 5px 5px 5px rgba(255, 105, 0, 0.1); }
+      .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .slide-three-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 4rem;
+        margin-bottom: 15rem; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .slide-three-bottom .return {
+          display: flex;
+          align-items: center;
+          cursor: pointer; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .slide-three-bottom .return i {
+            font-size: 3rem;
+            color: #484848;
+            opacity: 0.5;
+            cursor: pointer; }
+          .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .slide-three-bottom .return span {
+            font-weight: normal;
+            font-size: 3rem;
+            color: #484848;
+            opacity: 0.5;
+            padding-left: 2rem; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .slide-three-bottom .confirm button {
+          width: 15rem;
+          height: 6rem;
+          border-radius: 5px;
+          background: #ff6900;
+          color: white;
+          font-size: 1.8rem;
+          font-weight: bold;
+          cursor: pointer;
+          outline: none; }
+        .paiement-page .paiement-page-content .paiement-page-content-first-page .auth-form-body .orbit-wrapper .orbit-container .orbit-slide .slide-three-bottom .go-next button {
+          background-color: #ff6900;
+          width: 15rem;
+          height: 6rem;
+          border-radius: 5px;
+          font-weight: bold;
+          font-size: 1.8rem;
+          color: #fff;
+          outline: none; }
+    .paiement-page .paiement-page-content .paiement-page-content-second-page {
+      display: block; }
+      .paiement-page .paiement-page-content .paiement-page-content-second-page .loading-inner {
+        min-height: 37rem;
+        margin-top: 10rem;
+        margin-bottom: 6rem;
+        position: relative; }
+        .paiement-page .paiement-page-content .paiement-page-content-second-page .loading-inner canvas {
+          display: block;
+          margin: auto; }
+        .paiement-page .paiement-page-content .paiement-page-content-second-page .loading-inner .chief {
+          position: absolute;
+          left: 3.7rem;
+          right: 0;
+          bottom: 0;
+          top: 0;
+          margin: auto; }
+      .paiement-page .paiement-page-content .paiement-page-content-second-page .loading-info {
+        display: block;
+        margin: auto; }
+        .paiement-page .paiement-page-content .paiement-page-content-second-page .loading-info span,
+        .paiement-page .paiement-page-content .paiement-page-content-second-page .loading-info p {
+          text-align: center;
+          display: block;
+          font-weight: bold;
+          font-size: 1.6rem;
+          text-align: center;
+          color: #484848;
+          margin-bottom: 1rem;
+          border-radius: 5px; }
+        .paiement-page .paiement-page-content .paiement-page-content-second-page .loading-info p {
+          font-weight: normal; }

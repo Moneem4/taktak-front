@@ -1,0 +1,235 @@
+.inbox-page {
+  overflow: hidden;
+  height: 100vh;
+  grid-template-columns: auto 1fr; }
+  .inbox-page .inbox-page-content {
+    overflow-y: scroll; }
+    .inbox-page .inbox-page-content::-webkit-scrollbar {
+      display: none; }
+    .inbox-page .inbox-page-content .navbar {
+      top: 0;
+      position: sticky;
+      z-index: 5555; }
+
+.inbox-page-content-main {
+  background-color: #F8F7FA;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem; }
+  .inbox-page-content-main .content-inbox {
+    background-color: white;
+    display: flex;
+    justify-content: space-between; }
+    .inbox-page-content-main .content-inbox .discussion-left-side {
+      width: 70%; }
+      .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 4rem 2rem 2rem;
+        border-bottom: 1px solid #d5d5d5; }
+        .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-header .discussion-header-details-user span {
+          font-size: 1.5rem;
+          font-weight: bold;
+          padding-left: 2rem; }
+        .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-header .discussion-header-parameter {
+          display: flex;
+          align-items: center; }
+          .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-header .discussion-header-parameter .move {
+            padding-right: 4rem; }
+            .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-header .discussion-header-parameter .move span {
+              color: #484848;
+              font-size: 1.8rem;
+              cursor: pointer; }
+            .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-header .discussion-header-parameter .move i {
+              font-size: 1.6rem;
+              padding-right: 1rem;
+              color: #ff6900;
+              cursor: pointer; }
+          .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-header .discussion-header-parameter .banish {
+            padding-right: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+            .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-header .discussion-header-parameter .banish span {
+              color: #484848;
+              font-size: 1.8rem;
+              cursor: pointer; }
+            .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-header .discussion-header-parameter .banish i {
+              font-size: 1.6rem;
+              padding-right: 1rem;
+              color: #ff6900;
+              cursor: pointer; }
+          .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-header .discussion-header-parameter .fa-ellipsis-v {
+            font-size: 1.6rem;
+            color: #ff6900;
+            cursor: pointer; }
+      .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-main {
+        border-right: 1px solid #d5d5d5;
+        border-bottom: 1px solid #d5d5d5; }
+        .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-main .discussion {
+          padding: 3rem 2rem; }
+          .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-main .discussion .message-sent .content {
+            align-items: flex-end;
+            display: flex;
+            flex-direction: column; }
+            .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-main .discussion .message-sent .content .content-msg {
+              display: flex;
+              position: relative;
+              display: flex;
+              align-items: center;
+              cursor: pointer;
+              margin-bottom: 1rem; }
+              .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-main .discussion .message-sent .content .content-msg .fa-ellipsis-v {
+                margin-left: 1rem;
+                font-size: 1.4rem;
+                color: #484848;
+                opacity: 0.5;
+                cursor: pointer; }
+              .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-main .discussion .message-sent .content .content-msg .message {
+                padding: 1rem;
+                width: max-content;
+                max-width: 25rem;
+                background-color: #FFA500;
+                border-radius: 5px;
+                color: white;
+                font-size: 1.4rem; }
+              .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-main .discussion .message-sent .content .content-msg .triangle {
+                position: absolute;
+                right: 0.5rem;
+                width: 0;
+                top: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 1.7rem 1.7rem 0 0;
+                border-color: #FFA500 transparent transparent transparent; }
+          .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-main .discussion .message-sent .time-send {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 2rem;
+            color: #CBCBCB;
+            font-size: 1.2rem; }
+          .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-main .discussion .message-received .content {
+            display: flex;
+            align-items: center; }
+            .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-main .discussion .message-received .content .fa-ellipsis-v {
+              margin-left: 1rem;
+              font-size: 1.4rem;
+              color: #484848;
+              opacity: 0.5;
+              cursor: pointer; }
+            .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-main .discussion .message-received .content .message {
+              padding: 1rem;
+              width: max-content;
+              max-width: 25rem;
+              background-color: #E8E8E8;
+              border-radius: 5px;
+              margin-bottom: 1rem;
+              color: #5d5d5d;
+              margin-left: 1rem;
+              font-size: 1.4rem;
+              position: relative; }
+              .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-main .discussion .message-received .content .message .triangle {
+                top: 0;
+                left: -7.5px;
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-top: -1px solid transparent;
+                border-right: 23px solid #E8E8E8;
+                border-bottom: 15px solid transparent; }
+          .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-main .discussion .message-received .time-send {
+            padding-left: 6rem;
+            color: #CBCBCB;
+            font-size: 1.2rem; }
+          .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-main .discussion .writing {
+            margin: 3rem 0 1rem 0; }
+            .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-main .discussion .writing .icon-writing {
+              width: 4.5rem;
+              padding-left: 1rem; }
+      .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-bottom {
+        padding: 2rem;
+        border-right: 1px solid #d5d5d5;
+        border-bottom: 1px solid #d5d5d5; }
+        .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-bottom .send-msg {
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 2rem; }
+          .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-bottom .send-msg input {
+            font-size: 2rem;
+            box-shadow: none;
+            outline: none;
+            border: none; }
+            .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-bottom .send-msg input::placeholder {
+              color: #b2b2b2;
+              font-size: 1.8rem; }
+          .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-bottom .send-msg .fa-paper-plane {
+            font-size: 2.4rem;
+            color: #ff6900;
+            cursor: pointer; }
+        .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-bottom .icons {
+          display: flex;
+          align-items: center; }
+          .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-bottom .icons .camera, .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-bottom .icons .micro {
+            font-size: 1.8rem;
+            color: #ff6900;
+            margin-right: 2rem;
+            cursor: pointer; }
+          .inbox-page-content-main .content-inbox .discussion-left-side .discussion-left-side-bottom .icons img {
+            padding-right: 2rem;
+            cursor: pointer; }
+    .inbox-page-content-main .content-inbox .discussion-right-side {
+      width: 30%; }
+      .inbox-page-content-main .content-inbox .discussion-right-side .discussion-right-side-header {
+        background: linear-gradient(#fda700 0%, #fd6a00 100%);
+        height: 8.4rem; }
+        .inbox-page-content-main .content-inbox .discussion-right-side .discussion-right-side-header img {
+          width: 8rem;
+          display: block;
+          margin: auto;
+          top: 4rem;
+          position: relative; }
+      .inbox-page-content-main .content-inbox .discussion-right-side .discussion-right-side-main {
+        text-align: center;
+        margin-top: 7rem;
+        border-bottom: 1px solid #d5d5d5; }
+        .inbox-page-content-main .content-inbox .discussion-right-side .discussion-right-side-main .discussion-right-side-main-name {
+          font-size: 3rem;
+          margin-bottom: 1rem;
+          color: #484848; }
+        .inbox-page-content-main .content-inbox .discussion-right-side .discussion-right-side-main .location {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 1rem;
+          align-items: center; }
+          .inbox-page-content-main .content-inbox .discussion-right-side .discussion-right-side-main .location .map {
+            font-size: 1.4rem;
+            color: #484848;
+            opacity: 0.8; }
+          .inbox-page-content-main .content-inbox .discussion-right-side .discussion-right-side-main .location span {
+            font-size: 1.3rem;
+            margin-left: 0.5rem; }
+        .inbox-page-content-main .content-inbox .discussion-right-side .discussion-right-side-main .hashtag {
+          padding-bottom: 5rem; }
+          .inbox-page-content-main .content-inbox .discussion-right-side .discussion-right-side-main .hashtag span {
+            font-weight: bold;
+            padding-left: 1rem;
+            font-size: 1.2rem;
+            color: #484848; }
+      .inbox-page-content-main .content-inbox .discussion-right-side .discussion-right-side-bottom {
+        padding: 2rem; }
+        .inbox-page-content-main .content-inbox .discussion-right-side .discussion-right-side-bottom span {
+          color: #175DB3;
+          font-size: 2rem;
+          font-weight: bold; }
+        .inbox-page-content-main .content-inbox .discussion-right-side .discussion-right-side-bottom .discussion-right-side-bottom-img {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 10px;
+          margin-top: 2rem;
+          cursor: pointer; }
+
+.svg-writing {
+  color: #ff6900; }
+  .svg-writing path {
+    fill: #ff6900 !important; }

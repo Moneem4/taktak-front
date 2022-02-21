@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="460" height="460" viewBox="0 0 460 460">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_1193" data-name="Ellipse 1193" cx="230" cy="230" r="230" transform="translate(-11613 -19133)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fda700"/>
+      <stop offset="1" stop-color="#fd6a00"/>
+    </linearGradient>
+  </defs>
+  <g id="Mask_Group_20" data-name="Mask Group 20" transform="translate(11613 19133)" clip-path="url(#clip-path)">
+    <path id="user" d="M236,236A115,115,0,1,1,351,121,115,115,0,0,1,236,236Zm0,86.25c91.6,0,173.784,16.407,230,88.071V466H6V410.321C62.216,338.637,144.4,322.25,236,322.25Z" transform="translate(-11619 -19139)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

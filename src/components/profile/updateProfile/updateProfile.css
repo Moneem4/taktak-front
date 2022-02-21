@@ -1,0 +1,1584 @@
+.profile-empty {
+    /*display: block;*/
+    overflow-y: scroll; }
+    .profile-empty .profile-page-header {
+      margin-bottom: 3rem;
+      height: 30rem;
+      width: 100%;
+      position: relative; }
+      .profile-empty .profile-page-header:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 16rem;
+        background: linear-gradient(#fda700 0%, #fd6a00 100%); }
+      .profile-empty .profile-page-header .header-inner {
+        display: flex;
+        align-self: center; }
+      .profile-empty .profile-page-header .profile-picture {
+        display: flex;
+        align-items: center;
+        position: relative; }
+        .profile-empty .profile-page-header .profile-picture .profile-picture-empty {
+          max-width: 26rem;
+          height: 26rem;
+          width: 26rem;
+          border-radius: 100%;
+          display: block;
+          border: 1px solid #e8e8e8;
+          cursor: pointer; }
+        .profile-empty .profile-page-header .profile-picture i {
+          position: absolute;
+          color: #ff6900;
+          font-size: 6rem;
+          right: 10rem;
+          cursor: pointer; }
+      .profile-empty .profile-page-header .user-info {
+        margin-left: 2rem;
+        display: grid; }
+        .profile-empty .profile-page-header .user-info .user-info-info {
+          padding: 2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+          height: 16rem;}
+          .profile-empty .profile-page-header .user-info .user-info-info .name {
+            font-weight: 300;
+            font-size: 4rem;
+            line-height: 4rem;
+            color: #fff; }
+            .profile-empty .profile-page-header .user-info .user-info-info .name i {
+              font-size: 2.5rem;
+              margin-left: 2rem;
+              cursor: pointer; }
+          .profile-empty .profile-page-header .user-info .user-info-info .location {
+            font-weight: normal;
+            font-size: 1.4rem;
+            color: #fff;
+            opacity: 0.8; }
+          .profile-empty .profile-page-header .user-info .user-info-info .tags {
+            padding: 1rem;
+            width: 40rem;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #fff;
+            background: #db6800; }
+        .profile-empty .profile-page-header .user-info .user-info-stories {
+          height: 16rem;
+          position: relative;
+          display: flex;
+          align-items: center; }
+          .profile-empty .profile-page-header .user-info .user-info-stories .story-empty {
+            display: flex;
+            height: 6rem;
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            padding: 0 2rem;
+            align-items: center;
+            border-radius: 5px; }
+            .profile-empty .profile-page-header .user-info .user-info-stories .story-empty i {
+              font-size: 2rem;
+              color: #d40562; }
+            .profile-empty .profile-page-header .user-info .user-info-stories .story-empty span {
+              font-size: 1.4rem;
+              color: #131d28;
+              opacity: 0.6;
+              padding-left: 2rem; }
+          .profile-empty .profile-page-header .user-info .user-info-stories .story {
+            margin-right: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; }
+            .profile-empty .profile-page-header .user-info .user-info-stories .story .story-image {
+              margin-bottom: 1rem;
+              border: 2px solid #E8E8E8;
+              border-radius: 100%;
+              padding: 0.2rem; }
+              .profile-empty .profile-page-header .user-info .user-info-stories .story .story-image img {
+                max-width: 6rem;
+                height: 6rem;
+                width: 6rem;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 100%; }
+              .profile-empty .profile-page-header .user-info .user-info-stories .story .story-image .story-user {
+                font-weight: 500;
+                font-size: 1.6rem;
+                text-align: center;
+                color: #484848;
+                opacity: 0.5;
+                display: block;
+                max-width: 7rem;
+                white-space: nowrap;
+                overflow: hidden !important;
+                text-overflow: ellipsis; }
+            .profile-empty .profile-page-header .user-info .user-info-stories .story.add .story-image span {
+              min-width: 6rem;
+              border-radius: 100%;
+              color: white;
+              width: 6rem;
+              height: 6rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 4rem;
+              transition: all 0.3s;
+              background: linear-gradient(#fda700 0%, #fd6a00 100%); }
+    .profile-empty .user-foodlist-profile-page-content-feed {
+      display: flex; }
+      .profile-empty .user-foodlist-profile-page-content-feed .feed-main {
+        padding-bottom: 15rem;
+        position: relative;
+        width: 62%;
+        max-width: 675px; }
+        .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs {
+          margin-bottom: 3rem;
+          border: 0; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs .tabs-title {
+            transition: all 0.3s;
+            padding-bottom: 1.5rem;
+            border-bottom: 5px solid #f6f6f6; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs .tabs-title a {
+              outline: none;
+              text-decoration: none;
+              font-weight: 500;
+              font-size: 1.6rem;
+              color: #484848;
+              background: transparent;
+              transition: all 0.3s; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs .tabs-title.is-active {
+              border-color: #ff6900; }
+        .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-panel {
+          padding: 0; }
+        .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content {
+          border: 0; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .user-stats {
+            margin-bottom: 3rem;
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 5rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .user-stats .line {
+              position: absolute;
+              left: 0;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              z-index: 0;
+              width: 100%;
+              height: 1px;
+              background: #e8e8e8; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .user-stats .user-stat {
+              background: white;
+              position: relative;
+              z-index: 1;
+              min-height: 19rem;
+              padding: 2rem 0;
+              border: 1px solid #e8e8e8;
+              border-radius: 5px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .user-stats .user-stat .user-stat-top {
+                position: relative;
+                top: 0;
+                transition: all 0.1s;
+                margin-bottom: 2rem; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .user-stats .user-stat .user-stat-top > div {
+                  font-weight: 300;
+                  font-size: 4rem;
+                  text-align: center;
+                  color: #175db3; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .user-stats .user-stat .user-stat-top > span {
+                  font-weight: 300;
+                  font-size: 1.4rem;
+                  text-align: center;
+                  display: block;
+                  color: #484848; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .user-stats .user-stat .user-stat-bottom {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                top: 0;
+                font-weight: bold;
+                font-size: 1.4rem;
+                text-align: center;
+                color: #ff6900;
+                cursor: pointer; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .brief {
+            padding-bottom: 3rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .brief p {
+              font-weight: normal;
+              font-size: 1.4rem;
+              text-align: left;
+              color: #484848; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .personal-information .personal-information-body {
+            display: flex;
+            flex-direction: column; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .personal-information .personal-information-body .info-item {
+              margin-bottom: 2rem;
+              display: flex;
+              justify-content: space-between;
+              align-items: center; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .personal-information .personal-information-body .info-item .info-label {
+                font-weight: bold;
+                font-size: 1.4rem;
+                text-align: left;
+                color: #484848; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .personal-information .personal-information-body .info-item form {
+                width: 60%; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .personal-information .personal-information-body .info-item form input {
+                  height: 5rem;
+                  font-size: 1.4rem;
+                  color: #484848;
+                  box-shadow: none; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .personal-information .personal-information-body .info-item form input::placeholder {
+                    color: #484848;
+                    font-size: 1.4rem; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .personal-information .personal-information-body .info-item .langues {
+                width: 60%;
+                position: relative; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .personal-information .personal-information-body .info-item .langues input {
+                  box-shadow: none;
+                  height: 5rem;
+                  font-size: 1.4rem;
+                  color: #484848; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .personal-information .personal-information-body .info-item .langues input::placeholder {
+                    font-size: 1.4rem; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .personal-information .personal-information-body .info-item .langues span {
+                  position: absolute;
+                  top: 1.6rem;
+                  right: 8rem;
+                  color: #ff6900;
+                  font-size: 1.4rem;
+                  font-weight: bold;
+                  cursor: pointer; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .personal-information .personal-information-body .info-item .langues i {
+                  font-weight: normal;
+                  font-size: 1.2rem;
+                  color: #131d28;
+                  cursor: pointer;
+                  position: absolute;
+                  top: 2rem;
+                  width: 15%;
+                  right: -2.1rem;
+                  border: none; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .personal-information .personal-information-body .info-item .date {
+                width: 60%;
+                position: relative; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .personal-information .personal-information-body .info-item .date input {
+                  box-shadow: none;
+                  height: 5rem;
+                  font-size: 1.4rem;
+                  color: #484848; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .personal-information .personal-information-body .info-item .date input::placeholder {
+                    color: #484848;
+                    font-size: 1.4rem; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .personal-information .personal-information-body .info-item .date i {
+                  position: absolute;
+                  top: 1.6rem;
+                  right: 11.5rem;
+                  color: #ff6900;
+                  font-size: 1.4rem;
+                  font-weight: bold;
+                  cursor: pointer; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .followers .follower-title {
+            display: grid;
+            grid-template-columns: 1fr 1fr; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .followers .follower-title .profile-title {
+              font-weight: bold;
+              font-size: 2.5rem;
+              text-align: left;
+              color: #175db3;
+              margin-bottom: 2rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .followers .follower-title .your-followers-title {
+              font-weight: bold;
+              font-size: 2.5rem;
+              text-align: left;
+              color: #175db3;
+              margin-bottom: 2rem;
+              font-family: Raleway;
+              opacity: 0.2; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .followers .followers-list {
+            display: flex; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .followers .followers-list i {
+              color: #D40562;
+              font-size: 2rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .followers .followers-list .description {
+              display: flex;
+              flex-direction: column;
+              padding-left: 2rem; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .followers .followers-list .description .info-description {
+                font-weight: 300;
+                font-size: 1.4rem;
+                color: #131d28;
+                opacity: 0.6;
+                margin-bottom: 4rem; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .followers .followers-list .description div {
+                margin-bottom: 3rem; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .followers .followers-list .description div .add-followers, .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .followers .followers-list .description div .search-followers {
+                  font-weight: bold;
+                  font-size: 1.4rem;
+                  color: #ff6900;
+                  cursor: pointer; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .followers .followers-list .description div .search-followers {
+                  padding-left: 3rem; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .restaurants-followed .you-may-like .you-may-like-body {
+            box-shadow: none;
+            filter: none;
+            border: 0; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .restaurants-followed .you-may-like .you-may-like-body .you-may-like-element {
+              margin-bottom: 2rem; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .profile-section {
+            border-bottom: 1px solid #e8e8e8;
+            margin-bottom: 3rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .profile-section .profile-title {
+              font-weight: bold;
+              font-size: 2.5rem;
+              text-align: left;
+              color: #175db3;
+              margin-bottom: 2rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .profile-section input {
+              box-shadow: none;
+              border-radius: 5px;
+              height: 7rem;
+              border: 1px solid #e8e8e8;
+              font-size: 2rem;
+              color: #484848; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .profile-section input::placeholder {
+                font-size: 2rem; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .tab-one {
+            background: #fff;
+            border: 1px solid #ff6900;
+            filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.1)); }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .tab-one .tab-one-header {
+              padding: 0 2rem;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              height: 8rem; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .tab-one .tab-one-header span {
+                font-weight: 300;
+                font-size: 2.4rem;
+                text-align: left;
+                color: #b2b2b2; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .tab-one .tab-one-header i {
+                color: #ff6900;
+                font-size: 3rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .tab-one .tab-one-body {
+              display: none;
+              padding: 2rem;
+              transition: all 0.3s; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .tab-one .tab-one-body #dropzone {
+                margin-bottom: 2rem;
+                border: 1px dashed #e8e8e8;
+                height: 15rem;
+                display: flex;
+                align-items: center;
+                justify-content: center; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .tab-one .tab-one-body #dropzone .dz-details,
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .tab-one .tab-one-body #dropzone .dz-error-message,
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .tab-one .tab-one-body #dropzone .dz-error-mark,
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .tab-one .tab-one-body #dropzone .dz-success-mark {
+                  display: none; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .tab-one .tab-one-body #dropzone .dz-image img {
+                  height: 8rem;
+                  width: 8rem;
+                  border-radius: 5px; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .tab-one .tab-one-body #dropzone .dz-remove {
+                  display: block;
+                  width: 100%;
+                  visibility: hidden;
+                  position: relative;
+                  cursor: pointer; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .tab-one .tab-one-body #dropzone .dz-remove:after {
+                    color: #ff6900;
+                    text-align: center;
+                    visibility: visible;
+                    content: "\e91a";
+                    font-family: icomoon;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    cursor: pointer; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .tab-one .tab-one-body .upload-now {
+                text-align: center !important;
+                width: 100%;
+                height: 7rem;
+                background: #ff6900;
+                font-weight: bold;
+                font-size: 1.6rem;
+                text-align: left;
+                color: #fff;
+                border-radius: 5px; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .tab-one.collapsed {
+              border: 0;
+              box-shadow: none; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .tab-one.collapsed .tab-one-header {
+                border-radius: 5px;
+                background: #fff;
+                border: 1px solid #e8e8e8;
+                box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05); }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .my-photos {
+            margin-top: 3rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .my-photos .my-photos-top {
+              margin-bottom: 2rem;
+              display: flex; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .my-photos .my-photos-top .photos-top-ele {
+                margin-left: 3rem;
+                font-weight: bold;
+                font-size: 1.6rem;
+                text-align: left;
+                color: #a3a3a3; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .my-photos .my-photos-top .photos-top-ele.active {
+                  color: #ff6900; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .my-photos .my-photos-top .photos-top-ele i {
+                  margin-right: 1rem; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .my-photos .my-photos-top .photos-top-ele:last-child {
+                  margin-right: 0; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .my-photos .my-photos-bottom {
+              padding: 2rem;
+              background: #fff;
+              border: 1px solid #e8e8e8;
+              filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05));
+              border-radius: 5px; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .my-photos .my-photos-bottom .my-photos-bottom-header {
+                margin-bottom: 2rem;
+                display: block;
+                width: 100%;
+                display: flex;
+                justify-content: space-between; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .my-photos .my-photos-bottom .my-photos-bottom-header > span:first-child {
+                  font-weight: 500;
+                  font-size: 1.4rem;
+                  text-align: left;
+                  color: #484848;
+                  opacity: 0.5; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .my-photos .my-photos-bottom .my-photos-bottom-header > span:last-child {
+                  cursor: pointer;
+                  font-weight: bold;
+                  font-size: 1.4rem;
+                  color: #484848; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .my-photos .my-photos-bottom .my-photos-bottom-header > span:last-child i {
+                    margin-left: 1rem;
+                    font-size: 1.7rem;
+                    color: #484848; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .my-photos .my-photos-photos {
+              padding-bottom: 6rem;
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+              grid-template-rows: 15rem 15rem 15rem 15rem;
+              grid-gap: 1rem; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .my-photos .my-photos-photos img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 5px; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-first {
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 2rem;
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05)); }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-first .check-in-header {
+              margin-bottom: 2rem;
+              display: flex;
+              justify-content: space-between; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-first .check-in-header .checkin-label {
+                font-weight: 500;
+                font-size: 1.4rem;
+                color: #484848;
+                opacity: 0.5; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-first .check-in-header .checkin-options {
+                font-weight: bold;
+                font-size: 1.4rem;
+                text-align: right;
+                color: #484848; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-first .check-in-header .checkin-options i {
+                  margin-left: 0.5rem;
+                  font-size: 0.7rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-first .check-in-body {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              grid-gap: 2rem; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-first .check-in-body .check-in-place .place-media {
+                margin-bottom: 1rem; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-first .check-in-body .check-in-place .place-media img {
+                  display: block;
+                  width: 100%;
+                  height: 15rem;
+                  -webkit-border-radius: 5px;
+                  -moz-border-radius: 5px;
+                  border-radius: 5px; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-first .check-in-body .check-in-place .place-info {
+                display: flex;
+                align-items: center;
+                justify-content: space-between; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-first .check-in-body .check-in-place .place-info > span:first-child {
+                  font-weight: normal;
+                  font-size: 2rem;
+                  text-align: left;
+                  color: #484848;
+                  opacity: 0.8; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-first .check-in-body .check-in-place .place-info > span:first-child i {
+                    margin-right: 0.5rem; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-first .check-in-body .check-in-place .place-info > span:last-child {
+                  font-weight: normal;
+                  font-size: 1.6rem;
+                  text-align: right;
+                  color: #484848;
+                  opacity: 0.5; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second {
+            display: none; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .check-in-map {
+              margin-bottom: 3rem;
+              padding: 2rem;
+              background: rgba(232, 232, 232, 0.05);
+              border: 1px solid #e8e8e8;
+              filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05));
+              border-radius: 5px; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .check-in-map .check-in-map-header {
+                margin-bottom: 2rem;
+                display: flex;
+                justify-content: space-between; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .check-in-map .check-in-map-header .map-label {
+                  font-weight: 500;
+                  font-size: 1.4rem;
+                  text-align: left;
+                  color: #484848;
+                  opacity: 0.5; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .check-in-map .check-in-map-header .map-options {
+                  font-weight: bold;
+                  font-size: 1.4rem;
+                  text-align: right;
+                  color: #484848; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .check-in-map .check-in-map-header .map-options i {
+                    font-size: 1.7rem;
+                    margin-left: 0.5rem;
+                    cursor: pointer; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .check-in-map .check-in-map-body img {
+                width: 100%;
+                object-fit: cover;
+                height: 15rem;
+                margin-bottom: 2rem; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .check-in-map .check-in-map-body .map-info {
+                display: flex; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .check-in-map .check-in-map-body .map-info > span:first-child, .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .check-in-map .check-in-map-body .map-info > span:nth-child(2) {
+                  margin-right: 3rem;
+                  font-weight: normal;
+                  font-size: 2rem;
+                  text-align: left;
+                  color: #484848;
+                  opacity: 0.8; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .check-in-map .check-in-map-body .map-info > span:first-child i, .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .check-in-map .check-in-map-body .map-info > span:nth-child(2) i {
+                    margin-right: 1rem;
+                    font-weight: normal; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .check-in-map .check-in-map-body .map-info > span:last-child {
+                  margin-left: auto;
+                  font-weight: normal;
+                  font-size: 1.6rem;
+                  text-align: right;
+                  color: #484848;
+                  opacity: 0.5; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info {
+              margin-bottom: 3rem;
+              display: grid;
+              grid-template-columns: 40% auto;
+              border-radius: 5px;
+              background: #fff;
+              border: 1px solid #e8e8e8;
+              box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05); }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-media {
+                height: 30rem;
+                width: 100%; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-media img {
+                  object-fit: cover;
+                  width: 100%;
+                  height: 100%;
+                  border-top-left-radius: 5px;
+                  border-bottom-left-radius: 5px; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info {
+                padding: 2rem; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-header {
+                  margin-bottom: 1rem;
+                  display: flex;
+                  align-items: center; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-header img {
+                    margin-right: 1rem;
+                    border-radius: 5px;
+                    height: 4rem;
+                    width: 4rem;
+                    object-fit: cover; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-header .name .restaurant-name {
+                    display: block;
+                    font-weight: bold;
+                    font-size: 1.8rem;
+                    text-align: left;
+                    color: #484848; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-header .name .restaurant-location {
+                    font-weight: normal;
+                    font-size: 1.4rem;
+                    text-align: left;
+                    color: #484848;
+                    opacity: 0.8; }
+                    .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-header .name .restaurant-location i {
+                      margin-right: 0.5rem; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-header .raiting {
+                    margin-left: auto; }
+                    .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-header .raiting i {
+                      color: #ffa500;
+                      font-size: 1rem;
+                      font-weight: normal; }
+                    .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-header .raiting span {
+                      color: #e2e2e2; }
+                      .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-header .raiting span.full {
+                        color: #ffa500; }
+                      .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-header .raiting span:hover {
+                        color: #ffa500; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-body .time {
+                  margin-bottom: 1rem;
+                  display: flex;
+                  align-items: center; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-body .time i {
+                    margin-right: 1rem;
+                    color: #484848;
+                    font-size: 1.4rem; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-body .time .title {
+                    font-weight: bold;
+                    font-size: 1.4rem;
+                    text-align: left;
+                    color: #175db3;
+                    margin-right: 1rem; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-body .time .status {
+                    display: flex;
+                    align-items: center;
+                    height: 2rem;
+                    border-radius: 3px;
+                    background: #5ecc73;
+                    padding: 0 0.5rem;
+                    font-weight: bold;
+                    font-size: 1rem;
+                    text-align: center;
+                    color: #fff;
+                    text-transform: uppercase; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-body .time ._time {
+                    margin-left: auto;
+                    font-weight: normal;
+                    font-size: 1.4rem;
+                    text-align: left;
+                    color: #484848; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-body .info {
+                  margin-bottom: 2rem; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-body .info i {
+                    font-size: 1.4rem;
+                    margin-right: 0.5rem;
+                    color: #484848; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-body .info .title {
+                    font-weight: bold;
+                    font-size: 1.4rem;
+                    text-align: left;
+                    color: #175db3;
+                    margin-right: 1rem; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-body .info ._info {
+                    max-width: 20rem;
+                    padding-left: 1.5rem;
+                    font-weight: normal;
+                    font-size: 1.2rem;
+                    line-height: 1.6rem;
+                    text-align: left;
+                    color: #484848;
+                    display: flex;
+                    flex-direction: column; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-body .people-was-here {
+                  display: flex;
+                  align-items: center; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-body .people-was-here .peoples {
+                    display: flex; }
+                    .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-body .people-was-here .peoples .people {
+                      position: relative;
+                      left: 0;
+                      width: 2.5rem;
+                      height: 2.5rem;
+                      border-radius: 100%;
+                      border: 1px solid white; }
+                      .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-body .people-was-here .peoples .people img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover; }
+                      .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-body .people-was-here .peoples .people:nth-child(2) {
+                        left: -1.25rem; }
+                      .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-body .people-was-here .peoples .people:nth-child(3) {
+                        left: -2.25rem; }
+                      .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-body .people-was-here .peoples .people:nth-child(4) {
+                        left: -3.25rem; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-body .people-was-here span {
+                    position: relative;
+                    left: -2rem;
+                    font-size: 1.1rem;
+                    text-align: left;
+                    color: #484848;
+                    opacity: 0.8; }
+                    .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .restaurant-with-info .slide-info .slide-info-body .people-was-here span strong {
+                      font-weight: bold;
+                      color: #175db3; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              grid-gap: 2rem; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant {
+                max-height: 24.5rem;
+                overflow: hidden;
+                border-radius: 5px;
+                background: #fff;
+                border: 1px solid #e8e8e8;
+                filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05)); }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-header {
+                  height: 13rem;
+                  width: 100%;
+                  transition: all 0.3s; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-header img {
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-body {
+                  padding: 1rem; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-body .soft-restaurant-body-header {
+                    margin-bottom: 1rem;
+                    display: flex;
+                    align-items: center; }
+                    .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-body .soft-restaurant-body-header img {
+                      margin-right: 1rem;
+                      border-radius: 5px;
+                      height: 4rem;
+                      width: 4rem;
+                      object-fit: cover; }
+                    .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-body .soft-restaurant-body-header .name .restaurant-name {
+                      display: block;
+                      font-weight: bold;
+                      font-size: 1.8rem;
+                      text-align: left;
+                      color: #484848; }
+                    .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-body .soft-restaurant-body-header .name .restaurant-location {
+                      font-weight: normal;
+                      font-size: 1.4rem;
+                      text-align: left;
+                      color: #484848;
+                      opacity: 0.8; }
+                      .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-body .soft-restaurant-body-header .name .restaurant-location i {
+                        margin-right: 0.5rem; }
+                    .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-body .soft-restaurant-body-header .raiting {
+                      margin-left: auto; }
+                      .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-body .soft-restaurant-body-header .raiting i {
+                        font-size: 1.1rem;
+                        color: #ffa500;
+                        font-weight: normal; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer {
+                    padding-left: 5rem; }
+                    .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here {
+                      display: flex;
+                      align-items: center; }
+                      .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here .peoples {
+                        display: flex; }
+                        .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here .peoples .people {
+                          position: relative;
+                          left: 0;
+                          width: 2.5rem;
+                          height: 2.5rem;
+                          border-radius: 100%;
+                          border: 1px solid white; }
+                          .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here .peoples .people img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover; }
+                          .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here .peoples .people:nth-child(2) {
+                            left: -1.25rem; }
+                          .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here .peoples .people:nth-child(3) {
+                            left: -2.25rem; }
+                          .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here .peoples .people:nth-child(4) {
+                            left: -3.25rem; }
+                      .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here span {
+                        position: relative;
+                        left: -2rem;
+                        font-size: 1.1rem;
+                        text-align: left;
+                        color: #484848;
+                        opacity: 0.8; }
+                        .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-body .soft-restaurant-body-footer .people-was-here span strong {
+                          font-weight: bold;
+                          color: #175db3; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-body .soft-restaurant-body-invisible {
+                    transition: all 0.1s;
+                    opacity: 0;
+                    padding-left: 5rem;
+                    display: flex;
+                    align-items: center;
+                    padding-top: 2rem; }
+                    .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-body .soft-restaurant-body-invisible .promo .promo-name {
+                      font-weight: bold;
+                      font-size: 1.1rem;
+                      text-align: left;
+                      color: #d40562; }
+                    .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-body .soft-restaurant-body-invisible button {
+                      margin-left: auto;
+                      height: 4rem;
+                      color: white;
+                      background: #ffa500;
+                      padding: 0 1rem;
+                      border-radius: 5px;
+                      font-weight: normal;
+                      font-size: 1.4rem;
+                      text-align: left;
+                      color: #fff; }
+                      .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant .soft-restaurant-body .soft-restaurant-body-invisible button i {
+                        margin-right: 1rem; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant:hover .soft-restaurant-header {
+                  height: 8rem; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .check-in .check-in-second .soft-restaurants .soft-restaurant:hover .soft-restaurant-body .soft-restaurant-body-invisible {
+                  opacity: 1; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .evaluation {
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            background: #fefefe;
+            border: 1px solid #e8e8e8;
+            filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05));
+            padding: 2rem;
+            margin-bottom: 3rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .evaluation .evaluation-header {
+              display: flex;
+              justify-content: space-between; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .evaluation .evaluation-header .evaluation-label {
+                font-weight: 500;
+                font-size: 1.4rem;
+                color: #484848;
+                opacity: 0.5; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .evaluation .evaluation-header .evaluation-options {
+                font-weight: bold;
+                font-size: 1.4rem;
+                text-align: right;
+                color: #484848; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .evaluation .evaluation-header .evaluation-options i {
+                  margin-left: 0.5rem;
+                  font-size: 1.7rem;
+                  color: #484848;
+                  font-weight: normal; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .card {
+            margin-bottom: 3rem; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .divider {
+            margin-bottom: 5rem; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-reservation,
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-transactions {
+            margin-bottom: 5rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-reservation .my-reservation-title,
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-reservation .my-transactions-title,
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-transactions .my-reservation-title,
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-transactions .my-transactions-title {
+              margin-bottom: 2rem;
+              font-weight: bold;
+              font-size: 2rem;
+              text-align: left;
+              color: #175db3; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-reservation .my-reservation-body,
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-reservation .my-transactions-body,
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-transactions .my-reservation-body,
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-transactions .my-transactions-body {
+              display: flex; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-reservation .my-reservation-body .my-reservation-body-info,
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-reservation .my-transactions-body .my-reservation-body-info,
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-transactions .my-reservation-body .my-reservation-body-info,
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-transactions .my-transactions-body .my-reservation-body-info {
+                margin-left: 4rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-reservation .my-reservation-body .my-reservation-body-info p,
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-reservation .my-transactions-body .my-reservation-body-info p,
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-transactions .my-reservation-body .my-reservation-body-info p,
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-transactions .my-transactions-body .my-reservation-body-info p {
+                  font-weight: normal;
+                  font-size: 1.6rem;
+                  text-align: left;
+                  color: #484848;
+                  margin-bottom: 1.5rem; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-reservation .my-reservation-body .my-reservation-body-info button,
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-reservation .my-transactions-body .my-reservation-body-info button,
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-transactions .my-reservation-body .my-reservation-body-info button,
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-transactions .my-transactions-body .my-reservation-body-info button {
+                  height: 6rem;
+                  font-weight: bold;
+                  font-size: 1.4rem;
+                  text-align: center;
+                  width: 23rem;
+                  border-radius: 5px;
+                  background: #fff;
+                  border: 1px solid #54d0a5;
+                  color: #54d0a5;
+                  outline: none;
+                  cursor: pointer;
+                  padding: 0 3rem;
+                  -webkit-border-radius: 5px;
+                  -moz-border-radius: 5px;
+                  border-radius: 5px;
+                  -webkit-transition: all 0.3s;
+                  -moz-transition: all 0.3s;
+                  -ms-transition: all 0.3s;
+                  -o-transition: all 0.3s;
+                  transition: all 0.3s; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-reservation .my-reservation-body .my-reservation-body-info button:hover,
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-reservation .my-transactions-body .my-reservation-body-info button:hover,
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-transactions .my-reservation-body .my-reservation-body-info button:hover,
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-transactions .my-transactions-body .my-reservation-body-info button:hover {
+                    background: #54d0a5;
+                    color: white; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-reservation .my-transactions-body,
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-first .my-transactions .my-transactions-body {
+              align-items: center; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second {
+            display: none; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-interactions {
+              margin-bottom: 3rem;
+              padding: 2rem;
+              background: #fff;
+              border: 1px solid #e8e8e8;
+              filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05));
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              border-radius: 5px; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-interactions .my-interactions-title {
+                font-weight: bold;
+                font-size: 2rem;
+                text-align: left;
+                color: #175db3;
+                margin-bottom: 2rem; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-interactions .highlights {
+                display: flex;
+                align-items: center;
+                justify-content: space-around; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-interactions .highlights .highlight {
+                  margin-right: 1rem;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-interactions .highlights .highlight:last-child {
+                    margin-right: 0; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-interactions .highlights .highlight > span:last-child {
+                    margin-left: 1rem;
+                    font-weight: 300;
+                    font-size: 1.4rem;
+                    text-align: center;
+                    color: #484848; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-interactions .highlights .highlight .highlight-container {
+                    height: 6rem;
+                    width: 6rem;
+                    border: 2px solid #e8e8e8;
+                    border-radius: 100%;
+                    background: linear-gradient(#fda700 0%, #fd6a00 100%);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center; }
+                    .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-interactions .highlights .highlight .highlight-container i {
+                      font-size: 2rem;
+                      color: white; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-stats {
+              margin-bottom: 3rem;
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              border-radius: 5px;
+              padding: 2rem;
+              background: #fefefe;
+              border: 1px solid #e8e8e8;
+              filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.05)); }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-stats .my-stats-title {
+                margin-bottom: 2rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-stats .my-stats-title > span:first-child {
+                  font-weight: bold;
+                  font-size: 2rem;
+                  text-align: left;
+                  color: #175db3; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-stats .my-stats-title > span:last-child {
+                  font-weight: bold;
+                  font-size: 1.4rem;
+                  text-align: right;
+                  color: #484848; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-stats .my-stats-title > span:last-child i {
+                    margin-left: 1rem;
+                    font-size: 0.7rem; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-stats .my-stats-body {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-stats .my-stats-body .chart-container {
+                  position: relative; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-stats .my-stats-body .chart-container .number-of-reservation {
+                    position: absolute; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-stats .my-stats-body .chart-info .one-info {
+                  margin-bottom: 2rem;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-stats .my-stats-body .chart-info .one-info .info-circle {
+                    margin-right: 1rem;
+                    display: block;
+                    height: 1.6rem;
+                    width: 1.6rem;
+                    -webkit-border-radius: 100%;
+                    -moz-border-radius: 100%;
+                    border-radius: 100%;
+                    background: #55d8fe; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-stats .my-stats-body .chart-info .one-info .info-label {
+                    margin-right: auto; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-stats .my-stats-body .chart-info .one-info .info-value {
+                    opacity: 0.5; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-stats .my-stats-body .chart-info .one-info:nth-child(2) .info-circle {
+                    background: #ff8373; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-stats .my-stats-body .chart-info .one-info:nth-child(3) .info-circle {
+                    background: #ffda83; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-stats .my-stats-body .chart-info .one-info:nth-child(4) .info-circle {
+                    background: #a3a0fb; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-booking .my-booking-title {
+              margin-bottom: 2rem;
+              display: flex;
+              justify-content: space-between;
+              align-items: center; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-booking .my-booking-title > span:first-child {
+                font-weight: bold;
+                font-size: 2rem;
+                text-align: left;
+                color: #175db3; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-booking .my-booking-title > span:last-child {
+                font-weight: bold;
+                font-size: 1.4rem;
+                text-align: right;
+                color: #ff6900; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-booking .my-booking-body .my-booking-ele {
+              margin-bottom: 2rem;
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              border-radius: 5px;
+              background: #fefefe;
+              border: 1px solid #e8e8e8; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-booking .my-booking-body .my-booking-ele .divider {
+                margin-bottom: 0; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-booking .my-booking-body .my-booking-ele .my-booking-ele-top {
+                padding: 2rem;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-booking .my-booking-body .my-booking-ele .my-booking-ele-top > span {
+                  cursor: pointer;
+                  height: 4rem;
+                  padding: 0 2rem;
+                  display: flex;
+                  align-items: center;
+                  font-size: 1.2rem;
+                  color: #484848;
+                  border: 1px solid #e8e8e8;
+                  border-radius: 20px; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-booking .my-booking-body .my-booking-ele .my-booking-ele-top > span i {
+                    font-size: 1rem;
+                    color: #ff6900;
+                    margin-left: 0.5rem; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-booking .my-booking-body .my-booking-ele .my-booking-ele-top .you-may-like-element {
+                  align-items: flex-start; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-booking .my-booking-body .my-booking-ele .my-booking-ele-top .you-may-like-element .info-header {
+                    flex-wrap: wrap; }
+                    .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-booking .my-booking-body .my-booking-ele .my-booking-ele-top .you-may-like-element .info-header .raiting {
+                      margin-top: 1rem;
+                      width: 100%; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-booking .my-booking-body .my-booking-ele .my-booking-ele-bottom {
+                padding: 2rem; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-booking .my-booking-body .my-booking-ele .my-booking-ele-bottom > div {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  margin-bottom: 2rem; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-booking .my-booking-body .my-booking-ele .my-booking-ele-bottom > div:last-child {
+                    margin-bottom: 0; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-booking .my-booking-body .my-booking-ele .my-booking-ele-bottom > div .my-booking-label {
+                    font-weight: bold;
+                    font-size: 1.4rem;
+                    text-align: left;
+                    color: #175db3; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-booking .my-booking-body .my-booking-ele .my-booking-ele-bottom > div .my-booking-value {
+                    font-weight: normal;
+                    font-size: 1.4rem;
+                    text-align: left;
+                    color: #484848; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-transactions-list .my-transactions-list-header {
+              margin-bottom: 3rem;
+              display: flex;
+              align-items: center;
+              justify-content: space-between; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-transactions-list .my-transactions-list-header .header-title {
+                font-weight: bold;
+                font-size: 2rem;
+                text-align: left;
+                color: #175db3; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-transactions-list .my-transactions-list-header > span {
+                font-weight: bold;
+                font-size: 1.4rem;
+                text-align: right;
+                color: #484848; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-transactions-list .my-transactions-list-header > span i {
+                  margin-left: 0.5rem;
+                  font-size: 0.7rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-transactions-list .my-transactions-list-body .body-list-header {
+              display: flex;
+              align-items: center;
+              justify-content: flex-end; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-transactions-list .my-transactions-list-body .body-list-header > span {
+                width: 10rem;
+                font-weight: bold;
+                font-size: 1.2rem;
+                text-align: left;
+                color: #c7c7c7; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-transactions-list .body-list-body .my-transaction-item {
+              margin-bottom: 2rem;
+              padding: 1rem;
+              border-radius: 5px;
+              display: flex;
+              border: 1px solid #E8E8E8;
+              align-items: center; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-transactions-list .body-list-body .my-transaction-item .transaction-restaurant {
+                margin-right: auto;
+                display: flex;
+                align-items: center; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-transactions-list .body-list-body .my-transaction-item .transaction-restaurant img {
+                  height: 4rem;
+                  width: 4rem;
+                  margin-right: 1rem;
+                  display: block; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-transactions-list .body-list-body .my-transaction-item .transaction-restaurant > div {
+                  display: flex;
+                  flex-direction: column; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-transactions-list .body-list-body .my-transaction-item .transaction-restaurant > div > span:first-child {
+                    font-weight: bold;
+                    font-size: 1.8rem;
+                    text-align: left;
+                    color: #484848; }
+                  .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-transactions-list .body-list-body .my-transaction-item .transaction-restaurant > div > span:last-child {
+                    font-weight: normal;
+                    font-size: 1.4rem;
+                    text-align: left;
+                    color: #484848;
+                    opacity: 0.8; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-main .tabs-content .dashboard .dashboard-second .my-transactions-list .body-list-body .my-transaction-item .transaction-item-value {
+                font-weight: 300;
+                font-size: 1.6rem;
+                color: #131d28;
+                width: 10rem; }
+      .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary {
+        padding-left: 2rem;
+        width: 38%; }
+        .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .restaurant-management {
+          background: #484848;
+          border-radius: 5px;
+          padding: 2rem; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .restaurant-management .title {
+            display: flex;
+            align-items: center; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .restaurant-management .title i {
+              font-weight: 300;
+              font-size: 3rem;
+              color: #fff;
+              margin-right: 1rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .restaurant-management .title span {
+              font-weight: 500;
+              font-size: 2rem;
+              color: #fff; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .restaurant-management .restaurant-item {
+            display: flex;
+            margin-top: 2rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .restaurant-management .restaurant-item img {
+              margin-right: 1.5rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .restaurant-management .restaurant-item .information .name {
+              font-weight: bold;
+              font-size: 1.8rem;
+              color: #fff; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .restaurant-management .restaurant-item .information .dashboard {
+              margin-top: 0.5rem; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .restaurant-management .restaurant-item .information .dashboard i {
+                font-weight: normal;
+                font-size: 2rem;
+                color: #ff6900;
+                margin-right: 0.5rem; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .restaurant-management .restaurant-item .information .dashboard span {
+                font-size: 1.4rem;
+                font-weight: bold;
+                color: #ff6900; }
+        .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .balance {
+          margin: 2rem 0;
+          height: 10rem;
+          background: #a80000;
+          border-radius: 5px;
+          display: grid;
+          grid-template-columns: 2fr 5fr 1fr;
+          align-items: center;
+          padding: 0 2rem; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .balance .your-balance .title {
+            font-weight: 500;
+            font-size: 1.4rem;
+            color: #ffa500; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .balance .your-balance .sold {
+            display: flex; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .balance .your-balance .sold .numb {
+              font-weight: 500;
+              font-size: 2.4rem;
+              color: #fff; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .balance .your-balance .sold .wintak {
+              font-weight: 500;
+              font-size: 1.5rem;
+              color: #fff;
+              margin-left: 0.5rem; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .balance i {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: normal;
+            text-align: center; }
+        .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-location {
+          margin: 2.2rem 0; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-location .shared-location-first-title {
+            margin-bottom: 1.5rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-location .shared-location-first-title span {
+              color: #175DB3;
+              font-size: 1.8rem;
+              font-weight: bold; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-location .shared-component-location-maps {
+            border-radius: 5px;
+            border: 1px solid #E8E8E8; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-location .shared-component-location-maps hr {
+              border: 1px solid #E8E8E8; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-location .shared-component-location-maps .shared-component-location-bottom {
+              display: flex;
+              justify-content: space-between;
+              padding: 2rem; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-location .shared-component-location-maps .shared-component-location-bottom .shared-component-adress {
+                display: flex;
+                flex-direction: column; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-location .shared-component-location-maps .shared-component-location-bottom .shared-component-adress span:first-child {
+                  color: #175db3;
+                  font-size: 1.5rem;
+                  font-weight: bold; }
+                .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-location .shared-component-location-maps .shared-component-location-bottom .shared-component-adress span:last-child {
+                  color: #484848;
+                  font-size: 1.5rem; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-location .shared-component-location-maps .shared-component-location-bottom .shared-component-adress-panneau svg {
+                color: #ff6900;
+                font-size: 2.4rem; }
+        .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-profil {
+          padding: 2rem; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-profil .title {
+            margin-bottom: 1rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-profil .title span {
+              font-size: 1.4rem;
+              color: #175db3; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-profil:hover .shared-component-profil-img {
+            padding-left: 1rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-profil:hover .shared-component-profil-img > img:nth-child(2) {
+              left: -0.5rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-profil:hover .shared-component-profil-img > img:nth-child(3) {
+              left: -1rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-profil:hover .shared-component-profil-img > img:nth-child(4) {
+              left: -1.5rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-profil:hover .shared-component-profil-img > img:nth-child(5) {
+              left: -2rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-profil:hover .shared-component-profil-img > img:nth-child(6) {
+              left: -2.5rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-profil:hover .shared-component-profil-img > img:nth-child(7) {
+              left: -3rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-profil:hover .shared-component-profil-img #profil-img-number {
+              position: relative;
+              left: -6rem;
+              color: white;
+              font-size: 1.4rem;
+              font-weight: bold;
+              text-align: center;
+              justify-content: center;
+              top: 0.9rem; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-profil .shared-component-profil-img {
+            display: flex;
+            position: relative;
+            top: 0;
+            transition: all 0.1s; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-profil .shared-component-profil-img > img {
+              position: relative;
+              display: block;
+              height: 4rem;
+              width: 4rem;
+              border-radius: 100%;
+              object-fit: cover;
+              position: relative;
+              left: 0; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-profil .shared-component-profil-img > img:nth-child(2) {
+                left: -1.5rem; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-profil .shared-component-profil-img > img:nth-child(3) {
+                left: -3rem; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-profil .shared-component-profil-img > img:nth-child(4) {
+                left: -4.5rem; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-profil .shared-component-profil-img > img:nth-child(5) {
+                left: -6rem; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-profil .shared-component-profil-img > img:nth-child(6) {
+                left: -7.5rem; }
+              .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-profil .shared-component-profil-img > img:nth-child(7) {
+                left: -9rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-profil .shared-component-profil-img #profil-img-number {
+              left: -12.2rem;
+              position: relative;
+              color: white;
+              font-size: 1.4rem;
+              font-weight: bold;
+              text-align: center;
+              justify-content: center;
+              top: 0.9rem; }
+        .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-restaurant {
+          padding: 0 2rem 2rem 2rem; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-restaurant .title {
+            margin-bottom: 1rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-restaurant .title span {
+              font-size: 1.4rem;
+              color: #175db3; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-restaurant .shared-restaurant-img {
+            padding-bottom: 2rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-restaurant .shared-restaurant-img img {
+              margin-right: 0.5rem; }
+            .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-restaurant .shared-restaurant-img span {
+              font-size: 1.4rem;
+              color: white;
+              position: relative;
+              font-weight: bold;
+              right: 4.2rem; }
+          .profile-empty .user-foodlist-profile-page-content-feed .feed-secondary .shared-restaurant .show-all {
+            font-size: 1.4rem;
+            color: #ff6900;
+            font-weight: bold;
+            margin-top: 2rem;
+            cursor: pointer; }
+    .profile-empty .user-foodlist-add-profile-picture {
+      display: none;
+      margin: auto;
+      width: 100rem; }
+      .profile-empty .user-foodlist-add-profile-picture .title-header {
+        margin-top: 10rem;
+        margin-bottom: 6rem;
+        display: block;
+        text-align: center;
+        font-size: 3rem;
+        color: #484848; }
+      .profile-empty .user-foodlist-add-profile-picture .circle {
+        margin-top: 4rem;
+        width: 38rem;
+        height: 38rem;
+        background: #fff;
+        border: 1px solid #e8e8e8;
+        display: block;
+        margin: auto;
+        border-radius: 35rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8rem; }
+        .profile-empty .user-foodlist-add-profile-picture .circle .import-picture-first-methode {
+          font-size: 1.6rem;
+          line-height: 2rem;
+          text-align: center;
+          color: #484848;
+          opacity: 0.6;
+          padding: 2rem 0;
+          cursor: pointer;
+          width: 85%; }
+        .profile-empty .user-foodlist-add-profile-picture .circle .import-picture-second-methode {
+          margin-top: 5rem;
+          cursor: pointer;
+          width: 100%;
+          text-align: center; }
+          .profile-empty .user-foodlist-add-profile-picture .circle .import-picture-second-methode .here {
+            font-weight: bold;
+            font-size: 1.4rem;
+            color: #ff6900;
+            cursor: pointer; }
+      .profile-empty .user-foodlist-add-profile-picture #dropzone2 .dz-details,
+      .profile-empty .user-foodlist-add-profile-picture #dropzone2 .dz-error-message,
+      .profile-empty .user-foodlist-add-profile-picture #dropzone2 .dz-error-mark,
+      .profile-empty .user-foodlist-add-profile-picture #dropzone2 .dz-success-mark {
+        display: none; }
+      .profile-empty .user-foodlist-add-profile-picture #dropzone2 .dz-image img {
+        height: 8rem;
+        width: 8rem;
+        border-radius: 5px; }
+      .profile-empty .user-foodlist-add-profile-picture #dropzone2 .dz-remove {
+        display: block;
+        width: 100%;
+        visibility: hidden;
+        position: relative;
+        cursor: pointer; }
+        .profile-empty .user-foodlist-add-profile-picture #dropzone2 .dz-remove:after {
+          color: #ff6900;
+          text-align: center;
+          visibility: visible;
+          content: "\e91a";
+          font-family: icomoon;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          cursor: pointer; }
+      .profile-empty .user-foodlist-add-profile-picture .user-foodlist-add-profile-picture-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .profile-empty .user-foodlist-add-profile-picture .user-foodlist-add-profile-picture-bottom .profil-picture-instruction {
+          font-weight: 300;
+          font-size: 1.4rem;
+          line-height: 2rem;
+          text-align: center;
+          color: #484848;
+          opacity: 0.6;
+          padding-top: 2rem;
+          max-width: 20%; }
+        .profile-empty .user-foodlist-add-profile-picture .user-foodlist-add-profile-picture-bottom .profil-picture-third-methode {
+          font-weight: bold;
+          font-size: 1.4rem;
+          color: #ff6900;
+          padding: 5rem 0;
+          cursor: pointer; }
+        .profile-empty .user-foodlist-add-profile-picture .user-foodlist-add-profile-picture-bottom .confirm {
+          width: 38rem;
+          height: 6rem;
+          border-radius: 5px;
+          background: #fff;
+          border: 1px solid rgba(72, 72, 72, 0.2);
+          font-weight: bold;
+          font-size: 1.8rem;
+          text-align: center;
+          color: #dadada;
+          margin-top: 2rem;
+          margin-bottom: 4rem;
+          outline: none;
+          cursor: pointer; }
+          .profile-empty .user-foodlist-add-profile-picture .user-foodlist-add-profile-picture-bottom .confirm:hover {
+            background-color: #ff6900;
+            color: white; }
+
+.resto-element {
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: left;
+  color: #131d28;
+  margin-bottom: 2rem; }
+
+.one-follower {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center; }
+  .one-follower .one-follower-inner {
+    display: flex;
+    align-items: center; }
+    .one-follower .one-follower-inner .user-who-post-info-avatar {
+      margin-right: 1rem; }
+      .one-follower .one-follower-inner .user-who-post-info-avatar img {
+        max-width: 4rem;
+        object-fit: cover;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 5px; }
+    .one-follower .one-follower-inner .user-who-post-info-info .user-username {
+      font-weight: bold;
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      color: #484848; }
+    .one-follower .one-follower-inner .user-who-post-info-info .user-about {
+      font-weight: normal;
+      font-size: 1.4rem;
+      line-height: 1.4rem;
+      color: #484848;
+      opacity: 0.8;
+      margin-top: 0.5rem; }
+
+.follow-button {
+  cursor: pointer;
+  background: #ffa500;
+  color: white;
+  padding: 0 1rem;
+  height: 5rem;
+  width: 23%;
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 75%; }
+
+.suivre-btn {
+  align-items: center;
+  margin-top: -10%;
+  margin-bottom: 6rem;
+  cursor: pointer; }
+  .suivre-btn .suivre-button {
+    margin-right: 3rem;
+    background: #ffa500;
+    color: white;
+    padding: 0 1rem;
+    height: 5rem;
+    width: 10%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    margin-left: 87%;
+    cursor: pointer; }
+    .suivre-btn .suivre-button span {
+      font-weight: bold;
+      font-size: 1.8rem;
+      color: #fff;
+      cursor: pointer; }
+
+.unfollow-pane {
+  padding: 1rem 2rem;
+  background: #f7f7fa;
+  border: 1px solid #e8e8e8;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.15));
+  border-radius: 5px;
+  position: absolute;
+  /*top: 0.8rem !important;*/
+  right: 3rem !important;
+  z-index: 99999999999;
+  height: 10rem;
+  width: 20rem;
+  display: none;}
+  .unfollow-pane .unfollow-pane-items {
+    margin: 0;
+    list-style-type: none; }
+    .unfollow-pane .unfollow-pane-items .filter-content {
+      display: flex;
+      flex-direction: column; }
+      .unfollow-pane .unfollow-pane-items .filter-content .content-title {
+        font-weight: normal;
+        font-size: 1.8rem;
+        text-align: left;
+        color: #484848;
+        margin: 0.8rem 0;
+        cursor: pointer; }
+        .unfollow-pane .unfollow-pane-items .filter-content .content-title:last-child {
+          margin-bottom: 0; }
+        .unfollow-pane .unfollow-pane-items .filter-content .content-title:hover {
+          color: #ff6900; }
+      .unfollow-pane .unfollow-pane-items .filter-content .clicked {
+        color: #ff6900; }

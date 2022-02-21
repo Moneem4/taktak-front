@@ -1,0 +1,1062 @@
+.card.post-card {
+  border: 1px solid #e8e8e8;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  margin-top: 2rem;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: #f8f7fa; }
+  .card.post-card .post-card-header .post-card-photo img {
+    height: 30rem;
+    object-fit: cover;
+    width: 100%; }
+  .card.post-card .post-card-header .post-card-photo.more {
+    padding: 0rem 2rem 0 2rem; }
+  .card.post-card .post-card-header .post-photos {
+    height: 30rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 14rem 14rem;
+    grid-gap: 1rem; }
+    .card.post-card .post-card-header .post-photos .post-photo-container {
+      position: relative;
+      cursor: pointer;
+      height: 100%; }
+      .card.post-card .post-card-header .post-photos .post-photo-container img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px; }
+      .card.post-card .post-card-header .post-photos .post-photo-container.photo-one {
+        grid-column: 1/3;
+        grid-row: 1/3; }
+      .card.post-card .post-card-header .post-photos .post-photo-container .more-photos {
+        z-index: 9;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .card.post-card .post-card-header .post-photos .post-photo-container .more-photos span {
+          z-index: 9;
+          font-weight: bold;
+          font-size: 3rem;
+          color: #fff; }
+          .card.post-card .post-card-header .post-photos .post-photo-container .more-photos span:before {
+            content: "";
+            height: 9rem;
+            width: 9rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border: 2px solid white;
+            border-radius: 100%; }
+        .card.post-card .post-card-header .post-photos .post-photo-container .more-photos.last-photo:after {
+          content: "";
+          opacity: 0.5;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: #ff6900;
+          transition: all 0.3s;
+          border-radius: 5px; }
+  .card.post-card .post-card-body {
+    padding: 2rem; }
+    .card.post-card .post-card-body .post-card-body-description {
+      padding-left: 5rem;
+      font-size: 1.2rem;
+      padding-right: 1rem; }
+      .card.post-card .post-card-body .post-card-body-description .description-note {
+        margin-bottom: 1rem; }
+        .card.post-card .post-card-body .post-card-body-description .description-note .note {
+          font-weight: bold;
+          font-size: 1.4rem;
+          color: #ff6900;
+          opacity: 0.8;
+          margin-right: 1.5rem; }
+        .card.post-card .post-card-body .post-card-body-description .description-note .date {
+          font-weight: bold;
+          font-size: 1.4rem;
+          text-align: left;
+          color: #484848;
+          opacity: 0.8; }
+    .card.post-card .post-card-body .post-card-body-description-user {
+      font-size: 1.2rem;
+      padding-right: 1rem; }
+      .card.post-card .post-card-body .post-card-body-description-user .description-note {
+        margin-bottom: 1rem; }
+        .card.post-card .post-card-body .post-card-body-description-user .description-note .note {
+          font-weight: bold;
+          font-size: 1.4rem;
+          color: #ff6900;
+          opacity: 0.8;
+          margin-right: 1.5rem; }
+        .card.post-card .post-card-body .post-card-body-description-user .description-note .date {
+          font-weight: bold;
+          font-size: 1.4rem;
+          text-align: left;
+          color: #484848;
+          opacity: 0.8; }
+    .card.post-card .post-card-body .user-who-post-wrapper .user-who-post {
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .card.post-card .post-card-body .user-who-post-wrapper .user-who-post .user-who-post-info {
+        display: flex;
+        align-items: center; }
+        .card.post-card .post-card-body .user-who-post-wrapper .user-who-post .user-who-post-info .user-who-post-info-avatar {
+          margin-right: 1rem; }
+          .card.post-card .post-card-body .user-who-post-wrapper .user-who-post .user-who-post-info .user-who-post-info-avatar img {
+            height: 4rem;
+            width: 4rem;
+            object-fit: cover; }
+        .card.post-card .post-card-body .user-who-post-wrapper .user-who-post .user-who-post-info .user-who-post-info-info .user-username {
+          font-weight: bold;
+          font-size: 1.8rem;
+          line-height: 1.8rem;
+          color: #484848;
+          text-align: left; }
+        .card.post-card .post-card-body .user-who-post-wrapper .user-who-post .user-who-post-info .user-who-post-info-info .user-about {
+          font-weight: normal;
+          font-size: 1.4rem;
+          line-height: 1.4rem;
+          color: #484848;
+          opacity: 0.8;
+          margin-top: 0.5rem; }
+          .card.post-card .post-card-body .user-who-post-wrapper .user-who-post .user-who-post-info .user-who-post-info-info .user-about i {
+            font-weight: normal;
+            font-size: 1.4rem;
+            color: #484848;
+            opacity: 0.8; }
+      .card.post-card .post-card-body .user-who-post-wrapper .user-who-post .user-who-post-options {
+        display: flex;
+        align-items: center; }
+        .card.post-card .post-card-body .user-who-post-wrapper .user-who-post .user-who-post-options .header-note {
+          padding: 0 1rem;
+          border-radius: 5px;
+          background-color: #ff6900;
+          display: flex;
+          align-items: center;
+          height: 3.5rem; }
+          .card.post-card .post-card-body .user-who-post-wrapper .user-who-post .user-who-post-options .header-note span {
+            font-weight: normal;
+            font-size: 1.6rem;
+            text-align: center;
+            color: #fff; }
+        .card.post-card .post-card-body .user-who-post-wrapper .user-who-post .user-who-post-options .follow-button {
+          margin-right: 3rem;
+          cursor: pointer;
+          background: #ffa500;
+          color: white;
+          padding: 0 1rem;
+          height: 4rem;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          outline: none; }
+          .card.post-card .post-card-body .user-who-post-wrapper .user-who-post .user-who-post-options .follow-button span {
+            font-weight: normal;
+            font-size: 1.4rem;
+            color: #fff; }
+          .card.post-card .post-card-body .user-who-post-wrapper .user-who-post .user-who-post-options .follow-button i {
+            margin-right: 1rem;
+            font-weight: normal;
+            font-size: 1.4rem;
+            color: #fff; }
+        .card.post-card .post-card-body .user-who-post-wrapper .user-who-post .user-who-post-options .raiting {
+          margin-right: 2rem; }
+          .card.post-card .post-card-body .user-who-post-wrapper .user-who-post .user-who-post-options .raiting i {
+            color: #ffa500;
+            font-size: 1rem;
+            font-weight: normal; }
+        .card.post-card .post-card-body .user-who-post-wrapper .user-who-post .user-who-post-options .more-options {
+          display: flex;
+          align-items: center; }
+          .card.post-card .post-card-body .user-who-post-wrapper .user-who-post .user-who-post-options .more-options i {
+            cursor: pointer;
+            font-size: 4px; }
+  .card.post-card .post-card-footer .post-card-social-info {
+    padding: 2rem;
+    display: flex;
+    align-items: center; }
+    .card.post-card .post-card-footer .post-card-social-info .post-card-likes {
+      margin-right: 5rem;
+      display: flex;
+      align-items: center; }
+      .card.post-card .post-card-footer .post-card-social-info .post-card-likes i {
+        color: #ff6900;
+        font-size: 2.4rem;
+        margin-right: 1rem;
+        font-weight: normal; }
+      .card.post-card .post-card-footer .post-card-social-info .post-card-likes .likes-number {
+        font-weight: 300;
+        font-size: 2.2rem;
+        color: #484848; }
+    .card.post-card .post-card-footer .post-card-social-info .post-card-comments {
+      display: flex;
+      align-items: center; }
+      .card.post-card .post-card-footer .post-card-social-info .post-card-comments i {
+        color: #ff6900;
+        font-size: 2.4rem;
+        margin-right: 1rem; }
+      .card.post-card .post-card-footer .post-card-social-info .post-card-comments .comments-number {
+        margin-right: 3rem;
+        font-weight: 300;
+        font-size: 2.2rem;
+        color: #484848; }
+      .card.post-card .post-card-footer .post-card-social-info .post-card-comments .comments-show-more {
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1.4rem;
+        color: #ff6900; }
+    .card.post-card .post-card-footer .post-card-social-info .post-card-comment-button {
+      margin-left: auto;
+      cursor: pointer;
+      outline: none; }
+      .card.post-card .post-card-footer .post-card-social-info .post-card-comment-button i {
+        font-size: 2.4rem;
+        color: #ff6900;
+        font-weight: normal; }
+  .card.post-card .post-card-footer .post-card-comment {
+    padding: 2rem;
+    background: #f8f7fa;
+    /*display: flex;*/
+    align-items: center; }
+    .card.post-card .post-card-footer .post-card-comment .post-card-comment-avatar {
+      margin-right: 3rem;
+      display: flex;
+      align-items: center; }
+      .card.post-card .post-card-footer .post-card-comment .post-card-comment-avatar i {
+        font-weight: normal;
+        font-size: 1.3rem;
+        color: #484848;
+        cursor: pointer; }
+      .card.post-card .post-card-footer .post-card-comment .post-card-comment-avatar img {
+        display: block;
+        max-width: 3rem;
+        height: 3rem;
+        width: 3rem;
+        margin-right: 0.8rem; }
+    .card.post-card .post-card-footer .post-card-comment .post-card-comment-input {
+      width: 100%;
+      position: relative; }
+      .card.post-card .post-card-footer .post-card-comment .post-card-comment-input .post-card-comment-input-field {
+        width: 100%;
+        height: 4.5rem;
+        background: #fff;
+        border: 1px solid #f0f0f0;
+        outline: none;
+        padding-left: 2rem;
+        padding-right: 10.5rem;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        color: #484848;
+        outline: none; }
+        .card.post-card .post-card-footer .post-card-comment .post-card-comment-input .post-card-comment-input-field::placeholder {
+          font-weight: normal;
+          font-size: 1.4rem;
+          text-align: left;
+          color: #484848;
+          opacity: 0.5; }
+      .card.post-card .post-card-footer .post-card-comment .post-card-comment-input .comment-options {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 4.5rem;
+        display: flex;
+        align-items: center; }
+        .card.post-card .post-card-footer .post-card-comment .post-card-comment-input .comment-options i {
+          font-size: 1.6rem;
+          cursor: pointer;
+          height: 1.4rem;
+          width: auto;
+          margin-right: 2rem; }
+  .card.post-card .post-card-footer .post-card-comments-list {
+    padding: 2rem; }
+    .card.post-card .post-card-footer .post-card-comments-list .who-comment {
+      margin-bottom: 2rem; }
+      .card.post-card .post-card-footer .post-card-comments-list .who-comment:last-child {
+        margin-bottom: 0; }
+      .card.post-card .post-card-footer .post-card-comments-list .who-comment .who-comment-info {
+        margin-bottom: 1rem; }
+        .card.post-card .post-card-footer .post-card-comments-list .who-comment .who-comment-info img {
+          max-width: 4rem;
+          width: 4rem;
+          height: 4rem;
+          object-fit: cover;
+          margin-right: 1rem; }
+        .card.post-card .post-card-footer .post-card-comments-list .who-comment .who-comment-info .who-comment-info-username {
+          font-weight: bold;
+          font-size: 1.4rem;
+          color: #484848; }
+      .card.post-card .post-card-footer .post-card-comments-list .who-comment .who-comment-info-description {
+        font-size: 1.4rem; }
+
+.card.restaurant-post-card {
+  position: relative;
+  border: 1px solid #e8e8e8;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 5px; }
+  .card.restaurant-post-card .restaurant-post-card-header .restaurant-post-card-photo img {
+    height: 30rem;
+    object-fit: cover;
+    width: 100%; }
+  .card.restaurant-post-card .restaurant-post-card-header .restaurant-post-card-photo.more {
+    padding: 2rem 2rem 0 2rem; }
+  .card.restaurant-post-card .restaurant-post-card-header .restaurant-post-photos {
+    height: 30rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 14rem 14rem;
+    grid-gap: 1rem; }
+    .card.restaurant-post-card .restaurant-post-card-header .restaurant-post-photos .restaurant-post-photo-container {
+      position: relative;
+      cursor: pointer;
+      height: 100%; }
+      .card.restaurant-post-card .restaurant-post-card-header .restaurant-post-photos .restaurant-post-photo-container img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px; }
+      .card.restaurant-post-card .restaurant-post-card-header .restaurant-post-photos .restaurant-post-photo-container.photo-one {
+        grid-column: 1/3;
+        grid-row: 1/3; }
+      .card.restaurant-post-card .restaurant-post-card-header .restaurant-post-photos .restaurant-post-photo-container .more-photos {
+        z-index: 9;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        translate: all 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .card.restaurant-post-card .restaurant-post-card-header .restaurant-post-photos .restaurant-post-photo-container .more-photos span {
+          z-index: 9;
+          font-weight: bold;
+          font-size: 3rem;
+          color: #fff; }
+          .card.restaurant-post-card .restaurant-post-card-header .restaurant-post-photos .restaurant-post-photo-container .more-photos span:before {
+            content: "";
+            height: 9rem;
+            width: 9rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border: 2px solid white;
+            border-radius: 5px; }
+        .card.restaurant-post-card .restaurant-post-card-header .restaurant-post-photos .restaurant-post-photo-container .more-photos.last-photo:after {
+          content: "";
+          opacity: 0.5;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: #ff6900;
+          transition: all 0.3s;
+          border-radius: 5px; }
+  .card.restaurant-post-card #full-stars-example-two {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background-color: white;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+    /* make hover effect work properly in IE */
+    /* hide radio inputs */
+    /* hide 'none' input from screenreaders */
+    /* set icon padding and size */
+    /* set default star color */
+    /* if any input is checked, make its following siblings grey */
+    /* make all stars orange on rating group hover */
+    /* make hovered input's following siblings grey on hover */ }
+    .card.restaurant-post-card #full-stars-example-two .rating-group {
+      display: inline-flex; }
+    .card.restaurant-post-card #full-stars-example-two .rating__icon {
+      pointer-events: none; }
+    .card.restaurant-post-card #full-stars-example-two .rating__input {
+      position: absolute !important;
+      left: -9999px !important; }
+    .card.restaurant-post-card #full-stars-example-two .rating__input--none {
+      display: none; }
+    .card.restaurant-post-card #full-stars-example-two .rating__label {
+      cursor: pointer;
+      font-size: 1.1rem;
+      margin: 0 0.3rem 0 0; }
+    .card.restaurant-post-card #full-stars-example-two .rating__icon--star {
+      color: #ffa500;
+      font-weight: 700; }
+    .card.restaurant-post-card #full-stars-example-two .rating__input:checked ~ .rating__label .rating__icon--star {
+      color: #ffa500;
+      font-weight: 300; }
+    .card.restaurant-post-card #full-stars-example-two .rating-group:hover .rating__label .rating__icon--star {
+      color: #ffa500; }
+    .card.restaurant-post-card #full-stars-example-two .rating__input:hover ~ .rating__label .rating__icon--star {
+      color: #ffa500; }
+  .card.restaurant-post-card .restaurant-post-card-body {
+    padding: 2rem; }
+    .card.restaurant-post-card .restaurant-post-card-body .restaurant-post-card-body-description {
+      padding-left: 5rem;
+      font-size: 1.4rem;
+      font-weight: normal;
+      line-height: 2rem;
+      color: #484848; 
+      overflow-y: scroll;}
+      .card.restaurant-post-card .restaurant-post-card-body .restaurant-post-card-body-description::-webkit-scrollbar {
+        display: none; }
+    .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .restaurant-who-post {
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .restaurant-who-post .restaurant-who-post-info {
+        display: flex;
+        align-items: center; }
+        .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .restaurant-who-post .restaurant-who-post-info .restaurant-who-post-info-avatar {
+          margin-right: 1rem; }
+          .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .restaurant-who-post .restaurant-who-post-info .restaurant-who-post-info-avatar img {
+            max-width: 4rem;
+            object-fit: cover;
+            height: 4rem;
+            width: 4rem;
+            border-radius: 5px; }
+        .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .restaurant-who-post .restaurant-who-post-info .restaurant-who-post-info-info .restaurant-username {
+          font-weight: bold;
+          font-size: 1.8rem;
+          line-height: 1.8rem;
+          color: #484848; }
+        .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .restaurant-who-post .restaurant-who-post-info .restaurant-who-post-info-info .restaurant-about {
+          font-weight: normal;
+          font-size: 1.4rem;
+          line-height: 1.4rem;
+          color: #484848;
+          opacity: 0.8;
+          margin-top: 0.5rem; }
+      .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .restaurant-who-post .restaurant-who-post-options {
+        display: flex;
+        align-items: center; }
+        .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .restaurant-who-post .restaurant-who-post-options .cup-button {
+          outline: none;
+          width: 4rem;
+          height: 4rem;
+          background: #fff;
+          margin-right: 3rem;
+          border: 1px solid #e8e8e8;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .restaurant-who-post .restaurant-who-post-options .cup-button i {
+            font-weight: normal;
+            font-size: 2rem;
+            color: #d40562;
+            cursor: pointer; }
+        .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .restaurant-who-post .restaurant-who-post-options .follow-button {
+          margin-right: 3rem;
+          cursor: pointer;
+          background: #ffa500;
+          color: white;
+          padding: 0 1rem;
+          height: 4rem;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          outline: none; }
+          .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .restaurant-who-post .restaurant-who-post-options .follow-button span {
+            font-weight: normal;
+            font-size: 1.4rem;
+            color: #fff; }
+          .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .restaurant-who-post .restaurant-who-post-options .follow-button i {
+            margin-right: 1rem;
+            font-weight: normal;
+            font-size: 1.4rem;
+            color: #fff; }
+        .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .restaurant-who-post .restaurant-who-post-options .followed {
+          margin-right: 3rem;
+          cursor: pointer;
+          padding: 0 1rem;
+          height: 4rem;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 119px;
+          border-radius: 5px;
+          background: #fff;
+          border: 1px solid #e8e8e8; }
+          .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .restaurant-who-post .restaurant-who-post-options .followed span {
+            font-weight: normal;
+            font-size: 1.4rem;
+            color: #484848; }
+          .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .restaurant-who-post .restaurant-who-post-options .followed i {
+            margin-right: 1rem;
+            font-weight: normal;
+            font-size: 1.4rem;
+            color: #ff6900; }
+        .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .restaurant-who-post .restaurant-who-post-options .more-options {
+          display: flex;
+          align-items: center; }
+          .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .restaurant-who-post .restaurant-who-post-options .more-options i {
+            font-size: 4px;
+            cursor: pointer; }
+      .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .restaurant-who-post .restaurant-who-post-details span {
+        font-weight: normal;
+        font-size: 1.2rem;
+        line-height: 4rem;
+        color: #484848;
+        opacity: 0.5;
+        margin-left: 2rem; }
+    .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .description {
+      font-size: 1.4rem;
+      font-weight: normal;
+      line-height: 20px;
+      color: #484848; }
+    .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .restaurant-post-card-body-description-vente-flash {
+      display: flex;
+      flex-direction: column; }
+      .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .restaurant-post-card-body-description-vente-flash .title {
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: #484848; }
+      .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .restaurant-post-card-body-description-vente-flash .description {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4rem;
+        padding-right: 2rem;
+        margin-top: 2rem; }
+    .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .restaurant-who-made-a-donation {
+      font-weight: bold;
+      font-size: 1.8rem;
+      color: #ff6900;
+      margin: 1rem 0; }
+    .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .association {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 15.5rem;
+      background: #fff;
+      border: 1px solid #e8e8e8; }
+      .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .association .association-img {
+        width: 85%; }
+      .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .association .association-information {
+        padding: 0 2rem;
+        border-left: 1px solid #e8e8e8;
+        margin-top: 1rem; }
+        .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .association .association-information .association-name {
+          font-weight: bold;
+          font-size: 2rem;
+          color: #484848; }
+        .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .association .association-information .association-location {
+          display: flex;
+          align-items: center; }
+          .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .association .association-information .association-location i {
+            font-weight: normal;
+            font-size: 1.4rem;
+            color: #484848;
+            opacity: 0.8; }
+          .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .association .association-information .association-location .adress {
+            font-size: 1.4rem;
+            color: #484848;
+            opacity: 0.8;
+            padding-left: 1rem; }
+        .card.restaurant-post-card .restaurant-post-card-body .restaurant-who-post-wrapper .association .association-information .association-description {
+          font-size: 1.4rem;
+          line-height: 20px;
+          color: #484848; }
+    .card.restaurant-post-card .restaurant-post-card-body .restaurant-post-card-vente-flash-promo {
+      display: flex;
+      justify-content: space-between;
+      margin: 2rem 0; }
+      .card.restaurant-post-card .restaurant-post-card-body .restaurant-post-card-vente-flash-promo .duration {
+        width: 30rem;
+        height: 7rem;
+        background: #175db3;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 300;
+        font-size: 2.4rem;
+        color: #fff;
+        align-items: center;
+        padding: 0 2rem;
+        border-radius: 5px; }
+      .card.restaurant-post-card .restaurant-post-card-body .restaurant-post-card-vente-flash-promo button {
+        height: 7rem;
+        width: 21rem;
+        border-radius: 5px;
+        background: #ff6900;
+        font-family: Raleway;
+        font-weight: bold;
+        font-size: 1.6rem;
+        color: #fff;
+        padding: 0 2rem;
+        cursor: pointer;
+        outline: none; }
+  .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-social-info {
+    padding: 2rem;
+    display: flex;
+    align-items: center; }
+    .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-social-info .restaurant-post-card-likes {
+      margin-right: 5rem;
+      display: flex;
+      align-items: center; }
+      .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-social-info .restaurant-post-card-likes i {
+        color: #ff6900;
+        font-size: 2.4rem;
+        margin-right: 1rem;
+        font-weight: normal; }
+      .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-social-info .restaurant-post-card-likes .likes-number {
+        font-weight: 300;
+        font-size: 2.2rem;
+        color: #484848; }
+    .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-social-info .restaurant-post-card-comments {
+      display: flex;
+      align-items: center; }
+      .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-social-info .restaurant-post-card-comments i {
+        color: #ff6900;
+        font-size: 2.4rem;
+        margin-right: 1rem; }
+      .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-social-info .restaurant-post-card-comments .comments-number {
+        margin-right: 3rem;
+        font-weight: 300;
+        font-size: 2.2rem;
+        color: #484848; }
+      .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-social-info .restaurant-post-card-comments .comments-show-more {
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1.4rem;
+        color: #ff6900; }
+    .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-social-info .restaurant-post-card-comment-button {
+      margin-left: auto;
+      cursor: pointer;
+      outline: none; }
+      .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-social-info .restaurant-post-card-comment-button i {
+        color: #ff6900;
+        font-size: 2.4rem; }
+  .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-comment {
+    padding: 2rem;
+    background: #f8f7fa;
+    display: flex;
+    align-items: center; }
+    .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-comment .restaurant-post-card-comment-avatar {
+      margin-right: 3rem;
+      display: flex;
+      align-items: center; }
+      .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-comment .restaurant-post-card-comment-avatar img {
+        height: 3rem;
+        width: 3rem;
+        max-width: 3rem;
+        object-fit: cover;
+        border-radius: 100%;
+        margin-right: 1rem; }
+      .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-comment .restaurant-post-card-comment-avatar i {
+        font-size: 1.3rem;
+        color: #484848; }
+    .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-comment .restaurant-post-card-comment-input {
+      width: 100%;
+      position: relative; }
+      .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-comment .restaurant-post-card-comment-input .restaurant-post-card-comment-input-field {
+        width: 100%;
+        height: 4.5rem;
+        background: #fff;
+        border: 1px solid #f0f0f0;
+        outline: none;
+        padding-left: 2rem;
+        padding-right: 10.5rem;
+        border-radius: 5px; }
+        .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-comment .restaurant-post-card-comment-input .restaurant-post-card-comment-input-field::placeholder {
+          font-weight: normal;
+          font-size: 1.4rem;
+          text-align: left;
+          color: #484848;
+          opacity: 0.5; }
+      .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-comment .restaurant-post-card-comment-input .comment-options {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 4.5rem;
+        display: flex;
+        align-items: center; }
+        .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-comment .restaurant-post-card-comment-input .comment-options i {
+          font-size: 1.5rem;
+          cursor: pointer;
+          height: 1.4rem;
+          width: auto;
+          margin-right: 2rem; }
+  .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-comments-list {
+    padding: 2rem; }
+    .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-comments-list .who-comment {
+      margin-bottom: 2rem; }
+      .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-comments-list .who-comment:last-child {
+        margin-bottom: 0; }
+      .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-comments-list .who-comment .who-comment-info {
+        margin-bottom: 1rem; }
+        .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-comments-list .who-comment .who-comment-info .who-comment-info-avatar {
+          margin-right: 1rem; }
+        .card.restaurant-post-card .restaurant-post-card-footer .restaurant-post-card-comments-list .who-comment .who-comment-info .who-comment-info-username {
+          font-weight: bold;
+          font-size: 1.4rem;
+          color: #484848; }
+  .card.restaurant-post-card .restaurant-post-card-footer-vente-flash {
+    display: flex;
+    align-items: center;
+    padding: 0  2rem 2rem; }
+    .card.restaurant-post-card .restaurant-post-card-footer-vente-flash span {
+      font-size: 1.4rem;
+      color: #175db3; }
+    .card.restaurant-post-card .restaurant-post-card-footer-vente-flash:hover .shared-component-profil-img {
+      padding-left: 1rem; }
+      .card.restaurant-post-card .restaurant-post-card-footer-vente-flash:hover .shared-component-profil-img > img:nth-child(2) {
+        left: -0.5rem; }
+      .card.restaurant-post-card .restaurant-post-card-footer-vente-flash:hover .shared-component-profil-img > img:nth-child(3) {
+        left: -1rem; }
+      .card.restaurant-post-card .restaurant-post-card-footer-vente-flash:hover .shared-component-profil-img > img:nth-child(4) {
+        left: -1.5rem; }
+      .card.restaurant-post-card .restaurant-post-card-footer-vente-flash:hover .shared-component-profil-img > img:nth-child(5) {
+        left: -2rem; }
+      .card.restaurant-post-card .restaurant-post-card-footer-vente-flash:hover .shared-component-profil-img > img:nth-child(6) {
+        left: -2.5rem; }
+      .card.restaurant-post-card .restaurant-post-card-footer-vente-flash:hover .shared-component-profil-img > img:nth-child(7) {
+        left: -3rem; }
+      .card.restaurant-post-card .restaurant-post-card-footer-vente-flash:hover .shared-component-profil-img #profil-img-number {
+        position: relative;
+        left: -6rem;
+        color: white;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+        justify-content: center;
+        top: 0.9rem; }
+    .card.restaurant-post-card .restaurant-post-card-footer-vente-flash .shared-component-profil-img {
+      display: flex;
+      position: relative;
+      top: 0;
+      transition: all 0.1s;
+      margin-left: 2rem; }
+      .card.restaurant-post-card .restaurant-post-card-footer-vente-flash .shared-component-profil-img > img {
+        position: relative;
+        display: block;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 100%;
+        object-fit: cover;
+        position: relative;
+        left: 0; }
+        .card.restaurant-post-card .restaurant-post-card-footer-vente-flash .shared-component-profil-img > img:nth-child(2) {
+          left: -1.5rem; }
+        .card.restaurant-post-card .restaurant-post-card-footer-vente-flash .shared-component-profil-img > img:nth-child(3) {
+          left: -3rem; }
+        .card.restaurant-post-card .restaurant-post-card-footer-vente-flash .shared-component-profil-img > img:nth-child(4) {
+          left: -4.5rem; }
+        .card.restaurant-post-card .restaurant-post-card-footer-vente-flash .shared-component-profil-img > img:nth-child(5) {
+          left: -6rem; }
+        .card.restaurant-post-card .restaurant-post-card-footer-vente-flash .shared-component-profil-img > img:nth-child(6) {
+          left: -7.5rem; }
+        .card.restaurant-post-card .restaurant-post-card-footer-vente-flash .shared-component-profil-img > img:nth-child(7) {
+          left: -9rem; }
+      .card.restaurant-post-card .restaurant-post-card-footer-vente-flash .shared-component-profil-img #profil-img-number {
+        left: -12.2rem;
+        position: relative;
+        color: white;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+        justify-content: center;
+        top: 0.9rem; }
+  .card.restaurant-post-card .restaurant-post-card-footer-gestion-de-residus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0  2rem 2rem; }
+    .card.restaurant-post-card .restaurant-post-card-footer-gestion-de-residus .left-side {
+      display: flex;
+      align-items: center; }
+      .card.restaurant-post-card .restaurant-post-card-footer-gestion-de-residus .left-side span {
+        font-size: 1.4rem;
+        color: #175db3;
+        margin-right: 2rem; }
+      .card.restaurant-post-card .restaurant-post-card-footer-gestion-de-residus .left-side:hover .shared-component-profil-img {
+        padding-left: 1rem; }
+        .card.restaurant-post-card .restaurant-post-card-footer-gestion-de-residus .left-side:hover .shared-component-profil-img > img:nth-child(2) {
+          left: -0.5rem; }
+        .card.restaurant-post-card .restaurant-post-card-footer-gestion-de-residus .left-side:hover .shared-component-profil-img > img:nth-child(3) {
+          left: -1rem; }
+        .card.restaurant-post-card .restaurant-post-card-footer-gestion-de-residus .left-side:hover .shared-component-profil-img > img:nth-child(4) {
+          left: -1.5rem; }
+        .card.restaurant-post-card .restaurant-post-card-footer-gestion-de-residus .left-side:hover .shared-component-profil-img > img:nth-child(5) {
+          left: -2rem; }
+        .card.restaurant-post-card .restaurant-post-card-footer-gestion-de-residus .left-side:hover .shared-component-profil-img > img:nth-child(6) {
+          left: -2.5rem; }
+        .card.restaurant-post-card .restaurant-post-card-footer-gestion-de-residus .left-side:hover .shared-component-profil-img > img:nth-child(7) {
+          left: -3rem; }
+        .card.restaurant-post-card .restaurant-post-card-footer-gestion-de-residus .left-side:hover .shared-component-profil-img #profil-img-number {
+          position: relative;
+          left: -6rem;
+          color: white;
+          font-size: 1.4rem;
+          font-weight: bold;
+          text-align: center;
+          justify-content: center;
+          top: 0.9rem; }
+      .card.restaurant-post-card .restaurant-post-card-footer-gestion-de-residus .left-side .shared-component-profil-img {
+        display: flex;
+        position: relative;
+        top: 0;
+        transition: all 0.1s;
+        width: 60%; }
+        .card.restaurant-post-card .restaurant-post-card-footer-gestion-de-residus .left-side .shared-component-profil-img > img {
+          position: relative;
+          display: block;
+          height: 4rem;
+          width: 4rem;
+          border-radius: 100%;
+          object-fit: cover;
+          position: relative;
+          left: 0; }
+          .card.restaurant-post-card .restaurant-post-card-footer-gestion-de-residus .left-side .shared-component-profil-img > img:nth-child(2) {
+            left: -1.5rem; }
+          .card.restaurant-post-card .restaurant-post-card-footer-gestion-de-residus .left-side .shared-component-profil-img > img:nth-child(3) {
+            left: -3rem; }
+          .card.restaurant-post-card .restaurant-post-card-footer-gestion-de-residus .left-side .shared-component-profil-img > img:nth-child(4) {
+            left: -4.5rem; }
+          .card.restaurant-post-card .restaurant-post-card-footer-gestion-de-residus .left-side .shared-component-profil-img > img:nth-child(5) {
+            left: -6rem; }
+          .card.restaurant-post-card .restaurant-post-card-footer-gestion-de-residus .left-side .shared-component-profil-img > img:nth-child(6) {
+            left: -7.5rem; }
+          .card.restaurant-post-card .restaurant-post-card-footer-gestion-de-residus .left-side .shared-component-profil-img > img:nth-child(7) {
+            left: -9rem; }
+        .card.restaurant-post-card .restaurant-post-card-footer-gestion-de-residus .left-side .shared-component-profil-img #profil-img-number {
+          left: -10.5rem;
+          position: relative;
+          color: white;
+          font-size: 1.4rem;
+          font-weight: bold;
+          text-align: center;
+          justify-content: center;
+          top: 0.9rem; }
+    .card.restaurant-post-card .restaurant-post-card-footer-gestion-de-residus .right-side button {
+      width: 20rem;
+      cursor: pointer;
+      outline: none;
+      padding: 0 2rem;
+      height: 6rem;
+      background: #ff6900;
+      font-family: Raleway;
+      font-weight: bold;
+      font-size: 1.6rem;
+      color: #fff;
+      border-radius: 5px; }
+  .card.restaurant-post-card .restaurant-my-besty-button {
+    position: absolute;
+    left: 2rem;
+    top: 2rem; }
+    .card.restaurant-post-card .restaurant-my-besty-button button {
+      outline: none;
+      cursor: pointer;
+      padding: 0 1rem;
+      height: 4rem;
+      width: 10rem;
+      background: #fff;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+      border: 0;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .card.restaurant-post-card .restaurant-my-besty-button button .button-my-besty {
+        opacity: 1;
+        font-weight: normal;
+        font-size: 1.4rem;
+        color: #ff6900;
+        outline: none; }
+      .card.restaurant-post-card .restaurant-my-besty-button button i {
+        font-size: 1.4rem;
+        color: #ff6900;
+        font-weight: normal; }
+      .card.restaurant-post-card .restaurant-my-besty-button button .button-enlever {
+        display: none;
+        outline: none; }
+      .card.restaurant-post-card .restaurant-my-besty-button button:hover .button-my-besty {
+        display: none;
+        outline: none; }
+      .card.restaurant-post-card .restaurant-my-besty-button button:hover .button-enlever {
+        display: block;
+        opacity: 1;
+        font-weight: normal;
+        font-size: 1.4rem;
+        color: #ff6900;
+        outline: none; }
+  .card.restaurant-post-card .button-with-star {
+    position: absolute;
+    left: 2rem;
+    top: 2rem; }
+    .card.restaurant-post-card .button-with-star button {
+      cursor: pointer;
+      padding: 0 1rem;
+      height: 4rem;
+      outline: none;
+      background: #fff;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+      border: 0;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .card.restaurant-post-card .button-with-star button .button-my-besty {
+        opacity: 1;
+        font-weight: normal;
+        font-size: 1.4rem;
+        color: #ff6900;
+        display: none;
+        outline: none; }
+      .card.restaurant-post-card .button-with-star button i {
+        font-size: 1.4rem;
+        color: #ff6900;
+        font-weight: normal; }
+      .card.restaurant-post-card .button-with-star button .button-enlever {
+        display: none;
+        outline: none; }
+      .card.restaurant-post-card .button-with-star button:hover {
+        width: 10rem; }
+        .card.restaurant-post-card .button-with-star button:hover .button-my-besty {
+          display: flex;
+          outline: none; }
+        .card.restaurant-post-card .button-with-star button:hover .button-enlever {
+          display: block;
+          opacity: 1;
+          font-weight: normal;
+          font-size: 1.4rem;
+          color: #ff6900;
+          outline: none; }
+  .card.restaurant-post-card .restaurant-promos-my-besty-button {
+    position: absolute;
+    left: 2rem;
+    top: 2rem; }
+    .card.restaurant-post-card .restaurant-promos-my-besty-button button {
+      cursor: pointer;
+      padding: 0 1rem;
+      height: 4rem;
+      outline: none;
+      background: #fff;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+      border: 0;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .card.restaurant-post-card .restaurant-promos-my-besty-button button .button-my-besty {
+        display: none;
+        outline: none;
+        font-weight: normal;
+        font-size: 1.4rem;
+        color: #ff6900; }
+      .card.restaurant-post-card .restaurant-promos-my-besty-button button i {
+        color: #ff6900; }
+      .card.restaurant-post-card .restaurant-promos-my-besty-button button:hover {
+        width: 10rem; }
+        .card.restaurant-post-card .restaurant-promos-my-besty-button button:hover .button-my-besty {
+          display: block;
+          outline: none; }
+
+.card.restaurant-mini-post-card {
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.05)); }
+  .card.restaurant-mini-post-card .restaurant-mini-post-card-header {
+    height: 16rem;
+    width: 100%;
+    position: relative; }
+    .card.restaurant-mini-post-card .restaurant-mini-post-card-header img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center; }
+    .card.restaurant-mini-post-card .restaurant-mini-post-card-header .arrows {
+      position: absolute;
+      bottom: 9px;
+      background: white;
+      width: 10rem;
+      z-index: 1111;
+      height: 3.5rem;
+      border-radius: 5px;
+      right: 2rem;
+      display: none;
+      padding: 0 1rem; }
+      .card.restaurant-mini-post-card .restaurant-mini-post-card-header .arrows i {
+        font-weight: normal;
+        font-size: 2.5rem;
+        color: #ff6900;
+        cursor: pointer; }
+    .card.restaurant-mini-post-card .restaurant-mini-post-card-header:hover .arrows {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+  .card.restaurant-mini-post-card .restaurant-mini-post-card-footer {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center; }
+    .card.restaurant-mini-post-card .restaurant-mini-post-card-footer .restaurant-mini-post-card-logo {
+      border: 1px solid #f0f0f0;
+      height: 4rem;
+      width: 4rem;
+      margin-right: 2rem; }
+      .card.restaurant-mini-post-card .restaurant-mini-post-card-footer .restaurant-mini-post-card-logo img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px; }
+    .card.restaurant-mini-post-card .restaurant-mini-post-card-footer .restaurant-mini-post-card-name .name {
+      display: block;
+      font-weight: bold;
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      text-align: left;
+      color: #484848;
+      margin-bottom: 0.5rem; }
+    .card.restaurant-mini-post-card .restaurant-mini-post-card-footer .restaurant-mini-post-card-name .location {
+      font-weight: normal;
+      font-size: 1.4rem;
+      line-height: 1.4rem;
+      text-align: left;
+      color: #484848;
+      opacity: 0.8; }
+      .card.restaurant-mini-post-card .restaurant-mini-post-card-footer .restaurant-mini-post-card-name .location i {
+        margin-right: 0.5rem; }
+    .card.restaurant-mini-post-card .restaurant-mini-post-card-footer .restaurant-mini-post-card-options {
+      margin-left: auto; }
+      .card.restaurant-mini-post-card .restaurant-mini-post-card-footer .restaurant-mini-post-card-options button {
+        height: 4rem;
+        font-weight: normal;
+        font-size: 1.4rem;
+        text-align: left;
+        color: #fff;
+        background: #ffa500;
+        padding: 0 2rem;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer; }
+        .card.restaurant-mini-post-card .restaurant-mini-post-card-footer .restaurant-mini-post-card-options button i {
+          margin-right: 1rem; }
